@@ -8,7 +8,7 @@ Link for avalon bot: http://t.me/avalonbg_bot
 
 Feel free to add new line for your own language.
 
-For example, to add language "xx" for example, add new line, line below:
+For example, to add language "xx", add new line below:
 
 Script::$script["xx"][Script::QUEST] = "YOUR TRANSLATION BELONG TO HERE";
 
