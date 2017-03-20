@@ -34,6 +34,9 @@ class Constant{
     const WITCH = 12;
     const AUDITOR = 13;
 
+    const GOOD_LANCELOT = 14;
+    const EVIL_LANCELOT = 15;
+
     const THRES_REMIND = 9; // $updatesTimeout + 1
 
     static $_120; // start game
@@ -45,6 +48,7 @@ class Constant{
     static $_startGame;
     static $_startGame_r1;
     static $_startGame_r2;
+    static $_startRandomRoles;
     static $_discussAssignQuestGroup;
     static $_discussAssignQuestGroup_r1;
     static $_discussAssignQuestGroup_r2;
@@ -103,6 +107,31 @@ class Constant{
     const EMO_NO_B = '👎';
     const EMO_MEGAPHONE_B = '📣';
     const EMO_CAR = '🚗';
+    const EMO_SINGLE_EXCLAMATION_MARK = '❗';
+    const EMO_EXCLAMATION_MARK = '‼';
+
+    const EMO_MERLIN = '🔮';
+    const EMO_PERCIVAL = '⚔';
+    const EMO_MORGANA = '👸';
+    const EMO_OBERON = '👹';
+    const EMO_NINJA = '🏹';
+    const EMO_MORDRED = '🎩';
+    const EMO_SERVANT = '👱';
+    const EMO_THIEF = '👲';
+    const EMO_WITCH = '👁';
+    const EMO_AGENT = '🕵';
+    const EMO_AUDITOR = '⚖';
+    const EMO_ASSASSIN = '🗡';
+    const EMO_MORGAUSE = '👱‍♀';
+    const EMO_KNIGHT = '🏇';
+    const EMO_EVIL_LANCELOT = '👺';
+    const EMO_GOOD_LANCELOT = '🤥';
+
+    const EMO_PROHIBITED = '🚫';
+    const EMO_HEART_NOT_SWITCH = '💕';
+    const EMO_HEART_SWITCH = '💞';
+
+
 
     const idString = "Bahasa Indonesia";
     const enString = "English";
@@ -120,9 +149,14 @@ class Constant{
     public static $twoFailsRequired;
 
     public static $normalRoleMap;
+    public static $normalLancelotRoleMap;
     public static $chaosRoleMap;
+    public static $chaosLancelotRoleMap;
 
-    static function isGNBPlayer($role){
+    public static $lancelotVariant1;
+    public static $lancelotVariant2;
+
+    static function isGNBPlayer($role, $isLancelotSwitched){
         switch ($role) {
             case Constant::MERLIN:
             case Constant::PERCIVAL:
@@ -131,6 +165,10 @@ class Constant{
             case Constant::AGENT:
             case Constant::AUDITOR:
                 return 1;
+            case Constant::GOOD_LANCELOT:
+                return $isLancelotSwitched? -1: 1;
+            case Constant::EVIL_LANCELOT:
+                return $isLancelotSwitched? 1: -1;
             default:
                 return -1;
         }
@@ -254,6 +292,8 @@ class Constant{
                 Constant::$imgStartChaosId = "AgADBQADsqcxG5qM6xBC6m-Gor3SAahCyjIABPnal7KYKg0qlxoAAgI";
             }
 
+            Constant::$_startRandomRoles = Constant::$_45 / 2;
+
             Constant::$_discussAssignQuestGroup = Constant::$_120;
             Constant::$_discussAssignQuestGroup_r1 = Constant::$_60;
             Constant::$_discussAssignQuestGroup_r2 = Constant::$_90;
@@ -290,6 +330,9 @@ class Constant{
                 9 => array(1,1,1,2,1),
                 10 => array(1,1,1,2,1),
             );
+
+            Constant::$lancelotVariant1 = array(0,0,0,1,1);
+            Constant::$lancelotVariant2 = array(0,0,0,0,0,1,1);
 
             Constant::$normalRoleMap = array(
                 5 => array(Constant::MERLIN,
@@ -339,80 +382,129 @@ class Constant{
                     Constant::OBERON),
             );
 
+            Constant::$normalLancelotRoleMap = array(
+                5 => array(Constant::MERLIN,
+                    Constant::PERCIVAL,
+                    Constant::GOOD_LANCELOT,
+                    Constant::MORGAUSE,
+                    Constant::EVIL_LANCELOT),
+                6 => array(Constant::MERLIN,
+                    Constant::PERCIVAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_LANCELOT,
+                    Constant::MORGAUSE,
+                    Constant::EVIL_LANCELOT),
+                7 => array(Constant::MERLIN,
+                    Constant::PERCIVAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_LANCELOT,
+                    Constant::MORDRED,
+                    Constant::MORGAUSE,
+                    Constant::EVIL_LANCELOT),
+                8 => array(Constant::MERLIN,
+                    Constant::PERCIVAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_LANCELOT,
+                    Constant::MORDRED,
+                    Constant::MORGAUSE,
+                    Constant::EVIL_LANCELOT),
+                9 => array(Constant::MERLIN,
+                    Constant::PERCIVAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_LANCELOT,
+                    Constant::MORDRED,
+                    Constant::MORGAUSE,
+                    Constant::EVIL_LANCELOT),
+                10 => array(Constant::MERLIN,
+                    Constant::PERCIVAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_NORMAL,
+                    Constant::GOOD_LANCELOT,
+                    Constant::MORDRED,
+                    Constant::MORGAUSE,
+                    Constant::EVIL_LANCELOT,
+                    Constant::OBERON),
+            );
+
+
 
             Constant::$chaosRoleMap = array(
                 5 =>
-                array(
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::MORDRED,
-                        Constant::MORGAUSE),
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AUDITOR,
-                        Constant::MORDRED,
-                        Constant::MORGAUSE),
-                    array(Constant::MERLIN,
-                        Constant::AGENT,
-                        Constant::AGENT,
-                        Constant::MORDRED,
-                        Constant::ASSASSIN),
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AGENT,
-                        Constant::MORGANA,
-                        Constant::ASSASSIN),
-                ),
+                    array(
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::MORDRED,
+                            Constant::MORGAUSE),
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AUDITOR,
+                            Constant::MORDRED,
+                            Constant::MORGAUSE),
+                        array(Constant::MERLIN,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::MORDRED,
+                            Constant::ASSASSIN),
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::MORGANA,
+                            Constant::ASSASSIN),
+                    ),
                 6 =>
-                array(
                     array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::KNIGHT,
-                        Constant::MORDRED,
-                        Constant::MORGAUSE),
-                    array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::AUDITOR,
-                        Constant::MORDRED,
-                        Constant::MORGAUSE),
-                    array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AGENT,
-                        Constant::AGENT,
-                        Constant::MORDRED,
-                        Constant::MORGAUSE),
-                    array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AGENT,
-                        Constant::GOOD_NORMAL,
-                        Constant::MORGANA,
-                        Constant::ASSASSIN),
-                ),
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::KNIGHT,
+                            Constant::MORDRED,
+                            Constant::MORGAUSE),
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AUDITOR,
+                            Constant::MORDRED,
+                            Constant::MORGAUSE),
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::MORDRED,
+                            Constant::MORGAUSE),
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORGANA,
+                            Constant::ASSASSIN),
+                    ),
                 7 =>
-                array(
                     array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::AGENT,
-                        Constant::MORDRED,
-                        Constant::WITCH,
-                        Constant::MORGAUSE),
-                    array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AGENT,
-                        Constant::AGENT,
-                        Constant::MORDRED,
-                        Constant::WITCH,
-                        Constant::MORGAUSE),
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AGENT,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGAUSE),
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGAUSE),
 //                    array(
 //                        Constant::MERLIN,
 //                        Constant::PERCIVAL,
@@ -437,118 +529,118 @@ class Constant{
 //                        Constant::MORDRED,
 //                        Constant::MORGANA,
 //                        Constant::ASSASSIN),
-                ),
+                    ),
                 8 =>
-                array(
-                    // ninja witch morga, strong vs strong
                     array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AGENT,
-                        Constant::AGENT,
-                        Constant::GOOD_NORMAL,
-                        Constant::NINJA,
-                        Constant::WITCH,
-                        Constant::MORGAUSE),
+                        // ninja witch morga, strong vs strong
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::GOOD_NORMAL,
+                            Constant::NINJA,
+                            Constant::WITCH,
+                            Constant::MORGAUSE),
 
-                    // mordred witch, morgs
-                    array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::KNIGHT,
-                        Constant::GOOD_NORMAL,
-                        Constant::NINJA,
-                        Constant::WITCH,
-                        Constant::MORGAUSE),
+                        // mordred witch, morgs
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::KNIGHT,
+                            Constant::GOOD_NORMAL,
+                            Constant::NINJA,
+                            Constant::WITCH,
+                            Constant::MORGAUSE),
 
-                    // mordred morga assassin
-                    array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::AGENT,
-                        Constant::GOOD_NORMAL,
-                        Constant::MORDRED,
-                        Constant::WITCH,
-                        Constant::MORGAUSE),
+                        // mordred morga assassin
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AGENT,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGAUSE),
 
-                    array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::GOOD_NORMAL,
-                        Constant::GOOD_NORMAL,
-                        Constant::MORDRED,
-                        Constant::WITCH,
-                        Constant::MORGAUSE),
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGAUSE),
 
-                    // ninja oberon morga
-                    array(
-                        Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::AUDITOR,
-                        Constant::GOOD_NORMAL,
-                        Constant::NINJA,
-                        Constant::OBERON,
-                        Constant::MORGAUSE),
+                        // ninja oberon morga
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AUDITOR,
+                            Constant::GOOD_NORMAL,
+                            Constant::NINJA,
+                            Constant::OBERON,
+                            Constant::MORGAUSE),
 
-                ),
+                    ),
                 9 =>
-                array(
-                    // ninja witch morga,
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AGENT,
-                        Constant::AGENT,
-                        Constant::GOOD_NORMAL,
-                        Constant::GOOD_NORMAL,
-                        Constant::NINJA,
-                        Constant::WITCH,
-                        Constant::MORGAUSE),
+                    array(
+                        // ninja witch morga,
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::NINJA,
+                            Constant::WITCH,
+                            Constant::MORGAUSE),
 
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::AUDITOR,
-                        Constant::GOOD_NORMAL,
-                        Constant::GOOD_NORMAL,
-                        Constant::NINJA,
-                        Constant::WITCH,
-                        Constant::MORGAUSE),
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AUDITOR,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::NINJA,
+                            Constant::WITCH,
+                            Constant::MORGAUSE),
 
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::GOOD_NORMAL,
-                        Constant::GOOD_NORMAL,
-                        Constant::GOOD_NORMAL,
-                        Constant::MORDRED,
-                        Constant::WITCH,
-                        Constant::MORGAUSE),
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGAUSE),
 
-                    array(Constant::MERLIN,
-                        Constant::KNIGHT,
-                        Constant::KNIGHT,
-                        Constant::GOOD_NORMAL,
-                        Constant::GOOD_NORMAL,
-                        Constant::GOOD_NORMAL,
-                        Constant::MORDRED,
-                        Constant::OBERON,
-                        Constant::ASSASSIN),
+                        array(Constant::MERLIN,
+                            Constant::KNIGHT,
+                            Constant::KNIGHT,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::OBERON,
+                            Constant::ASSASSIN),
 
-                    // ninja oberon morga
+                        // ninja oberon morga
 
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AUDITOR,
-                        Constant::AGENT,
-                        Constant::GOOD_NORMAL,
-                        Constant::GOOD_NORMAL,
-                        Constant::NINJA,
-                        Constant::OBERON,
-                        Constant::MORGAUSE),
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AUDITOR,
+                            Constant::AGENT,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::NINJA,
+                            Constant::OBERON,
+                            Constant::MORGAUSE),
 
 //                    array(Constant::MERLIN,
 //                        Constant::PERCIVAL,
@@ -570,82 +662,82 @@ class Constant{
 //                        Constant::MORDRED,
 //                        Constant::MORGAUSE),
 
-                ),
+                    ),
                 10 =>
-                array(
-                    // ninja witch morga oberon
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AGENT,
-                        Constant::AGENT,
-                        Constant::KNIGHT,
-                        Constant::GOOD_NORMAL,
-                        Constant::NINJA,
-                        Constant::WITCH,
-                        Constant::MORGAUSE,
-                        Constant::OBERON),
+                    array(
+                        // ninja witch morga oberon
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::KNIGHT,
+                            Constant::GOOD_NORMAL,
+                            Constant::NINJA,
+                            Constant::WITCH,
+                            Constant::MORGAUSE,
+                            Constant::OBERON),
 
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::KNIGHT,
-                        Constant::AUDITOR,
-                        Constant::AGENT,
-                        Constant::NINJA,
-                        Constant::WITCH,
-                        Constant::MORGAUSE,
-                        Constant::OBERON),
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::KNIGHT,
+                            Constant::AUDITOR,
+                            Constant::AGENT,
+                            Constant::NINJA,
+                            Constant::WITCH,
+                            Constant::MORGAUSE,
+                            Constant::OBERON),
 
-                    // mordred witch, morgas
-                    // witch can guess, then 1:5
+                        // mordred witch, morgas
+                        // witch can guess, then 1:5
 
-                    // witch can guess, then 1:5
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::AGENT,
-                        Constant::GOOD_NORMAL,
-                        Constant::GOOD_NORMAL,
-                        Constant::MORDRED,
-                        Constant::WITCH,
-                        Constant::MORGAUSE,
-                        Constant::OBERON),
+                        // witch can guess, then 1:5
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AGENT,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGAUSE,
+                            Constant::OBERON),
 
-                    // no oberon
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::KNIGHT,
-                        Constant::KNIGHT,
-                        Constant::KNIGHT,
-                        Constant::AGENT,
-                        Constant::MORDRED,
-                        Constant::WITCH,
-                        Constant::MORGANA,
-                        Constant::ASSASSIN),
+                        // no oberon
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::KNIGHT,
+                            Constant::KNIGHT,
+                            Constant::AGENT,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGANA,
+                            Constant::ASSASSIN),
 
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AGENT,
-                        Constant::AGENT,
-                        Constant::AUDITOR,
-                        Constant::GOOD_NORMAL,
-                        Constant::MORDRED,
-                        Constant::WITCH,
-                        Constant::MORGANA,
-                        Constant::ASSASSIN),
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::AUDITOR,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGANA,
+                            Constant::ASSASSIN),
 
-                    array(Constant::MERLIN,
-                        Constant::PERCIVAL,
-                        Constant::AGENT,
-                        Constant::AGENT,
-                        Constant::KNIGHT,
-                        Constant::GOOD_NORMAL,
-                        Constant::MORDRED,
-                        Constant::WITCH,
-                        Constant::MORGANA,
-                        Constant::ASSASSIN),
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::KNIGHT,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGANA,
+                            Constant::ASSASSIN),
 
-                    // ninja oberon morgana assassin
+                        // ninja oberon morgana assassin
 //                    array(Constant::MERLIN,
 //                        Constant::PERCIVAL,
 //                        Constant::AGENT,
@@ -657,7 +749,7 @@ class Constant{
 //                        Constant::ASSASSIN,
 //                        Constant::OBERON),
 
-                    // ninja mordred oberon witch
+                        // ninja mordred oberon witch
 //                    array(Constant::MERLIN,
 //                        Constant::PERCIVAL,
 //                        Constant::AGENT,
@@ -668,8 +760,202 @@ class Constant{
 //                        Constant::MORDRED,
 //                        Constant::OBERON,
 //                        Constant::MORGAUSE),
-                ),
+                    ),
             );
+
+
+            Constant::$chaosLancelotRoleMap = array(
+                5 =>
+                    array(
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::GOOD_LANCELOT,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+                    ),
+                6 =>
+                    array(
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+                    ),
+                7 =>
+                    array(
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::MORDRED,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+                    ),
+                8 =>
+                    array(
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::NINJA,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+
+                        // mordred witch, morgs
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::KNIGHT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::NINJA,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+
+                        // mordred morga assassin
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AGENT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::MORDRED,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+
+                        array(
+                            Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_LANCELOT,
+                            Constant::MORDRED,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+
+                    ),
+                9 =>
+                    array(
+                        // ninja witch morga,
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::GOOD_NORMAL,
+                            Constant::NINJA,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AUDITOR,
+                            Constant::GOOD_LANCELOT,
+                            Constant::GOOD_NORMAL,
+                            Constant::NINJA,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::GOOD_NORMAL,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AUDITOR,
+                            Constant::GOOD_LANCELOT,
+                            Constant::AGENT,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE),
+
+                    ),
+                10 =>
+                    array(
+                        // ninja witch morga oberon
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::KNIGHT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::NINJA,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE,
+                            Constant::OBERON),
+
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AUDITOR,
+                            Constant::AGENT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::NINJA,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE,
+                            Constant::OBERON),
+
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::AGENT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::GOOD_NORMAL,
+                            Constant::MORDRED,
+                            Constant::EVIL_LANCELOT,
+                            Constant::MORGAUSE,
+                            Constant::OBERON),
+
+                        // no oberon
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::KNIGHT,
+                            Constant::KNIGHT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::AGENT,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGAUSE,
+                            Constant::EVIL_LANCELOT),
+
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::AUDITOR,
+                            Constant::GOOD_LANCELOT,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGAUSE,
+                            Constant::EVIL_LANCELOT),
+
+                        array(Constant::MERLIN,
+                            Constant::PERCIVAL,
+                            Constant::AGENT,
+                            Constant::AGENT,
+                            Constant::KNIGHT,
+                            Constant::GOOD_LANCELOT,
+                            Constant::MORDRED,
+                            Constant::WITCH,
+                            Constant::MORGAUSE,
+                            Constant::EVIL_LANCELOT),
+
+                    ),
+            );
+
         }
     }
 
@@ -708,7 +994,7 @@ class Constant{
         return $randomizedArr;
     }
 
-    static function generateRandomRoleArray($mode, $size){
+    static function generateRandomRoleArray($mode, $lancelotMode, $size){
         if (!Constant::$inited) {
             Constant::init();
         }
@@ -716,22 +1002,39 @@ class Constant{
         // generate [0,1,2,3,...,size]
         $defaultInt = array();
         if ($mode == Constant::MODE_NORMAL) {
-            $questMap = Constant::$normalRoleMap[$size];
-            for ($i = 0; $i < $size; $i++) {
-                $defaultInt[$i] = $questMap[$i];
+            if ($lancelotMode == 0) { // no lancelot
+                for ($i = 0; $i < $size; $i++) {
+                    $defaultInt[$i] = Constant::$normalRoleMap[$size][$i];
+                }
+            }
+            else { // has lancelot
+                for ($i = 0; $i < $size; $i++) {
+                    $defaultInt[$i] = Constant::$normalLancelotRoleMap[$size][$i];
+                }
             }
         }
         else if ($mode == Constant::MODE_CHAOS) {
-            $variantRoleInQuest = count(Constant::$chaosRoleMap[$size]);
-            if ($variantRoleInQuest == 1){
-                $pickVariant = 0;
+            if ($lancelotMode == 0) { // no lancelot
+                $variantRoleInQuest = count(Constant::$chaosRoleMap[$size]);
+                if ($variantRoleInQuest == 1) {
+                    $pickVariant = 0;
+                } else { // there is more than 1 variant
+                    $pickVariant = rand(0, $variantRoleInQuest - 1);
+                }
+                for ($i = 0; $i < $size; $i++) {
+                    $defaultInt[$i] = Constant::$chaosRoleMap[$size][$pickVariant] [$i];
+                }
             }
-            else { // there is more than 1 variant
-                $pickVariant = rand(0, $variantRoleInQuest-1);
-            }
-            $questMap = Constant::$chaosRoleMap[$size][$pickVariant];
-            for ($i = 0; $i < $size; $i++) {
-                $defaultInt[$i] = $questMap[$i];
+            else { // has lancelot
+                $variantRoleInQuest = count(Constant::$chaosLancelotRoleMap[$size]);
+                if ($variantRoleInQuest == 1) {
+                    $pickVariant = 0;
+                } else { // there is more than 1 variant
+                    $pickVariant = rand(0, $variantRoleInQuest - 1);
+                }
+                for ($i = 0; $i < $size; $i++) {
+                    $defaultInt[$i] = Constant::$chaosLancelotRoleMap[$size][$pickVariant] [$i];
+                }
             }
         }
         $randomizedArr = array();

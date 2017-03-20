@@ -47,8 +47,6 @@ class Script{
 
     const PU_BADGUYSWONKILL= 32; // bad guys won
 
-    // const PR_OBERONFINALLY = 32; // oberon finally know friends they are %s
-
     const PU_LADYLAKEINST = 33; // %s as lady lake may choose 1 person
 
     const PU_KILLMERLIN = 34; // 3 quest success. Tim jahat adalah %s.
@@ -141,6 +139,8 @@ class Script{
     const PU_FAIL5XREJ = 96; //
     const PR_AUDITORDECREASE1 = 97;
 
+    const PR_EXECQUESTLANCELOT = 98;
+
     const PU_CHCKPMTOCHGLANG = 100; // check PM untuk mengganti bahasa
     const PU_SECONDTODECIDE = 101; // you have %d to decide
     const PU_LANGGROUPNOTFOUND = 102; // "Bahasa tidak berhasil diganti. group tidak ditemukan.";
@@ -182,6 +182,9 @@ class Script{
     const EVIL_TEAM_WON_STAT = 133;
     const GOOD_TEAM_WON_STAT = 134;
 
+    const WON = 135;
+    const LOST = 136;
+
 
 
     const SERVANT = 150;
@@ -219,6 +222,25 @@ class Script{
     const PU_AGENTINFO = 269;
     const PU_WITCHINFO = 270;
     const PU_AUDITORINFO = 271;
+    const PU_GOODLANCELOTINFO = 272;
+    const PU_EVILLANCELOTINFO = 273;
+
+    const NO_LANCELOT = 300;
+    const LANCELOT_V1 = 301;
+    const LANCELOT_V2 = 302;
+    const PU_LANCELOT_V1_SELECT = 303;
+    const PU_LANCELOT_V2_SELECT = 304;
+
+    const GOOD_LANCELOT = 305;
+    const EVIL_LANCELOT = 306;
+
+    const PR_YOUAREGOODLANCELOT = 307;
+    const PR_YOUAREEVILLANCELOT = 308;
+    const PU_FORECAST_LANCELOT = 309;
+
+    const PU_LANCELOT_NOT_SWITCHED = 310;
+    const PU_LANCELOT_SWITCHED = 311;
+
 
     static $script;
     static function init(){
@@ -248,172 +270,194 @@ class Script{
             Script::$script["och"][Script::TOKEN_REJECT] = "否決標誌 ❌";
 
 
-            Script::$script["en"][Script::MERLIN] = "Merlin";
-            Script::$script["id"][Script::MERLIN] = "Merlin";
-            Script::$script["it"][Script::MERLIN] = "Merlino";
-            Script::$script["cn"][Script::MERLIN] = "梅林";
-            Script::$script["pb"][Script::MERLIN] = "Merlin";
-            Script::$script["ph"][Script::MERLIN] = "Merlin";
-            Script::$script["es"][Script::MERLIN] = "Merlín";
-            Script::$script["zho"][Script::MERLIN] = "梅林 🔮";
-            Script::$script["yue"][Script::MERLIN] = "梅林 🔮";
-            Script::$script["och"][Script::MERLIN] = "梅林 🔮";
+            Script::$script["en"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
+            Script::$script["id"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
+            Script::$script["it"][Script::MERLIN] = "Merlino ". Constant::EMO_MERLIN;
+            Script::$script["cn"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
+            Script::$script["pb"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
+            Script::$script["ph"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
+            Script::$script["es"][Script::MERLIN] = "Merlín ". Constant::EMO_MERLIN;
+            Script::$script["zho"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
+            Script::$script["yue"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
+            Script::$script["och"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
 
 
-            Script::$script["en"][Script::PERCIVAL] = "Percival";
-            Script::$script["id"][Script::PERCIVAL] = "Percival";
-            Script::$script["it"][Script::PERCIVAL] = "Percival";
-            Script::$script["cn"][Script::PERCIVAL] = "派西維爾";
-            Script::$script["pb"][Script::PERCIVAL] = "Percival";
-            Script::$script["ph"][Script::PERCIVAL] = "Percival";
-            Script::$script["es"][Script::PERCIVAL] = "Perceval";
-            Script::$script["zho"][Script::PERCIVAL] = "派西维尔 ⚔";
-            Script::$script["yue"][Script::PERCIVAL] = "珀西瓦里 ⚔";
-            Script::$script["och"][Script::PERCIVAL] = "派西維爾 ⚔";
+            Script::$script["en"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
+            Script::$script["id"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
+            Script::$script["it"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
+            Script::$script["cn"][Script::PERCIVAL] = "派西維爾 ". Constant::EMO_PERCIVAL;
+            Script::$script["pb"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
+            Script::$script["ph"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
+            Script::$script["es"][Script::PERCIVAL] = "Perceval ". Constant::EMO_PERCIVAL;
+            Script::$script["zho"][Script::PERCIVAL] = "派西维尔 ". Constant::EMO_PERCIVAL;
+            Script::$script["yue"][Script::PERCIVAL] = "珀西瓦里 ". Constant::EMO_PERCIVAL;
+            Script::$script["och"][Script::PERCIVAL] = "派西維爾 ". Constant::EMO_PERCIVAL;
 
 
-            Script::$script["en"][Script::MORGANA] = "Morgana";
-            Script::$script["id"][Script::MORGANA] = "Morgana";
-            Script::$script["it"][Script::MORGANA] = "Morgana";
-            Script::$script["cn"][Script::MORGANA] = "莫甘娜";
-            Script::$script["pb"][Script::MORGANA] = "Morgana";
-            Script::$script["ph"][Script::MORGANA] = "Morgana";
-            Script::$script["es"][Script::MORGANA] = "Morgana";
-            Script::$script["zho"][Script::MORGANA] = "摩甘娜 👸";
-            Script::$script["yue"][Script::MORGANA] = "莫甘娜 👸";
-            Script::$script["och"][Script::MORGANA] = "莫甘娜 👸";
+            Script::$script["en"][Script::MORGANA] = "Morgana " .Constant::EMO_MORGANA;
+            Script::$script["id"][Script::MORGANA] = "Morgana ".Constant::EMO_MORGANA;
+            Script::$script["it"][Script::MORGANA] = "Morgana ".Constant::EMO_MORGANA;
+            Script::$script["cn"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
+            Script::$script["pb"][Script::MORGANA] = "Morgana ".Constant::EMO_MORGANA;
+            Script::$script["ph"][Script::MORGANA] = "Morgana ".Constant::EMO_MORGANA;
+            Script::$script["es"][Script::MORGANA] = "Morgana ".Constant::EMO_MORGANA;
+            Script::$script["zho"][Script::MORGANA] = "摩甘娜 ".Constant::EMO_MORGANA;
+            Script::$script["yue"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
+            Script::$script["och"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
 
 
-            Script::$script["en"][Script::OBERON] = "Oberon";
-            Script::$script["id"][Script::OBERON] = "Oberon";
-            Script::$script["it"][Script::OBERON] = "Oberon";
-            Script::$script["cn"][Script::OBERON] = "奧北朗";
-            Script::$script["pb"][Script::OBERON] = "Oberon";
-            Script::$script["ph"][Script::OBERON] = "Oberon";
-            Script::$script["es"][Script::OBERON] = "Oberón";
-            Script::$script["zho"][Script::OBERON] = "欧泊朗 👹";
-            Script::$script["yue"][Script::OBERON] = "奧伯龍 👹";
-            Script::$script["och"][Script::OBERON] = "奥伯倫 👹";
+            Script::$script["en"][Script::OBERON] = "Oberon " .Constant::EMO_OBERON;
+            Script::$script["id"][Script::OBERON] = "Oberon ".Constant::EMO_OBERON;
+            Script::$script["it"][Script::OBERON] = "Oberon ".Constant::EMO_OBERON;
+            Script::$script["cn"][Script::OBERON] = "奧北朗 ".Constant::EMO_OBERON;
+            Script::$script["pb"][Script::OBERON] = "Oberon ".Constant::EMO_OBERON;
+            Script::$script["ph"][Script::OBERON] = "Oberon ".Constant::EMO_OBERON;
+            Script::$script["es"][Script::OBERON] = "Oberón ".Constant::EMO_OBERON;
+            Script::$script["zho"][Script::OBERON] = "欧泊朗 ".Constant::EMO_OBERON;
+            Script::$script["yue"][Script::OBERON] = "奧伯龍 ".Constant::EMO_OBERON;
+            Script::$script["och"][Script::OBERON] = "奥伯倫 ".Constant::EMO_OBERON;
 
 
-            Script::$script["en"][Script::NINJA] = "Ninja";
-            Script::$script["id"][Script::NINJA] = "Ninja";
-            Script::$script["it"][Script::NINJA] = "Ninja";
-            Script::$script["cn"][Script::NINJA] = "忍者";
-            Script::$script["pb"][Script::NINJA] = "Ninja";
-            Script::$script["ph"][Script::NINJA] = "Hokage";
-            Script::$script["es"][Script::NINJA] = "Ninja";
-            Script::$script["zho"][Script::NINJA] = "忍者 🏹";
-            Script::$script["yue"][Script::NINJA] = "忍者 🏹";
-            Script::$script["och"][Script::NINJA] = "忍者 🏹";
+            Script::$script["en"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
+            Script::$script["id"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
+            Script::$script["it"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
+            Script::$script["cn"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
+            Script::$script["pb"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
+            Script::$script["ph"][Script::NINJA] = "Hokage ".Constant::EMO_NINJA;
+            Script::$script["es"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
+            Script::$script["zho"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
+            Script::$script["yue"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
+            Script::$script["och"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
 
 
-            Script::$script["en"][Script::MORDRED] = "Mordred";
-            Script::$script["id"][Script::MORDRED] = "Mordred";
-            Script::$script["it"][Script::MORDRED] = "Mordred";
-            Script::$script["cn"][Script::MORDRED] = "莫德雷德";
-            Script::$script["pb"][Script::MORDRED] = "Mordred";
-            Script::$script["ph"][Script::MORDRED] = "Mordred";
-            Script::$script["es"][Script::MORDRED] = "Mordred";
-            Script::$script["zho"][Script::MORDRED] = "莫德雷德 🎩";
-            Script::$script["yue"][Script::MORDRED] = "莫德雷德 🎩";
-            Script::$script["och"][Script::MORDRED] = "莫德雷德 🎩";
+            Script::$script["en"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
+            Script::$script["id"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
+            Script::$script["it"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
+            Script::$script["cn"][Script::MORDRED] = "莫德雷德 ".Constant::EMO_MORDRED;
+            Script::$script["pb"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
+            Script::$script["ph"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
+            Script::$script["es"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
+            Script::$script["zho"][Script::MORDRED] = "莫德雷德 ".Constant::EMO_MORDRED;
+            Script::$script["yue"][Script::MORDRED] = "莫德雷德 ".Constant::EMO_MORDRED;
+            Script::$script["och"][Script::MORDRED] = "莫德雷德 ".Constant::EMO_MORDRED;
 
 
-            Script::$script["en"][Script::SERVANT] = "Servant";
-            Script::$script["id"][Script::SERVANT] = "Rakyat Jelata";
-            Script::$script["it"][Script::SERVANT] = "Servo";
-            Script::$script["cn"][Script::SERVANT] = "僕人";
-            Script::$script["pb"][Script::SERVANT] = "Servo";
-            Script::$script["ph"][Script::SERVANT] = "Alalay";
-            Script::$script["es"][Script::SERVANT] = "Leal";
-            Script::$script["zho"][Script::SERVANT] = "僕人 💂";
-            Script::$script["yue"][Script::SERVANT] = "跟班 💂";
-            Script::$script["och"][Script::SERVANT] = "仕從 💂";
+            Script::$script["en"][Script::SERVANT] = "Servant ".Constant::EMO_SERVANT;
+            Script::$script["id"][Script::SERVANT] = "Rakyat Jelata ".Constant::EMO_SERVANT;
+            Script::$script["it"][Script::SERVANT] = "Servo ".Constant::EMO_SERVANT;
+            Script::$script["cn"][Script::SERVANT] = "僕人 ".Constant::EMO_SERVANT;
+            Script::$script["pb"][Script::SERVANT] = "Servo ".Constant::EMO_SERVANT;
+            Script::$script["ph"][Script::SERVANT] = "Alalay ".Constant::EMO_SERVANT;
+            Script::$script["es"][Script::SERVANT] = "Leal ".Constant::EMO_SERVANT;
+            Script::$script["zho"][Script::SERVANT] = "僕人 ".Constant::EMO_SERVANT;
+            Script::$script["yue"][Script::SERVANT] = "跟班 ".Constant::EMO_SERVANT;
+            Script::$script["och"][Script::SERVANT] = "仕從 ".Constant::EMO_SERVANT;
 
 
-            Script::$script["en"][Script::THIEF] = "Thief";
-            Script::$script["id"][Script::THIEF] = "Penjahat Biasa";
-            Script::$script["it"][Script::THIEF] = "Ladro";
-            Script::$script["cn"][Script::THIEF] = "小偷";
-            Script::$script["pb"][Script::THIEF] = "Ladrão";
-            Script::$script["ph"][Script::THIEF] = "Isnatcher";
-            Script::$script["es"][Script::THIEF] = "Ladrón";
-            Script::$script["zho"][Script::THIEF] = "小偷 👲";
-            Script::$script["yue"][Script::THIEF] = "賊仔 👲";
-            Script::$script["och"][Script::THIEF] = "小偷 👲";
+            Script::$script["en"][Script::THIEF] = "Thief " .Constant::EMO_THIEF;
+            Script::$script["id"][Script::THIEF] = "Penjahat Biasa ".Constant::EMO_THIEF;
+            Script::$script["it"][Script::THIEF] = "Ladro ".Constant::EMO_THIEF;
+            Script::$script["cn"][Script::THIEF] = "小偷 ".Constant::EMO_THIEF;
+            Script::$script["pb"][Script::THIEF] = "Ladrão ".Constant::EMO_THIEF;
+            Script::$script["ph"][Script::THIEF] = "Isnatcher ".Constant::EMO_THIEF;
+            Script::$script["es"][Script::THIEF] = "Ladrón ".Constant::EMO_THIEF;
+            Script::$script["zho"][Script::THIEF] = "小偷 ".Constant::EMO_THIEF;
+            Script::$script["yue"][Script::THIEF] = "賊仔 ".Constant::EMO_THIEF;
+            Script::$script["och"][Script::THIEF] = "小偷 ".Constant::EMO_THIEF;
 
 
-            Script::$script["en"][Script::WITCH] = "Witch";
-            Script::$script["id"][Script::WITCH] = "Penyihir";
-            Script::$script["it"][Script::WITCH] = "Strega";
-            Script::$script["cn"][Script::WITCH] = "巫師";
-            Script::$script["pb"][Script::WITCH] = "Feiticeira";
-            Script::$script["ph"][Script::WITCH] = "Bruha";
-            Script::$script["es"][Script::WITCH] = "Bruja";
-            Script::$script["zho"][Script::WITCH] = "巫师 👁";
-            Script::$script["yue"][Script::WITCH] = "女巫 👁";
-            Script::$script["och"][Script::WITCH] = "女巫 👁";
+            Script::$script["en"][Script::WITCH] = "Witch " .Constant::EMO_WITCH;
+            Script::$script["id"][Script::WITCH] = "Penyihir ".Constant::EMO_WITCH;
+            Script::$script["it"][Script::WITCH] = "Strega ".Constant::EMO_WITCH;
+            Script::$script["cn"][Script::WITCH] = "巫師 ".Constant::EMO_WITCH;
+            Script::$script["pb"][Script::WITCH] = "Feiticeira ".Constant::EMO_WITCH;
+            Script::$script["ph"][Script::WITCH] = "Bruha ".Constant::EMO_WITCH;
+            Script::$script["es"][Script::WITCH] = "Bruja ".Constant::EMO_WITCH;
+            Script::$script["zho"][Script::WITCH] = "巫师 ".Constant::EMO_WITCH;
+            Script::$script["yue"][Script::WITCH] = "女巫 ".Constant::EMO_WITCH;
+            Script::$script["och"][Script::WITCH] = "女巫 ".Constant::EMO_WITCH;
 
 
-            Script::$script["en"][Script::AGENT] = "Agent";
-            Script::$script["id"][Script::AGENT] = "Agen";
-            Script::$script["it"][Script::AGENT] = "Agente";
-            Script::$script["cn"][Script::AGENT] = "特務";
-            Script::$script["pb"][Script::AGENT] = "Agente";
-            Script::$script["ph"][Script::AGENT] = "Agent";
-            Script::$script["es"][Script::AGENT] = "Agente";
-            Script::$script["zho"][Script::AGENT] = "特务 🕵";
-            Script::$script["yue"][Script::AGENT] = "特務 🕵";
-            Script::$script["och"][Script::AGENT] = "密探 🕵";
+            Script::$script["en"][Script::AGENT] = "Agent " .Constant::EMO_AGENT;
+            Script::$script["id"][Script::AGENT] = "Agen " .Constant::EMO_AGENT;
+            Script::$script["it"][Script::AGENT] = "Agente " .Constant::EMO_AGENT;
+            Script::$script["cn"][Script::AGENT] = "特務 " .Constant::EMO_AGENT;
+            Script::$script["pb"][Script::AGENT] = "Agente " .Constant::EMO_AGENT;
+            Script::$script["ph"][Script::AGENT] = "Agent " .Constant::EMO_AGENT;
+            Script::$script["es"][Script::AGENT] = "Agente ".Constant::EMO_AGENT;
+            Script::$script["zho"][Script::AGENT] = "特务 ".Constant::EMO_AGENT;
+            Script::$script["yue"][Script::AGENT] = "特務 ".Constant::EMO_AGENT;
+            Script::$script["och"][Script::AGENT] = "密探 ".Constant::EMO_AGENT;
 
 
-            Script::$script["en"][Script::AUDITOR] = "Auditor";
-            Script::$script["id"][Script::AUDITOR] = "Auditor";
-            Script::$script["it"][Script::AUDITOR] = "Revisore";
-            Script::$script["cn"][Script::AUDITOR] = "外交達人";
-            Script::$script["pb"][Script::AUDITOR] = "Auditor";
-            Script::$script["ph"][Script::AUDITOR] = "Auditor";
-            Script::$script["es"][Script::AUDITOR] = "Auditor";
-            Script::$script["zho"][Script::AUDITOR] = "外交官 ⚖";
-            Script::$script["yue"][Script::AUDITOR] = "覆查官 ⚖";
-            Script::$script["och"][Script::AUDITOR] = "使節 ⚖";
+            Script::$script["en"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
+            Script::$script["id"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
+            Script::$script["it"][Script::AUDITOR] = "Revisore ".Constant::EMO_AUDITOR;
+            Script::$script["cn"][Script::AUDITOR] = "外交達人 ".Constant::EMO_AUDITOR;
+            Script::$script["pb"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
+            Script::$script["ph"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
+            Script::$script["es"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
+            Script::$script["zho"][Script::AUDITOR] = "外交官 ".Constant::EMO_AUDITOR;
+            Script::$script["yue"][Script::AUDITOR] = "覆查官 ".Constant::EMO_AUDITOR;
+            Script::$script["och"][Script::AUDITOR] = "使節 ".Constant::EMO_AUDITOR;
 
 
-            Script::$script["en"][Script::ASSASSIN] = "Assassin";
-            Script::$script["id"][Script::ASSASSIN] = "Assassin";
-            Script::$script["it"][Script::ASSASSIN] = "Assassino";
-            Script::$script["cn"][Script::ASSASSIN] = "刺客";
-            Script::$script["pb"][Script::ASSASSIN] = "Assassina";
-            Script::$script["ph"][Script::ASSASSIN] = "Assassin";
-            Script::$script["es"][Script::ASSASSIN] = "Asesino";
-            Script::$script["zho"][Script::ASSASSIN] = "刺客 🗡";
-            Script::$script["yue"][Script::ASSASSIN] = "刺客 🗡";
-            Script::$script["och"][Script::ASSASSIN] = "刺客 🗡";
+            Script::$script["en"][Script::ASSASSIN] = "Assassin " .Constant::EMO_ASSASSIN;
+            Script::$script["id"][Script::ASSASSIN] = "Assassin ".Constant::EMO_ASSASSIN;
+            Script::$script["it"][Script::ASSASSIN] = "Assassino ".Constant::EMO_ASSASSIN;
+            Script::$script["cn"][Script::ASSASSIN] = "刺客 ".Constant::EMO_ASSASSIN;
+            Script::$script["pb"][Script::ASSASSIN] = "Assassina ".Constant::EMO_ASSASSIN;
+            Script::$script["ph"][Script::ASSASSIN] = "Assassin ".Constant::EMO_ASSASSIN;
+            Script::$script["es"][Script::ASSASSIN] = "Asesino ".Constant::EMO_ASSASSIN;
+            Script::$script["zho"][Script::ASSASSIN] = "刺客 ".Constant::EMO_ASSASSIN;
+            Script::$script["yue"][Script::ASSASSIN] = "刺客 ".Constant::EMO_ASSASSIN;
+            Script::$script["och"][Script::ASSASSIN] = "刺客 ".Constant::EMO_ASSASSIN;
 
 
-            Script::$script["en"][Script::MORGAUSE] = "Morgause";
-            Script::$script["id"][Script::MORGAUSE] = "Morgause";
-            Script::$script["it"][Script::MORGAUSE] = "Morgause";
-            Script::$script["cn"][Script::MORGAUSE] = "摩高斯";
-            Script::$script["pb"][Script::MORGAUSE] = "Morgause";
-            Script::$script["ph"][Script::MORGAUSE] = "Morgause";
-            Script::$script["es"][Script::MORGAUSE] = "Morgause";
-            Script::$script["zho"][Script::MORGAUSE] = "摩高斯 👱‍♀";
-            Script::$script["yue"][Script::MORGAUSE] = "莫歌絲 👱‍♀";
-            Script::$script["och"][Script::MORGAUSE] = "莫歌絲 👱‍♀";
+            Script::$script["en"][Script::MORGAUSE] = "Morgause " .Constant::EMO_MORGAUSE;
+            Script::$script["id"][Script::MORGAUSE] = "Morgause ".Constant::EMO_MORGAUSE;
+            Script::$script["it"][Script::MORGAUSE] = "Morgause ".Constant::EMO_MORGAUSE;
+            Script::$script["cn"][Script::MORGAUSE] = "摩高斯 ".Constant::EMO_MORGAUSE;
+            Script::$script["pb"][Script::MORGAUSE] = "Morgause ".Constant::EMO_MORGAUSE;
+            Script::$script["ph"][Script::MORGAUSE] = "Morgause ".Constant::EMO_MORGAUSE;
+            Script::$script["es"][Script::MORGAUSE] = "Morgause ".Constant::EMO_MORGAUSE;
+            Script::$script["zho"][Script::MORGAUSE] = "摩高斯 ".Constant::EMO_MORGAUSE;
+            Script::$script["yue"][Script::MORGAUSE] = "莫歌絲 ".Constant::EMO_MORGAUSE;
+            Script::$script["och"][Script::MORGAUSE] = "莫歌絲 ".Constant::EMO_MORGAUSE;
 
 
-            Script::$script["en"][Script::KNIGHT] = "Knight";
-            Script::$script["id"][Script::KNIGHT] = "Ksatria";
-            Script::$script["it"][Script::KNIGHT] = "Cavaliere";
-            Script::$script["cn"][Script::KNIGHT] = "騎士";
-            Script::$script["pb"][Script::KNIGHT] = "Cavaleiro";
-            Script::$script["ph"][Script::KNIGHT] = "Kawal";
-            Script::$script["es"][Script::KNIGHT] = "Caballero";
-            Script::$script["zho"][Script::KNIGHT] = "骑士 🏇";
-            Script::$script["yue"][Script::KNIGHT] = "武士 🏇";
-            Script::$script["och"][Script::KNIGHT] = "騎士 🏇";
+            Script::$script["en"][Script::KNIGHT] = "Knight ".Constant::EMO_KNIGHT;
+            Script::$script["id"][Script::KNIGHT] = "Ksatria ".Constant::EMO_KNIGHT;
+            Script::$script["it"][Script::KNIGHT] = "Cavaliere ".Constant::EMO_KNIGHT;
+            Script::$script["cn"][Script::KNIGHT] = "騎士 ".Constant::EMO_KNIGHT;
+            Script::$script["pb"][Script::KNIGHT] = "Cavaleiro ".Constant::EMO_KNIGHT;
+            Script::$script["ph"][Script::KNIGHT] = "Kawal ".Constant::EMO_KNIGHT;
+            Script::$script["es"][Script::KNIGHT] = "Caballero ".Constant::EMO_KNIGHT;
+            Script::$script["zho"][Script::KNIGHT] = "骑士 ".Constant::EMO_KNIGHT;
+            Script::$script["yue"][Script::KNIGHT] = "武士 ".Constant::EMO_KNIGHT;
+            Script::$script["och"][Script::KNIGHT] = "騎士 ".Constant::EMO_KNIGHT;
+
+            Script::$script["en"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["id"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["it"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["cn"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["pb"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["ph"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["es"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["zho"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["yue"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["och"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
+
+            Script::$script["en"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["id"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["it"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["cn"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["pb"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["ph"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["es"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["zho"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["yue"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["och"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
 
 
             Script::$script["en"][Script::PR_NEWGAME]
@@ -658,6 +702,29 @@ class Script{
                 = "你是正派，盡了很多力去完成".Script::$script["och"][Script::QUEST]."，務求盡善盡美。";
 
 
+            //NEW
+            Script::$script["en"][Script::PR_EXECQUESTLANCELOT]
+                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+            Script::$script["id"][Script::PR_EXECQUESTLANCELOT]
+                = "Sebagai Evil Lancelot, kamu harus menggagalkan misi apapun yang terjadi. “ψ(｀∇´)ψ";
+            Script::$script["it"][Script::PR_EXECQUESTLANCELOT]
+                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+            Script::$script["cn"][Script::PR_EXECQUESTLANCELOT]
+                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+            Script::$script["pb"][Script::PR_EXECQUESTLANCELOT]
+                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+            Script::$script["ph"][Script::PR_EXECQUESTLANCELOT]
+                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+            Script::$script["es"][Script::PR_EXECQUESTLANCELOT]
+                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+            Script::$script["zho"][Script::PR_EXECQUESTLANCELOT]
+                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+            Script::$script["yue"][Script::PR_EXECQUESTLANCELOT]
+                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+            Script::$script["och"][Script::PR_EXECQUESTLANCELOT]
+                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+
+
             Script::$script["en"][Script::PR_GOFORQUEST]
                 = "%s go to execute the quest. <b>%d seconds</b> are given to finish the quest.";
             Script::$script["id"][Script::PR_GOFORQUEST]
@@ -723,77 +790,77 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::PERCIVAL]."</b>。你察覺 %s 為魔法師梅林，但不確定誰人是真正那位。\n<b>注意：你不可用任何方法私下詢問任何一個。</b>\n \n如有需要，輸入 /percival 會查看更多描述。";
 
             Script::$script["en"][Script::PR_YOUAREGOODNORMAL]
-                = "You are servant. You don't know anything good or bad, but it is important to follow the right king.";
+                = "You are servant. You don't know anything good or bad, but it is important to follow the right king. You should not use the Private Message to communicate.";
             Script::$script["id"][Script::PR_YOUAREGOODNORMAL]
-                = "Kamu adalah Rakyat jelata yang baik. Kamu tidak tahu menahu, yang penting ikut menyukseskan quest dan mengikuti perintah raja.";
+                = "Kamu adalah Rakyat jelata yang baik. Kamu tidak tahu menahu, yang penting ikut menyukseskan quest dan mengikuti perintah raja. Kamu tidak boleh menggunakan PM untuk berkomunikasi.";
             Script::$script["it"][Script::PR_YOUAREGOODNORMAL]
-                = "Sei un bravo villico. Non sai nulla di buono o cattivo, ma è importante seguire il giusto Re.";
+                = "Sei un bravo villico. Non sai nulla di buono o cattivo, ma è importante seguire il giusto Re. Non dovete usare i messaggi privati per comunicare.";
             Script::$script["cn"][Script::PR_YOUAREGOODNORMAL]
-                = "和神秘能力無緣的你們，只是一介草民，唯有通過和大家的交流，努力更隨你們的王，找出所有敵對角色，並且努力地完成任務。";
+                = "和神秘能力無緣的你們，只是一介草民，唯有通過和大家的交流，努力更隨你們的王，找出所有敵對角色，並且努力地完成任務。你不能PM其他人。";
             Script::$script["pb"][Script::PR_YOUAREGOODNORMAL]
-                = "Você é um servo sem conhecimentos ocultos sobre o Bem e o Mal. Está do lado do Bem e seu objetivo é que as Missões tenham SUCESSO.";
+                = "Você é um servo sem conhecimentos ocultos sobre o Bem e o Mal. Está do lado do Bem e seu objetivo é que as Missões tenham SUCESSO. Você não deve se comunicar por mensagens privadas.";
             Script::$script["ph"][Script::PR_YOUAREGOODNORMAL]
                 = "Ikaw ay mabuting mamamayan. Wala kang alam kung sino ang mabuti o masama, pero mahalagang sumunod sa tamang hari(Wag PM kahit wala kang Alam).";
             Script::$script["es"][Script::PR_YOUAREGOODNORMAL]
-                = "Eres un leal. No conoces quién está del lado del Bien o del Mal, pero tú estás del lado del Bien.";
+                = "Eres un leal. No conoces quién está del lado del Bien o del Mal, pero tú estás del lado del Bien. No debes usar un Mensaje Privado para comunicarte.";
             Script::$script["zho"][Script::PR_YOUAREGOODNORMAL]
-                = "你是一介<b>".Script::$script["zho"][Script::SERVANT]."</b>，唯有通过和大家的交流，努力更随你们的王，找出所有敌对角色，并且努力地完成任务。";
+                = "你是一介<b>".Script::$script["zho"][Script::SERVANT]."</b>，唯有通过和大家的交流，努力更随你们的王，找出所有敌对角色，并且努力地完成任务。你不能PM其他人。";
             Script::$script["yue"][Script::PR_YOUAREGOODNORMAL]
-                = "你係<b>".Script::$script["yue"][Script::SERVANT]."</b>。你唔知邊一個係忠定奸，但係跟著忠臣方向。\n \n可以打 /servant 睇到多啲解説。";
+                = "你係<b>".Script::$script["yue"][Script::SERVANT]."</b>。你唔知邊一個係忠定奸，但係跟著忠臣方向。\n \n可以打 /servant 睇到多啲解説。你係唔可以用私訊去搵其他人。";
             Script::$script["och"][Script::PR_YOUAREGOODNORMAL]
-                = "你是<b>".Script::$script["och"][Script::SERVANT]."</b>，卻不知哪一方是好或壞，但最重要是跟著正派方向。\n \n如有需要，輸入 /servant 會查看更多描述。";
+                = "你是<b>".Script::$script["och"][Script::SERVANT]."</b>，卻不知哪一方是好或壞，但最重要是跟著正派方向。\n \n如有需要，輸入 /servant 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
 
 
             Script::$script["en"][Script::PR_YOUAREMORDRED]
-                = "You are Mordred. You team are %s. Merlin does not know you are in the bad side.";
+                = "You are Mordred. You team are %s. Merlin does not know you are in the bad side. You should not use the Private Message to communicate.";
             Script::$script["id"][Script::PR_YOUAREMORDRED]
-                = "Kamu adalah Mordred. Tim jahatmu adalah %s. Merlin tidak tahu bahwa kamu orang jahat.";
+                = "Kamu adalah Mordred. Tim jahatmu adalah %s. Merlin tidak tahu bahwa kamu orang jahat. Kamu tidak boleh menggunakan PM untuk berkomunikasi.";
             Script::$script["it"][Script::PR_YOUAREMORDRED]
-                = "Sei Mordred. Il tuo team è composto da %s. Merlino non sa che sei cattivo.";
+                = "Sei Mordred. Il tuo team è composto da %s. Merlino non sa che sei cattivo. Non dovete usare i messaggi privati per comunicare.";
             Script::$script["cn"][Script::PR_YOUAREMORDRED]
-                = "你是莫德雷德。你要和你的同伴們%s想盡辦法破壞任務。另外，大法師梅林本身的弱點就是會見到你是好人，所以你能假扮好人，取得好人的信任，令任務失敗。";
+                = "你是莫德雷德。你要和你的同伴們%s想盡辦法破壞任務。另外，大法師梅林本身的弱點就是會見到你是好人，所以你能假扮好人，取得好人的信任，令任務失敗。你不能PM其他人。";
             Script::$script["pb"][Script::PR_YOUAREMORDRED]
-                = "Você é Mordred. Seu time é composto por %s. Merlin não sabe que você é do Mal.";
+                = "Você é Mordred. Seu time é composto por %s. Merlin não sabe que você é do Mal. Você não deve se comunicar por mensagens privadas.";
             Script::$script["ph"][Script::PR_YOUAREMORDRED]
-                = "Ikaw ang Mordred. Ang kakampi mo ay sina %s. Hindi alam ng Merlin na ikaw ay masama. Galingan mo ang akting bes!(Wag kang makulit BAWAL mag-pm!).";
+                = "Ikaw ang Mordred. Ang kakampi mo ay sina %s. Hindi alam ng Merlin na ikaw ay masama. Galingan mo ang akting bes!(Wag kang makulit BAWAL mag-pm!). (Panira ng Laro ang PM wag Epal bes!)";
             Script::$script["es"][Script::PR_YOUAREMORDRED]
-                = "Eres Mordred. Tu equipo es %s. Merlín no sabe que formas parte del lado del Mal.";
+                = "Eres Mordred. Tu equipo es %s. Merlín no sabe que formas parte del lado del Mal. No debes usar un Mensaje Privado para comunicarte.";
             Script::$script["zho"][Script::PR_YOUAREMORDRED]
-                = "你是<b>".Script::$script["zho"][Script::MORDRED]."</b>。你要和你的同伴们%s想尽办法破坏任务。另外，梅林本身的弱点就会见到你是好人，所以你能假扮好人，取得好人的信任，令任务失败。";
+                = "你是<b>".Script::$script["zho"][Script::MORDRED]."</b>。你要和你的同伴们%s想尽办法破坏任务。另外，梅林本身的弱点就会见到你是好人，所以你能假扮好人，取得好人的信任，令任务失败。你不能PM其他人。";
             Script::$script["yue"][Script::PR_YOUAREMORDRED]
-                = "你係<b>".Script::$script["yue"][Script::MORDRED]."</b>。你奸臣嗰邊有 %s，但梅林係唔知你係奸臣。\n \n可以打 /mordred 睇到多啲解説。";
+                = "你係<b>".Script::$script["yue"][Script::MORDRED]."</b>。你奸臣嗰邊有 %s，但梅林係唔知你係奸臣。\n \n可以打 /mordred 睇到多啲解説。你係唔可以用私訊去搵其他人。";
             Script::$script["och"][Script::PR_YOUAREMORDRED]
-                = "你是<b>".Script::$script["och"][Script::MORDRED]."</b>。你反派那夥人有 %s，而梅林卻不會知道你已是反派的。\n \n如有需要，輸入 /mordred 會查看更多描述。";
+                = "你是<b>".Script::$script["och"][Script::MORDRED]."</b>。你反派那夥人有 %s，而梅林卻不會知道你已是反派的。\n \n如有需要，輸入 /mordred 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
 
 
 
             Script::$script["en"][Script::PR_YOUARENINJA]
-                = "You are Ninja (Super Mordred). You team are %s. Merlin does not know you are in the bad side. You can give 2 FAILs if you are assigned in a quest, but this ability can only be used once per one game.";
+                = "You are Ninja (Super Mordred). You team are %s. Merlin does not know you are in the bad side. You can give 2 FAILs if you are assigned in a quest, but this ability can only be used once per one game. You should not use the Private Message to communicate.";
             Script::$script["id"][Script::PR_YOUARENINJA]
-                = "Kamu adalah Ninja (Super Mordred). Tim jahatmu adalah %s. Merlin tidak tahu bahwa kamu orang jahat. Kamu bisa memberikan 2 GAGAL jika kamu diikutkan dalam sebuah quest, namun kemampuan ini hanya bisa dipakai 1 kali saja dalam 1 game.";
+                = "Kamu adalah Ninja (Super Mordred). Tim jahatmu adalah %s. Merlin tidak tahu bahwa kamu orang jahat. Kamu bisa memberikan 2 GAGAL jika kamu diikutkan dalam sebuah quest, namun kemampuan ini hanya bisa dipakai 1 kali saja dalam 1 game. Kamu tidak boleh menggunakan PM untuk berkomunikasi.";
             Script::$script["it"][Script::PR_YOUARENINJA]
-                = "Sei il Ninja(Super Mordred). Il tuo team è composto da %s. Merlino non sa che sei cattivo. Puoi dare 2 FALLIMENTI se sei in una missione, ma potrai farlo solo una volta per partita.";
+                = "Sei il Ninja(Super Mordred). Il tuo team è composto da %s. Merlino non sa che sei cattivo. Puoi dare 2 FALLIMENTI se sei in una missione, ma potrai farlo solo una volta per partita. Non dovete usare i messaggi privati per comunicare.";
             Script::$script["cn"][Script::PR_YOUARENINJA]
-                = "身負絕技的你是忍者,就連梅林都無法看穿你真實的身份。你的同伴有%s。一旦你被委派做任務，你會有2次機讓任務失敗。";
+                = "身負絕技的你是忍者,就連梅林都無法看穿你真實的身份。你的同伴有%s。一旦你被委派做任務，你會有2次機讓任務失敗。你不能PM其他人。";
             Script::$script["pb"][Script::PR_YOUARENINJA]
-                = "Você é o Ninja (Super Mordred). O seu time é composto por %s. Merlin não sabe que você é do Mal. Se estiver em uma Missão, poderá votar com 2 FRACASSOS. Esta habilidade só pode ser usada uma vez no jogo.";
+                = "Você é o Ninja (Super Mordred). O seu time é composto por %s. Merlin não sabe que você é do Mal. Se estiver em uma Missão, poderá votar com 2 FRACASSOS. Esta habilidade só pode ser usada uma vez no jogo. Você não deve se comunicar por mensagens privadas.";
             Script::$script["ph"][Script::PR_YOUARENINJA]
-                = "Ikaw ay Hokage (Super Mordred). Ang kakampi mo ay sina %s. Hindi alam ng Merlin na ikaw ay Evil Team, Galingan mo ang akting Bes!,Pwede mo gamitin ang 2 Fails Ninjutsu kung ikaw ay maitalaga sa Quest isang beses sa isang Laro.";
+                = "Ikaw ay Hokage (Super Mordred). Ang kakampi mo ay sina %s. Hindi alam ng Merlin na ikaw ay Evil Team, Galingan mo ang akting Bes!,Pwede mo gamitin ang 2 Fails Ninjutsu kung ikaw ay maitalaga sa Quest isang beses sa isang Laro. (Panira ng Laro ang PM wag Epal bes!)";
             Script::$script["es"][Script::PR_YOUARENINJA]
-                = "Eres un Ninja (Super Mordred). Tu equipo es %s. Merlín no sabe que formas parte del lado del Mal. Puedes aportar 2 FRACASOs si eres elegido en una quest,  pero esta habilidad sólo puede ser usada una vez por partida.";
+                = "Eres un Ninja (Super Mordred). Tu equipo es %s. Merlín no sabe que formas parte del lado del Mal. Puedes aportar 2 FRACASOs si eres elegido en una quest,  pero esta habilidad sólo puede ser usada una vez por partida. No debes usar un Mensaje Privado para comunicarte.";
             Script::$script["zho"][Script::PR_YOUARENINJA]
-                = "身怀绝技的你是<b>".Script::$script["zho"][Script::NINJA]."</b>,就连梅林都无法看穿你真实的身份。你的同伴有%s。一旦你被委派做任务，你会有2次机让任务失败。";
+                = "身怀绝技的你是<b>".Script::$script["zho"][Script::NINJA]."</b>,就连梅林都无法看穿你真实的身份。你的同伴有%s。一旦你被委派做任务，你会有2次机让任务失败。你不能PM其他人。";
             Script::$script["yue"][Script::PR_YOUARENINJA]
-                = "你係<b>".Script::$script["yue"][Script::NINJA]."</b>，能力重勁過莫德雷德。你奸臣嗰邊有 %s，但梅林係唔會知你係奸人嘅。當你要去做任務，可以連搞禍同一任務行動 2 次，但呢種能力只用得 1 次。\n \n可以打 /ninja 睇到多啲解説。";
+                = "你係<b>".Script::$script["yue"][Script::NINJA]."</b>，能力重勁過莫德雷德。你奸臣嗰邊有 %s，但梅林係唔會知你係奸人嘅。當你要去做任務，可以連搞禍同一任務行動 2 次，但呢種能力只用得 1 次。\n \n可以打 /ninja 睇到多啲解説。你係唔可以用私訊去搵其他人。";
             Script::$script["och"][Script::PR_YOUARENINJA]
-                = "你是<b>".Script::$script["och"][Script::NINJA]."</b>，能力強過莫德雷德。你反派那夥人有 %s，而梅林卻不會知道你已是反派的。當你獲委任去做任務時候，可以令任務 2 次失敗，但這種能力只容許 1 次運用。\n \n如有需要，輸入 /ninja 會查看更多描述。";
+                = "你是<b>".Script::$script["och"][Script::NINJA]."</b>，能力強過莫德雷德。你反派那夥人有 %s，而梅林卻不會知道你已是反派的。當你獲委任去做任務時候，可以令任務 2 次失敗，但這種能力只容許 1 次運用。\n \n如有需要，輸入 /ninja 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
 
             Script::$script["en"][Script::PR_YOUAREAGENT]
-                = "You are Agent, a good person whose job is to succeed the missions. The same secret codes are given to agents after a quest has been failed. Find your agent teammates, then together you will succeed the mission easier. Note: you should not use the Private Message to communicate.";
+                = "You are Agent, a good person whose job is to succeed the missions. The same secret codes are given to agents after a quest has been failed. Find your agent teammates, then together you will succeed the mission easier. You should not use the Private Message to communicate.";
             Script::$script["id"][Script::PR_YOUAREAGENT]
-                = "Kamu adalah agent, orang baik yang bertugas untuk menyukseskan misi. Kode rahasia yang sama akan diberikan ke agent setelah sebuah quest gagal. Temukan teman agenmu, maka bersama-sama kalian akan menyukseskan misi lebih mudah. Catatan: kamu tidak boleh menggunakan PM untuk berkomunikasi.";
+                = "Kamu adalah agent, orang baik yang bertugas untuk menyukseskan misi. Kode rahasia yang sama akan diberikan ke agent setelah sebuah quest gagal. Temukan teman agenmu, maka bersama-sama kalian akan menyukseskan misi lebih mudah. Kamu tidak boleh menggunakan PM untuk berkomunikasi.";
             Script::$script["it"][Script::PR_YOUAREAGENT]
-                = "Sei un Agente, una persona buona il cui compito è completare le missioni. Lo stesso codice viene dato agli agenti dopo una missione è stato fallito. Trova i tuoi compagni agenti, e finisci la missione più facilmente. Nota: Non dovete usare i messaggi privati per comunicare.";
+                = "Sei un Agente, una persona buona il cui compito è completare le missioni. Lo stesso codice viene dato agli agenti dopo una missione è stato fallito. Trova i tuoi compagni agenti, e finisci la missione più facilmente. Non dovete usare i messaggi privati per comunicare.";
             Script::$script["cn"][Script::PR_YOUAREAGENT]
                 = "你是特務,專門暗中幫助好人完成任務。你的同伴們會通過暗號來知道你的存在。在執行任務後失敗後，特務們都會收到同樣的暗號。切記，你不能PM其他人來確認你們之間的暗號。";
             Script::$script["pb"][Script::PR_YOUAREAGENT]
@@ -801,7 +868,7 @@ class Script{
             Script::$script["ph"][Script::PR_YOUAREAGENT]
                 = "Ikaw ang Agent, mabuting tao ka na ang misyon ay manalo. May parehas na secret code ang ibibigay sa mga agent pagkatapos ng Quest 2 o 3. Gamitin ang code at hanapin ang  mga co-agent mo para mapadali ang misyon!(Panira ng Laro ang PM wag Epal bes!).";
             Script::$script["es"][Script::PR_YOUAREAGENT]
-                = "Eres un Agente, una buena persona cuyo trabajo es completar las misiones. El mismo código secreto os es revelado a los agentes después de que una gesta fracase. Encuentra a tu equipo de agentes, juntos podréis completar las misiones más fácilmente. Nota: no debes usar un Mensaje Privado para comunicarte";
+                = "Eres un Agente, una buena persona cuyo trabajo es completar las misiones. El mismo código secreto os es revelado a los agentes después de que una gesta fracase. Encuentra a tu equipo de agentes, juntos podréis completar las misiones más fácilmente. No debes usar un Mensaje Privado para comunicarte";
             Script::$script["zho"][Script::PR_YOUAREAGENT]
                 = "你是<b>".Script::$script["zho"][Script::AGENT]."</b>,专门暗中帮助好人完成任务。你的同伴们会通过暗号来知道你的存在。在执行任务後失败後，特务们都会收到同样的暗号。切记，你不能PM其他人来确认你们之间的暗号。";
             Script::$script["yue"][Script::PR_YOUAREAGENT]
@@ -810,13 +877,13 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::AGENT]."</b>，屬於正派而只會令任務成功。當有任務失敗後，就會有同一個暗號予所有密探。若找到其他特務團隊，就會更大機會令任務成功。\n注意：你是不可以用任何方法私下聯絡其他人。\n \n如有需要，輸入 /agent 會查看更多描述。";
 
             Script::$script["en"][Script::PR_YOUAREWITCH]
-                = "You are Witch, an evil person. Your evil teams are %s. With your ability, you know that there are these roles on the good sides: %s.";
+                = "You are Witch, an evil person. Your evil teams are %s. With your ability, you know that there are these roles on the good sides: %s. You should not use the Private Message to communicate.";
             Script::$script["id"][Script::PR_YOUAREWITCH]
-                = "Kamu adalah Witch (Penyihir), orang jahat. Tim jahatmu adalah %s. Dengan kemampuanmu, kamu tahu bahwa ada peran-peran ini di sisi baik: %s.";
+                = "Kamu adalah Witch (Penyihir), orang jahat. Tim jahatmu adalah %s. Dengan kemampuanmu, kamu tahu bahwa ada peran-peran ini di sisi baik: %s. Kamu tidak boleh menggunakan PM untuk berkomunikasi.";
             Script::$script["it"][Script::PR_YOUAREWITCH]
-                = "Sei la Strega, dalla parte dei cattivi. Il tuo team è composto da %s. Con la tua abilità, saprai quali ruoli buoni sono presenti in partita: %s.";
+                = "Sei la Strega, dalla parte dei cattivi. Il tuo team è composto da %s. Con la tua abilità, saprai quali ruoli buoni sono presenti in partita: %s. Non dovete usare i messaggi privati per comunicare.";
             Script::$script["cn"][Script::PR_YOUAREWITCH]
-                = "你是巫師, 邪惡隊伍的引領者。你的隊員是%s。以你高強的法力，你能夠知道, 好人的角色有這些: %s.";
+                = "你是巫師, 邪惡隊伍的引領者。你的隊員是%s。以你高強的法力，你能夠知道, 好人的角色有這些: %s. 你不能PM其他人。";
             Script::$script["pb"][Script::PR_YOUAREWITCH]
                 = "Você é a Feiticeira, uma pessoa do Mal. Seu grupo do Mal é composto por %s. Você é capaz de saber que o grupo do Bem é composto por: %s.";
             Script::$script["ph"][Script::PR_YOUAREWITCH]
@@ -850,6 +917,148 @@ class Script{
                 = "你係<b>".Script::$script["yue"][Script::AUDITOR]."</b>，好人一個。喺你要做任務，有 20% 會阻到呢個任務行動中有人搞禍 1 次。\n \n可以打 /auditor 睇到多啲解説。";
             Script::$script["och"][Script::PR_YOUAREAUDITOR]
                 = "你係<b>".Script::$script["och"][Script::AUDITOR]."</b>，屬於正派。當挑選你去任務時，有 20% 會防止到 1 次任務失敗。\n \n如有需要，輸入 /auditor 會查看更多描述。";
+
+            // NEW
+            Script::$script["en"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["en"][Script::GOOD_LANCELOT]
+                ."</b>. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become evil.";
+            Script::$script["id"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["id"][Script::GOOD_LANCELOT]
+                ."</b>. Kepercayaanmu terhadap kebenaran goyah. Kadang kamu tidak dapat mengontrol emosi dan menjadi jahat.";
+            Script::$script["it"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["it"][Script::GOOD_LANCELOT]
+                ."</b>. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become evil.";
+            Script::$script["cn"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["cn"][Script::GOOD_LANCELOT]
+                ."</b>. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become evil.";
+            Script::$script["pb"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["pb"][Script::GOOD_LANCELOT]
+                ."</b>. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become evil.";
+            Script::$script["ph"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["ph"][Script::GOOD_LANCELOT]
+                ."</b>. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become evil.";
+            Script::$script["es"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["es"][Script::GOOD_LANCELOT]
+                ."</b>. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become evil.";
+            Script::$script["zho"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["zho"][Script::GOOD_LANCELOT]
+                ."</b>. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become evil.";
+            Script::$script["yue"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["yue"][Script::GOOD_LANCELOT]
+                ."</b>. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become evil.";
+            Script::$script["och"][Script::PR_YOUAREGOODLANCELOT]
+                = "You are <b>".Script::$script["och"][Script::GOOD_LANCELOT]
+                ."</b>. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become evil.";
+
+            // NEW
+            Script::$script["en"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["en"][Script::EVIL_LANCELOT]
+                ."</b>. You don't know your any evil friends. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become good.";
+            Script::$script["id"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["id"][Script::EVIL_LANCELOT]
+                ."</b>. Kamu tidak tahu satu pun teman jahatmu. Pendirianmu tidak kuat. Kadang, kamu tidak bisa mengontrol emosi dan menjadi baik.";
+            Script::$script["it"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["it"][Script::EVIL_LANCELOT]
+                ."</b>. You don't know your any evil friends. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become good.";
+            Script::$script["cn"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["cn"][Script::EVIL_LANCELOT]
+                ."</b>. You don't know your any evil friends. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become good.";
+            Script::$script["pb"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["pb"][Script::EVIL_LANCELOT]
+                ."</b>. You don't know your any evil friends. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become good.";
+            Script::$script["ph"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["ph"][Script::EVIL_LANCELOT]
+                ."</b>. You don't know your any evil friends. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become good.";
+            Script::$script["es"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["es"][Script::EVIL_LANCELOT]
+                ."</b>. You don't know your any evil friends. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become good.";
+            Script::$script["zho"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["zho"][Script::EVIL_LANCELOT]
+                ."</b>. You don't know your any evil friends. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become good.";
+            Script::$script["yue"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["yue"][Script::EVIL_LANCELOT]
+                ."</b>. You don't know your any evil friends. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become good.";
+            Script::$script["och"][Script::PR_YOUAREEVILLANCELOT]
+                = "You are <b>".Script::$script["och"][Script::EVIL_LANCELOT]
+                ."</b>. You don't know your any evil friends. Your allegiance is not stabil. Sometimes, you cannot control your emotion and become good.";
+
+
+            Script::$script["en"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+            Script::$script["id"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Peran Lancelot sudah masuk. Gunakan ramalan berikut untuk melihat masa depan!\n";
+            Script::$script["it"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+            Script::$script["cn"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+            Script::$script["pb"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+            Script::$script["ph"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+            Script::$script["es"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+            Script::$script["zho"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+            Script::$script["yue"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+            Script::$script["och"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+
+
+            Script::$script["en"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["id"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "Di giliran ini, Evil Lancelot tetap jahat dan Good Lancelot tetap baik, seperti biasa. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["it"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["cn"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["pb"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["ph"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["es"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["zho"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["yue"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["och"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+
+
+            Script::$script["en"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+            Script::$script["id"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "Di giliran ini, Evil Lancelot menjadi baik dan Good Lancelot menjadi jahat. " . Constant::EMO_HEART_SWITCH;
+            Script::$script["it"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+            Script::$script["cn"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+            Script::$script["pb"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+            Script::$script["ph"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+            Script::$script["es"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+            Script::$script["zho"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+            Script::$script["yue"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+            Script::$script["och"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+
+
 
             Script::$script["en"][Script::PR_FAILDECREASE1]
                 = "You use the ability of auditor. You have decreased the 1 FAIL for this quest.";
@@ -2688,6 +2897,206 @@ class Script{
             Script::$script["och"][Script::CHAOS_MODE]
                 = "混亂模式";
 
+            // NEW
+            Script::$script["en"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+            Script::$script["id"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+            Script::$script["it"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+            Script::$script["cn"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+            Script::$script["pb"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+            Script::$script["ph"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+            Script::$script["es"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+            Script::$script["zho"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+            Script::$script["yue"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+            Script::$script["och"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " No Lancelot";
+
+            // NEW
+            Script::$script["en"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+            Script::$script["id"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+            Script::$script["it"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+            Script::$script["cn"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+            Script::$script["pb"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+            Script::$script["ph"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+            Script::$script["es"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+            Script::$script["zho"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+            Script::$script["yue"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+            Script::$script["och"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
+
+            // NEW
+            Script::$script["en"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+            Script::$script["id"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+            Script::$script["it"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+            Script::$script["cn"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+            Script::$script["pb"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+            Script::$script["ph"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+            Script::$script["es"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+            Script::$script["zho"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+            Script::$script["yue"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+            Script::$script["och"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
+
+            // NEW
+            Script::$script["en"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n";
+            Script::$script["id"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 dipilih</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." dan ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." akan masuk ke permainan.\n"
+                ."Keduanya dapat bertukar peran selama permainan.\n\n";
+            Script::$script["it"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 is selected</b>\n"
+                .Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n";
+            Script::$script["cn"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 is selected</b>\n"
+                . "Good ".Constant::EMO_GOOD_LANCELOT
+                ." and Evil ".Constant::EMO_EVIL_LANCELOT
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n";
+            Script::$script["pb"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n";
+            Script::$script["ph"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 is selected</b>\n"
+                .Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n";
+            Script::$script["es"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 is selected</b>\n"
+                .Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n";
+            Script::$script["zho"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 is selected</b>\n"
+                .Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n";
+            Script::$script["yue"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 is selected</b>\n"
+                .Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n";
+            Script::$script["och"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variant 1 is selected</b>\n"
+                .Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n";
+
+            // NEW
+            Script::$script["en"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 is selected</b>\n"
+                .Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n"
+                ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
+            Script::$script["id"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 dipilih</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." dan ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." akan masuk dalam permainan.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n"
+                ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
+            Script::$script["it"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." Lancelot roles will join the game.\n"
+                ."Keduanya dapat bertukar peran selama permainan.\n\n"
+                ."Di varian ini, Evil Lancelot harus selalu menggagalkan misi yang dia ikuti.\n\n";
+            Script::$script["cn"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n"
+                ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
+            Script::$script["pb"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n"
+                ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
+            Script::$script["ph"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n"
+                ."In this variant, Evil Lancelot must fail the quest he is on.";
+            Script::$script["es"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n"
+                ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
+            Script::$script["zho"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n"
+                ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
+            Script::$script["yue"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n"
+                ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
+            Script::$script["och"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variant 2 is selected</b>\n"
+                . Script::$script["en"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." roles will join the game.\n"
+                ."Both of the roles may switch allegiance during the game.\n\n"
+                ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
+
             Script::$script["en"][Script::PLAY_TIME]
                 = "played %d times";
             Script::$script["id"][Script::PLAY_TIME]
@@ -2771,6 +3180,50 @@ class Script{
                 = "忠臣贏咗 %d%%";
             Script::$script["och"][Script::GOOD_TEAM_WON_STAT]
                 = "正派獲勝了 %d%%";
+
+            // NEW
+            Script::$script["en"][Script::WON]
+                = "Won";
+            Script::$script["id"][Script::WON]
+                = "Menang";
+            Script::$script["it"][Script::WON]
+                = "Won";
+            Script::$script["cn"][Script::WON]
+                = "Won";
+            Script::$script["pb"][Script::WON]
+                = "Won";
+            Script::$script["ph"][Script::WON]
+                = "Won";
+            Script::$script["es"][Script::WON]
+                = "Won";
+            Script::$script["zho"][Script::WON]
+                = "Won";
+            Script::$script["yue"][Script::WON]
+                = "Won";
+            Script::$script["och"][Script::WON]
+                = "Won";
+
+            // NEW
+            Script::$script["en"][Script::LOST]
+                = "Lost";
+            Script::$script["id"][Script::LOST]
+                = "Kalah";
+            Script::$script["it"][Script::LOST]
+                = "Lost";
+            Script::$script["cn"][Script::LOST]
+                = "Lost";
+            Script::$script["pb"][Script::LOST]
+                = "Lost";
+            Script::$script["ph"][Script::LOST]
+                = "Lost";
+            Script::$script["es"][Script::LOST]
+                = "Lost";
+            Script::$script["zho"][Script::LOST]
+                = "Lost";
+            Script::$script["yue"][Script::LOST]
+                = "Lost";
+            Script::$script["och"][Script::LOST]
+                = "Lost";
 
             Script::$script["en"][Script::EVIL_TEAM_WON_STAT]
                 = "Evil Team Won %d%%";
@@ -3221,7 +3674,9 @@ class Script{
                 .Constant::EMO_EVIL_B."/assassin\n"
                 .Constant::EMO_EVIL_B."/morgana\n"
                 .Constant::EMO_EVIL_B."/mordred\n"
-                .Constant::EMO_EVIL_B."/oberon\n\n";
+                .Constant::EMO_EVIL_B."/oberon\n"
+                .Constant::EMO_SMILE_B."/goodlancelot\n"
+                .Constant::EMO_EVIL_B."/evillancelot\n\n";
 
 
             $chaosRoleList = Constant::EMO_SMILE_B."/knight\n"
@@ -3921,7 +4376,7 @@ class Script{
                 "sad",
                 "stupid",
                 "smart",
-                "Oh my God",
+//                "Oh my God",
                 "believe",
                 "choose",
                 "sure",
@@ -3938,7 +4393,7 @@ class Script{
                 "sedih",
                 "bodoh",
                 "pintar",
-                "ya Tuhan",
+//                "ya Tuhan",
                 "percaya",
                 "pilih",
                 "yakin",
@@ -3972,7 +4427,7 @@ class Script{
                 "傷心",
                 "笨蛋",
                 "醒目",
-                "我的天",
+//                "我的天",
                 "相信",
                 "選擇",
                 "當然",
@@ -3989,7 +4444,7 @@ class Script{
                 "triste",
                 "idiota",
                 "esperto",
-                "Meu Deus!",
+//                "Meu Deus!",
                 "acredite",
                 "escolha",
                 "claro",
@@ -4025,7 +4480,7 @@ class Script{
                 "triste",
                 "estúpido",
                 "inteligente",
-                "Oh Dios mío",
+//                "Oh Dios mío",
                 "creer",
                 "elegir",
                 "seguro",
@@ -4042,7 +4497,7 @@ class Script{
                 "伤心",
                 "笨蛋",
                 "醒目",
-                "我的天",
+//                "我的天",
                 "相信",
                 "选择",
                 "当然",
@@ -4076,7 +4531,7 @@ class Script{
                 "心傷",
                 "蠢純",
                 "聰明",
-                "天啊",
+//                "天啊",
                 "相信",
                 "選擇",
                 "當然",
@@ -4340,6 +4795,101 @@ class Script{
                 . "騎士有能力知曉 2 位選手皆不是反派，或者至少有 1 位是反派。不過，莫德雷德會當作正派。\n\n";
 
 
+            // NEW
+            Script::$script["en"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["en"][Script::GOOD_LANCELOT]."</b>"
+                . " is originally a good person whose job is to succeed the quests.\n\n"
+                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+            Script::$script["id"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["id"][Script::GOOD_LANCELOT]."</b>"
+                . " awalnya adalah orang baik yang tugasnya menyukseskan misi\n\n"
+                . "Namun, ada kemungkinan di suatu misi, Good Lancelot akan bertukar peran dengan Evil Lancelot. Jika itu terjadi, maka di misi itu, lady akan melihat Good Lancelot sebagai Jahat, dan kondisi kemenangan untuk Good Lancelot juga berubah (untuk misi itu saja)\n\n";
+            Script::$script["it"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["it"][Script::GOOD_LANCELOT]."</b>"
+                . " is originally a good person whose job is to succeed the quests.\n\n"
+                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+            Script::$script["cn"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["cn"][Script::GOOD_LANCELOT]."</b>"
+                . " is originally a good person whose job is to succeed the quests.\n\n"
+                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+            Script::$script["pb"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["pb"][Script::GOOD_LANCELOT]."</b>"
+                . " is originally a good person whose job is to succeed the quests.\n\n"
+                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+            Script::$script["ph"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["ph"][Script::GOOD_LANCELOT]."</b>"
+                . " is originally a good person whose job is to succeed the quests.\n\n"
+                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+            Script::$script["es"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["es"][Script::GOOD_LANCELOT]."</b>"
+                . " is originally a good person whose job is to succeed the quests.\n\n"
+                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+            Script::$script["zho"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["zho"][Script::GOOD_LANCELOT]."</b>"
+                . " is originally a good person whose job is to succeed the quests.\n\n"
+                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+            Script::$script["yue"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["yue"][Script::GOOD_LANCELOT]."</b>"
+                . " is originally a good person whose job is to succeed the quests.\n\n"
+                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+            Script::$script["och"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["och"][Script::GOOD_LANCELOT]."</b>"
+                . " is originally a good person whose job is to succeed the quests.\n\n"
+                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+
+            //NEW
+            Script::$script["en"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["en"][Script::EVIL_LANCELOT]."</b>"
+                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
+                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+            Script::$script["id"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["id"][Script::EVIL_LANCELOT]."</b>"
+                . " awalnya adalah orang jahat. Dia diketahui oleh Merlin dan teman jahat lainnya. Namun, Evil Lancelot sendiri tidak tahu teman jahatnya.\n\n"
+                . "Ada kemungkinan di suatu misi, Evil Lancelot akan bertukar peran dengan Good Lancelot. Jika itu terjadi, maka di misi itu, lady akan melihat Evil Lancelot sebagai Baik, dan kondisi kemenangan untuk Evil Lancelot juga berubah (untuk misi itu saja)\n\n"
+                . "Di Varian 1, Evil Lancelot boleh memberikan SUKSES atau GAGAL. Di Varian 2, Evil Lancelot harus memberikan GAGAL di misi yang dia ikuti.";
+            Script::$script["it"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["it"][Script::EVIL_LANCELOT]."</b>"
+                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
+                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+            Script::$script["cn"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["cn"][Script::EVIL_LANCELOT]."</b>"
+                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
+                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+            Script::$script["pb"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["pb"][Script::EVIL_LANCELOT]."</b>"
+                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
+                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+            Script::$script["ph"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["ph"][Script::EVIL_LANCELOT]."</b>"
+                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
+                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+            Script::$script["es"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["es"][Script::EVIL_LANCELOT]."</b>"
+                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
+                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+            Script::$script["zho"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["zho"][Script::EVIL_LANCELOT]."</b>"
+                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
+                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+            Script::$script["yue"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["yue"][Script::EVIL_LANCELOT]."</b>"
+                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
+                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+            Script::$script["och"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["och"][Script::EVIL_LANCELOT]."</b>"
+                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
+                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+
+
 
 
             Script::$script["en"][Script::PU_OBERONINFO]
@@ -4449,6 +4999,10 @@ class Script{
                 return Script::$script[$lang][Script::WITCH];
             case Constant::AUDITOR:
                 return Script::$script[$lang][Script::AUDITOR];
+            case Constant::GOOD_LANCELOT:
+                return Script::$script[$lang][Script::GOOD_LANCELOT];
+            case Constant::EVIL_LANCELOT:
+                return Script::$script[$lang][Script::EVIL_LANCELOT];
         }
     }
 
