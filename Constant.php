@@ -184,6 +184,7 @@ class Constant{
             case Constant::NINJA:
             case Constant::AGENT:
             case Constant::AUDITOR:
+            case Constant::GOOD_LANCELOT:
                 return 1;
             default:
                 return -1;
@@ -292,7 +293,7 @@ class Constant{
                 Constant::$imgStartChaosId = "AgADBQADsqcxG5qM6xBC6m-Gor3SAahCyjIABPnal7KYKg0qlxoAAgI";
             }
 
-            Constant::$_startRandomRoles = Constant::$_45 / 2;
+            Constant::$_startRandomRoles = Constant::$_30 / 3;
 
             Constant::$_discussAssignQuestGroup = Constant::$_120;
             Constant::$_discussAssignQuestGroup_r1 = Constant::$_60;
