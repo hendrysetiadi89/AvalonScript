@@ -717,7 +717,7 @@ class Script{
             Script::$script["pb"][Script::PR_EXECQUESTLANCELOT]
                 = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
             Script::$script["ph"][Script::PR_EXECQUESTLANCELOT]
-                = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
+                = "Bilang Evil Lancelot, kailangan mong i-fail ang mission kahit anong mangyari. “ψ(｀∇´)ψ";
             Script::$script["es"][Script::PR_EXECQUESTLANCELOT]
                 = "As the Evil Lancelot, you must fail the mission no matter what. “ψ(｀∇´)ψ";
             Script::$script["zho"][Script::PR_EXECQUESTLANCELOT]
@@ -945,8 +945,8 @@ class Script{
                 = "You are <b>".Script::$script["pb"][Script::GOOD_LANCELOT]
                 ."</b>. Your allegiance is not stable. Sometimes, you cannot control your emotion and become evil.";
             Script::$script["ph"][Script::PR_YOUAREGOODLANCELOT]
-                = "You are <b>".Script::$script["ph"][Script::GOOD_LANCELOT]
-                ."</b>. Your allegiance is not stable. Sometimes, you cannot control your emotion and become evil.";
+                = "Ikaw ang <b>".Script::$script["ph"][Script::GOOD_LANCELOT]
+                ."</b>. Ang iyong katapatan ay hindi matatag. Minsan, hindi mo mapigilang maging Pusong Bato.";
             Script::$script["es"][Script::PR_YOUAREGOODLANCELOT]
                 = "You are <b>".Script::$script["es"][Script::GOOD_LANCELOT]
                 ."</b>. Your allegiance is not stable. Sometimes, you cannot control your emotion and become evil.";
@@ -977,8 +977,8 @@ class Script{
                 = "You are <b>".Script::$script["pb"][Script::EVIL_LANCELOT]
                 ."</b>. You don't know your any evil friends. Your allegiance is not stable. Sometimes, you cannot control your emotion and become good.";
             Script::$script["ph"][Script::PR_YOUAREEVILLANCELOT]
-                = "You are <b>".Script::$script["ph"][Script::EVIL_LANCELOT]
-                ."</b>. You don't know your any evil friends. Your allegiance is not stable. Sometimes, you cannot control your emotion and become good.";
+                = "Ikaw ang <b>".Script::$script["ph"][Script::EVIL_LANCELOT]
+                ."</b>. Wala kang kilala sino man sa Evil Friends mo. Ang iyong katapatan ay hindi matatag. Minsan, di mo kayang layuan ang tukso at nagiging Pusong Mamon.";
             Script::$script["es"][Script::PR_YOUAREEVILLANCELOT]
                 = "You are <b>".Script::$script["es"][Script::EVIL_LANCELOT]
                 ."</b>. You don't know your any evil friends. Your allegiance is not stable. Sometimes, you cannot control your emotion and become good.";
@@ -1004,7 +1004,7 @@ class Script{
             Script::$script["pb"][Script::PU_FORECAST_LANCELOT]
                 = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
             Script::$script["ph"][Script::PU_FORECAST_LANCELOT]
-                = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
+                = Constant::EMO_MEGAPHONE_B. "Ang Lancelot roles ay kasali. Tignan ang Ulat Panahon!\n";
             Script::$script["es"][Script::PU_FORECAST_LANCELOT]
                 = Constant::EMO_MEGAPHONE_B. "Lancelot roles are in. Use below forecast to see the future!\n";
             Script::$script["zho"][Script::PU_FORECAST_LANCELOT]
@@ -1026,7 +1026,7 @@ class Script{
             Script::$script["pb"][Script::PU_LANCELOT_NOT_SWITCHED]
                 = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
             Script::$script["ph"][Script::PU_LANCELOT_NOT_SWITCHED]
-                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "Sa turn na ito ang Evil Lancelot ay masama at ng Good Lancelot ay mabuti. Gaya ng dati. " . Constant::EMO_HEART_NOT_SWITCH;
             Script::$script["es"][Script::PU_LANCELOT_NOT_SWITCHED]
                 = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
             Script::$script["zho"][Script::PU_LANCELOT_NOT_SWITCHED]
@@ -1057,7 +1057,7 @@ class Script{
                 . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
             Script::$script["ph"][Script::PU_LANCELOT_SWITCHED]
                 = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
-                . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
+                . "Sa turn na ito ang Evil Lancelot at Good Lancelot ay nanlamig sa kanilang Team (Switch Heart). Mga Balimbing! " . Constant::EMO_HEART_SWITCH;
             Script::$script["es"][Script::PU_LANCELOT_SWITCHED]
                 = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
                 . "This turn Evil Lancelot becomes good and Good Lancelot becomes evil! " . Constant::EMO_HEART_SWITCH;
@@ -1109,7 +1109,7 @@ class Script{
             Script::$script["pb"][Script::PR_AUDITORDECREASE1]
                 = "Auditor usou a habilidade do Auditor. Foi retirado 1 FRACASSO para esta Missão.";
             Script::$script["ph"][Script::PR_AUDITORDECREASE1]
-                = "Auditor ginamit ang Power sa nabawasan 1 FAIL Quest.";
+                = "OMG may Auditor sa Quest bawas ng 1 FAIL.";
             Script::$script["es"][Script::PR_AUDITORDECREASE1]
                 = "El Auditor ha usado la habilidad de desechar 1 FRACASO para esta gesta.";
             Script::$script["zho"][Script::PR_AUDITORDECREASE1]
@@ -3014,11 +3014,11 @@ class Script{
                 ." roles will join the game.\n"
                 ."Both of the roles may switch allegiance during the game.\n\n";
             Script::$script["ph"][Script::PU_LANCELOT_V1_SELECT]
-                = "<b>Variant 1 is selected</b>\n"
+                = "<b>Variant 1 is selected</b>\n Ang "
                 .Script::$script["en"][Script::GOOD_LANCELOT]
-                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
-                ." roles will join the game.\n"
-                ."Both of the roles may switch allegiance during the game.\n\n";
+                ." at ".Script::$script["ph"][Script::EVIL_LANCELOT]
+                ." ay sasali sa laro.\n"
+                ."Silang dalawa ay mamaring magbago ang katapatan at maging Taksil.\n\n";
             Script::$script["es"][Script::PU_LANCELOT_V1_SELECT]
                 = "<b>Variant 1 is selected</b>\n"
                 .Script::$script["en"][Script::GOOD_LANCELOT]
@@ -3081,12 +3081,12 @@ class Script{
                 ."Both of the roles may switch allegiance during the game.\n\n"
                 ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
             Script::$script["ph"][Script::PU_LANCELOT_V2_SELECT]
-                = "<b>Variant 2 is selected</b>\n"
-                . Script::$script["en"][Script::GOOD_LANCELOT]
-                ." and ".Script::$script["en"][Script::EVIL_LANCELOT]
-                ." roles will join the game.\n"
-                ."Both of the roles may switch allegiance during the game.\n\n"
-                ."In this variant, Evil Lancelot must fail the quest he is on.";
+                = "<b>Variant 2 is selected</b>\n Ang "
+                . Script::$script["ph"][Script::GOOD_LANCELOT]
+                ." at ".Script::$script["ph"][Script::EVIL_LANCELOT]
+                ." ay sasali sa laro.\n"
+                ."Silang dalawa ay mamaring magbago ang katapatan at maging Taksil.\n\n"
+                ."Sa variant na ito, Ang Evil Lancelot ay kailangang i-fail ang Quest kung saan siya kabilang.";
             Script::$script["es"][Script::PU_LANCELOT_V2_SELECT]
                 = "<b>Variant 2 is selected</b>\n"
                 . Script::$script["en"][Script::GOOD_LANCELOT]
@@ -4479,7 +4479,7 @@ class Script{
             );
             Script::$script["ph"][Script::SECRETCODES] = array(
                 "salamat",
-                "walang hiya",
+                "traydor",
                 "mabait",
                 "sinungaling",
                 "mahusay",
@@ -4841,9 +4841,9 @@ class Script{
                 . " is originally a good person whose job is to succeed the quests.\n\n"
                 . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
             Script::$script["ph"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["ph"][Script::GOOD_LANCELOT]."</b>"
-                . " is originally a good person whose job is to succeed the quests.\n\n"
-                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+                = "Ang <b>".Script::$script["ph"][Script::GOOD_LANCELOT]."</b>"
+                . "  ay orihinal na mabuting tao na nag misyon ay manalo sa Quest.\n\n"
+                . "Ngunit Subalit Datapwat, may slight chance na mag switch ng role ang Good Lancelot na maging Evil Lancelot sa isang quest. Kung mangyayari iyon sa quest, masisilip ng Babae sa Septic Tank na si Good Lancelot ay masama at ang winning condition ng Good Lancelot ay magbabago rin (para lang sa quest na iyon)\n\n";
             Script::$script["es"][Script::PU_GOODLANCELOTINFO]
                 = "<b>".Script::$script["es"][Script::GOOD_LANCELOT]."</b>"
                 . " is originally a good person whose job is to succeed the quests.\n\n"
@@ -4888,10 +4888,10 @@ class Script{
                 . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
                 . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
             Script::$script["ph"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["ph"][Script::EVIL_LANCELOT]."</b>"
-                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
-                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (fot that quest only)\n\n"
-                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+                = "Ang <b>".Script::$script["ph"][Script::EVIL_LANCELOT]."</b>"
+                . " ay orihinal na masamang tao. Kilala siya ng Merlin at ng kanyang ibang evil friends. Ngunit hindi niya kilala ang mga kakampi niya.\n\n"
+                . "May slight chance na mag switch ng role ang Evil Lancelot na maging Good Lancelot sa isang quest. Kung mangyayari iyon sa quest, masisilip ng Babae sa Septic Tank na si Evil Lancelot ay mabuti at ang winning condition ng Good Lancelot ay magbabago rin (para lang sa quest na iyon)\n\n"
+                . "Sa Variant 1, Ang Evil Lancelot ay pwede magbigay ng SUCCESS o FAIL sa Quest. Sa Variant 2, Ang Evil Lancelot ay kailangang magbigay FAIL sa Quest kung saan siya kabilang.";
             Script::$script["es"][Script::PU_EVILLANCELOTINFO]
                 = "<b>".Script::$script["es"][Script::EVIL_LANCELOT]."</b>"
                 . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
