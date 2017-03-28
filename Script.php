@@ -257,8 +257,8 @@ class Script{
             Script::$script["zho"][Script::QUEST] = "任务 ✉";
             Script::$script["yue"][Script::QUEST] = "任務 ✉";
             Script::$script["och"][Script::QUEST] = "任務 ✉";
-            
-            
+
+
             Script::$script["en"][Script::TOKEN_REJECT] = "Reject token";
             Script::$script["id"][Script::TOKEN_REJECT] = "Token Menolak";
             Script::$script["it"][Script::TOKEN_REJECT] = "numero di rifiuti";
@@ -269,8 +269,8 @@ class Script{
             Script::$script["zho"][Script::TOKEN_REJECT] = "反对标记 ❌";
             Script::$script["yue"][Script::TOKEN_REJECT] = "否決記號 ❌";
             Script::$script["och"][Script::TOKEN_REJECT] = "否決標誌 ❌";
-            
-            
+
+
             Script::$script["en"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
             Script::$script["id"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
             Script::$script["it"][Script::MERLIN] = "Merlino ". Constant::EMO_MERLIN;
@@ -281,8 +281,8 @@ class Script{
             Script::$script["zho"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
             Script::$script["yue"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
             Script::$script["och"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
-            
-            
+
+
             Script::$script["en"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
             Script::$script["id"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
             Script::$script["it"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
@@ -293,8 +293,8 @@ class Script{
             Script::$script["zho"][Script::PERCIVAL] = "派西维尔 ". Constant::EMO_PERCIVAL;
             Script::$script["yue"][Script::PERCIVAL] = "珀西瓦里 ". Constant::EMO_PERCIVAL;
             Script::$script["och"][Script::PERCIVAL] = "派西維爾 ". Constant::EMO_PERCIVAL;
-            
-            
+
+
             Script::$script["en"][Script::MORGANA] = "Morgana " .Constant::EMO_MORGANA;
             Script::$script["id"][Script::MORGANA] = "Morgana ".Constant::EMO_MORGANA;
             Script::$script["it"][Script::MORGANA] = "Morgana ".Constant::EMO_MORGANA;
@@ -305,8 +305,8 @@ class Script{
             Script::$script["zho"][Script::MORGANA] = "摩甘娜 ".Constant::EMO_MORGANA;
             Script::$script["yue"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
             Script::$script["och"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
-            
-            
+
+
             Script::$script["en"][Script::OBERON] = "Oberon " .Constant::EMO_OBERON;
             Script::$script["id"][Script::OBERON] = "Oberon ".Constant::EMO_OBERON;
             Script::$script["it"][Script::OBERON] = "Oberon ".Constant::EMO_OBERON;
@@ -318,7 +318,7 @@ class Script{
             Script::$script["yue"][Script::OBERON] = "奧伯龍 ".Constant::EMO_OBERON;
             Script::$script["och"][Script::OBERON] = "奥伯倫 ".Constant::EMO_OBERON;
 
-            
+
             Script::$script["en"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
             Script::$script["id"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
             Script::$script["it"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
@@ -329,8 +329,8 @@ class Script{
             Script::$script["zho"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
             Script::$script["yue"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
             Script::$script["och"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
-            
-            
+
+
             Script::$script["en"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
             Script::$script["id"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
             Script::$script["it"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
@@ -771,7 +771,7 @@ class Script{
             Script::$script["och"][Script::PR_YOUAREMERLIN]
                 = "你是<b>".Script::$script["och"][Script::MERLIN]."</b>。%s 那班人散發著邪惡氣息，你要帶領團隊免受壞人滋擾！\n<b>注意：你不可用任何方法聯絡其他人。</b>\n \n如有需要，輸入 /merlin 會查看更多描述。";
 
-            
+
             Script::$script["en"][Script::PR_YOUAREPERCIVAL]
                 = "You are Percival. You see %s as Merlin, but it seems that only one of them is the true Merlin. Note: you should not use Private Message to ask Merlin directly.";
             Script::$script["id"][Script::PR_YOUAREPERCIVAL]
@@ -793,7 +793,7 @@ class Script{
             Script::$script["och"][Script::PR_YOUAREPERCIVAL]
                 = "你是<b>".Script::$script["och"][Script::PERCIVAL]."</b>。你察覺 %s 為魔法師梅林，但不確定誰人是真正那位。\n<b>注意：你不可用任何方法私下詢問任何一個。</b>\n \n如有需要，輸入 /percival 會查看更多描述。";
 
-            
+
             Script::$script["en"][Script::PR_YOUAREGOODNORMAL]
                 = "You are servant. You don't know anything good or bad, but it is important to follow the right king. You should not use the Private Message to communicate.";
             Script::$script["id"][Script::PR_YOUAREGOODNORMAL]
@@ -859,7 +859,7 @@ class Script{
             Script::$script["och"][Script::PR_YOUARENINJA]
                 = "你是<b>".Script::$script["och"][Script::NINJA]."</b>，能力強過莫德雷德。你反派那夥人有 %s，而梅林卻不會知道你已是反派的。當你獲委任去做任務時候，可以令任務 2 次失敗，但這種能力只容許 1 次運用。\n \n如有需要，輸入 /ninja 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
 
-            
+
             Script::$script["en"][Script::PR_YOUAREAGENT]
                 = "You are Agent, a good person whose job is to succeed the missions. The same secret codes are given to agents after a quest has been failed. Find your agent teammates, then together you will succeed the mission easier. You should not use the Private Message to communicate.";
             Script::$script["id"][Script::PR_YOUAREAGENT]
@@ -881,7 +881,7 @@ class Script{
             Script::$script["och"][Script::PR_YOUAREAGENT]
                 = "你是<b>".Script::$script["och"][Script::AGENT]."</b>，屬於正派而只會令任務成功。當有任務失敗後，就會有同一個暗號予所有密探。若找到其他特務團隊，就會更大機會令任務成功。\n注意：你是不可以用任何方法私下聯絡其他人。\n \n如有需要，輸入 /agent 會查看更多描述。";
 
-            
+
             Script::$script["en"][Script::PR_YOUAREWITCH]
                 = "You are Witch, an evil person. Your evil teams are %s. With your ability, you know that there are these roles on the good sides: %s. You should not use the Private Message to communicate.";
             Script::$script["id"][Script::PR_YOUAREWITCH]
@@ -903,7 +903,7 @@ class Script{
             Script::$script["och"][Script::PR_YOUAREWITCH]
                 = "你是<b>".Script::$script["och"][Script::WITCH]."</b>，屬於壞人反派。你反派那夥人有 %s。以你能力許可，你亦已知曉正派有以下角色： %s。\n \n如有需要，輸入 /witch 會查看更多描述。";
 
-            
+
             Script::$script["en"][Script::PR_YOUAREAUDITOR]
                 = "You are Auditor, a good person. When you are assigned for a quest, there is 20% chance you can eliminate 1 FAIL for that quest.";
             Script::$script["id"][Script::PR_YOUAREAUDITOR]
@@ -1141,7 +1141,7 @@ class Script{
             Script::$script["och"][Script::PR_YOUAREASSASSIN]
                 = "你是<b>".Script::$script["och"][Script::ASSASSIN]."</b>。你反派那夥人有 %s。如果反派敗走後，你還可以暗殺梅林，令整局反敗為勝。\n \n如有需要，輸入 /assassin 會查看更多描述。";
 
-            
+
             Script::$script["en"][Script::PR_YOUAREMORGANA]
                 = "You are Morgana. Your evil team are %s. On Percival's eyes, you are Merlin.";
             Script::$script["id"][Script::PR_YOUAREMORGANA]
@@ -1185,7 +1185,7 @@ class Script{
             Script::$script["och"][Script::PR_YOUAREOBERON]
                 = "你是<b>".Script::$script["och"][Script::OBERON]."</b>，你反派那夥人是： %s，但你的反派同伴卻不認識你。\n注意：你是不可以用任何私訊去聯絡其他人。\n \n如有需要，輸入 /oberon 會查看更多描述。";
 
-            
+
             Script::$script["en"][Script::PR_YOUAREBADNORMAL]
                 = "You are the bad guy. Your evil team are %s.";
             Script::$script["id"][Script::PR_YOUAREBADNORMAL]
@@ -1251,7 +1251,7 @@ class Script{
             Script::$script["och"][Script::PR_YOUAREKNIGHTTHEREBAD]
                 = "你是<b>".Script::$script["och"][Script::KNIGHT]."</b>，屬於正派更會令任務成功。比較 %s 與 %s，至少有 1 位屬於反派。（注意，你卻不曉得分辨莫德雷德或忍者屬正派與否！）\n \n如有需要，輸入 /knight 會查看更多描述。";
 
-            
+
             Script::$script["en"][Script::PR_YOUAREKNIGHTNOBAD]
                 = "You are Knight, a good person whose job it to succeed the quests. Between %s and %s, it seems that there is no bad guys. (Remember, knight cannot detect Mordred or Ninja)";
             Script::$script["id"][Script::PR_YOUAREKNIGHTNOBAD]
@@ -3116,7 +3116,7 @@ class Script{
                 ."Both of the roles may switch allegiance during the game.\n\n"
                 ."In this variant, Evil Lancelot must fail the quest he is on.\n\n";
 
-            
+
             Script::$script["en"][Script::PLAY_TIME]
                 = "played %d times";
             Script::$script["id"][Script::PLAY_TIME]
@@ -3138,7 +3138,7 @@ class Script{
             Script::$script["och"][Script::PLAY_TIME]
                 = "已玩 %d 次";
 
-            
+
             Script::$script["en"][Script::X_TIMES]
                 = "%d times";
             Script::$script["id"][Script::X_TIMES]
@@ -3160,7 +3160,7 @@ class Script{
             Script::$script["och"][Script::X_TIMES]
                 = "%d 次";
 
-            
+
             Script::$script["en"][Script::WIN_RATE]
                 = "Winrate: %d%%";
             Script::$script["id"][Script::WIN_RATE]
@@ -3182,7 +3182,7 @@ class Script{
             Script::$script["och"][Script::WIN_RATE]
                 = "得勝率：%d%%";
 
-            
+
             Script::$script["en"][Script::GOOD_TEAM_WON_STAT]
                 = "Good Team Won %d%%";
             Script::$script["id"][Script::GOOD_TEAM_WON_STAT]
@@ -3269,7 +3269,7 @@ class Script{
             Script::$script["och"][Script::EVIL_TEAM_WON_STAT]
                 = "反派獲勝了 %d%%";
 
-            
+
             Script::$script["en"][Script::PLAY_TO_HAVE_STAT]
                 = "You have to play a game to have the statistics.";
             Script::$script["id"][Script::PLAY_TO_HAVE_STAT]
@@ -4684,7 +4684,7 @@ class Script{
                 . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n"
                 . "El Asesino puede descubrir a Merlín al final del juego (si se completan 3 gestas satisfactoriamente). Si lo adivina correctamente, las fuerzas del Mal ganarán.";
             Script::$script["zho"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["zho"][Script::ASSASSIN]."</b>".self::unichr(Constant::EMO_EVIL_B)
+                = "<b>".Script::$script["zho"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
                 . " 刺客会知道自己的同伴(除了欧泊朗)，并协助他们令到好人们任务失败。一旦好人成功完成3个任务，他有1次机会去刺杀梅林。梅林一死，坏人就赢。\n\n";
             Script::$script["yue"][Script::PU_ASSASSININFO]
                 = "<b>".Script::$script["yue"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
@@ -5030,7 +5030,4 @@ class Script{
         }
     }
 
-    static function unichr($i) {
-        return iconv('UCS-4LE', 'UTF-8', pack('V', $i));
-    }
 }
