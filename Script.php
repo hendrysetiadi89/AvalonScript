@@ -3018,7 +3018,7 @@ class Script{
                 .Script::$script["en"][Script::GOOD_LANCELOT]
                 ." at ".Script::$script["ph"][Script::EVIL_LANCELOT]
                 ." ay sasali sa laro.\n"
-                ."Silang dalawa ay mamaring magbago ang katapatan at maging Taksil.\n\n";
+                ."Silang dalawa ay maaaring magbago ang katapatan at maging Taksil.\n\n";
             Script::$script["es"][Script::PU_LANCELOT_V1_SELECT]
                 = "<b>Variant 1 is selected</b>\n"
                 .Script::$script["en"][Script::GOOD_LANCELOT]
@@ -3085,7 +3085,7 @@ class Script{
                 . Script::$script["ph"][Script::GOOD_LANCELOT]
                 ." at ".Script::$script["ph"][Script::EVIL_LANCELOT]
                 ." ay sasali sa laro.\n"
-                ."Silang dalawa ay mamaring magbago ang katapatan at maging Taksil.\n\n"
+                ."Silang dalawa ay maaaring magbago ang katapatan at maging Taksil.\n\n"
                 ."Sa variant na ito, Ang Evil Lancelot ay kailangang i-fail ang Quest kung saan siya kabilang.";
             Script::$script["es"][Script::PU_LANCELOT_V2_SELECT]
                 = "<b>Variant 2 is selected</b>\n"
