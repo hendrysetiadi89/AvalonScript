@@ -1026,7 +1026,7 @@ class Script{
             Script::$script["pb"][Script::PU_LANCELOT_NOT_SWITCHED]
                 = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
             Script::$script["ph"][Script::PU_LANCELOT_NOT_SWITCHED]
-                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "Sa turn na ito ang Evil Lancelot ay masama at ng Good Lancelot ay mabuti. Gaya ng dati. " . Constant::EMO_HEART_NOT_SWITCH;
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "Sa turn na ito ang Evil Lancelot ay masama at ang Good Lancelot ay mabuti. Gaya ng dati. " . Constant::EMO_HEART_NOT_SWITCH;
             Script::$script["es"][Script::PU_LANCELOT_NOT_SWITCHED]
                 = Constant::EMO_SINGLE_EXCLAMATION_MARK. "This turn Evil Lancelot is evil and Good Lancelot is good. As usual. " . Constant::EMO_HEART_NOT_SWITCH;
             Script::$script["zho"][Script::PU_LANCELOT_NOT_SWITCHED]
@@ -4037,7 +4037,7 @@ class Script{
                 ."<b>ITALIANO</b>\n"
                 ."<a href=\"http://telegram.me/AvalonITA\">Avalon Italia</a>\n\n"
                 ."<b>PHILIPPINES</b>\n"
-                ."<a href=\"https://telegram.me/joinchat/AAAAAEEQh-asjvlomOejzw\">Avalon PH</a>\n\n"
+                ."<a href=\"https://telegram.me/joinchat/AAAAAEEQh-ZsFYdQh0B4zw\">Avalon PH</a>\n\n"
                 ."<b>PORTUGUÊS</b>\n"
                 ."<a href=\"http://telegram.me/AvalonBrasil\">Avalon Brasil</a>\n\n"
                 ."<b>SINGAPORE</b>\n"
