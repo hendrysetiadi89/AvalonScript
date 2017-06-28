@@ -258,6 +258,7 @@ class Script{
             Script::$script["yue"][Script::QUEST] = "任務";
             Script::$script["och"][Script::QUEST] = "任務 ✉";
             Script::$script["ar"][Script::QUEST] = "مهمة";
+            Script::$script["fa"][Script::QUEST] = "چالش";
 
 
             Script::$script["en"][Script::TOKEN_REJECT] = "Reject token";
@@ -271,6 +272,7 @@ class Script{
             Script::$script["yue"][Script::TOKEN_REJECT] = "反對記號";
             Script::$script["och"][Script::TOKEN_REJECT] = "否決標誌 ❌";
             Script::$script["ar"][Script::TOKEN_REJECT] = "رمز مرفوض";
+            Script::$script["fa"][Script::TOKEN_REJECT] = "رد شانس";
 
 
             Script::$script["en"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
@@ -284,6 +286,7 @@ class Script{
             Script::$script["yue"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
             Script::$script["och"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
             Script::$script["ar"][Script::MERLIN] = "مارلين ". Constant::EMO_MERLIN;
+            Script::$script["fa"][Script::MERLIN] = "مرلین ". Constant::EMO_MERLIN;
 
 
             Script::$script["en"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
@@ -297,6 +300,7 @@ class Script{
             Script::$script["yue"][Script::PERCIVAL] = "珀西瓦里 ". Constant::EMO_PERCIVAL;
             Script::$script["och"][Script::PERCIVAL] = "派西維爾 ". Constant::EMO_PERCIVAL;
             Script::$script["ar"][Script::PERCIVAL] = "بريفسال ". Constant::EMO_PERCIVAL;
+            Script::$script["fa"][Script::PERCIVAL] = "پرسیوال ". Constant::EMO_PERCIVAL;
 
 
             Script::$script["en"][Script::MORGANA] = "Morgana " .Constant::EMO_MORGANA;
@@ -310,6 +314,7 @@ class Script{
             Script::$script["yue"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
             Script::$script["och"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
             Script::$script["ar"][Script::MORGANA] = "مورقانا ".Constant::EMO_MORGANA;
+            Script::$script["fa"][Script::MORGANA] = "مورگانا".Constant::EMO_MORGANA;
 
 
             Script::$script["en"][Script::OBERON] = "Oberon " .Constant::EMO_OBERON;
@@ -323,6 +328,7 @@ class Script{
             Script::$script["yue"][Script::OBERON] = "奧伯龍 ".Constant::EMO_OBERON;
             Script::$script["och"][Script::OBERON] = "奥伯倫 ".Constant::EMO_OBERON;
             Script::$script["ar"][Script::OBERON] = "أوبيرن ".Constant::EMO_OBERON;
+            Script::$script["fa"][Script::OBERON] = "اوبرون ".Constant::EMO_OBERON;
 
 
             Script::$script["en"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
@@ -336,6 +342,7 @@ class Script{
             Script::$script["yue"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
             Script::$script["och"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
             Script::$script["ar"][Script::NINJA] = "نينجا ".Constant::EMO_NINJA;
+            Script::$script["fa"][Script::NINJA] = "نينجا ".Constant::EMO_NINJA;
 
 
             Script::$script["en"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
@@ -349,6 +356,7 @@ class Script{
             Script::$script["yue"][Script::MORDRED] = "莫德雷德 ".Constant::EMO_MORDRED;
             Script::$script["och"][Script::MORDRED] = "莫德雷德 ".Constant::EMO_MORDRED;
             Script::$script["ar"][Script::MORDRED] = "موردريد ".Constant::EMO_MORDRED;
+            Script::$script["fa"][Script::MORDRED] = "موردرد ".Constant::EMO_MORDRED;
 
 
             Script::$script["en"][Script::SERVANT] = "Servant ".Constant::EMO_SERVANT;
@@ -362,6 +370,7 @@ class Script{
             Script::$script["yue"][Script::SERVANT] = "跟班 ".Constant::EMO_SERVANT;
             Script::$script["och"][Script::SERVANT] = "仕從 ".Constant::EMO_SERVANT;
             Script::$script["ar"][Script::SERVANT] = "خادم".Constant::EMO_SERVANT;
+            Script::$script["fa"][Script::SERVANT] = "خادم".Constant::EMO_SERVANT;
 
 
             Script::$script["en"][Script::THIEF] = "Thief " .Constant::EMO_THIEF;
@@ -375,6 +384,8 @@ class Script{
             Script::$script["yue"][Script::THIEF] = "賊仔 ".Constant::EMO_THIEF;
             Script::$script["och"][Script::THIEF] = "小偷 ".Constant::EMO_THIEF;
             Script::$script["ar"][Script::THIEF] = "لص" .Constant::EMO_THIEF;
+            Script::$script["fa"][Script::THIEF] = "دزد" .Constant::EMO_THIEF;
+            
 
 
             Script::$script["en"][Script::WITCH] = "Witch " .Constant::EMO_WITCH;
@@ -1020,6 +1031,8 @@ class Script{
             Script::$script["ar"][Script::PR_YOUAREGOODLANCELOT]
                 = "أنت <b>".Script::$script["ar"][Script::GOOD_LANCELOT]
                 ."</b>. ولاءك ليس مستقر. بعض المرات لا يمكنك بأن تتحكم بعواطفك و تصبح شرير.";
+                = "تو <b>".Script::$script["fa"][Script::GOOD_LANCELOT]
+                ."</b>. از سلامت روحی و روانی درستی بهره نمی بری (بعد از بازی به روانشناس مراجعه کن!) واسه ی همین بعضی وقتا تبدیل به یه فرد شیطانی و یاغی میشی.";
 
             // NEW
             Script::$script["en"][Script::PR_YOUAREEVILLANCELOT]
