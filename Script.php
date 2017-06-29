@@ -184,6 +184,7 @@ class Script{
 
     const WON = 135;
     const LOST = 136;
+    const LANG = 137;
 
 
 
@@ -247,6 +248,21 @@ class Script{
         // if have not inited
         if (!Script::$inited) {
             Script::$inited = true;
+
+            Script::$script["en"][Script::LANG] = "English";
+            Script::$script["id"][Script::LANG] = "Bahasa Indonesia";
+            Script::$script["it"][Script::LANG] = "Italiano";
+            Script::$script["cn"][Script::LANG] = "繁體中文";
+            Script::$script["pb"][Script::LANG] = "Português (Brasil)";
+            Script::$script["ph"][Script::LANG] = "Filipino";
+            Script::$script["es"][Script::LANG] = "Español";
+            Script::$script["zho"][Script::LANG] = "简体中文";
+            Script::$script["yue"][Script::LANG] = "港澳粵語";
+            Script::$script["och"][Script::LANG] = "正體中文";
+            Script::$script["ar"][Script::LANG] = "اللغة العربية";
+            Script::$script["fa"][Script::LANG] = "فارسی";
+
+
             Script::$script["en"][Script::QUEST] = "Quest";
             Script::$script["id"][Script::QUEST] = "Quest";
             Script::$script["it"][Script::QUEST] = "Missione";
@@ -400,7 +416,7 @@ class Script{
             Script::$script["ar"][Script::WITCH] = "ويتش " .Constant::EMO_WITCH;
             Script::$script["fa"][Script::WITCH] = "جادوگر " .Constant::EMO_WITCH;
 
-            
+
             Script::$script["en"][Script::AGENT] = "Agent " .Constant::EMO_AGENT;
             Script::$script["id"][Script::AGENT] = "Agen " .Constant::EMO_AGENT;
             Script::$script["it"][Script::AGENT] = "Agente " .Constant::EMO_AGENT;
@@ -413,7 +429,7 @@ class Script{
             Script::$script["och"][Script::AGENT] = "密探 ".Constant::EMO_AGENT;
             Script::$script["ar"][Script::AGENT] = "وكيل " .Constant::EMO_AGENT;
             Script::$script["fa"][Script::AGENT] = "مأمور " .Constant::EMO_AGENT;
-            
+
 
             Script::$script["en"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
             Script::$script["id"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
@@ -427,7 +443,7 @@ class Script{
             Script::$script["och"][Script::AUDITOR] = "使節 ".Constant::EMO_AUDITOR;
             Script::$script["ar"][Script::AUDITOR] = "المراجح ".Constant::EMO_AUDITOR;
             Script::$script["fa"][Script::AUDITOR] = "وکیل".Constant::EMO_AUDITOR;
-            
+
 
             Script::$script["en"][Script::ASSASSIN] = "Assassin " .Constant::EMO_ASSASSIN;
             Script::$script["id"][Script::ASSASSIN] = "Assassin ".Constant::EMO_ASSASSIN;
@@ -441,7 +457,7 @@ class Script{
             Script::$script["och"][Script::ASSASSIN] = "刺客 ".Constant::EMO_ASSASSIN;
             Script::$script["ar"][Script::ASSASSIN] = "الحشاش " .Constant::EMO_ASSASSIN;
             Script::$script["fa"][Script::ASSASSIN] = "قاتل " .Constant::EMO_ASSASSIN;
-            
+
 
             Script::$script["en"][Script::MORGAUSE] = "Morgause " .Constant::EMO_MORGAUSE;
             Script::$script["id"][Script::MORGAUSE] = "Morgause ".Constant::EMO_MORGAUSE;
@@ -468,7 +484,7 @@ class Script{
             Script::$script["och"][Script::KNIGHT] = "騎士 ".Constant::EMO_KNIGHT;
             Script::$script["ar"][Script::KNIGHT] = "الفارس ".Constant::EMO_KNIGHT;
             Script::$script["fa"][Script::KNIGHT] = "شوالیه ".Constant::EMO_KNIGHT;
-            
+
             // NEW
             Script::$script["en"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["id"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
@@ -482,7 +498,7 @@ class Script{
             Script::$script["och"][Script::GOOD_LANCELOT] = "正義方蘭斯洛特 ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["ar"][Script::GOOD_LANCELOT] = "لانسوت طيب ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["fa"][Script::GOOD_LANCELOT] = "لنسلات خوب ".Constant::EMO_GOOD_LANCELOT;
-            
+
             // NEW
             Script::$script["en"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["id"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
@@ -496,7 +512,7 @@ class Script{
             Script::$script["och"][Script::EVIL_LANCELOT] = "邪惡方蘭斯洛特 ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["ar"][Script::EVIL_LANCELOT] = "لانسوت شرير ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["fa"][Script::EVIL_LANCELOT] = "لنسلات شیطانی ".Constant::EMO_EVIL_LANCELOT;
-            
+
 
             Script::$script["en"][Script::PR_NEWGAME]
                 = "You have created the new game - %s mode in group %s.";
@@ -3495,6 +3511,7 @@ class Script{
                 ." و ".Script::$script["ar"][Script::EVIL_LANCELOT]
                 ." الأدوار ستدخل في اللعبة \n"
                 ."كل الدورين قد يتم تغيير ولاءهما خلال اللعبة. \n\n";
+            Script::$script["fa"][Script::PU_LANCELOT_V1_SELECT]
                 = "<b>لنسلات ورژن 1 انتخاب شد</b>\n"
                 . Script::$script["fa"][Script::GOOD_LANCELOT]
                 ." و ".Script::$script["fa"][Script::EVIL_LANCELOT]
@@ -4066,64 +4083,89 @@ class Script{
             Script::$script["fa"][Script::PU_MAINTENANCE]
                 = "درحال حاضر تغییراتی درحال انجام است لطفا بعدا تلاش کنید.";
 
+            $contributor =
+                Script::$script["en"][Script::LANG]."(@Rhyned), "
+                .Script::$script["id"][Script::LANG]."(@Rhyned), "
+                .Script::$script["it"][Script::LANG]."(@MatteoIlGrande), "
+                .Script::$script["cn"][Script::LANG]."(@bluebear119), "
+                .Script::$script["pb"][Script::LANG]."(@Liozek), "
+                .Script::$script["ph"][Script::LANG]."(@ArjayTheMan), "
+                .Script::$script["es"][Script::LANG]."(@hozarberto), "
+                .Script::$script["zho"][Script::LANG]."(@Khinchin), "
+                .Script::$script["yue"][Script::LANG]."(@Khinchin, @cicle_k), "
+                .Script::$script["och"][Script::LANG]."(@Khinchin), "
+                .Script::$script["ar"][Script::LANG]."(@RendezvousRama), "
+                .Script::$script["fa"][Script::LANG]."(@mohireza123)\n\n";
 
             Script::$script["en"][Script::PU_CONTACT]
                 = "Telegram code by <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
                 ."Contact to email: hendry.setiadi.89@gmail.com to give support or feedback.\n\n"
                 ."Rate me by clicking the link: <a href=\"http://telegram.me/storebot?start=%s\">Rate me</a>.\n\n"
                 ."Thank you.";
             Script::$script["id"][Script::PU_CONTACT]
                 = "Kode Telegram oleh <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
                 ."Hubungi email: hendry.setiadi.89@gmail.com untuk memberikan support atau feedback.\n\n"
                 ."Berikan rating dengan meng-klik link berikut: <a href=\"http://telegram.me/storebot?start=%s\">Rate me</a>.\n\n"
                 ."Terima kasih.";
             Script::$script["it"][Script::PU_CONTACT]
                 = "Codice Telegram di <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
                 ."Contattami via mail: hendry.setiadi.89@gmail.com per dare supporto o feedback.\n\n"
                 ."Valutami cliccando il link: <a href=\"http://telegram.me/storebot?start=%s\">Valuta</a>.\n\n"
                 ."Grazie Mille.";
             Script::$script["cn"][Script::PU_CONTACT]
                 = "Telegram 程式碼 by <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
                 ."電郵至: hendry.setiadi.89@gmail.com 來告訴作者意見吧.\n\n"
                 ."或者到這裡給我的Bot評介: <a href=\"http://telegram.me/storebot?start=%s\">評分</a>.\n\n"
                 ."謝謝";
             Script::$script["pb"][Script::PU_CONTACT]
                 = "Código do Telegram por <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
                 ."Entre em contato por email: hendry.setiadi.89@gmail.com para suporte ou feedback.\n\n"
                 ."Envie sua avaliação no endereço: <a href=\"http://telegram.me/storebot?start=%s\">Rate me</a>.\n\n"
                 ."Obrigado.";
             Script::$script["ph"][Script::PU_CONTACT]
                 = "Telegram code ni <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
                 ."Contact sa email: hendry.setiadi.89@gmail.com para magbigay suporta o feedback.\n\n"
                 ."I-rate mo ko i-click ang link: <a href=\"http://telegram.me/storebot?start=%s\">Rate me</a>.\n\n"
                 ."Salamat.";
             Script::$script["es"][Script::PU_CONTACT]
                 = "Telegram code ni <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
                 ."Contacta al email: hendry.setiadi.89@gmail.com para soporte.\n\n"
                 ."Valórame en el siguiente link: <a href=\"http://telegram.me/storebot?start=%s\">Valórame</a>.\n\n"
                 ."Gracias.";
             Script::$script["zho"][Script::PU_CONTACT]
                 = "Telegram 程式码的作者是 <b>Hendry Setiadi</b>。\n\n"
+                . $contributor
                 ."电邮至: hendry.setiadi.89@gmail.com 来向我告诉意见吧.\n\n"
                 ."请到以下多给我的Bot评价: <a href=\"http://telegram.me/storebot?start=%s\">评价</a>。\n\n"
                 ."谢谢";
             Script::$script["yue"][Script::PU_CONTACT]
                 = "Telegram 程式碼原作者係 <b>Hendry Setiadi</b>。\n\n"
+                . $contributor
                 ."要聯絡我可以電郵至: hendry.setiadi.89@gmail.com\n\n"
                 ."亦希望大家到Bot store: <a href=\"http://telegram.me/storebot?start=%s\">俾俾分</a>。\n\n"
                 ."多謝";
             Script::$script["och"][Script::PU_CONTACT]
                 = "Telegram 程式原碼由 <b>Hendry Setiadi</b> 開發。\n\n"
+                . $contributor
                 ."當然可以電郵至: hendry.setiadi.89@gmail.com 向我發表意見。\n\n"
                 ."亦期望各位用以下連結给我的機械人做評價: <a href=\"http://telegram.me/storebot?start=%s\">評價</a>。\n\n"
                 ."多謝";
             Script::$script["ar"][Script::PU_CONTACT]
                 = "تمت الصناعة من قِبل : <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
                 ."تواصل معه عبر البريد الإلكتروني : hendry.setiadi.89@gmail.com لإعطاء مساعدة أو رأي. \n\n"
                 ."قيمني بالضغط على هنا :  <a href=\"http://telegram.me/storebot?start=%s\">قيمني</a>.\n\n"
                 ."شكراً لك.";
             Script::$script["fa"][Script::PU_CONTACT]
                 = "ساخته شده توسط : <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
                 ."با من از طریق ایمیل در تماس باشید : hendry.setiadi.89@gmail.com برای کمک به بهتر شدن ربات. \n\n"
                 ."به این ربات از طریق این لینک رای دهید :  <a href=\"http://telegram.me/storebot?start=%s\">به من رای دهید</a>.\n\n"
                 ."ممنون.";
@@ -5272,7 +5314,7 @@ class Script{
                 "أشك",
                 "ألعب",
             );
-            
+
             Script::$script["fa"][Script::SECRETCODES] = array(
                 "ممنون",
                 "ببخشید",
@@ -5345,7 +5387,7 @@ class Script{
                 . "هو بصف الطيبين. كل الوكلاء الموجودين بنفس الفريق بإمكانهم التواصل مع بعضهم عبر البوت الخاص\n\n"
                 . "الوكلاء بإمكانهم معرفة أعضاء الفريق الآخر بإستخدام أكواد سرية, معاً بإمكانهم الفوز بالمهمة بسهولة. تذكر, لا تكون واضحاً...و إلا سيعرف الأشرار الوكلاء و سيجعل وظيفة الحشاش أسهل بقتل مرلين.\n\n"
                 . "الأكواد السرية المسموحة : ".Constant::arrayToString(Script::$script["ar"][Script::SECRETCODES]).".\n\n";
-           Script::$script["fa"][Script::PU_AGENTINFO]
+            Script::$script["fa"][Script::PU_AGENTINFO]
                 = "<b>".Script::$script["fa"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
                 . "مأمور ها درباری هستن. اونها در طول بازی از طریق کدهای رمزگذاری شده ی مخصوصی از طریق پی وی بات با هم ارتباط برقرار میکنن\n\n"
                 . "همه ی مأمور ها باید در طول بازی همدیگه رو از طریق کد ها بشناسن تا بتونن راحت تر به موفقیت برسن. توجه کنید که مأمور ها نباید نقششون رو معلوم کنن...در این صورت قاتل با شناختن اونها راحت تر میتونه مرلین رو بکشه.\n\n"
