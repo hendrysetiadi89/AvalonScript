@@ -258,6 +258,7 @@ class Script{
             Script::$script["yue"][Script::QUEST] = "任務";
             Script::$script["och"][Script::QUEST] = "任務 ✉";
             Script::$script["ar"][Script::QUEST] = "مهمة";
+            Script::$script["fa"][Script::QUEST] = "چالش";
 
 
             Script::$script["en"][Script::TOKEN_REJECT] = "Reject token";
@@ -271,6 +272,7 @@ class Script{
             Script::$script["yue"][Script::TOKEN_REJECT] = "反對記號";
             Script::$script["och"][Script::TOKEN_REJECT] = "否決標誌 ❌";
             Script::$script["ar"][Script::TOKEN_REJECT] = "رمز مرفوض";
+            Script::$script["fa"][Script::TOKEN_REJECT] = "رد شانس";
 
 
             Script::$script["en"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
@@ -284,6 +286,7 @@ class Script{
             Script::$script["yue"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
             Script::$script["och"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
             Script::$script["ar"][Script::MERLIN] = "مارلين ". Constant::EMO_MERLIN;
+            Script::$script["fa"][Script::MERLIN] = "مرلين ". Constant::EMO_MERLIN;
 
 
             Script::$script["en"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
@@ -297,6 +300,7 @@ class Script{
             Script::$script["yue"][Script::PERCIVAL] = "珀西瓦里 ". Constant::EMO_PERCIVAL;
             Script::$script["och"][Script::PERCIVAL] = "派西維爾 ". Constant::EMO_PERCIVAL;
             Script::$script["ar"][Script::PERCIVAL] = "بريفسال ". Constant::EMO_PERCIVAL;
+            Script::$script["fa"][Script::PERCIVAL] = "پرسیوال ". Constant::EMO_PERCIVAL;
 
 
             Script::$script["en"][Script::MORGANA] = "Morgana " .Constant::EMO_MORGANA;
@@ -310,6 +314,7 @@ class Script{
             Script::$script["yue"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
             Script::$script["och"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
             Script::$script["ar"][Script::MORGANA] = "مورقانا ".Constant::EMO_MORGANA;
+            Script::$script["fa"][Script::MORGANA] = "مورگانا ".Constant::EMO_MORGANA;
 
 
             Script::$script["en"][Script::OBERON] = "Oberon " .Constant::EMO_OBERON;
@@ -323,6 +328,7 @@ class Script{
             Script::$script["yue"][Script::OBERON] = "奧伯龍 ".Constant::EMO_OBERON;
             Script::$script["och"][Script::OBERON] = "奥伯倫 ".Constant::EMO_OBERON;
             Script::$script["ar"][Script::OBERON] = "أوبيرن ".Constant::EMO_OBERON;
+            Script::$script["fa"][Script::OBERON] = "اوبرن ".Constant::EMO_OBERON;
 
 
             Script::$script["en"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
@@ -336,7 +342,7 @@ class Script{
             Script::$script["yue"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
             Script::$script["och"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
             Script::$script["ar"][Script::NINJA] = "نينجا ".Constant::EMO_NINJA;
-
+            Script::$script["fa"][Script::NINJA] = "نينجا ".Constant::EMO_NINJA;
 
             Script::$script["en"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
             Script::$script["id"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
@@ -349,6 +355,8 @@ class Script{
             Script::$script["yue"][Script::MORDRED] = "莫德雷德 ".Constant::EMO_MORDRED;
             Script::$script["och"][Script::MORDRED] = "莫德雷德 ".Constant::EMO_MORDRED;
             Script::$script["ar"][Script::MORDRED] = "موردريد ".Constant::EMO_MORDRED;
+            Script::$script["fa"][Script::MORDRED] = "موردرد ".Constant::EMO_MORDRED;
+
 
 
             Script::$script["en"][Script::SERVANT] = "Servant ".Constant::EMO_SERVANT;
@@ -362,6 +370,7 @@ class Script{
             Script::$script["yue"][Script::SERVANT] = "跟班 ".Constant::EMO_SERVANT;
             Script::$script["och"][Script::SERVANT] = "仕從 ".Constant::EMO_SERVANT;
             Script::$script["ar"][Script::SERVANT] = "خادم".Constant::EMO_SERVANT;
+            Script::$script["fa"][Script::SERVANT] = "خدمتکار".Constant::EMO_SERVANT;
 
 
             Script::$script["en"][Script::THIEF] = "Thief " .Constant::EMO_THIEF;
@@ -375,6 +384,7 @@ class Script{
             Script::$script["yue"][Script::THIEF] = "賊仔 ".Constant::EMO_THIEF;
             Script::$script["och"][Script::THIEF] = "小偷 ".Constant::EMO_THIEF;
             Script::$script["ar"][Script::THIEF] = "لص" .Constant::EMO_THIEF;
+            Script::$script["fa"][Script::THIEF] = "دزد" .Constant::EMO_THIEF;
 
 
             Script::$script["en"][Script::WITCH] = "Witch " .Constant::EMO_WITCH;
@@ -388,8 +398,9 @@ class Script{
             Script::$script["yue"][Script::WITCH] = "女巫 ".Constant::EMO_WITCH;
             Script::$script["och"][Script::WITCH] = "女巫 ".Constant::EMO_WITCH;
             Script::$script["ar"][Script::WITCH] = "ويتش " .Constant::EMO_WITCH;
+            Script::$script["fa"][Script::WITCH] = "جادوگر " .Constant::EMO_WITCH;
 
-
+            
             Script::$script["en"][Script::AGENT] = "Agent " .Constant::EMO_AGENT;
             Script::$script["id"][Script::AGENT] = "Agen " .Constant::EMO_AGENT;
             Script::$script["it"][Script::AGENT] = "Agente " .Constant::EMO_AGENT;
@@ -401,7 +412,8 @@ class Script{
             Script::$script["yue"][Script::AGENT] = "特務 ".Constant::EMO_AGENT;
             Script::$script["och"][Script::AGENT] = "密探 ".Constant::EMO_AGENT;
             Script::$script["ar"][Script::AGENT] = "وكيل " .Constant::EMO_AGENT;
-
+            Script::$script["fa"][Script::AGENT] = "مأمور " .Constant::EMO_AGENT;
+            
 
             Script::$script["en"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
             Script::$script["id"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
@@ -414,7 +426,8 @@ class Script{
             Script::$script["yue"][Script::AUDITOR] = "外交官 ".Constant::EMO_AUDITOR;
             Script::$script["och"][Script::AUDITOR] = "使節 ".Constant::EMO_AUDITOR;
             Script::$script["ar"][Script::AUDITOR] = "المراجح ".Constant::EMO_AUDITOR;
-
+            Script::$script["fa"][Script::AUDITOR] = "وکیل".Constant::EMO_AUDITOR;
+            
 
             Script::$script["en"][Script::ASSASSIN] = "Assassin " .Constant::EMO_ASSASSIN;
             Script::$script["id"][Script::ASSASSIN] = "Assassin ".Constant::EMO_ASSASSIN;
@@ -427,7 +440,8 @@ class Script{
             Script::$script["yue"][Script::ASSASSIN] = "刺客 ".Constant::EMO_ASSASSIN;
             Script::$script["och"][Script::ASSASSIN] = "刺客 ".Constant::EMO_ASSASSIN;
             Script::$script["ar"][Script::ASSASSIN] = "الحشاش " .Constant::EMO_ASSASSIN;
-
+            Script::$script["fa"][Script::ASSASSIN] = "قاتل " .Constant::EMO_ASSASSIN;
+            
 
             Script::$script["en"][Script::MORGAUSE] = "Morgause " .Constant::EMO_MORGAUSE;
             Script::$script["id"][Script::MORGAUSE] = "Morgause ".Constant::EMO_MORGAUSE;
@@ -440,7 +454,7 @@ class Script{
             Script::$script["yue"][Script::MORGAUSE] = "莫歌絲 ".Constant::EMO_MORGAUSE;
             Script::$script["och"][Script::MORGAUSE] = "莫歌絲 ".Constant::EMO_MORGAUSE;
             Script::$script["ar"][Script::MORGAUSE] = "مورقوس " .Constant::EMO_MORGAUSE;
-
+            Script::$script["fa"][Script::MORGAUSE] = "مورگاس " .Constant::EMO_MORGAUSE;
 
             Script::$script["en"][Script::KNIGHT] = "Knight ".Constant::EMO_KNIGHT;
             Script::$script["id"][Script::KNIGHT] = "Ksatria ".Constant::EMO_KNIGHT;
@@ -453,7 +467,8 @@ class Script{
             Script::$script["yue"][Script::KNIGHT] = "騎士 ".Constant::EMO_KNIGHT;
             Script::$script["och"][Script::KNIGHT] = "騎士 ".Constant::EMO_KNIGHT;
             Script::$script["ar"][Script::KNIGHT] = "الفارس ".Constant::EMO_KNIGHT;
-
+            Script::$script["fa"][Script::KNIGHT] = "شوالیه ".Constant::EMO_KNIGHT;
+            
             // NEW
             Script::$script["en"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["id"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
@@ -466,7 +481,8 @@ class Script{
             Script::$script["yue"][Script::GOOD_LANCELOT] = "好嘅蘭斯洛特 ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["och"][Script::GOOD_LANCELOT] = "正義方蘭斯洛特 ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["ar"][Script::GOOD_LANCELOT] = "لانسوت طيب ".Constant::EMO_GOOD_LANCELOT;
-
+            Script::$script["fa"][Script::GOOD_LANCELOT] = "لنسلات خوب ".Constant::EMO_GOOD_LANCELOT;
+            
             // NEW
             Script::$script["en"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["id"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
@@ -479,7 +495,8 @@ class Script{
             Script::$script["yue"][Script::EVIL_LANCELOT] = "壞嘅蘭斯洛特 ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["och"][Script::EVIL_LANCELOT] = "邪惡方蘭斯洛特 ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["ar"][Script::EVIL_LANCELOT] = "لانسوت شرير ".Constant::EMO_EVIL_LANCELOT;
-
+            Script::$script["fa"][Script::EVIL_LANCELOT] = "لنسلات شیطانی ".Constant::EMO_EVIL_LANCELOT;
+            
 
             Script::$script["en"][Script::PR_NEWGAME]
                 = "You have created the new game - %s mode in group %s.";
@@ -503,6 +520,8 @@ class Script{
                 = "你剛建立新一輪遊戲，採用 %s 模式，將會運行在群組 %s 。Normal 為正常模式，Chaos 為混亂模式。";
             Script::$script["ar"][Script::PR_NEWGAME]
                 = "لقد أنشأت لعبة جديدة %s mode في مجموعة %s.";
+            Script::$script["fa"][Script::PR_NEWGAME]
+                = "یک بازی جدید با مد - %s در گروه %s ساخته شد";
 
 
             Script::$script["en"][Script::PR_JOINGAME]
@@ -527,6 +546,8 @@ class Script{
                 = "你已加入了在群組 %s 的「阿瓦隆」遊戲。";
             Script::$script["ar"][Script::PR_JOINGAME]
                 = "لقد دخلت في لعبة أفالون في مجموعة %s.";
+            Script::$script["fa"][Script::PR_JOINGAME]
+                = "شما در گروه %s وارد بازی شدید";
 
 
             Script::$script["en"][Script::PU_KINGDONE]
@@ -551,6 +572,8 @@ class Script{
                 = "亞瑟王已經心裡有數，決定停止這場無休止的討論。";
             Script::$script["ar"][Script::PU_KINGDONE]
                 = "وجد الملك بالفعل الجواب, ثم قرر أخيراً بإنهاء هذه المناقشة التي لن تنتهي.";
+            Script::$script["fa"][Script::PU_KINGDONE]
+                = "پادشاه جواب رو پیدا کرد و تصمیم گرفت به این بحث پایان ناپذیر پایان بده.";
 
 
             Script::$script["en"][Script::PU_REJECTCHANGEKING]
@@ -575,6 +598,8 @@ class Script{
                 = "%s 所領導的".Script::$script["och"][Script::QUEST]."已遭否決，現在任務改由亞瑟王指派的 %s 負責。";
             Script::$script["en"][Script::PU_REJECTCHANGEKING]
                 = "المهمة التي يقودها %s قد تم رفضها بالفعل. المهمة الجديدة بيد الملك: %s.";
+            Script::$script["fa"][Script::PU_REJECTCHANGEKING]
+                = "رهبری چالش توسط جانشین جدید یعنی %s رد شد و به پادشاه جدید ما یعنی %s رسید.";
 
 
             Script::$script["en"][Script::PU_KINGNEEDDISCUSS]
@@ -599,6 +624,8 @@ class Script{
                 = "在選揀<b>%d 名幫手</b>前，國王指派由 %s 負責，有<b>%d 秒</b>討論人選及考慮。若有需要，可以傳送 /done 預早完成考慮。至於過去任務的歷史，可以輸入 /questhistory 查看。";
             Script::$script["ar"][Script::PU_KINGNEEDDISCUSS]
                 = "قبل إختيار <b>%d للأشخاص</b>, %s كـ ملك له <b>%d ثانية</b> ليتناقش مع الجميع. الملك بإستطاعته كتابة /done لإنهاء النقاش. إضغط /questhistory لرؤية التاريخ.";
+            Script::$script["fa"][Script::PU_KINGNEEDDISCUSS]
+                = "قبل از معین کردن <b>%d نفر</b> توسط %s به عنوان پادشاه،  <b>%d ثانیه</b>  وقت داره که با درباریانش بحث کنه. پادشاه می تونه با استفاده از /done به بحث پایان بده و همچنین با استفاده از /questhistory تاریخچه رو ببینه.";
 
 
             Script::$script["en"][Script::PU_AFTERAPPROVE]
@@ -623,6 +650,8 @@ class Script{
                 = "有過半數贊成，任務即將執行！";
             Script::$script["ar"][Script::PU_AFTERAPPROVE]
                 = "معظم الأعضاء قد وافقوا, سيتم تنفيذ المهمة.";
+            Script::$script["fa"][Script::PU_AFTERAPPROVE]
+                = "بیشتر درباری ها موافقت هستن. پس چالش اجرا میشه!";
 
 
             Script::$script["en"][Script::PR_EXECQUEST]
@@ -647,6 +676,8 @@ class Script{
                 = Script::$script["och"][Script::QUEST]." %d 號。你要如何選擇呢？";
             Script::$script["ar"][Script::PR_EXECQUEST]
                 = "المهمة رقم : %d. ماذا تريد أن تختار؟";
+            Script::$script["fa"][Script::PR_EXECQUEST]
+                = "چالش شماره ی %d. انتخابت چیه؟";
 
 
             Script::$script["en"][Script::PR_SUCCESS]
@@ -671,6 +702,8 @@ class Script{
                 = "成功";
             Script::$script["ar"][Script::PR_SUCCESS]
                 = "نجحت!";
+            Script::$script["fa"][Script::PR_SUCCESS]
+                = "پیروزی!";
 
 
             Script::$script["en"][Script::PR_FAIL]
@@ -695,6 +728,8 @@ class Script{
                 = "失敗";
             Script::$script["ar"][Script::PR_FAIL]
                 = "فشلت";
+            Script::$script["fa"][Script::PR_FAIL]
+                = "شکست";
 
 
             Script::$script["en"][Script::PR_2FAIL]
@@ -719,6 +754,8 @@ class Script{
                 = "疊敗兩陣";
             Script::$script["ar"][Script::PR_2FAIL]
                 = "فشلين!";
+            Script::$script["fa"][Script::PR_2FAIL]
+                = "دو شکست!";
 
 
             Script::$script["en"][Script::PR_EXECQUESTGOOD]
@@ -743,6 +780,8 @@ class Script{
                 = "你是正派，盡了很多力去完成".Script::$script["och"][Script::QUEST]."，務求盡善盡美。";
             Script::$script["ar"][Script::PR_EXECQUESTGOOD]
                 = "أنت شخص جيد. لقد وضعت كل جهدك لإنهاء هذه المهمة بكل ما لديك.";
+            Script::$script["fa"][Script::PR_EXECQUESTGOOD]
+                = "تو از درباریان پادشاه هستی! تمام تلاشت رو بکن تا بتونی همه چیز رو تا جای ممکن عالی تموم کنی.";
 
             // NEW
             Script::$script["en"][Script::PR_EXECQUESTLANCELOT]
@@ -767,6 +806,8 @@ class Script{
                 = "身為".Script::$script["och"][Script::EVIL_LANCELOT]."，你必要令".Script::$script["och"][Script::QUEST]."失敗。 “ψ(｀∇´)ψ";
             Script::$script["ar"][Script::PR_EXECQUESTLANCELOT]
                 = "كـ لانسوت شرير, يجب عليك أن ترفض هذه المهمة مهما حصل. “ψ(｀∇´)ψ";
+            Script::$script["fa"][Script::PR_EXECQUESTLANCELOT]
+                = "به عنوان لنسلات شیطانی  تو باید چالش رو ببازی. انتخاب دیگه ای نداری!. “ψ(｀∇´)ψ";
 
             Script::$script["en"][Script::PR_GOFORQUEST]
                 = "%s go to execute the quest. <b>%d seconds</b> are given to finish the quest.";
@@ -790,6 +831,8 @@ class Script{
                 = "決定由 %s 執行".Script::$script["och"][Script::QUEST]."，之後有<b>%d 秒</b>去完成。";
             Script::$script["ar"][Script::PR_GOFORQUEST]
                 = "%s ذهب لتنفيذ المهمة <b>%d ثانية </b> معطاة لإنهاء المهمة.";
+            Script::$script["fa"][Script::PR_GOFORQUEST]
+                = "%s برو و چالش رو اجرا کن <b>%d ثانيه </b> برای این کار وقت داری.";
 
 
             Script::$script["en"][Script::PR_YOUAREMERLIN]
@@ -814,6 +857,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::MERLIN]."</b>。%s 那班人散發著邪惡氣息，你要帶領團隊免受壞人滋擾！\n<b>注意：你不可用任何方法聯絡其他人。</b>\n \n如有需要，輸入 /merlin 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREMERLIN]
                 = "أنت مرلين. طاقة شريرة تشع من %s. وجّه فريقك دون أن يقبض عليك من الأشرار. تذكير : لا يمكنك التواصل مع الآخرين بالرسائل الخاصة.";
+            Script::$script["fa"][Script::PR_YOUAREMERLIN]
+                = "تو مرلین، پیشگوی بزرگ هستی! بوهای بدی از طرف %s به مشام میاد. از به دام افتادن درباریان در برابر افراد بد جلوگیری کن. توجه کن که مرلین حق نداره توی چت خصوصی اطلاعاتی به کسی بده.";
 
 
             Script::$script["en"][Script::PR_YOUAREPERCIVAL]
@@ -838,6 +883,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::PERCIVAL]."</b>。你察覺 %s 為魔法師梅林，但不確定誰人是真正那位。\n<b>注意：你不可用任何方法私下詢問任何一個。</b>\n \n如有需要，輸入 /percival 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREPERCIVAL]
                 = "أنت بريفسال. ترى  %s .كـ مرلين, و لكن من الواضح أن واحداً منهم فقط هو مرلين الحقيقي تذكير : لا يمكنك التواصل معهم بشكل مباشر بشكل خاص أو عام للسؤال عن دورهم.";
+            Script::$script["fa"][Script::PR_YOUAREPERCIVAL]
+                = "تو پرسیوال هستی. تو %s رو به عنوان مرلین می بینی اما نمیدونی کدوم مرلین واقعیه و باید پیداش کنی. توجه کن که مرلین نمیتونه از طریق پیام خصوصی مرلین اصلی رو بشناسه.";
 
 
             Script::$script["en"][Script::PR_YOUAREGOODNORMAL]
@@ -862,6 +909,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::SERVANT]."</b>，卻不知哪一方是好或壞，但最重要是跟著正派方向。\n \n如有需要，輸入 /servant 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
             Script::$script["ar"][Script::PR_YOUAREGOODNORMAL]
                 = "أنت الخادم. لا تعرف أحداً خيراً كان أو شراً, لكن من المهم أن تتبع الملك الصحيح. يجب عليك ألا تستخدم التواصل المنفرد.";
+            Script::$script["fa"][Script::PR_YOUAREGOODNORMAL]
+                = "تو خادم هستی! نمیدونی کی بده و کی خوبه اما اونقدر وفاداری که همیشه از پادشاه واقعی سرزمینت پیروی کنی. توجه کن که نمی تونی از طریق پیام خصوصی با کسی صحبت کنی.";
 
 
             Script::$script["en"][Script::PR_YOUAREMORDRED]
@@ -886,6 +935,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::MORDRED]."</b>。你反派那夥人有 %s，而梅林卻不會知道你已是反派的。\n \n如有需要，輸入 /mordred 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
             Script::$script["ar"][Script::PR_YOUAREMORDRED]
                 = "أنت موردريد. فريقك هو %s. مرلين لا تعرف بأنك بصف الأشرار. يجب عليك ألا تستخدم التواصل المنفرد.";
+            Script::$script["fa"][Script::PR_YOUAREMORDRED]
+                = "تو موردرد هستی. این لیست هم تیمی های تو هستش: %s. مرلین حواسش به تو نبوده و نمیدونه طرف دشمنای دربار هستی پس سعی کن نقشتو خوب به عنوان یکی از درباریا بازی کنی تا توی زمان مناسب اونا رو به همراه تیمت از بین ببری. توجه کن که نمی تونی از چت خصوصی برای صحبت کردن استفاده کنی.";
 
 
             Script::$script["en"][Script::PR_YOUARENINJA]
@@ -910,6 +961,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::NINJA]."</b>，能力強過莫德雷德。你反派那夥人有 %s，而梅林卻不會知道你已是反派的。當你獲委任去做任務時候，可以令任務 2 次失敗，但這種能力只容許 1 次運用。\n \n如有需要，輸入 /ninja 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
             Script::$script["ar"][Script::PR_YOUARENINJA]
                 = "أنت نينجا (سوبر موردريد). فريقك هو %s. مرلين لا تعرف بأنك بصف الأشرار. بإمكانك أن تعطي فشلين إن كنت مصوتاً للمهمة, لكن هذه الميزة فقط يمكنك إستخدامها مرة واحدة. لا يمكنك إستخدام التواصل المنفرد.";
+            Script::$script["fa"][Script::PR_YOUARENINJA]
+                = "تو نینجا هستی یا بهتره بگم موردرد پیشرفته! این لیست هم تیمی های تو هستش: %s. مرلین تو رو نمیشناسه و نمیدونه که از دشمنای دربار هستی پس نقشتو به عنوان یه درباری خوب، به خوبی بازی کن. وجه برتری تو اینه که می تونی توی یه چالش 2 بار شکست وارد کنی ولی توجه کن که توی هر بازی فقط یه بار می تونی از این ویژگی استفاده کنی. توجه کن که نباید برای صحبت کردن از پیام خصوصی استفاده کنی.";
 
 
             Script::$script["en"][Script::PR_YOUAREAGENT]
@@ -934,6 +987,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::AGENT]."</b>，屬於正派而只會令任務成功。當有任務失敗後，就會有同一個暗號予所有密探。若找到其他特務團隊，就會更大機會令任務成功。\n注意：你是不可以用任何方法私下聯絡其他人。\n \n如有需要，輸入 /agent 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREAGENT]
                 = "أنت وكيل. شخص طيب هدفه بأن يفوز في المهام. تعطى نفس الرموز السرية للوكلاء الآخرين بعد فشل المهمة. أوجد الوكلاء من فريقك, و معاً بإمكانكم النجاح في المهمات. يجب عليك ألا تستخدم التواصل المنفرد.";
+            Script::$script["fa"][Script::PR_YOUAREAGENT]
+                = "تو یه مأمور از طرف دربار پادشاه هستی و وظیفت پیروزی در مأموریته که به تو واگذار شده. تو باید کمک کنی تا دربار به پیروزی برسه. بعد از شکست یک چالش کدهای مخفی بین مأمورها رد و بدل میشه. مأمورهای دیگه رو بشناس تا بتونید راحت تر مأموریتتونو به اتمام برسونید. توجه کن که نباید برای صحبت کردن از پیام خصوصی استفاده کنی.";
 
 
             Script::$script["en"][Script::PR_YOUAREWITCH]
@@ -958,6 +1013,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::WITCH]."</b>，屬於壞人反派。你反派那夥人有 %s。以你能力許可，你亦已知曉正派有以下角色： %s。\n \n如有需要，輸入 /witch 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREWITCH]
                 = "أنت ويتش. شخص شرير. فريقك الشرير هم %s. بقدراتك, أنت تعرف بأن هناك هذه الأدوار من الطيبين : %s. يجب عليك ألا تستخدم التواصل المنفرد.";
+            Script::$script["fa"][Script::PR_YOUAREWITCH]
+                = "تو جادوگر هستی. یه یاغی علیه دربار. هم تیمی های تو این افراد هستن: %s. با قدرت شیطانی‌ای که داری می تونی درباری ها رو که این افراد هستن شناسایی کنی: %s. توجه کن که نباید برای صحبت کردن از پیام خصوصی استفاده کنی.";
 
 
             Script::$script["en"][Script::PR_YOUAREAUDITOR]
@@ -985,6 +1042,8 @@ class Script{
                 ."</b>，屬於正派。當挑選你去任務時，有 20% 會防止到 1 次任務失敗。\n \n如有需要，輸入 /auditor 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREAUDITOR]
                 = "أنت المراجح, شخص جيد. عندما ترشح إلى المهمة, هناك إحتمال 20% بأن تزيل الفشل من هذه المهمة.";
+            Script::$script["fa"][Script::PR_YOUAREAUDITOR]
+                = "تو وکیل هستی. به خاطر تواناییت توی حرف زدن، می تونی به احتمال 20 درصد یه باخت رو توی چالشی که مأمورش شدی از بین ببری چون تو از درباریا هستی. توجه کن که نباید برای صحبت کردن از پیام خصوصی استفاده کنی.";
 
             // NEW
             Script::$script["en"][Script::PR_YOUAREGOODLANCELOT]
@@ -1020,6 +1079,9 @@ class Script{
             Script::$script["ar"][Script::PR_YOUAREGOODLANCELOT]
                 = "أنت <b>".Script::$script["ar"][Script::GOOD_LANCELOT]
                 ."</b>. ولاءك ليس مستقر. بعض المرات لا يمكنك بأن تتحكم بعواطفك و تصبح شرير.";
+            Script::$script["fa"][Script::PR_YOUAREGOODLANCELOT]
+                = "تو <b>".Script::$script["fa"][Script::GOOD_LANCELOT]
+                ."</b>. از سلامت روحی و روانی درستی بهره نمی بری (بعد از بازی به روانشناس مراجعه کن!) واسه ی همین بعضی وقتا تبدیل به یه فرد شیطانی و یاغی میشی.";
 
             // NEW
             Script::$script["en"][Script::PR_YOUAREEVILLANCELOT]
@@ -1055,6 +1117,9 @@ class Script{
             Script::$script["ar"][Script::PR_YOUAREEVILLANCELOT]
                 = "أنت <b>".Script::$script["ar"][Script::EVIL_LANCELOT]
                 ."</b>. أنت لا تعرف أي أحد من فريقك. ولاءك ليس ثابت, بعض المرات تحكمك عواطفك و تصبح طيب.";
+            Script::$script["fa"][Script::PR_YOUAREEVILLANCELOT]
+                = "تو<b>".Script::$script["fa"][Script::EVIL_LANCELOT]
+                ."</b>. از سلامت روحی و روانی درستی بهره نمی بری (بعد از بازی به روانشناس مراجعه کن!) واسه ی همین بعضی وقتا تبدیل به یه فرد خوب و همراه درباریا میشی.";
 
 
             Script::$script["en"][Script::PU_FORECAST_LANCELOT]
@@ -1079,6 +1144,8 @@ class Script{
                 = Constant::EMO_MEGAPHONE_B. "蘭斯洛特現身在今場中，請使用下面的預測報告去猜測未來幾個任務的情況！\n";
             Script::$script["ar"][Script::PU_FORECAST_LANCELOT]
                 = Constant::EMO_MEGAPHONE_B. "أُدخل أدوار اللانسوت. إستخدم التوقعات التالية لمعرفة المستقبل !\n";
+            Script::$script["fa"][Script::PU_FORECAST_LANCELOT]
+                = Constant::EMO_MEGAPHONE_B. "نقش های لنسلات وارد شدند. از پیشگویی زیر برای دیدن آینده استفاده کنید!\n";
 
 
             Script::$script["en"][Script::PU_LANCELOT_NOT_SWITCHED]
@@ -1107,6 +1174,8 @@ class Script{
                 ."仍是反派，而".Script::$script["och"][Script::GOOD_LANCELOT]."是正派。" . Constant::EMO_HEART_NOT_SWITCH;
             Script::$script["ar"][Script::PU_LANCELOT_NOT_SWITCHED]
                 = Constant::EMO_SINGLE_EXCLAMATION_MARK. "هذا الدور اللانسوت الشرير يبقى شرير و اللانسوت الطيب يبقى طيب. كما هو معتاد. " . Constant::EMO_HEART_NOT_SWITCH;
+            Script::$script["fa"][Script::PU_LANCELOT_NOT_SWITCHED]
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "این دست لنسلات شیطانی شیطانیه و لنسلات خوب خوبه. همه چی آرومه من چقد خوشحالم! " . Constant::EMO_HEART_NOT_SWITCH;
 
 
             Script::$script["en"][Script::PU_LANCELOT_SWITCHED]
@@ -1146,6 +1215,9 @@ class Script{
             Script::$script["ar"][Script::PU_LANCELOT_SWITCHED]
                 = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
                 . "هذا الدور اللانسوت الجيد يصبح شرير و اللانسوت الشرير يصبح طيب! " . Constant::EMO_HEART_SWITCH;
+            Script::$script["fa"][Script::PU_LANCELOT_SWITCHED]
+                = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
+                . "این دست لنسلات شیطانی، لنسلات خوب و لنسلات خوب، لنسلات شیطانی شد! " . Constant::EMO_HEART_SWITCH;
 
 
 
@@ -1171,6 +1243,8 @@ class Script{
                 = "你使用了使節的權力，令此任務減少機會失敗 1 次。";
             Script::$script["ar"][Script::PR_FAILDECREASE1]
                 = "إستخدامت قدرة المراجح. لقد قلصت خطأ واحد من هذه المهمة.";
+            Script::$script["fa"][Script::PR_FAILDECREASE1]
+                = "تو از شانست برای سخنوری استفاده کردی و یک باخت رو در این چالش خنثی کردی.";
 
             Script::$script["en"][Script::PR_AUDITORDECREASE1]
                 = "Auditor has used the ability to decrease 1 FAIL for this quest.";
@@ -1194,6 +1268,8 @@ class Script{
                 = "使節令此任務減少機會失敗 1 次。";
             Script::$script["ar"][Script::PR_AUDITORDECREASE1]
                 = "المراجح إستخدم قدرته و قلص خطأً واحد.";
+            Script::$script["fa"][Script::PR_AUDITORDECREASE1]
+                = "وکیل با استفاده از تواناییش یک باخت رو در این چالش از بین برد.";
 
 
             Script::$script["en"][Script::PR_YOUAREASSASSIN]
@@ -1218,6 +1294,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::ASSASSIN]."</b>。你反派那夥人有 %s。如果反派敗走後，你還可以暗殺梅林，令整局反敗為勝。\n \n如有需要，輸入 /assassin 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREASSASSIN]
                 = "أنت حشاش. فريقك هو %s. في نهاية اللعبة, يمكنك قتل مرلين و تفوز.";
+            Script::$script["fa"][Script::PR_YOUAREASSASSIN]
+                = "تو قاتل هستی. این افراد از ترس جونشون خودشون رو لو دادن که هم تیمی های تو هستن و حرفشونم درسته: %s. اگه اینهمه قتل سیرت نکرده، می تونی آخر بازی مرلین رو بکشی تا برنده بشید.";
 
             Script::$script["en"][Script::PR_YOUAREMORGANA]
                 = "You are Morgana. Your evil team are %s. On Percival's eyes, you are Merlin.";
@@ -1241,6 +1319,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::MORGANA]."</b>。你反派那夥人有 %s。派西維爾會見到你是梅林。\n \n如有需要，輸入 /morgana 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREMORGANA]
                 = "أنت مورقانا. فريقك الشرير هو %s. بأعين البريفسال, أنت مرلين.";
+            Script::$script["fa"][Script::PR_YOUAREMORGANA]
+                = "تو مورگانا هستی. هم تیمی های توی این افراد هستن: %s. تو چشمهای پرسیوال درباری ها تو مرلین هستی.";
 
             Script::$script["en"][Script::PR_YOUAREOBERON]
                 = "You are Oberon. Your evil teams are %s. The other evil teams don't know that you are evil. You should not use Private Message to communicate.";
@@ -1264,6 +1344,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::OBERON]."</b>，你反派那夥人是： %s，但你的反派同伴卻不認識你。\n注意：你是不可以用任何私訊去聯絡其他人。\n \n如有需要，輸入 /oberon 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREOBERON]
                 = "أنت أوبرين. فريقك الشرير هو %s. الأشرار الباقين لا يعرفون أنك معهم. يجب عليك ألا تستخدم التواصل المنفرد.";
+            Script::$script["fa"][Script::PR_YOUAREOBERON]
+                = "تو اوبرن هستی. هم تیمی های تو اینا هستن: %s. یاغی های هم تیمی تو نمیدونن که توهم شیطانی هستی. توجه کن که نمی تونی از طریق پیام خصوصی کسی رو مطلع کنی.";
 
 
             Script::$script["en"][Script::PR_YOUAREBADNORMAL]
@@ -1288,6 +1370,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::THIEF]."</b>，而一夥人其他是 %s。\n \n如有需要，輸入 /thief 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREBADNORMAL]
                 = "أنت شخص سيء. فريقك الشرير هو %s.";
+            Script::$script["fa"][Script::PR_YOUAREBADNORMAL]
+                = "تو یکی از یاغی ها هستی. هم تیمی ها تو اینا هستن: %s.";
 
             Script::$script["en"][Script::PR_YOUAREMORGAUSE]
                 = "You are Morgause (Morgana with assassin ability). Your team are %s.  On Percival's eyes, you were Merlin. At the end of the game, you can kill Merlin to win.";
@@ -1311,6 +1395,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::MORGAUSE]."</b>。你反派那夥人有 %s。在派西維爾眼中，你是梅林。如果反派敗走後，你還可以暗殺梅林，令整局反敗為勝。\n \n如有需要，輸入 /morgause 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREMORGAUSE]
                 = "أنت مورقوس ( مورقانا بقدرات الحشاش). فريقك هم %s.  بأعين البريفسال أنت مرلين. في نهاية اللعبة, يمكنك قتل مرلين و تفوز.";
+            Script::$script["fa"][Script::PR_YOUAREMORGAUSE]
+                = "تو مورگاس هستی ( ترکیبی از مورگانا و قاتل). هم تیمی های تو اینا هستن: %s.  تو چشمهای پرسیوال درباری ها تو مرلین هستی. تو می تونی در آخر بازی مرلین رو بکشی و پیروز بشی.";
 
 
             Script::$script["en"][Script::PR_YOUAREKNIGHTTHEREBAD]
@@ -1335,6 +1421,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::KNIGHT]."</b>，屬於正派更會令任務成功。比較 %s 與 %s，至少有 1 位屬於反派。（注意，你卻不曉得分辨莫德雷德或忍者屬正派與否！）\n \n如有需要，輸入 /knight 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREKNIGHTTHEREBAD]
                 = "أنت الفارس, شخص طيب هدفه بأن يفوز بالمهام. بين %s و %s, يوجد شخص واحد على الأقل يلعب بدور شرير. (تذكر, الفارس لا يمكنه رؤية موردريد)";
+            Script::$script["fa"][Script::PR_YOUAREKNIGHTTHEREBAD]
+                = "تو شوالیه هستی. بين %s و %s, حداقل یکیشون یاغیه. وظیفه ی تو پیروزی در مأموریته. (توجه کن که شوالیه نمی تونه موردرد رو تشخیص بده.)";
 
 
             Script::$script["en"][Script::PR_YOUAREKNIGHTNOBAD]
@@ -1359,6 +1447,8 @@ class Script{
                 = "你是<b>".Script::$script["och"][Script::KNIGHT]."</b>，屬於正派更會令任務成功。比較 %s 與 %s，無人屬於反派。（注意，你卻不曉得分辨莫德雷德或者忍者屬正派與否！）\n \n如有需要，輸入 /knight 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREKNIGHTNOBAD]
                 = "أنت الفارس, شخص طيب هدفه بأن يفوز في المهام. بين %s و %s, يبدو أنه لا يوجد أي أحد منهم يلعب دور شرير. (تذكر, الفارس لا يمكنه رؤية موردريد و نينجا.)";
+            Script::$script["fa"][Script::PR_YOUAREKNIGHTNOBAD]
+                = "تو شوالیه هستی. بين %s و %s, یاغی وجود نداره. وظیفه ی تو پیروزی در چالشه. (توجه کن که شوالیه نمی تونه موردرد رو تشخیص بده.)";
 
             Script::$script["en"][Script::PR_AGENTSECRETCODE]
                 = "The secret codes have been decrypted: %s. Use this code to find the other agents! Note: you cannot use Private Message to communicate.";
@@ -1382,6 +1472,8 @@ class Script{
                 = "暗號已遭破譯: %s。請運用此倆喑號找出其他密探！\n注意：你是不可以用任何私訊去聯絡其他人。";
             Script::$script["ar"][Script::PR_AGENTSECRETCODE]
                 = "تم فك تشفير الرموز السرية : %s. إستخدام هذا الكود للبحث عن الوكيل الآخر. تذكر : لا يمكنك إستخدام التواصل المنفرد.";
+            Script::$script["fa"][Script::PR_AGENTSECRETCODE]
+                = "کد های دریافت شده این ها هستن : %s. از این کد ها برای پیدا کردن بقیه ی مأمورها استفاده کن (من که نمیدونم چطوری!). توجه کن که پیام خصوصی ممنوعه!";
 
 
 
@@ -1407,6 +1499,8 @@ class Script{
                 = "贊成 ".Constant::EMO_YES_B;
             Script::$script["ar"][Script::PU_APPROVE]
                 = "موافق ".Constant::EMO_YES_B;
+            Script::$script["fa"][Script::PU_APPROVE]
+                = "موافقت ".Constant::EMO_YES_B;
 
             Script::$script["en"][Script::PU_REJECT]
                 = "Reject ".Constant::EMO_NO_B;
@@ -1430,6 +1524,8 @@ class Script{
                 = "反對 ".Constant::EMO_NO_B;
             Script::$script["ar"][Script::PU_REJECT]
                 = "أرفض ".Constant::EMO_NO_B;
+            Script::$script["fa"][Script::PU_REJECT]
+                = "مخالفت ".Constant::EMO_NO_B;
 
             Script::$script["en"][Script::PU_APPREJ_BOARD_REVEAL]
                 = "Approve (<b>%d</b>) : %s\n"
@@ -1464,6 +1560,9 @@ class Script{
             Script::$script["ar"][Script::PU_APPREJ_BOARD_REVEAL]
                 = "قبول (<b>%d</b>) : %s\n"
                 ."رفض (<b>%d</b>) : %s";
+            Script::$script["fa"][Script::PU_APPREJ_BOARD_REVEAL]
+                = "قبول (<b>%d</b>) : %s\n"
+                ."رد (<b>%d</b>) : %s";
 
             Script::$script["en"][Script::PU_APPREJ_BOARD_HIDE]
                 = "Approve/Reject?? (<b>%d</b>) : %s";
@@ -1487,6 +1586,8 @@ class Script{
                 = "贊成／反對？（<b>%d</b>）： %s";
             Script::$script["ar"][Script::PU_APPREJ_BOARD_HIDE]
                 = "مقبول أو مرفوض؟؟ (<b>%d</b>) : %s";
+            Script::$script["fa"][Script::PU_APPREJ_BOARD_HIDE]
+                = "قبول کردن یا رد کردن؟؟ (<b>%d</b>) : %s";
 
 
             Script::$script["en"][Script::PU_LADYHOLDER]
@@ -1510,6 +1611,8 @@ class Script{
             Script::$script["och"][Script::PU_LADYHOLDER]
                 = Constant::EMO_LADY_B ." ： %s\n";
             Script::$script["ar"][Script::PU_LADYHOLDER]
+                = Constant::EMO_LADY_B ." : %s\n";
+            Script::$script["fa"][Script::PU_LADYHOLDER]
                 = Constant::EMO_LADY_B ." : %s\n";
 
 
@@ -1535,6 +1638,8 @@ class Script{
                 = "亞瑟王已經委任 %s 選擇 <b>%d 人</b>協助執行此任務。現有 <b>%d 秒</b>作出考慮。";
             Script::$script["ar"][Script::PU_KINGNEEDASSIGN]
                 = "%s كـ ملك رشّح <b>%d أشخاص</b> للقيام بالمهمة. سيعطى للملك فترة <b>%d ثانية </b>";
+            Script::$script["fa"][Script::PU_KINGNEEDASSIGN]
+                = "%s به عنوان پادشاه <b>%d نفر</b> را برای اجرای چالش انتخاب کرد. مهلت داده شده از طرف پادشاه <b>%d ثانيه </b>";
 
 
             Script::$script["en"][Script::PR_SENDONEPLAYER]
@@ -1559,6 +1664,8 @@ class Script{
                 = "請揀選第 %d 位幫手（總共 %d 人）去執行此任務。";
             Script::$script["ar"][Script::PR_SENDONEPLAYER]
                 = "إختار الشخص رقم %d (من بين %d أشخاص) للقيام بالمهمة.";
+            Script::$script["fa"][Script::PR_SENDONEPLAYER]
+                = "انتخاب کن شخص شماره ی %d (از بين %d شخص) را برای اجرای چالش.";
 
 
             Script::$script["en"][Script::PR_KILLMERLIN]
@@ -1583,6 +1690,8 @@ class Script{
                 = "反派敗得一面倒，但是還有最後絕地反擊能力反敗為勝，殺死梅林就成！";
             Script::$script["ar"][Script::PR_KILLMERLIN]
                 = "فريقك الشرير قد خسر بالمهام, و لكن لديك السلاح الأخير...قتل مرلين!";
+            Script::$script["fa"][Script::PR_KILLMERLIN]
+                = "یاغی های نادون شما باختید, اما نه صبر کنید شما سلاح آخرتون رو دارید...قتل مرلين!";
 
 
             Script::$script["en"][Script::PR_LADYCHOOSE]
@@ -1607,6 +1716,8 @@ class Script{
                 = "請選擇一位你對他身份感到好奇。";
             Script::$script["ar"][Script::PR_LADYCHOOSE]
                 = "إختار شخص واحد لترى شخصيته الحقيقية.";
+            Script::$script["fa"][Script::PR_LADYCHOOSE]
+                = "کسی که میخوای نقش واقعیش رو بفهمی انتخاب کن.";
 
 
             Script::$script["en"][Script::PU_APPRREJINST]
@@ -1631,6 +1742,8 @@ class Script{
                 = "%s 選擇了 %s 執行此任務。\n\n現在有 <b>%d 秒</b>讓你們表决此次的委任應否通過；當中可以輸入 /showvote 再次見到投票按鈕。";
             Script::$script["ar"][Script::PU_APPRREJINST]
                 = "%s قد أختير %s للقيام بالمهمة. \n\n لديك <b>%d ثانية </b> للإختيار. أكتب /showvote لرؤية أزرار التصويت.";
+            Script::$script["fa"][Script::PU_APPRREJINST]
+                = "%s برای انجام چالش %s را مأمور کرده. \n\n شما <b>%d ثانيه </b> برای انتخاب در اختیار دارید. /showvote را برای رأی گیری بنویسید.";
 
 
             Script::$script["en"][Script::PU_SHOWVOTE]
@@ -1655,6 +1768,8 @@ class Script{
                 = "請按上面的信息來投票。";
             Script::$script["ar"][Script::PU_SHOWVOTE]
                 = "إضغط على الرد المرفق للتصويت.";
+            Script::$script["fa"][Script::PU_SHOWVOTE]
+                = "برای رأی دادن روی این پیام ریپلای شده کلیک کنید.";
 
             Script::$script["en"][Script::PU_REJECT5TIMES]
                 = "Quest was rejected 5 times, so it's failed.";
@@ -1678,6 +1793,8 @@ class Script{
                 = "任務已慘遭否決 5 次，所以此次任務唯有當作失敗。";
             Script::$script["ar"][Script::PU_REJECT5TIMES]
                 = "المهمة رفضت 5 مرات, إذا حُبطت.";
+            Script::$script["fa"][Script::PU_REJECT5TIMES]
+                = "چالش برای 5 بار رد شد! خب شما باختید.";
 
             Script::$script["en"][Script::PU_FAILWITHXFAIL]
                 = "In quest, we found <b>%d FAIL</b>! Quest is failed.";
@@ -1701,6 +1818,8 @@ class Script{
                 = "在此任務有 <b>%d 次失敗</b>！任務已經失敗。";
             Script::$script["ar"][Script::PU_FAILWITHXFAIL]
                 = "في المهمة وجدنا <b>%d فشل </b>! المهمة حُبطت.";
+            Script::$script["fa"][Script::PU_FAILWITHXFAIL]
+                = "در چالش ما <b>%d باخت </b> پیدا کردیم! خب این چالش شکست خورد.";
 
             Script::$script["en"][Script::PU_BADGUYSWONQUEST]
                 = "The good guys cried, they didn't have any chance. The evil team held a party, celebrating their victory..";
@@ -1724,6 +1843,8 @@ class Script{
                 = "反派勝利！他們經驗多，為他們勝利多番慶祝。";
             Script::$script["ar"][Script::PU_BADGUYSWONQUEST]
                 = "الأشخاص الطيبون يبكون, ليس لديهم أي فرصة للفوز. أقاموا الأشرار حفلة يحتفلوا بالفوز...";
+            Script::$script["fa"][Script::PU_BADGUYSWONQUEST]
+                = "درباری ها شروع به گریه کردن. یاغی ها پیروز شدن و شروع کردن به جشن گرفتن...";
 
 
             Script::$script["en"][Script::PU_BADGUYSWONKILL]
@@ -1748,6 +1869,8 @@ class Script{
                 = "正派以為邪不能勝正，但更可惜的是一個圈套。反派為他們勝利慶祝中！";
             Script::$script["ar"][Script::PU_BADGUYSWONKILL]
                 = "إعتقدوا الفريق الطيب أنهم فازوا, و لكنهم أدركوا الآن بأنها مجرد خدعة من الأشرار. يضحك الفريق الشرير بفوزهم.";
+            Script::$script["fa"][Script::PU_BADGUYSWONKILL]
+                = "درباری ها فکر میکردن که پیروز شدن. اما فهمیدن که این فقط یه دروغ از طرف یاغی ها بوده... یاغی ها شروع به خندیدن به پیروزیشون کردن.";
 
 
             Script::$script["en"][Script::PU_GOODGUYSWON]
@@ -1772,6 +1895,8 @@ class Script{
                 = "恭賀，正派勝利！他們贏得實至名歸，完全擊退反派的陰謀。";
             Script::$script["ar"][Script::PU_GOODGUYSWON]
                 = "تهانينا! فاز الفريق الطيب! الفريق الطيب كانوا أذكياء و صلبين بخداع الفريق الشرير.";
+            Script::$script["fa"][Script::PU_GOODGUYSWON]
+                = "تبریک به من! تبریک به شما! تبریک به همه! درباری ها پیروز شدن! اونها با شجاعت و زیرکی مبارزه کردن و یاغی ها رو از بین بردن.";
 
 
 
@@ -1797,6 +1922,8 @@ class Script{
                 = "%s 正得到湖中仙女幫忙，可以知曉某人的身份。其他人可以從旁規勸，但只有 <b>%d 秒</b>做決定。";
             Script::$script["ar"][Script::PU_LADYLAKEINST]
                 = "%s كـ سيدة البحار, بإمكانه إستخدام طاقتها لرؤية هوية شخص واحد. الأعضاء الآخرين بإمكانهم إعطاءها نصيحة... <b>%d ثانية </b> لها لإختيار الشخص.";
+            Script::$script["fa"][Script::PU_LADYLAKEINST]
+                = "%s به عنوان بانوی دریاچه, امکان دیدن نقش یه نفر رو داره. بقیه ی اعضای تیم باید راهنمایی ارائه بدن... <b>%d ثانيه </b> برای انجام این کار وقت دارید.";
 
 
 
@@ -1822,6 +1949,8 @@ class Script{
                 = "有 3 次任務成功，但是反派未完全輸，還有最後一著。反派一夥有： %s。只要殺死梅林，反派就反敗為勝！反派現在有 <b> %d 秒</b> 去决定。";
             Script::$script["en"][Script::PU_KILLMERLIN]
                 = "3 مهمات قد نجحت بالفعل للطيبين. على أي حال, الفريق الشرير لديهم خيار واحد. الفريق الشرير هم %s. إذا توقع الحشاش مرلين, الفريق الشرير سيفوز! الفريق الشرير له  <b>%d ثانية </b> للإختيار.";
+            Script::$script["fa"][Script::PU_KILLMERLIN]
+                = " اوه خدای من درباری ها 3 چالش رو با موفقیت پشت سر گذاشتن و حالا پیروز این میدان هستن. اما یاغی ها یعنی %s هنوز سلاح نهایی خودشون رو دارن. اگه قاتل بتونه مرلین رو درست حدس بزنه و بکشه اونها پیروز میشن! یاغی ها فقط <b>%d ثانيه </b> وقت دارید.";
 
 
             Script::$script["en"][Script::PU_QSUCCESSNOFAIL]
@@ -1846,6 +1975,8 @@ class Script{
                 = "任務成功。";
             Script::$script["ar"][Script::PU_QSUCCESSNOFAIL]
                 = "المهمة قد نجحت بالفعل! ";
+            Script::$script["fa"][Script::PU_QSUCCESSNOFAIL]
+                = "چالش با موفقیت انجام شد! ";
 
             Script::$script["en"][Script::PU_QSUCCESSXXFAIL]
                 = "However, team found there is <b>%d FAIL</b> in this quest..";
@@ -1869,6 +2000,8 @@ class Script{
                 = "不幸此任務顯示有 <b>%d 個失敗</b>。";
             Script::$script["ar"][Script::PU_QSUCCESSXXFAIL]
                 = "على أي حال, وجد الفريق أن هناك <b>%d فشل </b> في هذه المهمة...";
+            Script::$script["fa"][Script::PU_QSUCCESSXXFAIL]
+                = "متأسفانه... درباری ها <b>%d شکست </b> در این چالش پیدا کردن...";
 
             Script::$script["en"][Script::PR_ASSIGNONEQUEST]
                 = "You have successfully assigned %s in quest.";
@@ -1892,6 +2025,8 @@ class Script{
                 = "你成功選擇了 %s 去執行任務。";
             Script::$script["ar"][Script::PR_ASSIGNONEQUEST]
                 = "لقد تم تعيين %s بنجاح في هذه المهمة.";
+            Script::$script["fa"][Script::PR_ASSIGNONEQUEST]
+                = "شما با موفقیت %s را در چالش قرار دادید..";
 
             Script::$script["en"][Script::PU_ASSIGNONEQUEST]
                 = "%s assigned %s in quest.";
@@ -1915,6 +2050,8 @@ class Script{
                 = "%s 在此任務中已選擇了 %s。";
             Script::$script["ar"][Script::PU_ASSIGNONEQUEST]
                 = "%s إختار %s في المهمة";
+            Script::$script["fa"][Script::PU_ASSIGNONEQUEST]
+                = "%s قرار داد %s را در چالش.";
 
             Script::$script["en"][Script::PR_BADGUYSUCCESS]
                 = "Although you are evil, you have successfully made a good impression.";
@@ -1938,6 +2075,8 @@ class Script{
                 = "雖則你是反派，你成功的留下很好的印象。";
             Script::$script["ar"][Script::PR_BADGUYSUCCESS]
                 = "بالرغم من أنك شرير, لقد نجحت بإعطاء إنطباع جيد!";
+            Script::$script["fa"][Script::PR_BADGUYSUCCESS]
+                = "با اینکه تو یه آدم شرور هستی اما تونستی یه تصور خوب به وجود بیاری!";
 
 
             Script::$script["en"][Script::PR_BADGUYFAIL]
@@ -1962,6 +2101,8 @@ class Script{
                 = "你成功地令任務失敗了。";
             Script::$script["ar"][Script::PR_BADGUYFAIL]
                 = "لقد نجحت بإحباط هذه المهمة!";
+            Script::$script["fa"][Script::PR_BADGUYFAIL]
+                = "شما با موفقیت، در چالش شکست خوردید!";
 
 
             Script::$script["en"][Script::PR_BADGUY2FAIL]
@@ -1986,6 +2127,8 @@ class Script{
                 = "你行使了忍者能力，令此任務疊敗 2 陣！";
             Script::$script["ar"][Script::PR_BADGUY2FAIL]
                 = "لقد نجحت بالفعل بإستخدام ميزة النينجا. هذه المهمة أُعطيت 2 فشل!";
+            Script::$script["fa"][Script::PR_BADGUY2FAIL]
+                = "شما با موفقیت از قابلیت نینجایی خودتون استفاده کردید و 2 شکست وارد این چالش کردید!";
 
 
             Script::$script["en"][Script::PR_LADYNOTSEE]
@@ -2010,6 +2153,8 @@ class Script{
                 = "你已決定不使用湖中仙女的能力去查看。";
             Script::$script["ar"][Script::PR_LADYNOTSEE]
                 = "لقد إخترت بأنك لن تستخدم الميزة.";
+            Script::$script["fa"][Script::PR_LADYNOTSEE]
+                = "شما تصمیم گرفتید از توانایی خود برای شناختن استفاده نکنید.";
 
 
             Script::$script["en"][Script::PU_LADYNOTSEE]
@@ -2034,6 +2179,8 @@ class Script{
                 = "%s 已決定不會使用湖中仙女的能力去查看。";
             Script::$script["ar"][Script::PU_LADYNOTSEE]
                 = "%s إختار بأنه لن يستخدم الميزة.";
+            Script::$script["fa"][Script::PU_LADYNOTSEE]
+                = "%s تصمیم گرفت از تواناییش برای شناختن استفاده نکنه.";
 
 
             Script::$script["en"][Script::PR_LADYSEE]
@@ -2058,6 +2205,8 @@ class Script{
                 = "你查看到 %s 的身份……他／她是";
             Script::$script["ar"][Script::PR_LADYSEE]
                 = "لقد رأيت %s..إنه هي/هو ";
+            Script::$script["fa"][Script::PR_LADYSEE]
+                = "تو خواستی شخصی رو به این اسم بشناسی: %s... نقش اون هست  ";
 
 
             Script::$script["en"][Script::PR_GOOD]
@@ -2082,6 +2231,8 @@ class Script{
                 = "正派。";
             Script::$script["ar"][Script::PR_GOOD]
                 = "طيب.";
+            Script::$script["fa"][Script::PR_GOOD]
+                = "درباری.";
 
 
             Script::$script["en"][Script::PR_BAD]
@@ -2106,6 +2257,8 @@ class Script{
                 = "反派。";
             Script::$script["ar"][Script::PR_BAD]
                 = "شرير.";
+            Script::$script["fa"][Script::PR_BAD]
+                = "یاغی.";
 
 
             Script::$script["en"][Script::PU_LADYSEE]
@@ -2130,6 +2283,8 @@ class Script{
                 = "%s 已決定運用湖中仙女的能力去查看 %s。";
             Script::$script["ar"][Script::PU_LADYSEE]
                 = "%s إستخدم الميزة لرؤية %s.";
+            Script::$script["fa"][Script::PU_LADYSEE]
+                = "%s از توانایی خودش برای دیدن %s استفاده کرد.";
 
 
             Script::$script["en"][Script::PR_KILLMERLINSUCCESS]
@@ -2154,6 +2309,8 @@ class Script{
                 = "你成功地擊殺了 %s。";
             Script::$script["ar"][Script::PR_KILLMERLINSUCCESS]
                 = "لقد نجحت بقتل %s.";
+            Script::$script["fa"][Script::PR_KILLMERLINSUCCESS]
+                = "شما با موفقیت %s را به قتل رسوندید.";
 
 
             Script::$script["en"][Script::PU_KILLMERLINSUCCESS]
@@ -2178,6 +2335,8 @@ class Script{
                 = "%s 成功地擊殺了 %s，而 %s 原來";
             Script::$script["ar"][Script::PU_KILLMERLINSUCCESS]
                 = "%s قد نجح بقتل %s كان في الواقع %s ";
+            Script::$script["fa"][Script::PU_KILLMERLINSUCCESS]
+                = "%s موفق به قتل %s شد و درواقع %s ";
 
 
             Script::$script["en"][Script::PU_MERLIN]
@@ -2202,6 +2361,8 @@ class Script{
                 = "<b>就是梅林</b>！";
             Script::$script["ar"][Script::PU_MERLIN]
                 = "إنه <b>مرلين</b>!";
+            Script::$script["fa"][Script::PU_MERLIN]
+                = "اون هست <b>مرلین</b>!";
 
 
             Script::$script["en"][Script::PU_NOTMERLIN]
@@ -2226,6 +2387,8 @@ class Script{
                 = "<b>不是梅林</b>！";
             Script::$script["ar"][Script::PU_NOTMERLIN]
                 = "إنه <b>ليس مرلين</b>!";
+            Script::$script["fa"][Script::PU_NOTMERLIN]
+                = "اون <b> مرلين نیست</b>!";
 
 
             Script::$script["en"][Script::PR_ASSIGNLATE]
@@ -2250,6 +2413,8 @@ class Script{
                 = "時間到了，剩下未選的人數要由系统隨機挑選了。";
             Script::$script["ar"][Script::PR_ASSIGNLATE]
                 = "إنتهى الوقت. بقية اللاعبين أختيروا عشوائياً. ";
+            Script::$script["fa"][Script::PR_ASSIGNLATE]
+                = "وقت تموم شد. بازیکنا به صورت اتفاقی انتخاب میشن. ";
 
 
             Script::$script["en"][Script::PU_ASSIGNLATE]
@@ -2274,6 +2439,8 @@ class Script{
                 = "時間到了，剩下未選的人數要由系统隨機挑選了，名單有： %s。";
             Script::$script["ar"][Script::PU_ASSIGNLATE]
                 = "لأن الوقت إنتهى, إختير بقية اللاعبين عشوائياً : %s.";
+            Script::$script["fa"][Script::PU_ASSIGNLATE]
+                = "چون وقت تموم شد. این بازیکنا به صورت اتفاقی انتخاب شدن: %s.";
 
 
             Script::$script["en"][Script::PU_APPRREJLATE]
@@ -2298,6 +2465,8 @@ class Script{
                 = "時間到了，未投票的人會視作棄權。";
             Script::$script["ar"][Script::PU_APPRREJLATE]
                 = "لأن الوقت إنتهى, بقية اللاعبين أُعتبروا غير مصوتين.";
+            Script::$script["fa"][Script::PU_APPRREJLATE]
+                = "چون وقت تموم شد تعدادی از بازیکنا منصرف شدن.";
 
 
             Script::$script["en"][Script::PU_APPRREJREMIND]
@@ -2322,6 +2491,8 @@ class Script{
                 = "獲委任的人是 %s。\n\n現正還有<b> %d 秒</b>投票表示 <b>贊成</b> 或是 <b>反對</b>。如果任務中有 <b>%d 名成員</b> 令到此任務行動失敗，整個任務就當作失敗。";
             Script::$script["ar"][Script::PU_APPRREJREMIND]
                 = "المختارين لهذه المهمة هم %s\n\n<b>%d ثانية</b> متبقية لإختيار <b>موافق</b> or <b>أعترض</b>. إن كان هناك الحد الأدنى من <b>%d الأشخاص </b> رفضوا المهمة, المهمة ستُحبط.";
+            Script::$script["fa"][Script::PU_APPRREJREMIND]
+                = "انتخاب شده ها برای انجام این مأموریت: %s\n\n<b>%d ثانيه</b> وقت دارن تا انتخاب کنن <b>موافق</b> or <b>مخالف</b>. اگه حداقل <b>%d الأشخاص </b> چالش رو ناموفق کنن, چالش شکست میخوره.";
 
 
             Script::$script["en"][Script::PR_BADGUYLATESUCCESS]
@@ -2346,6 +2517,8 @@ class Script{
                 = "你回應太遲，唯有命令你要令任務成功。";
             Script::$script["ar"][Script::PR_BADGUYLATESUCCESS]
                 = "جاوبت متأخر. أجبرك الرئيس بإعطاء الإنطباع الجيد هذه المرة.";
+            Script::$script["fa"][Script::PR_BADGUYLATESUCCESS]
+                = "شما دیر جواب دادید. رئیس شما رو مجبور کرد به دادن تصور خوب برای این مرتبه.";
 
 
 
@@ -2371,6 +2544,8 @@ class Script{
                 = "你回應太遲，唯有命令你要令任務失敗。";
             Script::$script["ar"][Script::PR_BADGUYLATEFAIL]
                 = "جاوبت متأخر. الرئيس أجبرك بإحباط هذه المهمة.";
+            Script::$script["fa"][Script::PR_BADGUYLATEFAIL]
+                = "شما دیر جواب دادید و رئیس شما رو مجبور به باخت در این چالش کرد.";
 
 
             Script::$script["en"][Script::PU_DISCUSSREMIND]
@@ -2395,6 +2570,8 @@ class Script{
                 = "現有 <b>%d 秒</b>作討論。只要決定好人選， %s 可以輸入 /done 提早完成。";
             Script::$script["ar"][Script::PU_DISCUSSREMIND]
                 = "<b>%d ثانية </b> تبعت للإختيار... %s يمكنك كتابة /done إن كنت على إستعداد لإعطاء المهمة.";
+            Script::$script["fa"][Script::PU_DISCUSSREMIND]
+                = "<b>%d ثانيه </b> باقی مانده برای بحث... %s میتونه بنویسه /done وقتی که برای واگذاری مأموریت آماده باشید.";
 
             Script::$script["en"][Script::PR_LADYLATE]
                 = "You answered late to see the person's identity.";
@@ -2418,6 +2595,8 @@ class Script{
                 = "你回應太遲，不得使用湖中仙女的能力去查看。";
             Script::$script["ar"][Script::PR_LADYLATE]
                 = "أجبت متأخر لترى هوية شخص.";
+            Script::$script["fa"][Script::PR_LADYLATE]
+                = "شما برای دیدن هویت این شخص دیر جواب دادید.";
 
             Script::$script["en"][Script::PU_LADYLATE]
                 = "%s answered late so the power to see is not used.";
@@ -2441,6 +2620,8 @@ class Script{
                 = "%s 回應太遲，不得使用湖中仙女的能力去查看。";
             Script::$script["ar"][Script::PU_LADYLATE]
                 = "%s إختار متأخراً, لذا الطاقة لن تستخدم.";
+            Script::$script["fa"][Script::PU_LADYLATE]
+                = "%s دیر جواب داد و خب... از قدرت تشخیص هویت استفاده نشد.";
 
             Script::$script["en"][Script::PR_KILLMERLINLATE]
                 = "You answered late to kill Merlin.";
@@ -2464,6 +2645,8 @@ class Script{
                 = "你回應太遲，不能擊殺梅林。";
             Script::$script["ar"][Script::PR_KILLMERLINLATE]
                 = "لقد أجبت متأخر لتقتل مرلين.";
+            Script::$script["fa"][Script::PR_KILLMERLINLATE]
+                = "تو برای قتل مرلین دیر جواب دادی و مرلین با محیرضا فرار کرد.";
 
             Script::$script["en"][Script::PU_KILLMERLINLATE]
                 = "%s answered late. It seems Merlin is saved this time.";
@@ -2487,6 +2670,8 @@ class Script{
                 = "%s 回應太遲，不能擊殺梅林。梅林死裡逃生了。";
             Script::$script["ar"][Script::PU_KILLMERLINLATE]
                 = "%s أجاب متأخراً. يبدو أن مرلين قد نجى هذه المرة.";
+            Script::$script["fa"][Script::PU_KILLMERLINLATE]
+                = "%s دیر جواب داد و مرلین با خوش شانسی این مرتبه جون سالم به در برد.";
 
             Script::$script["en"][Script::PU_KILLMERLINREMIND]
                 = "<b>%d seconds</b> left for assassin to guess and kill Merlin...";
@@ -2510,6 +2695,8 @@ class Script{
                 = "現有 <b>%d 秒</b> 等待刺客猜測及按計劃一擊砍死梅林……";
             Script::$script["ar"][Script::PU_KILLMERLINREMIND]
                 = "<b>%d ثانية </b> تبقت للحشاش لتخمين و قتل مرلين.";
+            Script::$script["fa"][Script::PU_KILLMERLINREMIND]
+                = "<b>%d ثانيه </b> برای قاتل باقی مونده برای تشخیص و قتل مرلين.";
 
             Script::$script["en"][Script::PU_NOHISTFOUND]
                 = "No History found for the current game.";
@@ -2533,6 +2720,8 @@ class Script{
                 = "找不到任何相關的歷史記錄。";
             Script::$script["ar"][Script::PU_NOHISTFOUND]
                 = "لا يوجد تاريخ لهذه اللعبة بعد.";
+            Script::$script["fa"][Script::PU_NOHISTFOUND]
+                = "تاریخچه ای برای بازی فعلی پیدا نشد.";
 
             Script::$script["en"][Script::PU_HISTQEXECBY]
                 = "Quest no.%d %s lead by %s %s, executed by %s";
@@ -2556,6 +2745,8 @@ class Script{
                 = "任務 %d 號 %s，由國王委派%s %s所帶領，再挑選了 %s 去執行";
             Script::$script["ar"][Script::PU_HISTQEXECBY]
                 = "مهمة رقم %d %s قادها %s %s, قام بتنفيذها : %s";
+            Script::$script["fa"][Script::PU_HISTQEXECBY]
+                = "چالش شماره ی %d %s که هدایت میشد توسط %s %s, اجرا شد توسط : %s";
 
             Script::$script["en"][Script::PU_HISTQREJECTBY]
                 = ", rejected by %s\n\n";
@@ -2579,6 +2770,8 @@ class Script{
                 = "，但遭 %s 反對。\n\n";
             Script::$script["ar"][Script::PU_HISTQREJECTBY]
                 = ", رُفضت من قِبل : %s\n\n";
+            Script::$script["fa"][Script::PU_HISTQREJECTBY]
+                = ", رد شد توسط: %s\n\n";
 
             Script::$script["en"][Script::PU_HISTQFAILREJ]
                 = "Quest no.%d [%s 5x REJECT]\n\n";
@@ -2602,6 +2795,8 @@ class Script{
                 = "任务 %d 號[%s 5 次否決]\n\n";
             Script::$script["ar"][Script::PU_HISTQFAILREJ]
                 = "مهمة رقم %d [%s 5x رُفضت]\n\n";
+            Script::$script["fa"][Script::PU_HISTQFAILREJ]
+                = "چالش شماره ی  %d [%s 5x رد شد]\n\n";
 
             Script::$script["en"][Script::PU_FAIL5XREJ]
                 = "5x REJECT";
@@ -2625,6 +2820,8 @@ class Script{
                 = "5 次否決";
             Script::$script["ar"][Script::PU_FAIL5XREJ]
                 = "5x رُفضت";
+            Script::$script["fa"][Script::PU_FAIL5XREJ]
+                = "5x رد کرد";
 
             Script::$script["en"][Script::PU_CANNOTJOINFULL]
                 = " cannot join. Already %d players.";
@@ -2648,6 +2845,8 @@ class Script{
                 = " 不能參加。此遊戲已經有 %d 位選手。";
             Script::$script["ar"][Script::PU_CANNOTJOINFULL]
                 = "لا يمكنك الدخول. هناك %d لاعب بالفعل.";
+            Script::$script["fa"][Script::PU_CANNOTJOINFULL]
+                = "نمیشه عضو شد.%d وارد بازی شدن.";
 
             Script::$script["en"][Script::PU_CANNOTJOIN]
                 = " cannot join.";
@@ -2671,6 +2870,8 @@ class Script{
                 = " 不能參加。";
             Script::$script["ar"][Script::PU_CANNOTJOIN]
                 = "لا يمكنك الدخول.";
+            Script::$script["fa"][Script::PU_CANNOTJOIN]
+                = "نمیشه وارد شد.";
 
             Script::$script["en"][Script::PU_STARTMEFIRST]
                 = " <a href=\"http://telegram.me/%s\">Start Me</a> first.";
@@ -2694,6 +2895,8 @@ class Script{
                 = "一定先要 <a href=\"http://telegram.me/%s\">按此連結與我私聊</a> 在先。";
             Script::$script["ar"][Script::PU_STARTMEFIRST]
                 = " <a href=\"http://telegram.me/%s\">شغلني</a> أولاً.";
+            Script::$script["fa"][Script::PU_STARTMEFIRST]
+                = " <a href=\"http://telegram.me/%s\">منو استارت کن</a> اول.";
 
             Script::$script["en"][Script::PU_CREATEFIRST]
                 = "Game has not started yet. Type /start or /startchaos to start Avalon.";
@@ -2717,6 +2920,8 @@ class Script{
                 = "遊戲尚未開始，請輸入 /start 或者 /startchaos 來開始。";
             Script::$script["ar"][Script::PU_CREATEFIRST]
                 = "اللعبة لم تبدأ بعد. أكتب /start أو /startchaos لبدء أفالون.";
+            Script::$script["fa"][Script::PU_CREATEFIRST]
+                = "هنوز بازی شروع نشده. بنویس /start یا /startchaos برای شروع بازی.";
 
             Script::$script["en"][Script::PU_GAMESTART]
                 = "Game has been started. Please anyone check the private message to know your role.";
@@ -2740,6 +2945,8 @@ class Script{
                 = "遊戲剛已開始，所有人請查看機械人與你的私聊信息。";
             Script::$script["ar"][Script::PU_GAMESTART]
                 = "اللعبة قد بدأت. الرجاء من الجميع رؤية الرسائل الخاصة ليعرف كل لاعب دوره.";
+            Script::$script["fa"][Script::PU_GAMESTART]
+                = "بازی شروع شد. لطفا همه پی وی هاشون رو برای فهمیدن نقش چک کنن.";
 
             Script::$script["en"][Script::PU_GAMECANCEL]
                 = "Game is canceled because there is not enough players. Invite your friends to join.";
@@ -2763,6 +2970,8 @@ class Script{
                 = "遊戲取消了，參與度嚴重不足；請你找多一些朋友一起玩吧。";
             Script::$script["ar"][Script::PU_GAMECANCEL]
                 = "اللعبة ألغيت لعدم توفر لاعبين كفاية. أضف أصحابك و ألعب.";
+            Script::$script["fa"][Script::PU_GAMECANCEL]
+                = "بازی لغو شد چون بازیکن کافی توی بازی نبود. دوستاتون رو دعوت به بازی کنید.";
 
 
 
@@ -2788,6 +2997,8 @@ class Script{
                 = "餘下 <b>%d 秒</b>。";
             Script::$script["ar"][Script::PU_SECONDSLEFT]
                 = "<b>%d ثانية </b> تبقت.";
+            Script::$script["fa"][Script::PU_SECONDSLEFT]
+                = "<b>%d ثانيه </b> مونده.";
 
             Script::$script["en"][Script::PU_JOINREMIND]
                 = "<b>%d seconds</b> left. Invite your friends to /join.";
@@ -2811,6 +3022,8 @@ class Script{
                 = "餘下 <b>%d 秒</b> 就開始，請邀請更多人輸入 /join 一起玩吧。";
             Script::$script["ar"][Script::PU_JOINREMIND]
                 = "<b>%d ثانية </b> تبقت. أضف أصحابك ليلعبون /join.";
+            Script::$script["fa"][Script::PU_JOINREMIND]
+                = "<b>%d ثانيه </b> مونده. وارد بشید و یا دوستاتون رو دعوت به بازی کنید /join.";
 
             Script::$script["en"][Script::PU_JOINSTART]
                 = "%s has started the Avalon - %s. Type /join to join the game.";
@@ -2834,6 +3047,8 @@ class Script{
                 = "%s 剛建立新一輪阿瓦隆遊戲 - 採用 %s 模式。Normal 為正常模式，Chaos 為混亂模式。快些輸入 /join 參加遊戲。";
             Script::$script["ar"][Script::PU_JOINSTART]
                 = "%s قد بدأ أفالون %s. أكتب /join للدخول إلى اللعبة.";
+            Script::$script["fa"][Script::PU_JOINSTART]
+                = "%s بازی رو راه انداخت %s. بنویس /join برای ورود به بازی.";
 
             Script::$script["en"][Script::PU_JOINSUCCESS]
                 = "%s joined. <b>%d</b> players. min <b>%d</b>. max <b>%d</b>.";
@@ -2857,6 +3072,8 @@ class Script{
                 = "%s 參加了。現時有 <b>%d</b> 位選手。最少要 <b>%d</b> 人；最多有 <b>%d</b> 人。";
             Script::$script["ar"][Script::PU_JOINSUCCESS]
                 = "%s دخلوا. <b>%d</b> لاعبين. أقل حد <b>%d</b>. أقصى حد <b>%d</b>.";
+            Script::$script["fa"][Script::PU_JOINSUCCESS]
+                = "%s وارد شد. <b>%d</b> بازیکن. حداقل <b>%d</b>. و حداکثر <b>%d</b>.";
 
             Script::$script["en"][Script::PU_FLEE_SUCCESS]
                 = "%s fleed. <b>%d</b> players remaining.";
@@ -2880,6 +3097,8 @@ class Script{
                 = "%s 放棄此遊戲。現在還剩下 <b>%d</b> 位選手。";
             Script::$script["ar"][Script::PU_FLEE_SUCCESS]
                 = "%s هرب. <b>%d</b> لاعبين تبقوا.";
+            Script::$script["fa"][Script::PU_FLEE_SUCCESS]
+                = "%s بازی رو ترک کرد. <b>%d</b> باقی مونده.";
 
             Script::$script["en"][Script::PU_FLEE_FAIL]
                 = "%s cannot flee. The game has already started.";
@@ -2903,6 +3122,8 @@ class Script{
                 = "%s 無得放棄遊戲，遊戲已經開始了。";
             Script::$script["ar"][Script::PU_FLEE_FAIL]
                 = "%s لا يمكنك الهروب. اللعبة قد بدأت بالفعل.";
+            Script::$script["fa"][Script::PU_FLEE_FAIL]
+                = "%s نمی تونی فرار کنی. بازی شروع شده ترسوی کوچولو.";
 
             Script::$script["en"][Script::PU_NEED_MORE_PLAYERS]
                 = "We need minimum %d players to start the game.";
@@ -2926,6 +3147,8 @@ class Script{
                 = "至少需要 %d 位選手才能開始阿瓦隆遊戲。";
             Script::$script["ar"][Script::PU_NEED_MORE_PLAYERS]
                 = "نحتاج على الأقل %d لاعبين لبدء اللعبة.";
+            Script::$script["fa"][Script::PU_NEED_MORE_PLAYERS]
+                = "برای شروع بازی حداقل %d بازیکن نیاز داریم.";
 
             Script::$script["en"][Script::PU_REQUEST_STOP]
                 = "%s requested to cancel the game. <b>%d</b> of <b>%d</b>.";
@@ -2949,6 +3172,8 @@ class Script{
                 = "%s 要求取消遊戲。票數有 <b>%d</b> 票，總共要 <b>%d</b> 票。";
             Script::$script["ar"][Script::PU_REQUEST_STOP]
                 = "%s طلب بإلغاء اللعبة. <b>%d</b> من <b>%d</b>.";
+            Script::$script["fa"][Script::PU_REQUEST_STOP]
+                = "%s خواست بازی لغو بشه. <b>%d</b> از <b>%d</b>.";
 
             Script::$script["en"][Script::PU_STOP_SUCCESS]
                 = "The game is canceled.";
@@ -2972,6 +3197,8 @@ class Script{
                 =  "遊戲已被取消。";
             Script::$script["ar"][Script::PU_STOP_SUCCESS]
                 = "اللعبة ألغيت.";
+            Script::$script["fa"][Script::PU_STOP_SUCCESS]
+                = "بازی لغو شده.";
 
             Script::$script["en"][Script::PR_QUEUE_ME]
                 = "You have registered yourself to the next Avalon Game in %s group. Do not forget to /join when the game start. :D";
@@ -2995,6 +3222,8 @@ class Script{
                 =  "你已經註冊 %s 群組的下一場阿瓦隆遊戲。請在新遊戲開始之時，輸入 /join。:D";
             Script::$script["ar"][Script::PR_QUEUE_ME]
                 = "لقد سجلت نفسك في لعبة أفالون في مجموعة%s . لا تنسى بأن تكتب /join عندما تبدأ اللعبة :D";
+            Script::$script["fa"][Script::PR_QUEUE_ME]
+                = "شما ثبت نام کردید برای بازی بعدی در گروه%s . یادت نره که /join رو برای عضویت تو بازی بعدی بنویسی :D";
 
             Script::$script["en"][Script::PR_QUEUE_CALL]
                 = "The Avalon game is going to start in %s group.";
@@ -3018,6 +3247,8 @@ class Script{
                 =  "%s 群組即將開始新遊戲。";
             Script::$script["ar"][Script::PR_QUEUE_CALL]
                 = "لعبة أفالون ستبدأ في مجموعة %s .";
+            Script::$script["fa"][Script::PR_QUEUE_CALL]
+                = "یه بازی جدید توی گروه %s داره شروع میشه.";
 
             Script::$script["en"][Script::PR_QUEUE_FULL]
                 = "You cannot join for the avalon next game. The queue is full. Try to start the game!";
@@ -3041,6 +3272,8 @@ class Script{
                 =  "人數已滿，不能參加阿瓦隆遊戲，請延後再嘗試吧。";
             Script::$script["ar"][Script::PR_QUEUE_FULL]
                 = "لا يمكنك الدخول في لعبة أفالون القادمة. قائمة الإنتظار ممتلئة. جرب أن تبدأ اللعبة.";
+            Script::$script["fa"][Script::PR_QUEUE_FULL]
+                = "تو نمیتونی برای بازی بعد ثبت نام کنی چون سالن انتظار پر شده! سعی کن به موقع خودتو به بازی برسونی.";
 
             Script::$script["en"][Script::PU_IN_PROGRESS]
                 = "In Progress~";
@@ -3064,6 +3297,8 @@ class Script{
                 = "正在進行中……";
             Script::$script["ar"][Script::PU_IN_PROGRESS]
                 = "يتم الآن...";
+            Script::$script["fa"][Script::PU_IN_PROGRESS]
+                = "درحال پردازش...";
 
             Script::$script["en"][Script::NORMAL_MODE]
                 = "Normal Mode";
@@ -3087,6 +3322,8 @@ class Script{
                 = "正常模式";
             Script::$script["ar"][Script::NORMAL_MODE]
                 = "النمط الطبيعي";
+            Script::$script["fa"][Script::NORMAL_MODE]
+                = "حالت عادی";
 
             Script::$script["en"][Script::CHAOS_MODE]
                 = "Chaos Mode";
@@ -3110,6 +3347,8 @@ class Script{
                 = "混亂模式";
             Script::$script["ar"][Script::CHAOS_MODE]
                 = "الوضع الفوضوي.";
+            Script::$script["fa"][Script::CHAOS_MODE]
+                = "حالت هرج و مرج.";
 
             // NEW
             Script::$script["en"][Script::NO_LANCELOT]
@@ -3134,6 +3373,8 @@ class Script{
                 = Constant::EMO_PROHIBITED. " 沒有蘭斯洛特";
             Script::$script["ar"][Script::NO_LANCELOT]
                 = Constant::EMO_PROHIBITED. " بدون لانسوت";
+            Script::$script["fa"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " بدون لنسلات";
 
             // NEW
             Script::$script["en"][Script::LANCELOT_V1]
@@ -3158,6 +3399,8 @@ class Script{
                 = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " 蘭斯洛特 變體 1";
             Script::$script["ar"][Script::LANCELOT_V1]
                 = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " لانسوت الإصدار الأول";
+            Script::$script["fa"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " لنسلات ورژن 1";
 
             // NEW
             Script::$script["en"][Script::LANCELOT_V2]
@@ -3182,6 +3425,8 @@ class Script{
                 = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " 蘭斯洛特 變體 2";
             Script::$script["ar"][Script::LANCELOT_V2]
                 = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " لانسوت الإصدار الثاني";
+            Script::$script["fa"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " لنسلات ورژن 2";
 
             // NEW
             Script::$script["en"][Script::PU_LANCELOT_V1_SELECT]
@@ -3250,6 +3495,11 @@ class Script{
                 ." و ".Script::$script["ar"][Script::EVIL_LANCELOT]
                 ." الأدوار ستدخل في اللعبة \n"
                 ."كل الدورين قد يتم تغيير ولاءهما خلال اللعبة. \n\n";
+                = "<b>لنسلات ورژن 1 انتخاب شد</b>\n"
+                . Script::$script["fa"][Script::GOOD_LANCELOT]
+                ." و ".Script::$script["fa"][Script::EVIL_LANCELOT]
+                ." نقش ها وارد بازی خواهند شد \n"
+                ."هر دو نقش ممکن است در طول بازی تغییر کنند. \n\n";
 
             // NEW
             Script::$script["en"][Script::PU_LANCELOT_V2_SELECT]
@@ -3329,6 +3579,13 @@ class Script{
                 ." الأدوار ستدخل في اللعبة. \n"
                 ."كل الدورين سيتم تغيير ولاءهما خلال اللعبة. \n\n"
                 ."في هذا الإصدار, اللانسوت الشرير يجب عليه أن يفشل في أي مهمة هو فيها. \n\n";
+            Script::$script["fa"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>لنسلات ورژن 2 انتخاب شد.</b>\n"
+                .Script::$script["en"][Script::GOOD_LANCELOT]
+                ." و ".Script::$script["en"][Script::EVIL_LANCELOT]
+                ." نقش ها وارد بازی خواهند شد. \n"
+                ."نقش ها ممکنه در طول بازی تغییر کنن. \n\n"
+                ."در این حالت لنسلات شیطانی باید حتما توی چالشی که هست ببازه. \n\n";
 
             Script::$script["en"][Script::PLAY_TIME]
                 = "played %d times";
@@ -3352,6 +3609,8 @@ class Script{
                 = "已玩 %d 次";
             Script::$script["ar"][Script::PLAY_TIME]
                 = "لعب %d مرة";
+            Script::$script["fa"][Script::PLAY_TIME]
+                = "بازی کرده %d بار";
 
             Script::$script["en"][Script::X_TIMES]
                 = "%d times";
@@ -3375,6 +3634,8 @@ class Script{
                 = "%d 次";
             Script::$script["ar"][Script::X_TIMES]
                 = "%d مرات";
+            Script::$script["fa"][Script::X_TIMES]
+                = "%d بار";
 
             Script::$script["en"][Script::WIN_RATE]
                 = "Winrate: %d%%";
@@ -3398,6 +3659,8 @@ class Script{
                 = "得勝率：%d%%";
             Script::$script["ar"][Script::WIN_RATE]
                 = "معدل الفوز : %d%%";
+            Script::$script["fa"][Script::WIN_RATE]
+                = "درصد پیروزی : %d%%";
 
             Script::$script["en"][Script::GOOD_TEAM_WON_STAT]
                 = "Good Team Won %d%%";
@@ -3421,6 +3684,8 @@ class Script{
                 = "正派獲勝了 %d%%";
             Script::$script["ar"][Script::GOOD_TEAM_WON_STAT]
                 = "فريق الطيبين فازوا %d%%";
+            Script::$script["fa"][Script::GOOD_TEAM_WON_STAT]
+                = "برد درباری %d%%";
 
             // NEW
             Script::$script["en"][Script::WON]
@@ -3445,6 +3710,8 @@ class Script{
                 = "得勝";
             Script::$script["ar"][Script::WON]
                 = "فاز";
+            Script::$script["fa"][Script::WON]
+                = "پیروزی";
 
             // NEW
             Script::$script["en"][Script::LOST]
@@ -3469,6 +3736,8 @@ class Script{
                 = "輸掉";
             Script::$script["ar"][Script::LOST]
                 = "خسر";
+            Script::$script["fa"][Script::LOST]
+                = "شکست";
 
             Script::$script["en"][Script::EVIL_TEAM_WON_STAT]
                 = "Evil Team Won %d%%";
@@ -3492,6 +3761,8 @@ class Script{
                 = "反派獲勝了 %d%%";
             Script::$script["ar"][Script::EVIL_TEAM_WON_STAT]
                 = "الفريق الشرير فاز %d%%";
+            Script::$script["fa"][Script::EVIL_TEAM_WON_STAT]
+                = "برد یاغی %d%%";
 
 
             Script::$script["en"][Script::PLAY_TO_HAVE_STAT]
@@ -3516,6 +3787,8 @@ class Script{
                 = "你要參加了一次才會有紀錄。";
             Script::$script["ar"][Script::PLAY_TO_HAVE_STAT]
                 = "يجب عليك أن تلعب حتى تظهر الإحصائيات.";
+            Script::$script["fa"][Script::PLAY_TO_HAVE_STAT]
+                = "برای داشتن مشخصات حتما باید بازی کرده باشی.";
 
             Script::$script["en"][Script::PU_CHCKPMTOCHGLANG]
                 = "Please check private message to change the language.";
@@ -3539,6 +3812,8 @@ class Script{
                 = "請檢查私信作更換語言。";
             Script::$script["ar"][Script::PU_CHCKPMTOCHGLANG]
                 = "رجاء أنظر إلى الرسائل الخاصة حتى تغير اللعبة.";
+            Script::$script["fa"][Script::PU_CHCKPMTOCHGLANG]
+                = "لطفا برای تغییر زبان پیام های خصوصیتو چک کن.";
 
             Script::$script["en"][Script::PU_SECONDTODECIDE]
                 = "\n\nYou have <b>%d seconds</b> to decide.\n";
@@ -3562,6 +3837,8 @@ class Script{
                 = "\n\n你有 <b>%d 秒</b>去決定。\n";
             Script::$script["ar"][Script::PU_SECONDTODECIDE]
                 = "\n\n لديك <b>%d ثانية </b> لتقرر. \n";
+            Script::$script["fa"][Script::PU_SECONDTODECIDE]
+                = "\n\n تو <b>%d ثانيه </b> برای تصمیم گیری وقت داری. \n";
 
             Script::$script["en"][Script::PU_LANGGROUPNOTFOUND]
                 = "Language cannot be changed. We cannot find the group.";
@@ -3585,6 +3862,8 @@ class Script{
                 = "無法更改語言，我找不到那個群组。";
             Script::$script["ar"][Script::PU_LANGGROUPNOTFOUND]
                 = "لا يمكن تغيير اللغة. لم نجد المجموعة.";
+            Script::$script["fa"][Script::PU_LANGGROUPNOTFOUND]
+                = "گروه رو پیدا نکردیم. زبان نمیتونه تغییر کنه.";
 
             Script::$script["en"][Script::PR_LANGGROUPCHANGED]
                 = "Language in %s has been set to %s.";
@@ -3608,6 +3887,8 @@ class Script{
                 = "在 %s 群組裡面，語言已經更改為 %s。";
             Script::$script["ar"][Script::PR_LANGGROUPCHANGED]
                 = "اللغة في %s قد غيرت إلى %s.";
+            Script::$script["fa"][Script::PR_LANGGROUPCHANGED]
+                = "زبان %s تغییر کرد به %s.";
 
             Script::$script["en"][Script::PU_LANGCHANGED]
                 = "Language has been set to %s.";
@@ -3631,6 +3912,8 @@ class Script{
                 = "語言已經更改為 %s。";
             Script::$script["ar"][Script::PU_LANGCHANGED]
                 = "لقد تم تغيير اللغة إلى %s.";
+            Script::$script["fa"][Script::PU_LANGCHANGED]
+                = "زبان تغییر کرد به %s.";
 
             Script::$script["en"][Script::PR_SETLANGGROUPINST]
                 = "for %s.";
@@ -3654,6 +3937,8 @@ class Script{
                 = "於 %s。";
             Script::$script["ar"][Script::PR_SETLANGGROUPINST]
                 = "لـ %s.";
+            Script::$script["fa"][Script::PR_SETLANGGROUPINST]
+                = "برای %s.";
 
             Script::$script["en"][Script::PR_SETLANGINST]
                 = "Choose the language ";
@@ -3677,6 +3962,8 @@ class Script{
                 = "選擇語言 ";
             Script::$script["ar"][Script::PR_SETLANGINST]
                 = "إختر اللغة";
+            Script::$script["fa"][Script::PR_SETLANGINST]
+                = "زبان را اتخاب کنید";
 
             Script::$script["en"][Script::PR_GROUPONLY]
                 = "This command can only be executed from group.";
@@ -3700,6 +3987,8 @@ class Script{
                 = "此指令只能在群组內使用。";
             Script::$script["ar"][Script::PR_GROUPONLY]
                 = "هذا الأمر لا يمكن تنفيذه إلا في مجموعة.";
+            Script::$script["fa"][Script::PR_GROUPONLY]
+                = "این دستور فقط در گروه اجرا می شود.";
 
             Script::$script["en"][Script::PU_PMONLY]
                 = "This command can only be executed by Private Message to Bot.";
@@ -3723,6 +4012,8 @@ class Script{
                 = "此指令只能與機械人私聊時才可以使用。";
             Script::$script["ar"][Script::PU_PMONLY]
                 = "هذا الأمر لا يمكن قيامه إلا في بوت اللعبة الخاص.";
+            Script::$script["fa"][Script::PU_PMONLY]
+                = "این پیام فقط در چت شخصی ربات قابل اجرا است.";
 
             Script::$script["en"][Script::PU_ADMINONLY]
                 = "This command can only be executed by admin.";
@@ -3746,6 +4037,8 @@ class Script{
                 = "此指令只有群組管理員才可以使用。";
             Script::$script["ar"][Script::PU_ADMINONLY]
                 = "هذا الأمر لا يمكن قيامه إلا من قِبل المشرف.";
+            Script::$script["fa"][Script::PU_ADMINONLY]
+                = "این دستور مخصوص ادمین است.";
 
 
             Script::$script["en"][Script::PU_MAINTENANCE]
@@ -3770,6 +4063,8 @@ class Script{
                 = "阿瓦隆機械人正進行維護事宜。請稍後再試，造成不便敬請原諒。";
             Script::$script["ar"][Script::PU_MAINTENANCE]
                 = "يوجد صيانة حالية لبوت أفالون. الرجاء التجربة في وقت لاحق.";
+            Script::$script["fa"][Script::PU_MAINTENANCE]
+                = "درحال حاضر تغییراتی درحال انجام است لطفا بعدا تلاش کنید.";
 
 
             Script::$script["en"][Script::PU_CONTACT]
@@ -3827,6 +4122,11 @@ class Script{
                 ."تواصل معه عبر البريد الإلكتروني : hendry.setiadi.89@gmail.com لإعطاء مساعدة أو رأي. \n\n"
                 ."قيمني بالضغط على هنا :  <a href=\"http://telegram.me/storebot?start=%s\">قيمني</a>.\n\n"
                 ."شكراً لك.";
+            Script::$script["fa"][Script::PU_CONTACT]
+                = "ساخته شده توسط : <b>Hendry Setiadi</b>.\n\n"
+                ."با من از طریق ایمیل در تماس باشید : hendry.setiadi.89@gmail.com برای کمک به بهتر شدن ربات. \n\n"
+                ."به این ربات از طریق این لینک رای دهید :  <a href=\"http://telegram.me/storebot?start=%s\">به من رای دهید</a>.\n\n"
+                ."ممنون.";
 
 
             Script::$script["en"][Script::PU_JOINCHANNEL]
@@ -3851,6 +4151,8 @@ class Script{
                 = "加入了這個<a href=\"https://telegram.me/avalonbgbot\">頻道</a>，就可以收到阿瓦隆機械人的最新消息了";
             Script::$script["ar"][Script::PU_JOINCHANNEL]
                 = "أدخل هذه <a href=\"https://telegram.me/avalonbgbot\">القناة</a> لرؤية الأخبار و آخر التحديثات للعبة. \n";
+            Script::$script["fa"][Script::PU_JOINCHANNEL]
+                = "در این کانال عضو شوید <a href=\"https://telegram.me/avalonbgbot\">القناة</a> تا از آخرین اخبار و تغییرات اطلاع داشته باشید. \n";
 
 
             Script::$script["en"][Script::PU_HELP]
@@ -3941,6 +4243,14 @@ class Script{
                 . "أكتب /rolelist لرؤية قائمة أدوار اللعبة. \n"
                 . "أكتب /contact إن كنت تود التواصل مع المُطور.\n\n"
                 . Script::$script["ar"][Script::PU_JOINCHANNEL];
+            Script::$script["fa"][Script::PU_HELP]
+                = "آوالون بات برای تلگرام.\n"
+                . "ساخته شده بر اساس : <a href=\"https://boardgamegeek.com/boardgame/128882/resistance-avalon\">مقاومت: بازی تخته ای آوالون</a>\n\n"
+                . "برای بازی این بات را به گروه خود اضافه کرده و تایپ کنید /start یا /startchaos برای شروع بازی\n\n"
+                . "بنویسید /howtoplay برای اینکه یاد بگیرید چطور بازی کنید. \n"
+                . "بنویسید /rolelist برای دیدن نقش ها. \n"
+                . "بنویسید /contact برای تماس با سازنده ی ربات.\n\n"
+                . Script::$script["fa"][Script::PU_JOINCHANNEL];
 
             $normalRoleList = Constant::EMO_SMILE_B."/merlin\n"
                 .Constant::EMO_SMILE_B."/percival\n"
@@ -4004,6 +4314,10 @@ class Script{
             Script::$script["ar"][Script::PU_ROLELIST]
                 = $normalRoleList
                 . "أدوار جديدة مضافة لتليقرام : \n"
+                . $chaosRoleList;
+            Script::$script["fa"][Script::PU_ROLELIST]
+                = $normalRoleList
+                . "نقش های جدید انحصاری تلگرام : \n"
                 . $chaosRoleList;
 
 
@@ -4304,6 +4618,33 @@ class Script{
                 . "اللاعب الذي يحمل رمز سيدة البحار بإمكانه أن يختار ليعرف هوية شخصاً واحداً فقط ( طيب أم شرير ), و لكن فقط حامل هذا الرمز يعرف الحقيقة.\n\n"
 
                 . "هذا كل شيء, التدريب أسرع طريقة للتعلم...أكتب /start أو /startchaos لبدء اللعبة.\n\n";
+            Script::$script["fa"][Script::PU_HOWTOPLAY]
+                = " <b>آوالون یه بازی بر اساس حدس و دروغه.</b>\n\n"
+                . "این بازی داستان یه گروه که به دنبال کنترل تمدن آرتور هستن رو بازگو میکنه. "
+                . "همیشه <b> 5 چالش </b> در مجموع توی بازی وجود داره. بازیکنا ابتدا وارد چالش اول میشن و بعد از تموم کردن به چالش دوم میرن و همینطوری ادامه میدن تا چالش ها تموم بشه."
+                . " اگه 3 تا از چالش ها موفق بشن , تیم درباری ها <i>ممکنه</i> برنده بشن. اگه 3 تا از چالش ها شکست بخورن یاغی ها مستقیما پیروز میشن. \n\n"
+
+                . "در ابتدای بازی بازیکنا به صورت اتفاقی و مخفی یه نقش دریافت میکنن.\n"
+                . "برای دیدن اطلاعات هر دور کلیک کنید : \n"
+
+                . Script::$script["fa"][Script::PU_ROLELIST]
+
+                . "\n در ابتدای بازی شانس پادشاهی به یه نفر داده میشه و اون باید مشخص کنه که چه کسی باید چالش رو انجام بده".Constant::EMO_KING_B. ".\n"
+                . "بعد از انتخاب کردن پادشاه یه رای گیری انجام میشه و بازیکنا باید با گزینه های <b>قبول</b> یا <b>رد کردن</b> به افراد انتخاب شده رأی بدن. بعدش رأی های شمرده میشن. \n\n"
+
+                . "اگه تعداد رأی های <b>رد کردن</b> بیشتر از نصف تعداد بازیکنا بود، چالش رد میشه و بازیکنا اجراش نمیکنن و شانس پادشاهی"
+                .Constant::EMO_KING_B." به نفر بعدی ( پادشاه جدید ) داده میشه.\n"
+                . "اگه تعداد رأی های <b>قبول</b> بیشتر از نصف تعداد بازیکنا بود، فرد انتخاب شده چالش رو اجرا میکنه.\n\n"
+
+                . "در هنگام اجرای چالش یاغی ها باید شکست چالش رو انتخاب کنن و این محرمانست. "
+                . "بصورت کلی اگه حتی یه شکست توی چالش باشه، چالش به طور کلی می بازه. \n\n"
+
+                . "اگه چالش ها پشت سر هم رد بشن وقتی یه چالش حداکثر 5 بار که حداکثر تعداد رد کردن هست، رد بشه خود به خود شکست میخوره.\n\n"
+
+                . "تو بازی هایی که توی اون ها 8 نفر یا بیشتر هست <b>بانوی دریاچه</b>".Constant::EMO_LADY_B." می تونه استفاده بشه. بانوی دریاچه یه شانس بزرگ برای درباری هاست..."
+                . "بازیکنی که شانس بانوی دریاچه شدن رو داره، میتونه یکی از بازیکن ها رو انتخاب کنه تا نقش واقعیش رو بفهمه و نقش شخص مورد نظر رو فقط خود بانوی دریاچه می فهمه.\n\n"
+
+                . "این همه چیز بود، بهترین راه برای یادگیری تمرینه...تایپ کنید /start یا /startchaos تا یه بازی جدید رو شروع کنید.\n\n";
 
 
 
@@ -4366,6 +4707,9 @@ class Script{
             Script::$script["ar"][Script::PR_GROUPLIST]
                 = "قائمة المجموعة هذه قيد التطوير. إن كان لديك مجموعة مفتوحة خاصة بك يمكنك المشاركة بها, يمكنك التواصل مع المطور لإضافتها في القائمة. \n\n"
                 .$groupList;
+            Script::$script["fa"][Script::PR_GROUPLIST]
+                = "لیست گروه های فعلی درحال آپدیت شدنه. شما می تونید از طریق تماس با سازنده ی ربات گروه خودتون رو به این لیست اضافه کنید. \n\n"
+                .$groupList;
 
 
             Script::$script["en"][Script::PU_RATEME]
@@ -4412,6 +4756,10 @@ class Script{
                 = "مُعجب بهذا البوت؟ قيمن هنا ". Constant::EMO_SMILE_B . "\n"
                 ."<a href=\"http://telegram.me/storebot?start=%s\">قيمني!</a>\n\n"
                 . Script::$script["ar"][Script::PU_JOINCHANNEL];
+            Script::$script["fa"][Script::PU_RATEME]
+                = "این بات رو دوست دارید؟ به ما رأی بدید ". Constant::EMO_SMILE_B . "\n"
+                ."<a href=\"http://telegram.me/storebot?start=%s\">به من رأی بدید!</a>\n\n"
+                . Script::$script["fa"][Script::PU_JOINCHANNEL];
 
 
             Script::$script["en"][Script::PU_MERLININFO]
@@ -4477,6 +4825,12 @@ class Script{
                 . "حتى يمنع اللاعبين الأشرار فرصة إحباط المهمة.\n\n"
                 . "تذكر بأن مرلين لو كانت واضحة بكلامها أو برأيها حتى و إن كانت 3 مهمات قد نجح فيها فريقها ( الفريق الطيب ), الـ حشاش/assassin بإمكانه "
                 . "تخمين مرلين في نهاية اللعبة. إن كان تخمين الحشاش صحيح, الفريق الطيب سيخسر حتى و إن فاز بالمهام الثلاث.";
+            Script::$script["fa"][Script::PU_MERLININFO]
+                = "<b>".Script::$script["fa"][Script::MERLIN]."</b>".Constant::EMO_SMILE_B
+                . " همه ی یاغی ها بجز موردرد و نینجا رو میشناسه، کار مرلین کمک به درباری هاست. "
+                . "اون میتونه یاغی ها رو بشناسه و شانس سوزوندن چالش ها رو از اونا بگیره.\n\n"
+                . "توجه کنید که اگه مرلین خودش رو بشناسونه، حتی اگه درباری ها سه تا موفقیت توی چالش ها داشته باشن قاتل میتونه "
+                . "یه نفر رو به عنوان مرلین حدس بزنه و بکشه و اگه اون شخص مرلین باشه، حتی اگه درباری ها سه تا برد داشته باشن باز هم یاغی ها برنده ی بازی میشن.";
 
 
             Script::$script["en"][Script::PU_PERCIVALINFO]
@@ -4529,6 +4883,11 @@ class Script{
                 . " يعرف مرلين و مورقانا. بريفسال لن يعرف بشكل صريح من هو مرلين أو من هو مورقانا.\n\n"
                 . "هدف البريفسال هو التخمين الصحيح بين شخصيتين بإتباع كلام مرلين, "
                 . "بالإضافة إلى أن البريفسال يحتاج أن يدّعي بأنه مرلين حتى يخدع الحشاش. /assassin.";
+            Script::$script["fa"][Script::PU_PERCIVALINFO]
+                = "<b>".Script::$script["fa"][Script::PERCIVAL]."</b>".Constant::EMO_SMILE_B
+                . " پرسیوال، مرلین و مورگانا رو میشناسه ولی نمیدونه که کدوم به کدومه.\n\n"
+                . "هدف پرسیوال پیدا کردن مرلین و پیروی از دستورات اونه, "
+                . "بعلاوه مرلین باید خودش رو مرلین جا بزنه تا قاتل به اشتباه بیفته. /assassin.";
 
 
             Script::$script["en"][Script::PU_SERVANTINFO]
@@ -4580,6 +4939,11 @@ class Script{
                 . "  هو بصف الطيبين, لا يعرف أي شيء بداية اللعبة.\n\n"
                 . "وظيفة الخادم هو النجاح بالمهمة لتخمين من هي مرلين الحقيقي ( كلها بإستخدام الإستنتاج و الحدس ). ".
                 "الخادم بإمكانه الإدعاء بكونه مرلين حتى يخدع قوة الشر.";
+            Script::$script["fa"][Script::PU_SERVANTINFO]
+                = "<b>".Script::$script["fa"][Script::SERVANT]."</b>".Constant::EMO_SMILE_B
+                . "  خدمتکار با درباری هاست ولی با این وجود در ابتدای بازی هیچی نمیدونه.\n\n"
+                . "وظیفه ی خدمتکار اینه که در چالش ها موفق بشه و مرلین رو بشناسه ( با استنتاج و حدس ). ".
+                "همچنین خدمتکار باید خودش رو مرلین جا بزنه تا یاغی ها اشتباه کنن.";
 
             Script::$script["en"][Script::PU_AUDITORINFO]
                 = "<b>".Script::$script["en"][Script::AUDITOR]."</b>".Constant::EMO_SMILE_B
@@ -4614,6 +4978,9 @@ class Script{
             Script::$script["ar"][Script::PU_AUDITORINFO]
                 = "<b>".Script::$script["ar"][Script::AUDITOR]."</b>".Constant::EMO_SMILE_B
                 . " هو بصف الطيبين. إذا تم إختياره في المهمة...هناك إحتمال 20% أن هناك رأي \"رفض\" تجاه المهمة.\n\n";
+            Script::$script["fa"][Script::PU_AUDITORINFO]
+                = "<b>".Script::$script["fa"][Script::AUDITOR]."</b>".Constant::EMO_SMILE_B
+                . " وکیل تو تیم درباری هاست و اگه برای یه چالش انتخاب بشه 20 درصد امکان \"از بین بردن\" باخت در اون چالش رو داره.n\n";
 
 
             Script::$script["en"][Script::PU_MORDREDINFO]
@@ -4660,6 +5027,10 @@ class Script{
                 = "<b>".Script::$script["ar"][Script::MORDRED]."</b>".Constant::EMO_EVIL_B
                 . " يلعب بدور الشرير و يعرف عن كل الأشرار ما عدا أوبريون, يجب أن يجتمعوا معاً حتى يحبطوا المهمة.\n\n"
                 . "مرلين لا يمكنه رؤية موردير كشخصية شريرة, لذا بإمكانه التلاعب بكونه شخص طيب بدون الكشف عنه.";
+            Script::$script["fa"][Script::PU_MORDREDINFO]
+                = "<b>".Script::$script["fa"][Script::MORDRED]."</b>".Constant::EMO_EVIL_B
+                . " موردرد از یاغی هاست و همه ی اونها بجز اوبرن رو میشناسه. وظیفه ی موردرد شکست در چالش هاست.\n\n"
+                . "مرلین موردرد رو نمیشناسه پس میتونه بجای یه درباری نقش خودش رو اجرا کنه.";
 
             Script::$script["en"][Script::PU_NINJAINFO]
                 = "<b>".Script::$script["en"][Script::NINJA]."</b>".Constant::EMO_EVIL_B
@@ -4705,6 +5076,10 @@ class Script{
                 = "<b>".Script::$script["ar"][Script::NINJA]."</b>".Constant::EMO_EVIL_B
                 . " ( سوبر موردير ) بدوره بصف الأشرار هو يعرف عن كل الأشخاص من الأشرار من بداية اللعبة إلا أوبيرون و يجب أن يجتمع مع أصحابه حتى يحبطوا المهمة. \n\n"
                 . "مرلين لا يمكنه رؤية النينجا كـ شخصية شرير, لذا قد يتصرف كشخصية جيدة بدون أن يُعرف أنه شرير. النينجا بإمكانه أن يعطي رفضين إن رشّح للمهمة, لكن هذه الميزة لا يسمح لها إلا مرة طوال اللعبة.";
+            Script::$script["fa"][Script::PU_NINJAINFO]
+                = "<b>".Script::$script["fa"][Script::NINJA]."</b>".Constant::EMO_EVIL_B
+                . " نیجنجا ( سوبر موردرد ) از یاغی هاست و همه ی اونها بجز اوبرن رو میشناسه. وظیفه ی نینجا شکست در چالش هاست. \n\n"
+                . "مرلین نمیتونه نینجا رو به عنوان یه یاغی ببینه, پس میتونه به عنوان یه درباری نقش اجرا کنه. نینجا می تونه از قابلیت خودش که فقط یک بار در طول هر بازی فعال میشه استفاده کنه و وقتی توی یه چالش هست دو باخت اضافه کنه.";
 
 
             Script::$script["en"][Script::SECRETCODES] = array(
@@ -4897,6 +5272,24 @@ class Script{
                 "أشك",
                 "ألعب",
             );
+            
+            Script::$script["fa"][Script::SECRETCODES] = array(
+                "ممنون",
+                "ببخشید",
+                "راستگو",
+                "دروغگو",
+                "متعجب",
+                "خوشحال",
+                "ناراحت",
+                "احمق",
+                "باهوش",
+//                "اوه خدای من",
+                "باور کن",
+                "انتخاب کن",
+                "مطمئن",
+                "نامطمئن",
+                "بازی کن",
+            );
 
 
             Script::$script["en"][Script::PU_AGENTINFO]
@@ -4952,6 +5345,11 @@ class Script{
                 . "هو بصف الطيبين. كل الوكلاء الموجودين بنفس الفريق بإمكانهم التواصل مع بعضهم عبر البوت الخاص\n\n"
                 . "الوكلاء بإمكانهم معرفة أعضاء الفريق الآخر بإستخدام أكواد سرية, معاً بإمكانهم الفوز بالمهمة بسهولة. تذكر, لا تكون واضحاً...و إلا سيعرف الأشرار الوكلاء و سيجعل وظيفة الحشاش أسهل بقتل مرلين.\n\n"
                 . "الأكواد السرية المسموحة : ".Constant::arrayToString(Script::$script["ar"][Script::SECRETCODES]).".\n\n";
+           Script::$script["fa"][Script::PU_AGENTINFO]
+                = "<b>".Script::$script["fa"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                . "مأمور ها درباری هستن. اونها در طول بازی از طریق کدهای رمزگذاری شده ی مخصوصی از طریق پی وی بات با هم ارتباط برقرار میکنن\n\n"
+                . "همه ی مأمور ها باید در طول بازی همدیگه رو از طریق کد ها بشناسن تا بتونن راحت تر به موفقیت برسن. توجه کنید که مأمور ها نباید نقششون رو معلوم کنن...در این صورت قاتل با شناختن اونها راحت تر میتونه مرلین رو بکشه.\n\n"
+                . "کد های سری این ها هستن : ".Constant::arrayToString(Script::$script["fa"][Script::SECRETCODES]).".\n\n";
 
 
             Script::$script["en"][Script::PU_MORGANAINFO]
@@ -4998,6 +5396,10 @@ class Script{
                 = "<b>".Script::$script["ar"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
                 . " يلعب بدور الشرير و يعرف كل الأشرار من بداية اللعبة, يجب أن يجتمعوا حتى يحبطوا المهمة. \n\n"
                 . "و لأن البريفسال بإمكانه رؤية مرلين و مورقانا, هدف مورقانا الأساسي هو كسب ثقته بإدعاءه أنه مرلين. إن كان هناك شخص يدعي كونه بريفسال, عندها مرلين سيكون في مأزق. \n\n";
+            Script::$script["fa"][Script::PU_MORGANAINFO]
+                = "<b>".Script::$script["fa"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                . " توی تیم یاغی ها بازی میکنه. مورگانا همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه \n\n"
+                . "و چون پرسیوال مرلین و مورگانا رو نمیتونه تشخیص بده، وظیفه ی دوم مورگانا اینه که به جای مرلین برای پرسیوال نقش بازی کنه. در این صورت اگه پرسیوال باورش کنه، مرلین توی تله میفته. \n\n";
 
 
             Script::$script["en"][Script::PU_ASSASSININFO]
@@ -5042,6 +5444,10 @@ class Script{
                 = "<b>".Script::$script["ar"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
                 . " يلعب بدور الأشرار و يعرف من هم الأشرار من بداية اللعبة, و يجب أن يجتمعوا معاً حتى تحبط المهمة. \n\n"
                 . "الحشاش بإستطاعته تخمين من هي مرلين في نهاية اللعبة ( إذا كانت 3 مهمات قد نجحت بالفعل). إذا كان التخمين صحيح, مهما كانت نتيجة المهمات, قوة الأشرار ستفوز.";
+            Script::$script["fa"][Script::PU_ASSASSININFO]
+                = "<b>".Script::$script["fa"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                . " توی تیم یاغی ها بازی میکنه. قاتل همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
+                . "قاتل میتونه در انتهای بازی (اگه درباری ها سه پیروزی در چالش ها داشته باشن) مرلین رو حدس بزنه و بکشه. اگه حدس قاتل درست باشه و مرلین کشته بشه نتیجه هرچی که باشه باز هم تیم یاغی ها پیروز میشه.";
 
 
             Script::$script["en"][Script::PU_WITCHINFO]
@@ -5088,6 +5494,10 @@ class Script{
                 = "<b>".Script::$script["ar"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
                 . " كـلاعب بدور الأشرار, يعرف عن كل اللاعبين الأشرار من بداية اللعبة و يجب أن يجتمع معهم حتى يحبطوا المهمة. \n\n"
                 . "ويتش لديه القدرة لمعرفة أدوار الفريق الطيب, لكن لا يعرف من يحمل هذا الدور. يستعمل هذه الميزة ليحبط مرلين. \n";
+            Script::$script["fa"][Script::PU_WITCHINFO]
+                = "<b>".Script::$script["fa"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                . " توی تیم یاغی ها بازی میکنه. جادوگر همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
+                . "جادوگر همه ی درباری ها رو میشناسه. اما نمیدونه چند نفرن و چه نقشی دارن. ولی میتونه با استفاده از اطلاعاتش باعث باخت تیم دربار بشه. \n";
 
 
             Script::$script["en"][Script::PU_MORGAUSEINFO]
@@ -5133,6 +5543,10 @@ class Script{
                 = "<b>".Script::$script["ar"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
                 . " كـ لاعب بدور الأشرار, هو يعرف كل اللاعبين الأشرار من بداية اللعبة و يجب أن يجتمع معهم حتى يحبطوا المهمة. \n\n"
                 . "مورقوس هو مزيج بين مورقانا /morgana و الحشاش /assassin.  اللاعب بهذه الشخصية يدّعي بأنه بريفسال و مورقوس بإمكانه قتل مرلين في نهاية اللعبة. \n\n";
+            Script::$script["fa"][Script::PU_MORGAUSEINFO]
+                = "<b>".Script::$script["fa"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                . " توی تیم یاغی ها بازی میکنه. مورگاس همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
+                . "مورگاس ترکیبی از مورگانا /morgana و قاتله /assassin.  مورگاس باید هم پرسیوال رو به اشتباه بندازه و هم در انتهای بازی میتونه مرلین رو بکشه. \n\n";
 
 
             Script::$script["en"][Script::PU_KNIGHTINFO]
@@ -5178,6 +5592,10 @@ class Script{
                 = "<b>".Script::$script["ar"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
                 . " هو شخص جيد هدفه بأن ينجح في المهمة. \n\n"
                 . "في بداية اللعبة, بإمكان الفارس الحصول معلومات عن 2 من أقرباءه ( أقرب 2 من عنده من الأعلى و من الأسفل ). الفارس يعرف إذا كان هناك شخص سيء من بينهم, أو على الأقل شخص واحد سيء. على أي حال...الفارس لا يمكن معرفة موردير, إذاً سيرى موردريد على أساس أنه شخص جيد. \n\n";
+            Script::$script["fa"][Script::PU_KNIGHTINFO]
+                = "<b>".Script::$script["fa"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                . " شوالیه همونطور که از اسمش پیداست یکی از درباری هاست و وظیفش پیروزی در چالش هاست. \n\n"
+                . "در ابتدای بازی شوالیه میتونه دوتا از همسایه هاش رو بشناسه. شوالیه میتونه یاغی ای که میون اونها وجود داره رو ببینه و ممکنه حداقل یه یاغی وجود داشته باشه یا هردونفر درباری باشن. همچنین شوالیه نمیتونه موردرد رو ببینه واسه همین موردرد به عنوان یه درباری به اون نشون داده میشه. \n\n";
 
 
             // NEW
@@ -5225,6 +5643,10 @@ class Script{
                 = "<b>".Script::$script["ar"][Script::GOOD_LANCELOT]."</b>"
                 . " هو بالأصل شخص جيد هدفه بأنه ينجح بالمهام. \n\n"
                 . "على أي حال, هناك إحتمال في المهمة...اللانسوت الجيد يغير دوره مع اللانسوت الشرير. إن حصل هذا, إذاً في تلك المهمة...السيدة سترى اللانسوت الجيد كـ شرير...و حالة الفوز للانسوت الجيد ستتغير (فقط لمهمة واحدة). \n\n";
+            Script::$script["fa"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["fa"][Script::GOOD_LANCELOT]."</b>"
+                . " یکی از درباری هاست و وظیفش پیروزی در چالش هاست. \n\n"
+                . "با این حال لنسلات خوب این شانس رو داره که توی چالش جاش با لنسلات شیطانی عوض بشه. در این صورت بانوی دریاچه لنسلات شیطانی رو لنسلات خوب میبینه. همچنین با تغییر نقش ها، هدف پیروزی یا شکست در اون چالش برای لنسلات ها هم فرق میکنه (فقط برای اون چالش). \n\n";
 
             // NEW
             Script::$script["en"][Script::PU_EVILLANCELOTINFO]
@@ -5282,6 +5704,11 @@ class Script{
                 . " هو بالأساس شخص شرير. يعرف عنه جميع طاقم الأشرار , لكن هو لا يعرفهم.\n\n"
                 . "هناك إحتمال في المهمة, اللانسوت الشرير يتغير مع اللانسوت الطيب...لو حصل هذا, إذاً في تلك المهمة....السيدة سترى اللانسوت الشرير على أساس أنه طيب, و حالة الفوز أيضاً ستتغير ( لمهمة واحدة فقط ) .\n\n"
                 . "في الإصدار الأول, بإمكان اللانسوت الشرير إعطاء قبول أو رفض للمهمة. و لكن في الإصدار الثاني...اللانسوت الشرير يجب عليه أن يعطي رفض للمهمة التي هو فيها.";
+            Script::$script["fa"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["fa"][Script::EVIL_LANCELOT]."</b>"
+                . " یکی از یاغی هاست که مرلین و یاغی ها اون رو میشناسن ولی اون کسی رو نمیشناسه.\n\n"
+                . " با این حال لنسلات شیطانی این شانس رو داره که توی چالش جاش با لنسلات خوب عوض بشه. در این صورت بانوی دریاچه لنسلات خوب رو لنسلات شیطانی میبینه. همچنین با تغییر نقش ها، هدف پیروزی یا شکست در اون چالش برای لنسلات ها هم فرق میکنه (فقط برای اون چالش)..\n\n"
+                . "در ورژن 1 لنسلات شیطانی میتونه توی چالش ها موفقیت یا شکست رو انتخاب کنه. اما در ورژن 2 باید حتما شکست رو انتخاب کنه.";
 
 
 
@@ -5325,6 +5752,10 @@ class Script{
                 = "<b>".Script::$script["ar"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
                 . "كون بصف اللاعبين الأشرار, لكن كل الأشرار لا يعرفون هوية أوبيرن...مع ذلك, مرلين بإمكانها رؤية أوبيرن."
                 . "  أوبيرن يعرف جميع أصدقاءه الأشرار, لكن ممنوع أن يستخدم التواصل المنفرد.";
+            Script::$script["fa"][Script::PU_OBERONINFO]
+                = "<b>".Script::$script["fa"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                . "اوبرن با تیم یاغی هاست ولی هیچکدوم از یاغی ها اون رو نمیشناسن...با این حال اوبرن برای مرلین قابل شناساییه."
+                . "  اوبرن تمام هم تیمی های یاغی خودش رو میشناسه ولی نمیتونه از پیام خصوصی برای صحبت استفاده کنه.";
 
 
             Script::$script["en"][Script::PU_THIEFINFO]
@@ -5360,6 +5791,9 @@ class Script{
             Script::$script["ar"][Script::PU_THIEFINFO]
                 = "<b>".Script::$script["ar"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
                 . " كـ لاعب بدور الأشرار, يعرف عن كل اللاعبين الأشرار من بداية اللعبة و يجب أن يجتمع معهم حتى يحبطوا المهمة. \n\n";
+            Script::$script["fa"][Script::PU_THIEFINFO]
+                = "<b>".Script::$script["fa"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                ." دزد یکی از یاغی هاست. وظیفه ی دزد اینه که به کمک بقیه ی یاغی ها چالش ها رو به سمت شکست ببره. \n\n";
 
 
         }
