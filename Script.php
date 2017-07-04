@@ -480,7 +480,7 @@ class Script{
             Script::$script["ph"][Script::KNIGHT] = "Kawal ".Constant::EMO_KNIGHT;
             Script::$script["es"][Script::KNIGHT] = "Caballero ".Constant::EMO_KNIGHT;
             Script::$script["zho"][Script::KNIGHT] = "骑士 ".Constant::EMO_KNIGHT;
-            Script::$script["yue"][Script::KNIGHT] = "騎士 ".Constant::EMO_KNIGHT;
+            Script::$script["yue"][Script::KNIGHT] = "武士 ".Constant::EMO_KNIGHT;
             Script::$script["och"][Script::KNIGHT] = "騎士 ".Constant::EMO_KNIGHT;
             Script::$script["ar"][Script::KNIGHT] = "الفارس ".Constant::EMO_KNIGHT;
             Script::$script["fa"][Script::KNIGHT] = "شوالیه ".Constant::EMO_KNIGHT;
@@ -494,7 +494,7 @@ class Script{
             Script::$script["ph"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["es"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["zho"][Script::GOOD_LANCELOT] = "正义的兰斯洛特 ".Constant::EMO_GOOD_LANCELOT;
-            Script::$script["yue"][Script::GOOD_LANCELOT] = "好嘅蘭斯洛特 ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["yue"][Script::GOOD_LANCELOT] = "正義蘭斯洛特 ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["och"][Script::GOOD_LANCELOT] = "正義方蘭斯洛特 ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["ar"][Script::GOOD_LANCELOT] = "لانسوت طيب ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["fa"][Script::GOOD_LANCELOT] = "لنسلات خوب ".Constant::EMO_GOOD_LANCELOT;
@@ -508,7 +508,7 @@ class Script{
             Script::$script["ph"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["es"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["zho"][Script::EVIL_LANCELOT] = "邪恶的兰斯洛特 ".Constant::EMO_EVIL_LANCELOT;
-            Script::$script["yue"][Script::EVIL_LANCELOT] = "壞嘅蘭斯洛特 ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["yue"][Script::EVIL_LANCELOT] = "邪惡蘭斯洛特 ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["och"][Script::EVIL_LANCELOT] = "邪惡方蘭斯洛特 ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["ar"][Script::EVIL_LANCELOT] = "لانسوت شرير ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["fa"][Script::EVIL_LANCELOT] = "لنسلات شیطانی ".Constant::EMO_EVIL_LANCELOT;
@@ -531,7 +531,7 @@ class Script{
             Script::$script["zho"][Script::PR_NEWGAME]
                 = "新遊戏模式为 %s，你已经开了在 %s 群组。";
             Script::$script["yue"][Script::PR_NEWGAME]
-                = "你開咗個新一局遊戲，%s 版，喺群組 %s 。Normal 係正常，Chaos 係混亂。";
+                = "你開咗個新一局遊戲， %s版，喺群組 %s。Normal 係正常版，Chaos 係混亂版。。";
             Script::$script["och"][Script::PR_NEWGAME]
                 = "你剛建立新一輪遊戲，採用 %s 模式，將會運行在群組 %s 。Normal 為正常模式，Chaos 為混亂模式。";
             Script::$script["ar"][Script::PR_NEWGAME]
@@ -583,7 +583,7 @@ class Script{
             Script::$script["zho"][Script::PU_KINGDONE]
                 = "国王已经知道自己要作出什麽选择了，并出面终止这场无止尽的讨论。";
             Script::$script["yue"][Script::PU_KINGDONE]
-                = "國王睇到大家有共識，決定叫停大家嘅討論。";
+                = "國王見大家有共識，決定提早完咗個討論。";
             Script::$script["och"][Script::PU_KINGDONE]
                 = "亞瑟王已經心裡有數，決定停止這場無休止的討論。";
             Script::$script["ar"][Script::PU_KINGDONE]
@@ -609,7 +609,7 @@ class Script{
             Script::$script["zho"][Script::PU_REJECTCHANGEKING]
                 = "由国王 %s 委任的".Script::$script["zho"][Script::QUEST]."被反对了。现在新的国王是 %s";
             Script::$script["yue"][Script::PU_REJECTCHANGEKING]
-                = "由 %s 做國王嘅".Script::$script["yue"][Script::QUEST]."已經俾人反對咗。國王改由 %s 擔任。";
+                = "由 %s 做國王委派嘅任務已經俾人反對咗。輪到 %s 擔任國王。";
             Script::$script["och"][Script::PU_REJECTCHANGEKING]
                 = "%s 所領導的".Script::$script["och"][Script::QUEST]."已遭否決，現在任務改由亞瑟王指派的 %s 負責。";
             Script::$script["en"][Script::PU_REJECTCHANGEKING]
@@ -635,7 +635,7 @@ class Script{
             Script::$script["zho"][Script::PU_KINGNEEDDISCUSS]
                 = "在委任<b>%d 人</b>做任务之前,国王指定 %s 有 <b>%d 秒</b>可以同大家讨论要委任谁执行任务。一旦讨论完毕国王可以打 /done 来选择你要委任的人。如果你想见到之前任务的记录可以输入 /questhistory 。";
             Script::$script["yue"][Script::PU_KINGNEEDDISCUSS]
-                = "喺決定揀<b>%d 位幫手</b>前，國王 %s 有<b>%d 秒</b>同其他人商量，而佢可以打 /done 提早完咗個討論。任何人亦可以打 /questhistory 查看任務歷史。";
+                = "喺決定揀<b> %d 人 </b>出任務前，國王 %s 有<b> %d 秒 </b>同其他人商量，而佢可以打 /done 提早完咗個討論。任何人亦可以打 /questhistory 睇返做任務記錄。";
             Script::$script["och"][Script::PU_KINGNEEDDISCUSS]
                 = "在選揀<b>%d 名幫手</b>前，國王指派由 %s 負責，有<b>%d 秒</b>討論人選及考慮。若有需要，可以傳送 /done 預早完成考慮。至於過去任務的歷史，可以輸入 /questhistory 查看。";
             Script::$script["ar"][Script::PU_KINGNEEDDISCUSS]
@@ -687,7 +687,7 @@ class Script{
             Script::$script["zho"][Script::PR_EXECQUEST]
                 = "这是".Script::$script["zho"][Script::QUEST]." %d。你想选择如何执行任务？";
             Script::$script["yue"][Script::PR_EXECQUEST]
-                = "呢個係第 %d 次".Script::$script["yue"][Script::QUEST]."。你想點揀呢？";
+                = "呢個第 %d 次任務。你俾唔俾佢過呢？";
             Script::$script["och"][Script::PR_EXECQUEST]
                 = Script::$script["och"][Script::QUEST]." %d 號。你要如何選擇呢？";
             Script::$script["ar"][Script::PR_EXECQUEST]
@@ -791,7 +791,7 @@ class Script{
             Script::$script["zho"][Script::PR_EXECQUESTGOOD]
                 = "你是一个非常尽责的好人，因为你花了很多心思去尽力完成".Script::$script["zho"][Script::QUEST]."。";
             Script::$script["yue"][Script::PR_EXECQUESTGOOD]
-                = "你係好人，只會盡力令呢個".Script::$script["yue"][Script::QUEST]."成功。";
+                = "你係好人，好盡力完成咗今次任務。";
             Script::$script["och"][Script::PR_EXECQUESTGOOD]
                 = "你是正派，盡了很多力去完成".Script::$script["och"][Script::QUEST]."，務求盡善盡美。";
             Script::$script["ar"][Script::PR_EXECQUESTGOOD]
@@ -817,7 +817,7 @@ class Script{
             Script::$script["zho"][Script::PR_EXECQUESTLANCELOT]
                 = "身为".Script::$script["zho"][Script::EVIL_LANCELOT]."，你只会破坏所有".Script::$script["zho"][Script::QUEST]."。 “ψ(｀∇´)ψ";
             Script::$script["yue"][Script::PR_EXECQUESTLANCELOT]
-                = "作為".Script::$script["yue"][Script::EVIL_LANCELOT]."，你一定會令任何".Script::$script["yue"][Script::QUEST]."失敗。 “ψ(｀∇´)ψ";
+                = "作為邪惡蘭斯洛特 👺，你一定會令任何任務失敗 。 “ψ(｀∇´)ψ";
             Script::$script["och"][Script::PR_EXECQUESTLANCELOT]
                 = "身為".Script::$script["och"][Script::EVIL_LANCELOT]."，你必要令".Script::$script["och"][Script::QUEST]."失敗。 “ψ(｀∇´)ψ";
             Script::$script["ar"][Script::PR_EXECQUESTLANCELOT]
@@ -842,7 +842,7 @@ class Script{
             Script::$script["zho"][Script::PR_GOFORQUEST]
                 = "%s 被委派出去执行".Script::$script["zho"][Script::QUEST]."，他们有 <b>%d 秒</b>的时间去完成任务。";
             Script::$script["yue"][Script::PR_GOFORQUEST]
-                = "%s 去咗做呢個".Script::$script["yue"][Script::QUEST]."，要 <b>%d 秒</b>先返嚟。";
+                = "%s 去咗做呢個任務，要<b> %d 秒 </b>先返嚟。";
             Script::$script["och"][Script::PR_GOFORQUEST]
                 = "決定由 %s 執行".Script::$script["och"][Script::QUEST]."，之後有<b>%d 秒</b>去完成。";
             Script::$script["ar"][Script::PR_GOFORQUEST]
@@ -868,7 +868,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREMERLIN]
                 = "你是<b>".Script::$script["zho"][Script::MERLIN]."</b>。你可以感觉到%s身上散发出邪恶的气息。你必须在不引起坏人注意的情况下指引你的同伴完成任务。另外，<b>你不能通过PM来联络你的同伴。</b>";
             Script::$script["yue"][Script::PR_YOUAREMERLIN]
-                = "你係<b>".Script::$script["yue"][Script::MERLIN]."</b>，見到有大量邪氣嚟自 %s。你要幫自己好人團隊唔好揀錯壞人！\n<b>記住：你係唔可以PM或其他方法通知其他人嚟作弊。</b>\n \n可以打 /merlin 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::MERLIN]."</b>，見到 %s 同奧伯龍嘅手下傾密計，似係做緊啲不法勾當。\n小心帶領好人陣營，同時唔好引起壞人注意！\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /merlin 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREMERLIN]
                 = "你是<b>".Script::$script["och"][Script::MERLIN]."</b>。%s 那班人散發著邪惡氣息，你要帶領團隊免受壞人滋擾！\n<b>注意：你不可用任何方法聯絡其他人。</b>\n \n如有需要，輸入 /merlin 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREMERLIN]
@@ -894,7 +894,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREPERCIVAL]
                 = "你是<b>".Script::$script["zho"][Script::PERCIVAL]."</b>。你知道 %s 可能是梅林，可惜你无法分辨谁是才真梅林。因此你必须靠自己找出真梅林，同时暗中保护梅林误导刺客杀他。切记：你不可以使用PM方式找出梅林。";
             Script::$script["yue"][Script::PR_YOUAREPERCIVAL]
-                = "你係<b>".Script::$script["yue"][Script::PERCIVAL]."</b>。你見到 %s 可能係魔法師梅林，但當中一個係真梅林，另一個係假（摩甘娜）。\n<b>記住：你係唔可以PM或用任何方法私底下聯絡任何一個。</b>\n \n可以打 /percival 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::PERCIVAL]."</b>。你見到 %s 可能係梅林，但當中一個係假嘅（莫甘娜）。\n<b>記住：唔可以PM真假梅林或其他人。</b>\n \n可以打 /percival 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREPERCIVAL]
                 = "你是<b>".Script::$script["och"][Script::PERCIVAL]."</b>。你察覺 %s 為魔法師梅林，但不確定誰人是真正那位。\n<b>注意：你不可用任何方法私下詢問任何一個。</b>\n \n如有需要，輸入 /percival 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREPERCIVAL]
@@ -920,7 +920,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREGOODNORMAL]
                 = "你是一介<b>".Script::$script["zho"][Script::SERVANT]."</b>，唯有通过和大家的交流，努力更随你们的王，找出所有敌对角色，并且努力地完成任务。你不能PM其他人。";
             Script::$script["yue"][Script::PR_YOUAREGOODNORMAL]
-                = "你係<b>".Script::$script["yue"][Script::SERVANT]."</b>。你係一個好人，但冇任何神秘能力。\n \n可以打 /servant 溫故知新。你係唔可以PM去搵其他人。";
+                = "你係<b>".Script::$script["yue"][Script::SERVANT]."</b>。外表好醒，其實好薯，無任何特別嘅能力。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /servant 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREGOODNORMAL]
                 = "你是<b>".Script::$script["och"][Script::SERVANT]."</b>，卻不知哪一方是好或壞，但最重要是跟著正派方向。\n \n如有需要，輸入 /servant 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
             Script::$script["ar"][Script::PR_YOUAREGOODNORMAL]
@@ -946,7 +946,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREMORDRED]
                 = "你是<b>".Script::$script["zho"][Script::MORDRED]."</b>。你要和你的同伴们%s想尽办法破坏任务。另外，梅林本身的弱点就会见到你是好人，所以你能假扮好人，取得好人的信任，令任务失败。你不能PM其他人。";
             Script::$script["yue"][Script::PR_YOUAREMORDRED]
-                = "你係<b>".Script::$script["yue"][Script::MORDRED]."</b>。壞人陣營有 %s，但梅林係唔知你係壞人。\n \n可以打 /mordred 溫故知新。你係唔可以PM去搵其他人。";
+                = "你係<b>".Script::$script["yue"][Script::MORDRED]."</b>。壞人陣營有 %s，但梅林喺唔知你係壞人。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /mordred 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREMORDRED]
                 = "你是<b>".Script::$script["och"][Script::MORDRED]."</b>。你反派那夥人有 %s，而梅林卻不會知道你已是反派的。\n \n如有需要，輸入 /mordred 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
             Script::$script["ar"][Script::PR_YOUAREMORDRED]
@@ -972,7 +972,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUARENINJA]
                 = "身怀绝技的你是<b>".Script::$script["zho"][Script::NINJA]."</b>,就连梅林都无法看穿你真实的身份。你的同伴有%s。一旦你被委派做任务，你会有2次机让任务失败。你不能PM其他人。";
             Script::$script["yue"][Script::PR_YOUARENINJA]
-                = "你係<b>".Script::$script["yue"][Script::NINJA]."</b>，梅林唔會知你係壞人。當你要去做任務，可以連失敗同一任務行動 2 次，但呢種能力只用得 1 次。壞人陣營有 %s。\n \n可以打 /ninja 溫故知新。你係唔可以PM去搵其他人。";
+                = "你係<b>".Script::$script["yue"][Script::NINJA]."</b>，梅林唔會知你係壞人。當你要去做任務，可以令到任務失敗 2 次，但呢種能力只用得 1 次。壞人陣營有 %s。\n<b>記住：唔可以PM其他人。</b> \n \n可以打 /ninja 睇多啲。";
             Script::$script["och"][Script::PR_YOUARENINJA]
                 = "你是<b>".Script::$script["och"][Script::NINJA]."</b>，能力強過莫德雷德。你反派那夥人有 %s，而梅林卻不會知道你已是反派的。當你獲委任去做任務時候，可以令任務 2 次失敗，但這種能力只容許 1 次運用。\n \n如有需要，輸入 /ninja 會查看更多描述。你是不可以用任何方法私下聯絡其他人。";
             Script::$script["ar"][Script::PR_YOUARENINJA]
@@ -998,7 +998,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREAGENT]
                 = "你是<b>".Script::$script["zho"][Script::AGENT]."</b>,专门暗中帮助好人完成任务。你的同伴们会通过暗号来知道你的存在。在执行任务後失败後，特务们都会收到同样的暗号。切记，你不能PM其他人来确认你们之间的暗号。";
             Script::$script["yue"][Script::PR_YOUAREAGENT]
-                = "你係<b>".Script::$script["yue"][Script::AGENT]."</b>，你係一個好人，暗中協助好人成功執行任務。當有任務失敗咗，所有特務就會收到暗號，你可以憑暗號同其他特務相認。\n記住：你係唔可以PM去搵其他人。\n \n可以打 /agent 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::AGENT]."</b>，暗中協助好人成功執行任務。當有任務失敗咗，所有特務都會收到暗號，你可以憑暗號同其他特務相認。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /agent 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREAGENT]
                 = "你是<b>".Script::$script["och"][Script::AGENT]."</b>，屬於正派而只會令任務成功。當有任務失敗後，就會有同一個暗號予所有密探。若找到其他特務團隊，就會更大機會令任務成功。\n注意：你是不可以用任何方法私下聯絡其他人。\n \n如有需要，輸入 /agent 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREAGENT]
@@ -1024,7 +1024,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREWITCH]
                 = "你是<b>".Script::$script["zho"][Script::WITCH]."</b>，邪恶队伍的引领者。你的队员是%s。以你高强的法力，你能够知道好人的角色有这些: %s.";
             Script::$script["yue"][Script::PR_YOUAREWITCH]
-                = "你係<b>".Script::$script["yue"][Script::WITCH]."</b>，壞人一名。壞人陣營有 %s。以你嘅能力，你知好人嗰邊有呢啲身份： %s。\n \n可以打 /witch 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::WITCH]."</b>，壞人陣營有 %s。你用你個水晶球，睇到好人嗰邊有以下嘅角色： %s。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /witch 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREWITCH]
                 = "你是<b>".Script::$script["och"][Script::WITCH]."</b>，屬於壞人反派。你反派那夥人有 %s。以你能力許可，你亦已知曉正派有以下角色： %s。\n \n如有需要，輸入 /witch 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREWITCH]
@@ -1052,7 +1052,7 @@ class Script{
                 ."</b>，当你被委派做任务的时候你有 20% 的机率去让坏人造成的任务失败无效化。";
             Script::$script["yue"][Script::PR_YOUAREAUDITOR]
                 = "你係<b>".Script::$script["yue"][Script::AUDITOR]
-                ."</b>，好人一個。當你有份做任務時，有 20% 會阻到呢個任務行動中嘅 1 次失敗。\n \n可以打 /auditor 溫故知新。";
+                ."</b>，只要有你份做嘅任務，有 20% 機會可以抵銷其中一次失敗。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /auditor 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREAUDITOR]
                 = "你係<b>".Script::$script["och"][Script::AUDITOR]
                 ."</b>，屬於正派。當挑選你去任務時，有 20% 會防止到 1 次任務失敗。\n \n如有需要，輸入 /auditor 會查看更多描述。";
@@ -1088,7 +1088,7 @@ class Script{
                 ."</b>，毫无忠心可言，有机会就夺位，成为邪恶的兰斯洛特。";
             Script::$script["yue"][Script::PR_YOUAREGOODLANCELOT]
                 = "你係<b>".Script::$script["yue"][Script::GOOD_LANCELOT]
-                ."</b>，暫時都係好人，但係你隨時有機會叛變做壞人。\n \n可以打 /goodlancelot 溫故知新。";
+                ."</b>，暫時喺好人，但係你隨時有機會叛變做壞人。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /goodlancelot 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREGOODLANCELOT]
                 = "你是<b>".Script::$script["och"][Script::GOOD_LANCELOT]
                 ."</b>，暫定屬於正派，但不太忠誠。一時變心就會成反派。\n \n如有需要，輸入 /goodlancelot 會查看更多描述。";
@@ -1126,7 +1126,7 @@ class Script{
                 ."</b>>，对邪恶队伍亦毫忠心可言，有机会就变心，反成为正义的兰斯洛特。";
             Script::$script["yue"][Script::PR_YOUAREEVILLANCELOT]
                 = "你係<b>".Script::$script["yue"][Script::EVIL_LANCELOT]
-                ."</b>，暫時係壞人，並且唔知壞人陣營有咩人。遊戲中途有機會轉做好人。\n \n可以打 /badlancelot 溫故知新。";
+                ."</b>，暫時喺壞人，並且唔知壞人陣營有咩人。遊戲中途有機會轉做好人。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /badlancelot 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREEVILLANCELOT]
                 = "你是<b>".Script::$script["och"][Script::EVIL_LANCELOT]
                 ."</b>，暫定屬於反派，卻又不知悉自己反派有何人。一時變心就會成正派。\n \n如有需要，輸入 /badlancelot 會查看更多描述。";
@@ -1155,7 +1155,7 @@ class Script{
             Script::$script["zho"][Script::PU_FORECAST_LANCELOT]
                 = Constant::EMO_MEGAPHONE_B. "兰斯洛特已全面进驻，下面预告将来局势！\n";
             Script::$script["yue"][Script::PU_FORECAST_LANCELOT]
-                = Constant::EMO_MEGAPHONE_B. "今局有好同壞嘅蘭斯洛特，用下面嘅預測去估下未來嘅情況！\n";
+                = Constant::EMO_MEGAPHONE_B. "今局遊戲有蘭斯洛特，請留意下面嘅提示！\n";
             Script::$script["och"][Script::PU_FORECAST_LANCELOT]
                 = Constant::EMO_MEGAPHONE_B. "蘭斯洛特現身在今場中，請使用下面的預測報告去猜測未來幾個任務的情況！\n";
             Script::$script["ar"][Script::PU_FORECAST_LANCELOT]
@@ -1183,8 +1183,8 @@ class Script{
                 = Constant::EMO_SINGLE_EXCLAMATION_MARK. "這次".Script::$script["zho"][Script::EVIL_LANCELOT]
                 ."是奸人，而".Script::$script["zho"][Script::GOOD_LANCELOT]."是好人。" . Constant::EMO_HEART_NOT_SWITCH;
             Script::$script["yue"][Script::PU_LANCELOT_NOT_SWITCHED]
-                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "呢輪照舊".Script::$script["yue"][Script::EVIL_LANCELOT]
-                ."係奸，而".Script::$script["yue"][Script::GOOD_LANCELOT]."係忠。" . Constant::EMO_HEART_NOT_SWITCH;
+                = Constant::EMO_SINGLE_EXCLAMATION_MARK. "呢輪".Script::$script["yue"][Script::EVIL_LANCELOT]
+                ."同".Script::$script["yue"][Script::GOOD_LANCELOT]."做返自己。" . Constant::EMO_HEART_NOT_SWITCH;
             Script::$script["och"][Script::PU_LANCELOT_NOT_SWITCHED]
                 = Constant::EMO_SINGLE_EXCLAMATION_MARK. "此回合".Script::$script["och"][Script::EVIL_LANCELOT]
                 ."仍是反派，而".Script::$script["och"][Script::GOOD_LANCELOT]."是正派。" . Constant::EMO_HEART_NOT_SWITCH;
@@ -1222,8 +1222,8 @@ class Script{
                 . "变坏！" . Constant::EMO_HEART_SWITCH;
             Script::$script["yue"][Script::PU_LANCELOT_SWITCHED]
                 = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
-                . "呢輪".Script::$script["yue"][Script::EVIL_LANCELOT]."變返好，而".Script::$script["yue"][Script::GOOD_LANCELOT]
-                . "變壞！" . Constant::EMO_HEART_SWITCH;
+                . "呢輪".Script::$script["yue"][Script::EVIL_LANCELOT]."變咗好，而".Script::$script["yue"][Script::GOOD_LANCELOT]
+                . "變咗壞！" . Constant::EMO_HEART_SWITCH;
             Script::$script["och"][Script::PU_LANCELOT_SWITCHED]
                 = Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK .Constant::EMO_EXCLAMATION_MARK
                 . "此回合".Script::$script["och"][Script::EVIL_LANCELOT]. "已為正派，而".Script::$script["och"][Script::GOOD_LANCELOT]
@@ -1254,7 +1254,7 @@ class Script{
             Script::$script["zho"][Script::PR_FAILDECREASE1]
                 = "由於你出面沟通，成功说服坏人。因此你令到本次任务的其中一个失败无效化。";
             Script::$script["yue"][Script::PR_FAILDECREASE1]
-                = "你用咗外交官嘅權力，收咗壞人本護照，佢仲以為自己去到馬爾代夫做任務，太平山頂就有佢份。";
+                = "你用咗外交官嘅權力，收咗壞人本護照，佢仲以為自己去到馬爾代夫做任務，太平山頂就有佢份！";
             Script::$script["och"][Script::PR_FAILDECREASE1]
                 = "你使用了使節的權力，令此任務減少機會失敗 1 次。";
             Script::$script["ar"][Script::PR_FAILDECREASE1]
@@ -1279,7 +1279,7 @@ class Script{
             Script::$script["zho"][Script::PR_AUDITORDECREASE1]
                 = "外交官令到本次任务的其中一个失败无效化。";
             Script::$script["yue"][Script::PR_AUDITORDECREASE1]
-                = "外交官靜雞雞收埋咗你其中一個人本護照，搞到今次任務少咗一個壞人。";
+                = "外交官靜雞雞收埋咗你其中一個壞人本護照，搞到今次任務少咗一個壞人。";
             Script::$script["och"][Script::PR_AUDITORDECREASE1]
                 = "使節令此任務減少機會失敗 1 次。";
             Script::$script["ar"][Script::PR_AUDITORDECREASE1]
@@ -1305,7 +1305,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREASSASSIN]
                 = "你是<b>".Script::$script["zho"][Script::ASSASSIN]."</b>。你的队友有%s，你需要并协助他们令到好人们任务失败。一旦好人成功完成3个任务，你有 1 次机会去刺杀梅林。梅林一死，坏人就赢。";
             Script::$script["yue"][Script::PR_YOUAREASSASSIN]
-                = "你係<b>".Script::$script["yue"][Script::ASSASSIN]."</b>。壞人陣營有 %s。如果好人成功執行三個任務，你要負責係最後關頭隊死梅林。\n \n可以打 /assassin 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::ASSASSIN]."</b>。壞人陣營有 %s。如果好人成功執行三個任務，你要負責喺最後關頭隊死梅林。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /assassin 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREASSASSIN]
                 = "你是<b>".Script::$script["och"][Script::ASSASSIN]."</b>。你反派那夥人有 %s。如果反派敗走後，你還可以暗殺梅林，令整局反敗為勝。\n \n如有需要，輸入 /assassin 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREASSASSIN]
@@ -1330,7 +1330,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREMORGANA]
                 = "你是<b>".Script::$script["zho"][Script::MORGANA]."</b>。你的队友有 %s。你要专门放流料，给好人以为是梅林，好让派西维尔更难找到真梅林。";
             Script::$script["yue"][Script::PR_YOUAREMORGANA]
-                = "你係<b>".Script::$script["yue"][Script::MORGANA]."</b>。壞人陣營有 %s。喺派西維爾嘅資訊入面，你可能係梅林。\n \n可以打 /morgana 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::MORGANA]."</b>。壞人陣營有 %s。喺珀西瓦里嘅資訊入面，你可能係梅林。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /morgana 睇多啲。";
             Script::$script["och"][Script::PR_YOUAREMORGANA]
                 = "你是<b>".Script::$script["och"][Script::MORGANA]."</b>。你反派那夥人有 %s。派西維爾會見到你是梅林。\n \n如有需要，輸入 /morgana 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREMORGANA]
@@ -1355,7 +1355,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREOBERON]
                 = "你是<b>".Script::$script["zho"][Script::OBERON]."</b>，最神秘的坏人，一开始能知道所有坏人，但其他坏人却不会知道他的存在。你的队友是：%s。梅林能知道你就是坏人却不会知道你是欧泊朗。此角色不能PM其他坏人玩家。";
             Script::$script["yue"][Script::PR_YOUAREOBERON]
-                = "你係<b>".Script::$script["yue"][Script::OBERON]."</b>，壞人陣營有 %s，但其他壞人係唔知你係壞。\n注意：你係唔可以PM去搵其他人。\n \n可以打 /oberon 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::OBERON]."</b>，壞人陣營有 %s，但其他壞人喺唔知你係壞。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /oberon 溫故知新。";
             Script::$script["och"][Script::PR_YOUAREOBERON]
                 = "你是<b>".Script::$script["och"][Script::OBERON]."</b>，你反派那夥人是： %s，但你的反派同伴卻不認識你。\n注意：你是不可以用任何私訊去聯絡其他人。\n \n如有需要，輸入 /oberon 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREOBERON]
@@ -1381,7 +1381,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREBADNORMAL]
                 = "你是<b>".Script::$script["zho"][Script::THIEF]."</b>，最普通的坏人。你的队友有%s。";
             Script::$script["yue"][Script::PR_YOUAREBADNORMAL]
-                = "你係<b>".Script::$script["yue"][Script::THIEF]."</b>。你知壞人嗰邊有 %s。\n \n可以打 /thief 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::THIEF]."</b>。你知壞人嗰邊有 %s。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /thief 溫故知新。";
             Script::$script["och"][Script::PR_YOUAREBADNORMAL]
                 = "你是<b>".Script::$script["och"][Script::THIEF]."</b>，而一夥人其他是 %s。\n \n如有需要，輸入 /thief 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREBADNORMAL]
@@ -1406,7 +1406,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREMORGAUSE]
                 = "你是<b>".Script::$script["zho"][Script::MORGAUSE]."</b>。你的队员有 %s。在派西维尔对你的认知当中，你会是梅林。因此你要欺骗派西维尔相信你是真梅林，并在遊戏结束时候刺杀梅林。";
             Script::$script["yue"][Script::PR_YOUAREMORGAUSE]
-                = "你係<b>".Script::$script["yue"][Script::MORGAUSE]."</b>。壞人陣營有 %s。喺派西維爾嘅資訊入面，你可能係梅林。如果好人成功執行三個任務，你要負責喺最後關頭隊死梅林。\n \n可以打 /morgause 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::MORGAUSE]."</b>。壞人陣營有：%s。珀西瓦里見到你可能係梅林。如果好人成功執行三個任務，你要負責喺最後關頭隊死梅林。\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /morgause 溫故知新。";
             Script::$script["och"][Script::PR_YOUAREMORGAUSE]
                 = "你是<b>".Script::$script["och"][Script::MORGAUSE]."</b>。你反派那夥人有 %s。在派西維爾眼中，你是梅林。如果反派敗走後，你還可以暗殺梅林，令整局反敗為勝。\n \n如有需要，輸入 /morgause 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREMORGAUSE]
@@ -1432,7 +1432,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREKNIGHTTHEREBAD]
                 = "你是英勇善战的<b>".Script::$script["zho"][Script::KNIGHT]."</b>，你要负责帮好人完成任务。在%s和%s之间,至少有1人会是坏人。切记：你是无法发现你左右的人真实身份有可能是莫德雷德或忍者。";
             Script::$script["yue"][Script::PR_YOUAREKNIGHTTHEREBAD]
-                = "你係<b>".Script::$script["yue"][Script::KNIGHT]."</b>，你係一個好人。你知道 %s 同 %s 之間，起碼有 1 個係壞人。（記住，你係會當咗莫德雷德或忍者係好人！）\n \n可以打 /knight 溫故知新。";
+                = "你係<b>".Script::$script["yue"][Script::KNIGHT]."</b>，你知道 %s 同 %s之間，起碼有 1 個係壞人。（不過，你喺會當咗莫德雷德或忍者係好人！）\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /knight 溫故知新。";
             Script::$script["och"][Script::PR_YOUAREKNIGHTTHEREBAD]
                 = "你是<b>".Script::$script["och"][Script::KNIGHT]."</b>，屬於正派更會令任務成功。比較 %s 與 %s，至少有 1 位屬於反派。（注意，你卻不曉得分辨莫德雷德或忍者屬正派與否！）\n \n如有需要，輸入 /knight 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREKNIGHTTHEREBAD]
@@ -1458,7 +1458,7 @@ class Script{
             Script::$script["zho"][Script::PR_YOUAREKNIGHTNOBAD]
                 = "你是英勇善战的<b>".Script::$script["zho"][Script::KNIGHT]."</b>，你要负责帮好人完成任务。在%s和%s之间，你知道他们似乎都是好人。切记：你是无法发现你左右的人真实身份有可能是莫德雷德或忍者。";
             Script::$script["yue"][Script::PR_YOUAREKNIGHTNOBAD]
-                = "你係<b>".Script::$script["yue"][Script::KNIGHT]."</b>，你係一個好人。你知道 %s 同 %s ，應該都係好人。（記住，你係會當咗莫德雷德或忍者係好人！）\n \n可以打 /knight 睇到多啲解説。";
+                = "你係<b>".Script::$script["yue"][Script::KNIGHT]."</b>，你係一個好人。你知道 %s 同 %s，應該都係好人。（不過，你喺會當咗莫德雷德或忍者喺好人！）\n<b>記住：唔可以PM其他人。</b>\n \n可以打 /knight 睇到多啲解説。";
             Script::$script["och"][Script::PR_YOUAREKNIGHTNOBAD]
                 = "你是<b>".Script::$script["och"][Script::KNIGHT]."</b>，屬於正派更會令任務成功。比較 %s 與 %s，無人屬於反派。（注意，你卻不曉得分辨莫德雷德或者忍者屬正派與否！）\n \n如有需要，輸入 /knight 會查看更多描述。";
             Script::$script["ar"][Script::PR_YOUAREKNIGHTNOBAD]
@@ -1483,7 +1483,7 @@ class Script{
             Script::$script["zho"][Script::PR_AGENTSECRETCODE]
                 = "暗号已经成功被解开了:%s。现在你可以使用暗号找出你的同伴了，切记不可以用PM方式找出你的同伴。";
             Script::$script["yue"][Script::PR_AGENTSECRETCODE]
-                = "暗號已破解: %s。用呢兩個喑號去搵出你嘅同伴啦！\n記住：你係唔可以PM去搵其他同伴。";
+                = "暗號已破解: %s。用呢兩個喑號去搵出你嘅同伴啦！\n<b>記住：唔可以PM你既同伴。</b>";
             Script::$script["och"][Script::PR_AGENTSECRETCODE]
                 = "暗號已遭破譯: %s。請運用此倆喑號找出其他密探！\n注意：你是不可以用任何私訊去聯絡其他人。";
             Script::$script["ar"][Script::PR_AGENTSECRETCODE]
@@ -1701,7 +1701,7 @@ class Script{
             Script::$script["zho"][Script::PR_KILLMERLIN]
                 = "坏人虽然无法成功阻止任务的执行，但你们依然有最後的必杀技在手，是时候派出你们的高手杀死梅林吧！";
             Script::$script["yue"][Script::PR_KILLMERLIN]
-                = "壞人冇辦法阻止好人成功執行任務；但仲有一次最後機會可以反敗為勝：殺死梅林！";
+                = "壞人冇辦法阻止好人成功執行任務，但仲可以殺死梅林，反敗為勝！";
             Script::$script["och"][Script::PR_KILLMERLIN]
                 = "反派敗得一面倒，但是還有最後絕地反擊能力反敗為勝，殺死梅林就成！";
             Script::$script["ar"][Script::PR_KILLMERLIN]
@@ -1727,7 +1727,7 @@ class Script{
             Script::$script["zho"][Script::PR_LADYCHOOSE]
                 = "湖中仙女，希望你话我知此人的身份吧！";
             Script::$script["yue"][Script::PR_LADYCHOOSE]
-                = "你擁有湖女嘅能力，揀一位你想知佢嘅好壞嘅人啦。";
+                = "你擁有湖女嘅能力，揀一位你想知佢係好定壞嘅人啦。";
             Script::$script["och"][Script::PR_LADYCHOOSE]
                 = "請選擇一位你對他身份感到好奇。";
             Script::$script["ar"][Script::PR_LADYCHOOSE]
@@ -1804,7 +1804,7 @@ class Script{
             Script::$script["zho"][Script::PU_REJECT5TIMES]
                 = "任务已经被反对 5 次，所以任务正式以失败告终。";
             Script::$script["yue"][Script::PU_REJECT5TIMES]
-                = "呢個任務已經被班傻仔反對咗 5 次， 5 紅阿，我依家宣佈，任務失敗。";
+                = "呢個任務已經畀班傻仔反對咗 5 次，係 5 次阿，我依家宣佈，任務失敗。";
             Script::$script["och"][Script::PU_REJECT5TIMES]
                 = "任務已慘遭否決 5 次，所以此次任務唯有當作失敗。";
             Script::$script["ar"][Script::PU_REJECT5TIMES]
@@ -1829,7 +1829,7 @@ class Script{
             Script::$script["zho"][Script::PU_FAILWITHXFAIL]
                 = "在这次任务中，发现到有 <b>%d 次失败</b>！所以这次任务失败。";
             Script::$script["yue"][Script::PU_FAILWITHXFAIL]
-                = "喺行動搵到有 <b>%d 次失敗</b>！個任務已經被破壞！";
+                = "喺行動搵到有 <b>%d 次失敗</b>！任務失敗！";
             Script::$script["och"][Script::PU_FAILWITHXFAIL]
                 = "在此任務有 <b>%d 次失敗</b>！任務已經失敗。";
             Script::$script["ar"][Script::PU_FAILWITHXFAIL]
@@ -1854,7 +1854,7 @@ class Script{
             Script::$script["zho"][Script::PU_BADGUYSWONQUEST]
                 = "坏人队伍获得了胜利，他们拥有的经验超越了 1 个世纪，他们的实力强到好人们都自叹不如，科科！";
             Script::$script["yue"][Script::PU_BADGUYSWONQUEST]
-                = "班壞人破壞咗三次任務，佢地奸計得逞啦！好人你地返去好好檢討下！";
+                = "班壞人奸到出汁，個個都係影帝影后，前前後後破壞咗三次任務！好人返去好好檢討下！";
             Script::$script["och"][Script::PU_BADGUYSWONQUEST]
                 = "反派勝利！他們經驗多，為他們勝利多番慶祝。";
             Script::$script["ar"][Script::PU_BADGUYSWONQUEST]
@@ -1880,7 +1880,7 @@ class Script{
             Script::$script["zho"][Script::PU_BADGUYSWONKILL]
                 = "好人以为邪不能胜正，但很可惜的是事与愿违。坏人队伍获得了胜利！";
             Script::$script["yue"][Script::PU_BADGUYSWONKILL]
-                = "好人以為贏硬，點知原來係自作聰明。壞人一組反敗為勝而個個係度恥笑緊……";
+                = "好人以為贏硬，點知原來喺空歡喜一場。壞人陣營反敗為勝刺殺梅林，個個笑到碌晒地……";
             Script::$script["och"][Script::PU_BADGUYSWONKILL]
                 = "正派以為邪不能勝正，但更可惜的是一個圈套。反派為他們勝利慶祝中！";
             Script::$script["ar"][Script::PU_BADGUYSWONKILL]
@@ -1906,7 +1906,7 @@ class Script{
             Script::$script["zho"][Script::PU_GOODGUYSWON]
                 = "好人队伍获得了胜利，他们真的是实至名归。在对抗坏人中，他们完美的互相配合，粉碎了坏人的阴谋。";
             Script::$script["yue"][Script::PU_GOODGUYSWON]
-                = "恭喜，好人贏咗啦！佢哋真係好有腦，好聰明，睇穿壞人嘅真面目。";
+                = "恭喜，好人贏咗啦！佢地好叻吖，睇穿晒壞人嘅真面目。";
             Script::$script["och"][Script::PU_GOODGUYSWON]
                 = "恭賀，正派勝利！他們贏得實至名歸，完全擊退反派的陰謀。";
             Script::$script["ar"][Script::PU_GOODGUYSWON]
@@ -1933,7 +1933,7 @@ class Script{
             Script::$script["zho"][Script::PU_LADYLAKEINST]
                 = "%s 可以使用湖中仙女独有的法力知道某个人的身份。其他人可以提供意见。有 <b>%d 秒</b>要决定该去查处谁的身份。";
             Script::$script["yue"][Script::PU_LADYLAKEINST]
-                = "%s 可以用湖女嘅法力睇某個人嘅身份係好定壞。快啲傾下查邊個，但湖女仲有 <b>%d 秒</b>法力就會消失。";
+                = "%s 可以用湖女嘅法力睇某個人嘅身份好定壞。快啲傾下查邊個，但湖女仲有 <b>%d 秒</b>法力就會消失。";
             Script::$script["och"][Script::PU_LADYLAKEINST]
                 = "%s 正得到湖中仙女幫忙，可以知曉某人的身份。其他人可以從旁規勸，但只有 <b>%d 秒</b>做決定。";
             Script::$script["ar"][Script::PU_LADYLAKEINST]
@@ -1960,7 +1960,7 @@ class Script{
             Script::$script["zho"][Script::PU_KILLMERLIN]
                 = "好人们完美的执行了 3 个任务。但是先别高兴著，坏人队伍依然有最後的杀手鐧。坏人队伍就是这些人： %s。如果刺客成功杀掉梅林，他们就会反败为胜。坏人队伍，你们有 <b>%d 秒</b> 去决定想杀掉的人。";
             Script::$script["yue"][Script::PU_KILLMERLIN]
-                = "三個任務順利完成，壞人係：%s。不過，佢地仲有最後武器，如果壞人成功做低梅林，佢哋先係大贏家！壞人而家有 <b>%d 秒</b> 諗下人選。";
+                = "三個任務順利完成，壞人係：%s。不過，佢地仲有最後武器，如果壞人隊冧梅林，佢哋先係大贏家！壞人而家有 <b>%d 秒</b> 諗下人選。";
             Script::$script["och"][Script::PU_KILLMERLIN]
                 = "有 3 次任務成功，但是反派未完全輸，還有最後一著。反派一夥有： %s。只要殺死梅林，反派就反敗為勝！反派現在有 <b> %d 秒</b> 去决定。";
             Script::$script["en"][Script::PU_KILLMERLIN]
@@ -2061,7 +2061,7 @@ class Script{
             Script::$script["zho"][Script::PU_ASSIGNONEQUEST]
                 = "%s 在任务中已委任了 %s。";
             Script::$script["yue"][Script::PU_ASSIGNONEQUEST]
-                = "%s 喺呢次任務中揀咗 %s。";
+                = "%s 揀咗 %s 做任務。";
             Script::$script["och"][Script::PU_ASSIGNONEQUEST]
                 = "%s 在此任務中已選擇了 %s。";
             Script::$script["ar"][Script::PU_ASSIGNONEQUEST]
@@ -2086,7 +2086,7 @@ class Script{
             Script::$script["zho"][Script::PR_BADGUYSUCCESS]
                 = "虽然你是坏人，你成功的让好人们对你留下很好的印象。";
             Script::$script["yue"][Script::PR_BADGUYSUCCESS]
-                = "雖然你係壞人，但你係佢地面前留低咗一個好嘅印象。";
+                = "雖然你係壞人，但覺得時機未成熟，暫時幫手做個任務先。";
             Script::$script["och"][Script::PR_BADGUYSUCCESS]
                 = "雖則你是反派，你成功的留下很好的印象。";
             Script::$script["ar"][Script::PR_BADGUYSUCCESS]
@@ -2112,7 +2112,7 @@ class Script{
             Script::$script["zho"][Script::PR_BADGUYFAIL]
                 = "你成功的让今次的任务失败了。";
             Script::$script["yue"][Script::PR_BADGUYFAIL]
-                = "你成功破壞咗呢個任務啦。";
+                = "你破壞咗呢個任務啦。";
             Script::$script["och"][Script::PR_BADGUYFAIL]
                 = "你成功地令任務失敗了。";
             Script::$script["ar"][Script::PR_BADGUYFAIL]
@@ -2138,7 +2138,7 @@ class Script{
             Script::$script["zho"][Script::PR_BADGUY2FAIL]
                 = "你靠著那优秀的忍者能力，令这次的任务失败 2 次！";
             Script::$script["yue"][Script::PR_BADGUY2FAIL]
-                = "你用咗忍者能力，呢個任務多兩個失敗！";
+                = "你用咗忍者分身術，連續破壞咗呢個任務 2 次！";
             Script::$script["och"][Script::PR_BADGUY2FAIL]
                 = "你行使了忍者能力，令此任務疊敗 2 陣！";
             Script::$script["ar"][Script::PR_BADGUY2FAIL]
@@ -2216,7 +2216,7 @@ class Script{
             Script::$script["zho"][Script::PR_LADYSEE]
                 = "你查看到 %s 的身份……他／她是";
             Script::$script["yue"][Script::PR_LADYSEE]
-                = "你知道咗 %s 嘅身份……他／她係";
+                = "你知道咗 %s 嘅身份……佢喺";
             Script::$script["och"][Script::PR_LADYSEE]
                 = "你查看到 %s 的身份……他／她是";
             Script::$script["ar"][Script::PR_LADYSEE]
@@ -2424,7 +2424,7 @@ class Script{
             Script::$script["zho"][Script::PR_ASSIGNLATE]
                 = "时间到了，剩下未决定的玩家将会由系统随意委任去。";
             Script::$script["yue"][Script::PR_ASSIGNLATE]
-                = "夠晒鐘喇，剩低未揀嘅隨機幫你揀埋。";
+                = "夠晒鐘喇，剩低未揀嘅求其幫你揀埋。";
             Script::$script["och"][Script::PR_ASSIGNLATE]
                 = "時間到了，剩下未選的人數要由系统隨機挑選了。";
             Script::$script["ar"][Script::PR_ASSIGNLATE]
@@ -2502,7 +2502,7 @@ class Script{
             Script::$script["zho"][Script::PU_APPRREJREMIND]
                 = "被挑选的人是 %s。\n\n现还有<b> %d 秒</b>让大家去表达立场是 <b>赞成</b> 还是<b>反对</b>。如果任务执行期间有  <b>%d 名成员</b> 选择该任务失败，这个任务就会被宣布失败。";
             Script::$script["yue"][Script::PU_APPRREJREMIND]
-                = "被指派去做任務嘅人有 %s。\n\n而家仲有<b> %d 秒</b>投票表示係 <b>贊成</b> 定 <b>反對</b>。如果有 <b>%d 個</b> 或以上嘅失敗，整個任務就算衰咗。";
+                = "被指派去做任務嘅人有 %s。\n\n而家仲有<b> %d 秒</b>投票表示係 <b>贊成</b> 定 <b>反對</b>。如果有 <b>%d 個</b> 失敗，整個任務就算衰咗。";
             Script::$script["och"][Script::PU_APPRREJREMIND]
                 = "獲委任的人是 %s。\n\n現正還有<b> %d 秒</b>投票表示 <b>贊成</b> 或是 <b>反對</b>。如果任務中有 <b>%d 名成員</b> 令到此任務行動失敗，整個任務就當作失敗。";
             Script::$script["ar"][Script::PU_APPRREJREMIND]
@@ -2555,7 +2555,7 @@ class Script{
             Script::$script["zho"][Script::PR_BADGUYLATEFAIL]
                 = "太迟做出回应，你的首领唯有命令你让任务失败。";
             Script::$script["yue"][Script::PR_BADGUYLATEFAIL]
-                = "夠晒鐘喇，不過個 bot 本身壞底，佢當你今次走去破壞個任務。";
+                = "夠晒鐘喇，等我幫你去破壞個任務。";
             Script::$script["och"][Script::PR_BADGUYLATEFAIL]
                 = "你回應太遲，唯有命令你要令任務失敗。";
             Script::$script["ar"][Script::PR_BADGUYLATEFAIL]
@@ -2631,7 +2631,7 @@ class Script{
             Script::$script["zho"][Script::PU_LADYLATE]
                 = "%s 太迟做出回应了，所以他无法查看某个人的身份。";
             Script::$script["yue"][Script::PU_LADYLATE]
-                = "%s 擔屎唔偷食，有得𥄫都唔望下，做咗下個任務先有得再睇啦。";
+                = "%s 佢冇用到佢湖女嘅法力，要做咗下個任務先有得再睇啦。";
             Script::$script["och"][Script::PU_LADYLATE]
                 = "%s 回應太遲，不得使用湖中仙女的能力去查看。";
             Script::$script["ar"][Script::PU_LADYLATE]
@@ -2681,7 +2681,7 @@ class Script{
             Script::$script["zho"][Script::PU_KILLMERLINLATE]
                 = "%s 太迟做出杀害梅林的选择了。梅林幸运的逃过一劫了。";
             Script::$script["yue"][Script::PU_KILLMERLINLATE]
-                = "%s 揸住把刀，隻腳震過貓王，等到夠鐘都仲諗緊，梅林就咁走甩咗。";
+                = "%s 諗咗到過晒鐘都唔行動，梅林就咁走甩咗。";
             Script::$script["och"][Script::PU_KILLMERLINLATE]
                 = "%s 回應太遲，不能擊殺梅林。梅林死裡逃生了。";
             Script::$script["ar"][Script::PU_KILLMERLINLATE]
@@ -2706,7 +2706,7 @@ class Script{
             Script::$script["zho"][Script::PU_KILLMERLINREMIND]
                 = "还有 <b>%d 秒</b> 让刺客去讨论到底谁会才是他们要杀的梅林。";
             Script::$script["yue"][Script::PU_KILLMERLINREMIND]
-                = "剩返 <b>%d 秒</b> ，壞人陣營快啲討論下吉邊個。";
+                = "剩返 <b>%d 秒</b> ，壞人陣營快啲討論下隊死邊個。";
             Script::$script["och"][Script::PU_KILLMERLINREMIND]
                 = "現有 <b>%d 秒</b> 等待刺客猜測及按計劃一擊砍死梅林……";
             Script::$script["ar"][Script::PU_KILLMERLINREMIND]
@@ -2906,7 +2906,7 @@ class Script{
             Script::$script["zho"][Script::PU_STARTMEFIRST]
                 = "记得要<a href=\"http://telegram.me/%s\">按這句私联</a>先。";
             Script::$script["yue"][Script::PU_STARTMEFIRST]
-                = "你唔搞起我好難幫到你 <a href=\"http://telegram.me/%s\">Start Me</a> 先啦。";
+                = "記得要撳 <a href="http://telegram.me/%s">Start Me</a> 先可以玩到呀。";
             Script::$script["och"][Script::PU_STARTMEFIRST]
                 = "一定先要 <a href=\"http://telegram.me/%s\">按此連結與我私聊</a> 在先。";
             Script::$script["ar"][Script::PU_STARTMEFIRST]
@@ -2981,7 +2981,7 @@ class Script{
             Script::$script["zho"][Script::PU_GAMECANCEL]
                 = "由於不足够人数，所以遊戏取消了，你赶快叫你的朋友来一起玩吧。";
             Script::$script["yue"][Script::PU_GAMECANCEL]
-                = "毒毒開驚無人理！快啲去識多啲朋友先啦。";
+                = "冇人想同你玩喎！快啲去識多啲朋友先啦。";
             Script::$script["och"][Script::PU_GAMECANCEL]
                 = "遊戲取消了，參與度嚴重不足；請你找多一些朋友一起玩吧。";
             Script::$script["ar"][Script::PU_GAMECANCEL]
@@ -3058,7 +3058,7 @@ class Script{
             Script::$script["zho"][Script::PU_JOINSTART]
                 = "%s 开了阿瓦隆遊戏 - %s 模式。快打 /join 加入遊戏吧。";
             Script::$script["yue"][Script::PU_JOINSTART]
-                = "%s 開咗個「Avalon 亞法隆」遊戲 - %s 版。 Normal 係正常版，Chaos 係混亂版。快啲打 /join 一齊玩吧。";
+                = "%s 開咗個Avalon 亞法隆遊戲 - %s 版。 Normal 正常版，Chaos 係混亂版。快啲打 /join 一齊玩吧。";
             Script::$script["och"][Script::PU_JOINSTART]
                 = "%s 剛建立新一輪阿瓦隆遊戲 - 採用 %s 模式。Normal 為正常模式，Chaos 為混亂模式。快些輸入 /join 參加遊戲。";
             Script::$script["ar"][Script::PU_JOINSTART]
@@ -3158,7 +3158,7 @@ class Script{
             Script::$script["zho"][Script::PU_NEED_MORE_PLAYERS]
                 = "至少需要 %d 名玩家才能玩阿瓦隆遊戲。";
             Script::$script["yue"][Script::PU_NEED_MORE_PLAYERS]
-                = "要起碼 %d 名玩家先開到驚。";
+                = "要起碼 %d 名玩家先開到Game。";
             Script::$script["och"][Script::PU_NEED_MORE_PLAYERS]
                 = "至少需要 %d 位選手才能開始阿瓦隆遊戲。";
             Script::$script["ar"][Script::PU_NEED_MORE_PLAYERS]
@@ -3183,7 +3183,7 @@ class Script{
             Script::$script["zho"][Script::PU_REQUEST_STOP]
                 = "%s 要取消遊戏。 <b>%d</b>赞成，<b>%d</b>。";
             Script::$script["yue"][Script::PU_REQUEST_STOP]
-                = "%s 要求中止遊戲。有 <b>%d</b>票贊成，總數要 <b>%d</b> 票。";
+                = "%s 要求中止遊戲。有 <b>%d</b> 票贊成，總數要 <b>%d</b> 票。";
             Script::$script["och"][Script::PU_REQUEST_STOP]
                 = "%s 要求取消遊戲。票數有 <b>%d</b> 票，總共要 <b>%d</b> 票。";
             Script::$script["ar"][Script::PU_REQUEST_STOP]
@@ -3233,7 +3233,7 @@ class Script{
             Script::$script["zho"][Script::PR_QUEUE_ME]
                 =  "你已经注册在 %s 群组準备玩下一场的遊戏了。请在新遊戏开始时，切记输入 /join 。:D";
             Script::$script["yue"][Script::PR_QUEUE_ME]
-                =  "你已經係 %s 群組拎咗籌玩下一鋪。一有新遊戲就會收到通知，到時去返群組入面打 /join 就得。:D";
+                =  "你已經喺 %s 嗰邊攞咗籌玩下一鋪。一有新遊戲就會收到通知，到時去返群組入面打 /join 就得。:D";
             Script::$script["och"][Script::PR_QUEUE_ME]
                 =  "你已經註冊 %s 群組的下一場阿瓦隆遊戲。請在新遊戲開始之時，輸入 /join。:D";
             Script::$script["ar"][Script::PR_QUEUE_ME]
@@ -3258,7 +3258,7 @@ class Script{
             Script::$script["zho"][Script::PR_QUEUE_CALL]
                 =  "%s 群组将会开始新的阿瓦隆遊戏。";
             Script::$script["yue"][Script::PR_QUEUE_CALL]
-                =  "%s 有人開咗「Avalon 亞法隆」遊戲，入去 join 啦。";
+                =  "%s 有人開咗 Avalon 亞法隆遊戲，入去 join 啦。";
             Script::$script["och"][Script::PR_QUEUE_CALL]
                 =  "%s 群組即將開始新遊戲。";
             Script::$script["ar"][Script::PR_QUEUE_CALL]
@@ -3283,7 +3283,7 @@ class Script{
             Script::$script["zho"][Script::PR_QUEUE_FULL]
                 =  "因为有人数已满，所以你现在不能玩阿瓦隆遊戏，请在之後尝试启动遊戏吧。";
             Script::$script["yue"][Script::PR_QUEUE_FULL]
-                =  "今場「Avalon 亞法隆」嘅籌派晒啦，無得玩，下場啦。";
+                =  "今場 Avalon 亞法隆嘅滿晒，無得玩，下場啦。";
             Script::$script["och"][Script::PR_QUEUE_FULL]
                 =  "人數已滿，不能參加阿瓦隆遊戲，請延後再嘗試吧。";
             Script::$script["ar"][Script::PR_QUEUE_FULL]
@@ -3498,7 +3498,7 @@ class Script{
                 .Script::$script["yue"][Script::GOOD_LANCELOT]
                 ." 同 ".Script::$script["yue"][Script::EVIL_LANCELOT]
                 ." 會出現喺遊戲裡面。\n"
-                ."喺遊戲玩緊嘅時候，依兩個角色有機會出現互相調換嘅情況。\n\n";
+                ."喺遊戲玩緊嘅時候，依2個角色有機會出現互相調換嘅情況。\n\n";
             Script::$script["och"][Script::PU_LANCELOT_V1_SELECT]
                 = "<b>Variant 1 is selected</b>\n"
                 .Script::$script["en"][Script::GOOD_LANCELOT]
@@ -3580,8 +3580,8 @@ class Script{
                 . Script::$script["yue"][Script::GOOD_LANCELOT]
                 ." 同 ".Script::$script["yue"][Script::EVIL_LANCELOT]
                 ." 會出現喺遊戲裡面。\n"
-                ."喺遊戲玩緊嘅時候，依2個角色有機會出現互相調換嘅情況。\n\n"
-                ."分支2入面，壞嘅蘭斯洛特有份執行任務嘅時候會自動揀失敗。\n\n";
+                ."喺遊戲玩緊嘅時候，依 2 個角色有機會出現互相調換嘅情況。\n\n"
+                ."支線2入面，邪惡蘭斯洛特有份執行任務嘅時候會自動揀失敗。\n\n";
             Script::$script["och"][Script::PU_LANCELOT_V2_SELECT]
                 = "<b>Variant 2 is selected</b>\n"
                 . Script::$script["en"][Script::GOOD_LANCELOT]
@@ -3799,7 +3799,7 @@ class Script{
             Script::$script["zho"][Script::PLAY_TO_HAVE_STAT]
                 = "你要参加了一次才会有纪录。";
             Script::$script["yue"][Script::PLAY_TO_HAVE_STAT]
-                = "要玩過一次遊戲先會有得計。";
+                = "要玩過一次遊戲先有得計。";
             Script::$script["och"][Script::PLAY_TO_HAVE_STAT]
                 = "你要參加了一次才會有紀錄。";
             Script::$script["ar"][Script::PLAY_TO_HAVE_STAT]
@@ -3851,7 +3851,7 @@ class Script{
             Script::$script["yue"][Script::PU_SECONDTODECIDE]
                 = "\n\n你有 <b>%d 秒</b>做決定。\n";
             Script::$script["och"][Script::PU_SECONDTODECIDE]
-                = "\n\n你有 <b>%d 秒</b>去決定。\n";
+                = "\n\n你有 <b>%d 秒</b>做決定。\n";
             Script::$script["ar"][Script::PU_SECONDTODECIDE]
                 = "\n\n لديك <b>%d ثانية </b> لتقرر. \n";
             Script::$script["fa"][Script::PU_SECONDTODECIDE]
@@ -3899,7 +3899,7 @@ class Script{
             Script::$script["zho"][Script::PR_LANGGROUPCHANGED]
                 = "在 %s 群里面，语言已经被设定为 %s。";
             Script::$script["yue"][Script::PR_LANGGROUPCHANGED]
-                = "喺 %s 群組嘅語言已經換成 %s。";
+                = "喺 %s 群組嘅語言已經換成%s。";
             Script::$script["och"][Script::PR_LANGGROUPCHANGED]
                 = "在 %s 群組裡面，語言已經更改為 %s。";
             Script::$script["ar"][Script::PR_LANGGROUPCHANGED]
@@ -3924,7 +3924,7 @@ class Script{
             Script::$script["zho"][Script::PU_LANGCHANGED]
                 = "语言已经被设定为 %s。";
             Script::$script["yue"][Script::PU_LANGCHANGED]
-                = "語言已經換成 %s。";
+                = "語言已經換成%s。";
             Script::$script["och"][Script::PU_LANGCHANGED]
                 = "語言已經更改為 %s。";
             Script::$script["ar"][Script::PU_LANGCHANGED]
@@ -3999,7 +3999,7 @@ class Script{
             Script::$script["zho"][Script::PR_GROUPONLY]
                 = "这个指令只能在群组内进行。";
             Script::$script["yue"][Script::PR_GROUPONLY]
-                = "呢個命令只可以係群組入面用。";
+                = "呢個命令只可以係群組用。";
             Script::$script["och"][Script::PR_GROUPONLY]
                 = "此指令只能在群组內使用。";
             Script::$script["ar"][Script::PR_GROUPONLY]
@@ -4049,7 +4049,7 @@ class Script{
             Script::$script["zho"][Script::PU_ADMINONLY]
                 = "这个指令只有群主能执行。。";
             Script::$script["yue"][Script::PU_ADMINONLY]
-                = "呢個命令只有Admin先用得。";
+                = "呢個命令你用嘅咩？撳撳撳，咁心急派你做跟班啊嗱。";
             Script::$script["och"][Script::PU_ADMINONLY]
                 = "此指令只有群組管理員才可以使用。";
             Script::$script["ar"][Script::PU_ADMINONLY]
@@ -4075,7 +4075,7 @@ class Script{
             Script::$script["zho"][Script::PU_MAINTENANCE]
                 = "阿瓦隆机器人正进行维护中，请稍後才进行遊戏。";
             Script::$script["yue"][Script::PU_MAINTENANCE]
-                = "「Avalon 亞法隆」 Bot 而家維護緊，唔好意思，遲啲再試。";
+                = "Avalon 亞法隆 Bot 而家維護緊，唔好意思，遲啲再試。";
             Script::$script["och"][Script::PU_MAINTENANCE]
                 = "阿瓦隆機械人正進行維護事宜。請稍後再試，造成不便敬請原諒。";
             Script::$script["ar"][Script::PU_MAINTENANCE]
@@ -4148,9 +4148,9 @@ class Script{
             Script::$script["yue"][Script::PU_CONTACT]
                 = "Telegram 程式碼原作者係 <b>Hendry Setiadi</b>。\n\n"
                 . $contributor
-                ."要聯絡我可以電郵至: hendry.setiadi.89@gmail.com\n\n"
+                ."要聯絡作者可以電郵至: hendry.setiadi.89@gmail.com\n\n"
                 ."亦希望大家到Bot store: <a href=\"http://telegram.me/storebot?start=%s\">俾俾分</a>。\n\n"
-                ."多謝";
+                ."多多支持";
             Script::$script["och"][Script::PU_CONTACT]
                 = "Telegram 程式原碼由 <b>Hendry Setiadi</b> 開發。\n\n"
                 . $contributor
@@ -4262,7 +4262,7 @@ class Script{
                 . "输入 /contact 联络作者\n\n"
                 . Script::$script["zho"][Script::PU_JOINCHANNEL];
             Script::$script["yue"][Script::PU_HELP]
-                = "喺 Telegram嘅 Avalon 亞法隆 Bot\n"
+                = "係 Telegram嘅 Avalon 亞法隆 Bot\n"
                 . "建基於 <a href=\"https://boardgamegeek.com/boardgame/128882/resistance-avalon\">抵抗組織：阿瓦隆</a>\n\n"
                 . "要玩嘅話，先要將呢個 Bot 加落個谷，再打 /start 抑或 /startchaos 正式開嚟玩。\n\n"
                 . "打 /howtoplay 遊戲玩法\n"
@@ -4579,28 +4579,28 @@ class Script{
 
 
             Script::$script["yue"][Script::PU_HOWTOPLAY]
-                = " <b>呢隻遊戲係主要關於歸納同扮嘢，係隊制遊戲，只有好人或壞人一隊會贏。</b>\n\n"
-                . "遊戲跟著國王委派圓桌武士去執行任務嘅狀況而設計。"
+                = " <b>呢隻遊戲喺主要係考你諗野同扮嘢嘅能力，係團隊制遊戲，只有好人或壞人一隊會贏。</b>\n\n"
+                . "遊戲嘅每一個回合，國王會委派圓桌騎士去執行任務。"
                 . "總共有 5 個任務，跟次序跟住去做任務。"
-                . "如果有 3 個任務搞掂咗，好人陣營只係<i>可能</i>贏；但倒轉有 3 個任務失敗咗，奸臣一隊就即贏。\n\n"
+                . "如果有 3 個任務成功咗，好人一隊只喺<i>可能</i>贏；但倒轉有 3 個任務失敗，壞人一隊就即贏。\n\n"
 
-                . "遊戲一開，每個玩家都會秘密收到自己嘅角色。\n"
-                . "㩒下面啲link望清楚呢啲角色：\n"
+                . "遊戲一開，每個玩家都會透過Bot收到自己嘅角色。\n"
+                . "㩒下面嘅指令去睇睇啲角色要做啲咩：\n"
                 . Script::$script["yue"][Script::PU_ROLELIST]
 
-                . "\n遊戲一開，個國王記號".Constant::EMO_KING_B ."就會是但放喺一個玩家身上，而呢個玩家就係國王。\n"
-                . "當國王再諗好派咩人去做，所有玩家都會為呢個提議投票 <b>贊成</b> 或 <b>反對</b> 表決。當中只會計有去投票嗰啲。\n\n"
+                . "\n遊戲一開，個國王記號".Constant::EMO_KING_B ."就會是但放喺一個玩家身上，而呢個玩家就係國王，全權去管理嗰個任務。\n"
+                . "當國王諗好派咩人去做，所有玩家會根據國王嘅提議投 <b>贊成</b> 或 <b>反對</b> 票表決。當中只會計有去投票嗰啲。\n\n"
 
-                . "如果 <b>反對</b> 票超過一半，議案就會否決，而個國王記號".Constant::EMO_KING_B . "就會收返，再俾下一個玩家。\n"
+                . "如果 <b>反對</b> 票超過一半，議案就會否決，而個國王記號".Constant::EMO_KING_B . "就會收返，再畀下一個玩家。\n"
                 . "如果 <b>贊成</b> 票超過一半，議案就會通過，而個任務就即做\n\n"
 
-                . "當去做任務時，壞人嗰邊可以有得揀秘密搞禍個任務，或者俾個任務成功。"
-                . "一般嚟講，除非有特別要求，只要有至少 1 位令到個任務失敗，整個任務就會係失敗咗。\n\n"
+                . "當去做任務時，壞人嗰邊可以有得揀秘密失敗個任務，或者俾個任務成功。"
+                . "一般嚟講，除非有特別要求，只要有至少 1 位去失敗個任務行動，整個任務就會喺失敗。\n\n"
 
-                . "又為咗唔好無限噉否決嚟拉布，每個任務只有最多 5 次遭否決。如果有 5 次否決，個任務同樣等同失敗咗。\n\n"
+                . "又為咗唔好無限咁反對嚟拉布，每個任務只有最多 5 次遭反對。如果有 5 次反對，個任務同樣等同失敗。\n\n"
 
                 . "當遊戲超過 8 個玩家，<b>湖女</b>".Constant::EMO_LADY_B."就會出現。湖女對好人嚟講係極大幫助……"
-                . "任何玩家有湖女記號，就可以借助湖女嘅力量才查一下佢想知另一個玩家嘅角色身份。\n\n"
+                . "任何玩家有湖女記號，就可以借助湖女嘅力量調查其他玩家嘅角色身份。\n\n"
 
                 . "總之，多啲打 /start 或者 /startchaos 玩多幾鋪啦！\n\n";
 
@@ -4741,7 +4741,7 @@ class Script{
                 = "群组列表还在建立当中，如果你想将你的群组加进列表，请联络这个机器人的程式员。\n\n"
                 .$groupList;
             Script::$script["yue"][Script::PR_GROUPLIST]
-                = "群組列表仲係未齊備；如果你想將你嘅公共群組放入列表，通知 Bot 嘅作者。\n\n"
+                = "如果你想將你嘅公共群組放入列表，請聯絡 Bot 嘅作者<b>Hendry Setiadi(@Rhyned)</b>。\n\n"
                 .$groupList;
             Script::$script["och"][Script::PR_GROUPLIST]
                 = "群组列表仍在籌備中；如果你想將你的公用群组加進列表，請聯絡機械人的作者。\n\n"
@@ -4787,7 +4787,7 @@ class Script{
                 ."<a href=\"http://telegram.me/storebot?start=%s\">作出评价</a>\n\n"
                 . Script::$script["zho"][Script::PU_JOINCHANNEL];
             Script::$script["yue"][Script::PU_RATEME]
-                = "鍾意呢個 bot？噉就俾下". Constant::EMO_SMILE_B . "\n\n"
+                = "鍾意呢個 bot？咁就俾下". Constant::EMO_SMILE_B . "\n\n"
                 ."<a href=\"http://telegram.me/storebot?start=%s\">評價</a>\n\n"
                 . Script::$script["yue"][Script::PU_JOINCHANNEL];
             Script::$script["och"][Script::PU_RATEME]
@@ -4852,9 +4852,9 @@ class Script{
             Script::$script["yue"][Script::PU_MERLININFO]
                 = "<b>".Script::$script["yue"][Script::MERLIN]."</b>".Constant::EMO_SMILE_B
                 . "預知所有壞人，但唔包莫德雷德或忍者。他嘅重任就係俾好人提示，"
-                . "阻住壞人令任務失敗。\n\n"
+                . "阻住壞人破壞任務。\n\n"
                 . "記住如果梅林身份太過明顯，就算有三個任務成功咗，壞人都可以派出刺客刺殺佢。"
-                . "一旦刺客或摩甘娜殺中梅林，壞人陣營就會贏。";
+                . "一旦梅林被壞人刺殺，壞人陣營就會贏。";
             Script::$script["och"][Script::PU_MERLININFO]
                 = "<b>".Script::$script["och"][Script::MERLIN]."</b>".Constant::EMO_SMILE_B
                 . "知道所有反派的人選，莫德雷德和忍者除外。他的職責就是給好人提示，"
@@ -4914,8 +4914,8 @@ class Script{
                 . "他必须靠自己找出真梅林，同时暗中保护梅林误导刺客杀他。";
             Script::$script["yue"][Script::PU_PERCIVALINFO]
                 = "<b>".Script::$script["yue"][Script::PERCIVAL]."</b>".Constant::EMO_SMILE_B
-                . "一早就知邊個係梅林同摩甘娜。但係佢分唔到邊個打邊個。\n\n"
-                . "佢要估到真梅林，喺重要關頭更要假扮梅林去呃刺客。";
+                . "一早就知邊個係梅林同莫甘娜。但係珀西瓦里分唔到邊個打邊個。\n\n"
+                . "珀西瓦里要搵到真梅林，並且要保護梅林嘅身分，唔可以比壞人成功刺殺梅林。";
             Script::$script["och"][Script::PU_PERCIVALINFO]
                 = "<b>".Script::$script["och"][Script::PERCIVAL]."</b>".Constant::EMO_SMILE_B
                 . "會很早期就能洞識梅林及摩甘娜，但他分不到兩者確實身份。\n\n"
@@ -4970,8 +4970,8 @@ class Script{
                 . "是什麽也不懂的好人，需要凭著自己推理能力去尝试找出真梅林。";
             Script::$script["yue"][Script::PU_SERVANTINFO]
                 = "<b>".Script::$script["yue"][Script::SERVANT]."</b>".Constant::EMO_SMILE_B
-                . "係好人，但唔知邊一個係好定壞。\n\n"
-                . "職責當然係令任務成功，喺重要關頭都要假扮梅林去呃刺客。";
+                . "係好人一個，但唔知邊一個係好定壞。\n\n"
+                . "職責當然喺令任務成功，但就冇特異功能。";
             Script::$script["och"][Script::PU_SERVANTINFO]
                 = "<b>".Script::$script["och"][Script::SERVANT]."</b>".Constant::EMO_SMILE_B
                 . "屬於正派，但不清楚那一個是正派或反派。\n\n"
@@ -5013,7 +5013,7 @@ class Script{
                 . "是好人。一旦你被委任做任务，你有 20% 的机率能阻止到任务失败。\n\n";
             Script::$script["yue"][Script::PU_AUDITORINFO]
                 = "<b>".Script::$script["yue"][Script::AUDITOR]."</b>".Constant::EMO_SMILE_B
-                . "係好人一個。只要有得做任務，有 20% 可能會阻到一個任務失敗。\n\n";
+                . "係好人一個。只要有份做任務，就有 20% 機會可以抵銷其中一次失敗。\n\n";
             Script::$script["och"][Script::PU_AUDITORINFO]
                 = "<b>".Script::$script["och"][Script::AUDITOR]."</b>".Constant::EMO_SMILE_B
                 . "屬於正派。一旦獲委任做任務，你 20% 的概率能阻止到任務失敗。\n\n";
@@ -5060,7 +5060,7 @@ class Script{
                 = "<b>".Script::$script["yue"][Script::MORDRED]."</b>".Constant::EMO_EVIL_B
                 . "係壞人一名，遊戲開始時會知道壞人陣營有咩人，同隊友一齊令到任務失敗。\n\n"
                 . "天生有迷惑梅林嘅能力，令佢以為莫德雷德係好人。"
-                . "另外，佢係知晒所有壞人，除咗奧北朗。";
+                . "另外，佢會知道奧伯龍以外嘅壞人。";
             Script::$script["och"][Script::PU_MORDREDINFO]
                 = "<b>".Script::$script["och"][Script::MORDRED]."</b>".Constant::EMO_EVIL_B
                 . "屬於反派。狡猾的能力迷惑到梅林，令梅林亦以為他是正派。\n\n"
@@ -5108,8 +5108,8 @@ class Script{
                 . "此外，他能知道所有坏人队伍的成员，除了欧泊朗。";
             Script::$script["yue"][Script::PU_NINJAINFO]
                 = "<b>".Script::$script["yue"][Script::NINJA]."</b>".Constant::EMO_EVIL_B
-                . "喺遊戲啱啱開就知壞人嗰邊仲有咩人，除咗奧北朗，同壞人一齊失敗晒啲任務。\n\n"
-                . "就連梅林都會當咗佢係好人。一旦獲委派做任務，忍者重可以失敗任務行動 2 次，但只用得 1 次。";
+                . "本身能力仲勁過莫德雷德。喺遊戲啱啱開就知壞人嗰邊仲有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
+                . "就就連梅林都會當咗佢喺好人。一旦獲委派做任務，忍者仲可以令任務失敗 2 次，但呢個能力只能用一次。";
             Script::$script["och"][Script::PU_NINJAINFO]
                 = "<b>".Script::$script["och"][Script::NINJA]."</b>".Constant::EMO_EVIL_B
                 . "就連梅林都無法看穿他們奸臣的身份。一旦獲委任做任務，忍者還可以一個任務破壞 2 次，但只限 1 次。\n\n"
@@ -5278,6 +5278,9 @@ class Script{
                 "梗係",
                 "諗",
                 "玩嘢",
+                "過",
+                "唔去",
+                "你大我阿",
             );
             Script::$script["och"][Script::SECRETCODES] = array(
                 "多謝",
@@ -5374,9 +5377,9 @@ class Script{
                 . "这些是遊戏中可能会用到的暗号: ".Constant::arrayToString(Script::$script["zho"][Script::SECRETCODES]).".\n\n";
             Script::$script["yue"][Script::PU_AGENTINFO]
                 = "<b>".Script::$script["yue"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . "係好人，而特務會用暗號嚟搵自己同伴。\n\n"
-                . "當然係群组用暗號得太明顯，就只會更易搵到梅林。\n\n"
-                . "以下就係遊戲中可能會用嘅暗號: ".Constant::arrayToString(Script::$script["yue"][Script::SECRETCODES]).".\n\n";
+                . "喺好人，而特務會用暗號嚟搵自己同伴。\n\n"
+                . "記住，喺群组用暗號得太明顯，壞人就好容易搵到梅林。\n\n"
+                . "以下就喺遊戲中可能會用嘅暗號: ".Constant::arrayToString(Script::$script["yue"][Script::SECRETCODES]).".\n\n";
             Script::$script["och"][Script::PU_AGENTINFO]
                 = "<b>".Script::$script["och"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
                 . "屬於正派，而機械人會發放同一暗號予所有密探。"
@@ -5428,8 +5431,8 @@ class Script{
                 . "除了能知道自己的队友是谁(除了欧泊朗)，他还能负责欺骗派西维尔和在遊戏结束时候刺杀梅林。\n\n";
             Script::$script["yue"][Script::PU_MORGANAINFO]
                 = "<b>".Script::$script["yue"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " 係壞人一名，遊戲開始時會知道壞人陣營有咩人，同隊友一齊令到任務失敗。\n\n"
-                . "派西維爾知道真梅林同摩甘娜之間其中一人係真梅林。\n\n";
+                . " 喺壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
+                . "好好利用你有既資訊，誤導珀西瓦里相信你係真梅林。\n\n";
             Script::$script["och"][Script::PU_MORGANAINFO]
                 = "<b>".Script::$script["och"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
                 . " 屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n"
@@ -5476,8 +5479,8 @@ class Script{
                 . " 刺客会知道自己的同伴(除了欧泊朗)，并协助他们令到好人们任务失败。一旦好人成功完成3个任务，他有1次机会去刺杀梅林。梅林一死，坏人就赢。\n\n";
             Script::$script["yue"][Script::PU_ASSASSININFO]
                 = "<b>".Script::$script["yue"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . "係壞人一名，遊戲開始時會知道壞人陣營有咩人，除咗奧北朗，同隊友一齊令到任務失敗。\n\n"
-                . "一旦好人成功 3 個任務，佢就要負責刺殺梅林，估中梅林壞人陣營會贏。";
+                . "係壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
+                . "一旦好人成功執行 3 個任務，佢就要負責刺殺梅林，成功刺殺梅林嘅話壞人陣營會贏。";
             Script::$script["och"][Script::PU_ASSASSININFO]
                 = "<b>".Script::$script["och"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
                 . "會知道自己的同伴(除了奧伯倫)，並協助他們令到好人們任務失敗。\n\n"
@@ -5526,8 +5529,8 @@ class Script{
                 . "知道好人的角色，但不知道该角色是属於哪一个好人以及无法知道该角色的数量。\n";
             Script::$script["yue"][Script::PU_WITCHINFO]
                 = "<b>".Script::$script["yue"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . "係壞人一名，遊戲開始時會知道壞人陣營有咩人，除咗奧北朗，同隊友一齊令到任務失敗。\n\n"
-                . "女巫知道有邊啲身份，但唔知道嗰啲角色係邊個或者某一角色有幾多，需要出力去搵更多料嚟收窄邊嗰係梅林。\n";
+                . "係壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
+                . "女巫知道有邊啲身份，但唔知道嗰啲角色係邊個或者某一角色有幾多，可以利用手上有既資訊去幫隊友搵出邊嗰喺梅林。\n";
             Script::$script["och"][Script::PU_WITCHINFO]
                 = "<b>".Script::$script["och"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
                 . "屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n"
@@ -5575,8 +5578,8 @@ class Script{
                 . "除了能知道自己的队友是谁(除了奥北朗)，他还能负责欺骗派西维尔和在遊戏结束时候刺杀梅林。\n\n";
             Script::$script["yue"][Script::PU_MORGAUSEINFO]
                 = "<b>".Script::$script["yue"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . "係壞人一名，遊戲開始時會知道壞人陣營有咩人，除咗奧北朗，同隊友一齊令到任務失敗。\n\n"
-                . "摩高斯同時擁有摩甘娜及刺客嘅能力，佢呃到派西維爾，又會喺最後關頭刺殺梅林。\n\n";
+                . "係壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
+                . "莫歌絲同時擁有莫甘娜及刺客嘅能力，佢要誤導珀西瓦里以為佢係梅林，再喺最後關頭刺殺梅林。\n\n";
             Script::$script["och"][Script::PU_MORGAUSEINFO]
                 = "<b>".Script::$script["och"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
                 . "屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n"
@@ -5625,7 +5628,7 @@ class Script{
             Script::$script["yue"][Script::PU_KNIGHTINFO]
                 = "<b>".Script::$script["yue"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
                 . "係好人一名，而職責就係力保任務成功。\n\n"
-                . "遊戲一開始，騎士就會知道左右兩個玩家係好定壞：一係兩個都好人，一係就至少有一個壞人。而如果左右有玩家係莫德雷德，騎士會當咗佢係好人。\n\n";
+                . "遊戲一開始，騎士就會知道左右兩個玩家係好定壞：一係兩個都好人，一係就至少有一個壞人。而如果左右有玩家係莫德雷德，武士會當咗佢係好人。\n\n";
             Script::$script["och"][Script::PU_KNIGHTINFO]
                 = "<b>".Script::$script["och"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
                 . "屬於正派，只會令任務成功。"
@@ -5676,7 +5679,8 @@ class Script{
             Script::$script["yue"][Script::PU_GOODLANCELOTINFO]
                 = "<b>".Script::$script["yue"][Script::GOOD_LANCELOT]."</b>"
                 . " 原本屬於好人陣營。\n\n"
-                . "遊戲進行中會有好細嘅機會壞嘅蘭斯洛特會同好嘅蘭斯洛特交換身份。交換身份後，湖女會見到好嘅蘭斯洛特係壞人，好嘅蘭斯洛特亦會加入咗壞人陣營。(在分支1，壞嘅蘭斯洛特可以選擇讓任務成功或者失敗。然而，在分支2的遊戲裡面，當他執行任務時候，壞嘅蘭斯洛特只能讓任務失敗。)\n\n";
+                . "遊戲進行中會有好細嘅機會邪惡蘭斯洛特會同正義蘭斯洛特交換身份。交換身份後，湖女會見到正義蘭斯洛特喺壞人，正義蘭斯洛特亦會加入咗壞人陣營。"
+                . "(係分支1，邪惡蘭斯洛特可以選擇令任務成功或者失敗。但係，係分支2嘅遊戲裡面，當佢執行任務時候，邪惡蘭斯洛特只能夠令任務失敗。)\n\n";
             Script::$script["och"][Script::PU_GOODLANCELOTINFO]
                 = "<b>".Script::$script["och"][Script::GOOD_LANCELOT]."</b>"
                 . " is originally a good person whose job is to succeed the quests.\n\n"
@@ -5734,8 +5738,8 @@ class Script{
             Script::$script["yue"][Script::PU_EVILLANCELOTINFO]
                 = "<b>".Script::$script["yue"][Script::EVIL_LANCELOT]."</b>"
                 . " 原本屬於壞人陣營，會被梅林同埋其他壞人知道係壞人，但佢並唔知道有邊啲壞人。\n\n"
-                . "遊戲進行中會有好細嘅機會壞嘅蘭斯洛特會同好嘅蘭斯洛特交換身份。交換身份後，湖女會見到壞嘅蘭斯洛特係好人，壞嘅蘭斯洛特亦會加入咗好人陣營。\n\n"
-                . "(在分支1，壞嘅蘭斯洛特可以選擇讓任務成功或者失敗。然而，在分支2的遊戲裡面，當他執行任務時候，壞嘅蘭斯洛特只能讓任務失敗。)";
+                . "遊戲進行中會有好細嘅機會邪惡蘭斯洛特會同正義蘭斯洛特交換身份。交換身份後，湖女會見到邪惡蘭斯洛特喺好人，邪惡蘭斯洛特亦會加入咗好人陣營。\n\n"
+                . "(係分支1，邪惡蘭斯洛特可以選擇令任務成功或者失敗。但係，係分支2嘅遊戲裡面，當佢執行任務時候，邪惡蘭斯洛特只能夠令任務失敗。)";
             Script::$script["och"][Script::PU_EVILLANCELOTINFO]
                 = "<b>".Script::$script["och"][Script::EVIL_LANCELOT]."</b>"
                 . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
@@ -5786,7 +5790,7 @@ class Script{
                 . "，最神秘的坏人，一开始能知道所有坏人，但其他坏人却不会知道他的存在。梅林能知道他就是坏人。此角色不能PM其他坏人玩家，这会破坏遊戏的平衡。";
             Script::$script["yue"][Script::PU_OBERONINFO]
                 = "<b>".Script::$script["yue"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . "係壞人，雖然佢知道邊啲係壞人，但其他壞人唔知佢係壞人。但梅林會知道佢係壞人。";
+                . "係壞人，雖然佢知道邊啲係壞人，其他壞人亦唔知佢係壞人陣營，不過就逃唔出梅林嘅法眼。";
             Script::$script["och"][Script::PU_OBERONINFO]
                 = "<b>".Script::$script["och"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
                 . "屬於反派，但你的反派同伴卻不認識你。梅林反而知曉你是反派。";
@@ -5826,7 +5830,7 @@ class Script{
                 . " 一个非常普通的小偷。你只知道你自己的坏人同伴，除了欧泊朗。总之，能力不强的你无法用特殊能力对付好人，但你依然可以用你的口才，用尽一切手段去阻止任务成功。\n\n";
             Script::$script["yue"][Script::PU_THIEFINFO]
                 = "<b>".Script::$script["yue"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . "係壞人，遊戲開始時會知道壞人陣營有咩人，同隊友一齊令到任務失敗。\n\n";
+                . "係壞人，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n";
             Script::$script["och"][Script::PU_THIEFINFO]
                 = "<b>".Script::$script["och"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
                 . "屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n";
