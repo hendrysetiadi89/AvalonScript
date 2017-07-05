@@ -4084,8 +4084,8 @@ class Script{
                 = "درحال حاضر تغییراتی درحال انجام است لطفا بعدا تلاش کنید.";
 
             $contributor =
-                Script::$script["en"][Script::LANG]."(@Rhyned), "
-                .Script::$script["id"][Script::LANG]."(@Rhyned, @Khinchin), "
+                Script::$script["en"][Script::LANG]."(@Rhyned, @Khinchin), "
+                .Script::$script["id"][Script::LANG]."(@Rhyned), "
                 .Script::$script["it"][Script::LANG]."(@MatteoIlGrande), "
                 .Script::$script["cn"][Script::LANG]."(@bluebear119, @cicle_k), "
                 .Script::$script["pb"][Script::LANG]."(@Liozek), "
