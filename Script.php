@@ -4085,9 +4085,9 @@ class Script{
 
             $contributor =
                 Script::$script["en"][Script::LANG]."(@Rhyned), "
-                .Script::$script["id"][Script::LANG]."(@Rhyned), "
+                .Script::$script["id"][Script::LANG]."(@Rhyned, @Khinchin), "
                 .Script::$script["it"][Script::LANG]."(@MatteoIlGrande), "
-                .Script::$script["cn"][Script::LANG]."(@bluebear119), "
+                .Script::$script["cn"][Script::LANG]."(@bluebear119, @cicle_k), "
                 .Script::$script["pb"][Script::LANG]."(@Liozek), "
                 .Script::$script["ph"][Script::LANG]."(@ArjayTheMan), "
                 .Script::$script["es"][Script::LANG]."(@hozarberto), "
@@ -4711,8 +4711,7 @@ class Script{
                 ."<b>繁體中文</b>\n"
                 ."<a href=\"https://telegram.me/avalon_hk\">Avalon 阿瓦隆HK</a>\n\n"
                 ."<b>港澳粵語</b>\n"
-                ."<a href=\"https://telegram.me/HKAvalonGame\">亞法隆谷 @hktgb</a>\n"
-                ."<a href=\"https://t.me/HKFreedomAvalon\">HKFreedomAvalon</a>\n\n"
+                ."<a href=\"https://telegram.me/HKAvalonGame\">亞法隆谷 @hktgb</a>\n\n"
                 ."<b>Spanish</b>\n"
                 ."<a href=\"https://t.me/joinchat/AAAAAEJLtlKmqTAt1OwY3g\">Juguemos A valon</a>\n\n";
 
