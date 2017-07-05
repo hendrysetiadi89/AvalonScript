@@ -4084,17 +4084,17 @@ class Script{
                 = "درحال حاضر تغییراتی درحال انجام است لطفا بعدا تلاش کنید.";
 
             $contributor =
-                Script::$script["en"][Script::LANG]."(@Rhyned, @Khinchin), "
-                .Script::$script["id"][Script::LANG]."(@Rhyned), "
-                .Script::$script["it"][Script::LANG]."(@MatteoIlGrande), "
-                .Script::$script["cn"][Script::LANG]."(@bluebear119, @cicle_k), "
-                .Script::$script["pb"][Script::LANG]."(@Liozek), "
-                .Script::$script["ph"][Script::LANG]."(@ArjayTheMan), "
-                .Script::$script["es"][Script::LANG]."(@hozarberto), "
-                .Script::$script["zho"][Script::LANG]."(@Khinchin), "
-                .Script::$script["yue"][Script::LANG]."(@Khinchin, @cicle_k), "
-                .Script::$script["och"][Script::LANG]."(@Khinchin), "
-                .Script::$script["ar"][Script::LANG]."(@RendezvousRama), "
+                Script::$script["en"][Script::LANG]."(@Rhyned, @Khinchin)\n "
+                .Script::$script["id"][Script::LANG]."(@Rhyned)\n "
+                .Script::$script["it"][Script::LANG]."(@MatteoIlGrande)\n "
+                .Script::$script["cn"][Script::LANG]."(@bluebear119, @cicle_k)\n "
+                .Script::$script["pb"][Script::LANG]."(@Liozek)\n "
+                .Script::$script["ph"][Script::LANG]."(@ArjayTheMan)\n "
+                .Script::$script["es"][Script::LANG]."(@hozarberto)\n "
+                .Script::$script["zho"][Script::LANG]."(@Khinchin)\n "
+                .Script::$script["yue"][Script::LANG]."(@Khinchin, @cicle_k)\n "
+                .Script::$script["och"][Script::LANG]."(@Khinchin)\n "
+                .Script::$script["ar"][Script::LANG]."(@RendezvousRama)\n "
                 .Script::$script["fa"][Script::LANG]."(@mohireza123)\n\n";
 
             Script::$script["en"][Script::PU_CONTACT]
