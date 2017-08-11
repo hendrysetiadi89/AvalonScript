@@ -141,7 +141,7 @@ class Constant{
     const phString = "Filipino";
     const esString = "Español";
     const zhoString = "简体中文";
-    const yueString = "港澳粵語";
+    const gdhString = "�s�F��";
     const ochString = "正體中文";
     const arString = "اللغة العربية";
     const faString = "فارسی";
@@ -203,7 +203,7 @@ class Constant{
             case "ph": return Constant::phString;
             case "es": return Constant::esString;
             case "zho": return Constant::zhoString;
-            case "yue": return Constant::yueString;
+            case "gdh": return Constant::gdhString;
             case "och": return Constant::ochString;
         }
     }
