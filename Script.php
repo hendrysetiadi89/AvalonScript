@@ -108,7 +108,6 @@ class Script{
     const PU_JOINSTART = 74; //
     const PU_JOINSUCCESS = 75; //
 
-
     const PR_YOUAREMORGAUSE= 76; // you are morgause.
     const PR_YOUAREKNIGHTTHEREBAD= 77; // you are knight, at least 1 bad
     const PR_YOUAREKNIGHTNOBAD= 78; // you are knight, no bad
@@ -185,6 +184,8 @@ class Script{
     const WON = 135;
     const LOST = 136;
     const LANG = 137;
+
+    const PU_REQUEST_START = 138;
 
 
 
@@ -2906,7 +2907,7 @@ class Script{
             Script::$script["zho"][Script::PU_STARTMEFIRST]
                 = "记得要<a href=\"http://telegram.me/%s\">按這句私联</a>先。";
             Script::$script["yue"][Script::PU_STARTMEFIRST]
-                = "記得要撳 <a href="http://telegram.me/%s">Start Me</a> 先可以玩到呀。";
+                = "記得要撳 <a href=\"http://telegram.me/%s\">Start Me</a> 先可以玩到呀。";
             Script::$script["och"][Script::PU_STARTMEFIRST]
                 = "一定先要 <a href=\"http://telegram.me/%s\">按此連結與我私聊</a> 在先。";
             Script::$script["ar"][Script::PU_STARTMEFIRST]
@@ -3017,29 +3018,29 @@ class Script{
                 = "<b>%d ثانيه </b> مونده.";
 
             Script::$script["en"][Script::PU_JOINREMIND]
-                = "<b>%d seconds</b> left. Invite your friends to /join.";
+                = "<b>%d seconds</b> left. Invite your friends to /join. Use /forcestart to immediately start the game.";
             Script::$script["id"][Script::PU_JOINREMIND]
-                = "<b>%d detik</b> lagi. Ayo ajak teman-temanmu untuk /join.";
+                = "<b>%d detik</b> lagi. Ayo ajak teman-temanmu untuk /join. Gunakan /forcestart untuk langsung memulai game.";
             Script::$script["it"][Script::PU_JOINREMIND]
-                = "<b>%d secondi</b> rimanenti! Invita i tuoi amici a usare /join.";
+                = "<b>%d secondi</b> rimanenti! Invita i tuoi amici a usare /join. Use /forcestart to immediately start the game.";
             Script::$script["cn"][Script::PU_JOINREMIND]
-                = "還剩下<b>%d 秒</b>就開始遊戲，趕快叫你朋友 /join 一起玩吧。";
+                = "還剩下<b>%d 秒</b>就開始遊戲，趕快叫你朋友 /join 一起玩吧。Use /forcestart to immediately start the game.";
             Script::$script["pb"][Script::PU_JOINREMIND]
-                = "<b>%d segundos</b> restantes. Convide mais pessoas para enviar /join.";
+                = "<b>%d segundos</b> restantes. Convide mais pessoas para enviar /join. Use /forcestart to immediately start the game.";
             Script::$script["ph"][Script::PU_JOINREMIND]
-                = "<b>%d segundo</b> ang nalalabi. Mga Bes i-Tag na mga tropa now na /join.";
+                = "<b>%d segundo</b> ang nalalabi. Mga Bes i-Tag na mga tropa now na /join. Use /forcestart to immediately start the game.";
             Script::$script["es"][Script::PU_JOINREMIND]
-                = "Quedan <b>%d segundos</b>. Invita a tus amigos a que escriban el comando /join.";
+                = "Quedan <b>%d segundos</b>. Invita a tus amigos a que escriban el comando /join. Use /forcestart to immediately start the game.";
             Script::$script["zho"][Script::PU_JOINREMIND]
-                = "还剩下<b>%d 秒</b> 就开始遊戏，赶快叫你朋友 /join 一起玩吧。";
+                = "还剩下<b>%d 秒</b> 就开始遊戏，赶快叫你朋友 /join 一起玩吧。Use /forcestart to immediately start the game.";
             Script::$script["yue"][Script::PU_JOINREMIND]
-                = "仲有 <b>%d 秒</b>就開始，未入嘅好快啲 /join 。";
+                = "仲有 <b>%d 秒</b>就開始，未入嘅好快啲 /join 。Use /forcestart to immediately start the game.";
             Script::$script["och"][Script::PU_JOINREMIND]
-                = "餘下 <b>%d 秒</b> 就開始，請邀請更多人輸入 /join 一起玩吧。";
+                = "餘下 <b>%d 秒</b> 就開始，請邀請更多人輸入 /join 一起玩吧。Use /forcestart to immediately start the game.";
             Script::$script["ar"][Script::PU_JOINREMIND]
-                = "<b>%d ثانية </b> تبقت. أضف أصحابك ليلعبون /join.";
+                = "<b>%d ثانية </b> تبقت. أضف أصحابك ليلعبون /join. Use /forcestart to immediately start the game.";
             Script::$script["fa"][Script::PU_JOINREMIND]
-                = "<b>%d ثانيه </b> مونده. وارد بشید و یا دوستاتون رو دعوت به بازی کنید /join.";
+                = "<b>%d ثانيه </b> مونده. وارد بشید و یا دوستاتون رو دعوت به بازی کنید /join. Use /forcestart to immediately start the game.";
 
             Script::$script["en"][Script::PU_JOINSTART]
                 = "%s has started the Avalon - %s. Type /join to join the game.";
@@ -3190,6 +3191,33 @@ class Script{
                 = "%s طلب بإلغاء اللعبة. <b>%d</b> من <b>%d</b>.";
             Script::$script["fa"][Script::PU_REQUEST_STOP]
                 = "%s خواست بازی لغو بشه. <b>%d</b> از <b>%d</b>.";
+
+
+            Script::$script["en"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["id"][Script::PU_REQUEST_START]
+                = "%s ingin memulai permainan. <b>%d</b> dari <b>%d</b>.";
+            Script::$script["it"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["cn"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["pb"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["ph"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["es"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["zho"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["yue"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["och"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["ar"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["fa"][Script::PU_REQUEST_START]
+                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+
 
             Script::$script["en"][Script::PU_STOP_SUCCESS]
                 = "The game is canceled.";
@@ -4085,9 +4113,9 @@ class Script{
 
             $contributor =
                 Script::$script["en"][Script::LANG]."(@Rhyned), "
-                .Script::$script["id"][Script::LANG]."(@Rhyned, @Khinchin), "
+                .Script::$script["id"][Script::LANG]."(@Rhyned), "
                 .Script::$script["it"][Script::LANG]."(@MatteoIlGrande), "
-                .Script::$script["cn"][Script::LANG]."(@bluebear119, @cicle_k), "
+                .Script::$script["cn"][Script::LANG]."(@bluebear119), "
                 .Script::$script["pb"][Script::LANG]."(@Liozek), "
                 .Script::$script["ph"][Script::LANG]."(@ArjayTheMan), "
                 .Script::$script["es"][Script::LANG]."(@hozarberto), "
@@ -4699,6 +4727,7 @@ class Script{
                 ."<a href=\"http://telegram.me/mainavalon\">Main Avalon Indonesia</a>\n"
                 ."<a href=\"http://telegram.me/avalonwolfcircle\">Avalon Wolf Circle</a>\n"
                 ."<a href=\"https://telegram.me/joinchat/ArAp4UFSojc5mFfM7iLPWw\">Play Avalon</a>\n"
+                ."<a href=\"https://t.me/avalonhavefun\">Avalon Have Fun</a>\n"
                 ."<a href=\"http://telegram.me/avalonindonesia\">Avalon Indonesia</a>\n\n"
                 ."<b>ITALIANO</b>\n"
                 ."<a href=\"http://telegram.me/AvalonITA\">Avalon Italia</a>\n\n"
@@ -4711,7 +4740,9 @@ class Script{
                 ."<b>繁體中文</b>\n"
                 ."<a href=\"https://telegram.me/avalon_hk\">Avalon 阿瓦隆HK</a>\n\n"
                 ."<b>港澳粵語</b>\n"
-                ."<a href=\"https://telegram.me/HKAvalonGame\">亞法隆谷 @hktgb</a>\n\n"
+                ."<a href=\"https://telegram.me/HKAvalonGame\">亞法隆谷 @hktgb</a>\n"
+                ."<a href=\"https://t.me/HKFreedomAvalon\">HKFreedomAvalon</a>\n"
+                ."<a href=\"https://t.me/ProfessionalAvalon\">小火 Avalon精英谷</a>\n\n"
                 ."<b>Spanish</b>\n"
                 ."<a href=\"https://t.me/joinchat/AAAAAEJLtlKmqTAt1OwY3g\">Juguemos A valon</a>\n\n";
 
