@@ -141,7 +141,7 @@ class Constant{
     const phString = "Filipino";
     const esString = "Español";
     const zhoString = "简体中文";
-    const yueString = "港澳粵語";
+    const yueString = "廣東話";
     const ochString = "正體中文";
     const arString = "اللغة العربية";
     const faString = "فارسی";
