@@ -3034,7 +3034,7 @@ class Script{
             Script::$script["zho"][Script::PU_JOINREMIND]
                 = "还剩下<b>%d 秒</b> 就开始遊戏，赶快叫你朋友 /join 一起玩吧。Use /forcestart to immediately start the game.";
             Script::$script["yue"][Script::PU_JOINREMIND]
-                = "仲有 <b>%d 秒</b>就開始，未入嘅好快啲 /join 。Use /forcestart to immediately start the game.";
+                = "仲有 <b>%d 秒</b>就開始，未入嘅好快啲 /join ，湊齊人想開始嘅就 /forcestart 。";
             Script::$script["och"][Script::PU_JOINREMIND]
                 = "餘下 <b>%d 秒</b> 就開始，請邀請更多人輸入 /join 一起玩吧。Use /forcestart to immediately start the game.";
             Script::$script["ar"][Script::PU_JOINREMIND]
@@ -3210,7 +3210,7 @@ class Script{
             Script::$script["zho"][Script::PU_REQUEST_START]
                 = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
             Script::$script["yue"][Script::PU_REQUEST_START]
-                = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+                = "%s 要求開始遊戲，有 <b>%d</b> 票贊成，總數要 <b>%d</b> 票。";
             Script::$script["och"][Script::PU_REQUEST_START]
                 = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
             Script::$script["ar"][Script::PU_REQUEST_START]
