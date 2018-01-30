@@ -4732,7 +4732,7 @@ class Script{
                 ."<b>ITALIANO</b>\n"
                 ."<a href=\"http://telegram.me/AvalonITA\">Avalon Italia</a>\n\n"
                 ."<b>PHILIPPINES</b>\n"
-                ."<a href=\"https://telegram.me/joinchat/AAAAAEEQh-ZsFYdQh0B4zw\">Avalon PH</a>\n\n"
+                ."<a href=\"https://telegram.me/AvalonPH\">Avalon PH</a>\n\n"
                 ."<b>PORTUGUÊS</b>\n"
                 ."<a href=\"http://telegram.me/AvalonBrasil\">Avalon Brasil</a>\n\n"
                 ."<b>SINGAPORE</b>\n"
