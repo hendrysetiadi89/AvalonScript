@@ -262,6 +262,7 @@ class Script{
             Script::$script["och"][Script::LANG] = "正體中文";
             Script::$script["ar"][Script::LANG] = "اللغة العربية";
             Script::$script["fa"][Script::LANG] = "فارسی";
+            Script::$script["fr"][Script::LANG] = "Français";
 
 
             Script::$script["en"][Script::QUEST] = "Quest";
@@ -276,6 +277,7 @@ class Script{
             Script::$script["och"][Script::QUEST] = "任務 ✉";
             Script::$script["ar"][Script::QUEST] = "مهمة";
             Script::$script["fa"][Script::QUEST] = "چالش";
+            Script::$script["fr"][Script::QUEST] = "Quête";
 
 
             Script::$script["en"][Script::TOKEN_REJECT] = "Reject token";
@@ -290,6 +292,7 @@ class Script{
             Script::$script["och"][Script::TOKEN_REJECT] = "否決標誌 ❌";
             Script::$script["ar"][Script::TOKEN_REJECT] = "رمز مرفوض";
             Script::$script["fa"][Script::TOKEN_REJECT] = "رد شانس";
+            Script::$script["fr"][Script::TOKEN_REJECT] = "Marqueur de vote";
 
 
             Script::$script["en"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
@@ -304,6 +307,7 @@ class Script{
             Script::$script["och"][Script::MERLIN] = "梅林 ". Constant::EMO_MERLIN;
             Script::$script["ar"][Script::MERLIN] = "مارلين ". Constant::EMO_MERLIN;
             Script::$script["fa"][Script::MERLIN] = "مرلين ". Constant::EMO_MERLIN;
+            Script::$script["fr"][Script::MERLIN] = "Merlin ". Constant::EMO_MERLIN;
 
 
             Script::$script["en"][Script::PERCIVAL] = "Percival ". Constant::EMO_PERCIVAL;
@@ -318,6 +322,7 @@ class Script{
             Script::$script["och"][Script::PERCIVAL] = "派西維爾 ". Constant::EMO_PERCIVAL;
             Script::$script["ar"][Script::PERCIVAL] = "بريفسال ". Constant::EMO_PERCIVAL;
             Script::$script["fa"][Script::PERCIVAL] = "پرسیوال ". Constant::EMO_PERCIVAL;
+            Script::$script["fr"][Script::PERCIVAL] = "Perceval ". Constant::EMO_PERCIVAL;
 
 
             Script::$script["en"][Script::MORGANA] = "Morgana " .Constant::EMO_MORGANA;
@@ -332,6 +337,7 @@ class Script{
             Script::$script["och"][Script::MORGANA] = "莫甘娜 ".Constant::EMO_MORGANA;
             Script::$script["ar"][Script::MORGANA] = "مورقانا ".Constant::EMO_MORGANA;
             Script::$script["fa"][Script::MORGANA] = "مورگانا ".Constant::EMO_MORGANA;
+            Script::$script["fr"][Script::MORGANA] = "Morgane " .Constant::EMO_MORGANA;
 
 
             Script::$script["en"][Script::OBERON] = "Oberon " .Constant::EMO_OBERON;
@@ -346,6 +352,7 @@ class Script{
             Script::$script["och"][Script::OBERON] = "奥伯倫 ".Constant::EMO_OBERON;
             Script::$script["ar"][Script::OBERON] = "أوبيرن ".Constant::EMO_OBERON;
             Script::$script["fa"][Script::OBERON] = "اوبرن ".Constant::EMO_OBERON;
+            Script::$script["fr"][Script::OBERON] = "Oberon " .Constant::EMO_OBERON;
 
 
             Script::$script["en"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
@@ -360,6 +367,7 @@ class Script{
             Script::$script["och"][Script::NINJA] = "忍者 ".Constant::EMO_NINJA;
             Script::$script["ar"][Script::NINJA] = "نينجا ".Constant::EMO_NINJA;
             Script::$script["fa"][Script::NINJA] = "نينجا ".Constant::EMO_NINJA;
+            Script::$script["fr"][Script::NINJA] = "Ninja ".Constant::EMO_NINJA;
 
             Script::$script["en"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
             Script::$script["id"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
@@ -373,6 +381,7 @@ class Script{
             Script::$script["och"][Script::MORDRED] = "莫德雷德 ".Constant::EMO_MORDRED;
             Script::$script["ar"][Script::MORDRED] = "موردريد ".Constant::EMO_MORDRED;
             Script::$script["fa"][Script::MORDRED] = "موردرد ".Constant::EMO_MORDRED;
+            Script::$script["fr"][Script::MORDRED] = "Mordred ".Constant::EMO_MORDRED;
 
 
 
@@ -388,6 +397,7 @@ class Script{
             Script::$script["och"][Script::SERVANT] = "仕從 ".Constant::EMO_SERVANT;
             Script::$script["ar"][Script::SERVANT] = "خادم".Constant::EMO_SERVANT;
             Script::$script["fa"][Script::SERVANT] = "خدمتکار".Constant::EMO_SERVANT;
+            Script::$script["fr"][Script::SERVANT] = "Vassal ".Constant::EMO_SERVANT;
 
 
             Script::$script["en"][Script::THIEF] = "Thief " .Constant::EMO_THIEF;
@@ -402,6 +412,7 @@ class Script{
             Script::$script["och"][Script::THIEF] = "小偷 ".Constant::EMO_THIEF;
             Script::$script["ar"][Script::THIEF] = "لص" .Constant::EMO_THIEF;
             Script::$script["fa"][Script::THIEF] = "دزد" .Constant::EMO_THIEF;
+            Script::$script["fr"][Script::THIEF] = "Voleur " .Constant::EMO_THIEF;
 
 
             Script::$script["en"][Script::WITCH] = "Witch " .Constant::EMO_WITCH;
@@ -416,6 +427,7 @@ class Script{
             Script::$script["och"][Script::WITCH] = "女巫 ".Constant::EMO_WITCH;
             Script::$script["ar"][Script::WITCH] = "ويتش " .Constant::EMO_WITCH;
             Script::$script["fa"][Script::WITCH] = "جادوگر " .Constant::EMO_WITCH;
+            Script::$script["fr"][Script::WITCH] = "Sorcière " .Constant::EMO_WITCH;
 
 
             Script::$script["en"][Script::AGENT] = "Agent " .Constant::EMO_AGENT;
@@ -430,6 +442,7 @@ class Script{
             Script::$script["och"][Script::AGENT] = "密探 ".Constant::EMO_AGENT;
             Script::$script["ar"][Script::AGENT] = "وكيل " .Constant::EMO_AGENT;
             Script::$script["fa"][Script::AGENT] = "مأمور " .Constant::EMO_AGENT;
+            Script::$script["fr"][Script::AGENT] = "Agent " .Constant::EMO_AGENT;
 
 
             Script::$script["en"][Script::AUDITOR] = "Auditor ".Constant::EMO_AUDITOR;
@@ -444,6 +457,7 @@ class Script{
             Script::$script["och"][Script::AUDITOR] = "使節 ".Constant::EMO_AUDITOR;
             Script::$script["ar"][Script::AUDITOR] = "المراجح ".Constant::EMO_AUDITOR;
             Script::$script["fa"][Script::AUDITOR] = "وکیل".Constant::EMO_AUDITOR;
+            Script::$script["fr"][Script::AUDITOR] = "Auditeur ".Constant::EMO_AUDITOR;
 
 
             Script::$script["en"][Script::ASSASSIN] = "Assassin " .Constant::EMO_ASSASSIN;
@@ -458,6 +472,7 @@ class Script{
             Script::$script["och"][Script::ASSASSIN] = "刺客 ".Constant::EMO_ASSASSIN;
             Script::$script["ar"][Script::ASSASSIN] = "الحشاش " .Constant::EMO_ASSASSIN;
             Script::$script["fa"][Script::ASSASSIN] = "قاتل " .Constant::EMO_ASSASSIN;
+            Script::$script["fr"][Script::ASSASSIN] = "Assassin " .Constant::EMO_ASSASSIN;
 
 
             Script::$script["en"][Script::MORGAUSE] = "Morgause " .Constant::EMO_MORGAUSE;
@@ -472,6 +487,7 @@ class Script{
             Script::$script["och"][Script::MORGAUSE] = "莫歌絲 ".Constant::EMO_MORGAUSE;
             Script::$script["ar"][Script::MORGAUSE] = "مورقوس " .Constant::EMO_MORGAUSE;
             Script::$script["fa"][Script::MORGAUSE] = "مورگاس " .Constant::EMO_MORGAUSE;
+            Script::$script["fr"][Script::MORGAUSE] = "Morgause " .Constant::EMO_MORGAUSE;
 
             Script::$script["en"][Script::KNIGHT] = "Knight ".Constant::EMO_KNIGHT;
             Script::$script["id"][Script::KNIGHT] = "Ksatria ".Constant::EMO_KNIGHT;
@@ -485,6 +501,7 @@ class Script{
             Script::$script["och"][Script::KNIGHT] = "騎士 ".Constant::EMO_KNIGHT;
             Script::$script["ar"][Script::KNIGHT] = "الفارس ".Constant::EMO_KNIGHT;
             Script::$script["fa"][Script::KNIGHT] = "شوالیه ".Constant::EMO_KNIGHT;
+            Script::$script["fr"][Script::KNIGHT] = "Chevalier ".Constant::EMO_KNIGHT;
 
             // NEW
             Script::$script["en"][Script::GOOD_LANCELOT] = "Good Lancelot ".Constant::EMO_GOOD_LANCELOT;
@@ -499,6 +516,7 @@ class Script{
             Script::$script["och"][Script::GOOD_LANCELOT] = "正義方蘭斯洛特 ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["ar"][Script::GOOD_LANCELOT] = "لانسوت طيب ".Constant::EMO_GOOD_LANCELOT;
             Script::$script["fa"][Script::GOOD_LANCELOT] = "لنسلات خوب ".Constant::EMO_GOOD_LANCELOT;
+            Script::$script["fr"][Script::GOOD_LANCELOT] = "Bon Lancelot ".Constant::EMO_GOOD_LANCELOT;
 
             // NEW
             Script::$script["en"][Script::EVIL_LANCELOT] = "Evil Lancelot ".Constant::EMO_EVIL_LANCELOT;
@@ -513,6 +531,7 @@ class Script{
             Script::$script["och"][Script::EVIL_LANCELOT] = "邪惡方蘭斯洛特 ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["ar"][Script::EVIL_LANCELOT] = "لانسوت شرير ".Constant::EMO_EVIL_LANCELOT;
             Script::$script["fa"][Script::EVIL_LANCELOT] = "لنسلات شیطانی ".Constant::EMO_EVIL_LANCELOT;
+            Script::$script["fr"][Script::EVIL_LANCELOT] = "Mauvais Lancelot ".Constant::EMO_EVIL_LANCELOT;
 
 
             Script::$script["en"][Script::PR_NEWGAME]
@@ -539,6 +558,8 @@ class Script{
                 = "لقد أنشأت لعبة جديدة %s mode في مجموعة %s.";
             Script::$script["fa"][Script::PR_NEWGAME]
                 = "یک بازی جدید با مد - %s در گروه %s ساخته شد";
+            Script::$script["fr"][Script::PR_NEWGAME]
+                = "Vous avez crée une nouvelle partie, mode - %s  dans le groupe %s.";
 
 
             Script::$script["en"][Script::PR_JOINGAME]
@@ -565,6 +586,8 @@ class Script{
                 = "لقد دخلت في لعبة أفالون في مجموعة %s.";
             Script::$script["fa"][Script::PR_JOINGAME]
                 = "شما در گروه %s وارد بازی شدید";
+            Script::$script["fr"][Script::PR_JOINGAME]
+                = "Vous avez rejoint une partie d'Avalon dans le groupe %s.";
 
 
             Script::$script["en"][Script::PU_KINGDONE]
@@ -591,6 +614,8 @@ class Script{
                 = "وجد الملك بالفعل الجواب, ثم قرر أخيراً بإنهاء هذه المناقشة التي لن تنتهي.";
             Script::$script["fa"][Script::PU_KINGDONE]
                 = "پادشاه جواب رو پیدا کرد و تصمیم گرفت به این بحث پایان ناپذیر پایان بده.";
+            Script::$script["fr"][Script::PU_KINGDONE]
+                = "Le roi a trouvé une réponse, et a enfin décidé de mettre fin à ces discussions interminables.";
 
 
             Script::$script["en"][Script::PU_REJECTCHANGEKING]
@@ -617,6 +642,8 @@ class Script{
                 = "المهمة التي يقودها %s قد تم رفضها بالفعل. المهمة الجديدة بيد الملك: %s.";
             Script::$script["fa"][Script::PU_REJECTCHANGEKING]
                 = "رهبری چالش توسط جانشین جدید یعنی %s رد شد و به پادشاه جدید ما یعنی %s رسید.";
+            Script::$script["fr"][Script::PU_REJECTCHANGEKING]
+                = "La quête menée par %s a été refusée. La quête est maintenant menée par le nouveau roi: %s.";
 
 
             Script::$script["en"][Script::PU_KINGNEEDDISCUSS]
@@ -643,6 +670,8 @@ class Script{
                 = "قبل إختيار <b>%d للأشخاص</b>, %s كـ ملك له <b>%d ثانية</b> ليتناقش مع الجميع. الملك بإستطاعته كتابة /done لإنهاء النقاش. إضغط /questhistory لرؤية التاريخ.";
             Script::$script["fa"][Script::PU_KINGNEEDDISCUSS]
                 = "قبل از معین کردن <b>%d نفر</b> توسط %s به عنوان پادشاه،  <b>%d ثانیه</b>  وقت داره که با درباریانش بحث کنه. پادشاه می تونه با استفاده از /done به بحث پایان بده و همچنین با استفاده از /questhistory تاریخچه رو ببینه.";
+            Script::$script["fr"][Script::PU_KINGNEEDDISCUSS]
+                = "Avant de désigner <b>%d personnes</b>, en tant que roi, %s a <b>%d secondes</b> pour discuter avec le reste des joueurs. Le roi peut taper /done pour mettre fin à la discussion. Cliquez sur /questhistory pour voir l'historique.";
 
 
             Script::$script["en"][Script::PU_AFTERAPPROVE]
@@ -669,6 +698,8 @@ class Script{
                 = "معظم الأعضاء قد وافقوا, سيتم تنفيذ المهمة.";
             Script::$script["fa"][Script::PU_AFTERAPPROVE]
                 = "بیشتر درباری ها موافقت هستن. پس چالش اجرا میشه!";
+            Script::$script["fr"][Script::PU_AFTERAPPROVE]
+                = "La majorité des joueurs approuvent. La quête sera lancée!";
 
 
             Script::$script["en"][Script::PR_EXECQUEST]
@@ -695,6 +726,8 @@ class Script{
                 = "المهمة رقم : %d. ماذا تريد أن تختار؟";
             Script::$script["fa"][Script::PR_EXECQUEST]
                 = "چالش شماره ی %d. انتخابت چیه؟";
+            Script::$script["fr"][Script::PR_EXECQUEST]
+                = "Quête numéro.%d. Que voulez-vous choisir?";
 
 
             Script::$script["en"][Script::PR_SUCCESS]
@@ -721,6 +754,8 @@ class Script{
                 = "نجحت!";
             Script::$script["fa"][Script::PR_SUCCESS]
                 = "پیروزی!";
+            Script::$script["fr"][Script::PR_SUCCESS]
+                = "SUCCÈS";
 
 
             Script::$script["en"][Script::PR_FAIL]
@@ -747,6 +782,8 @@ class Script{
                 = "فشلت";
             Script::$script["fa"][Script::PR_FAIL]
                 = "شکست";
+            Script::$script["fr"][Script::PR_FAIL]
+                = "ÉCHEC";
 
 
             Script::$script["en"][Script::PR_2FAIL]
@@ -773,6 +810,8 @@ class Script{
                 = "فشلين!";
             Script::$script["fa"][Script::PR_2FAIL]
                 = "دو شکست!";
+            Script::$script["fr"][Script::PR_2FAIL]
+                = "2 ÉCHECS";
 
 
             Script::$script["en"][Script::PR_EXECQUESTGOOD]
@@ -799,6 +838,8 @@ class Script{
                 = "أنت شخص جيد. لقد وضعت كل جهدك لإنهاء هذه المهمة بكل ما لديك.";
             Script::$script["fa"][Script::PR_EXECQUESTGOOD]
                 = "تو از درباریان پادشاه هستی! تمام تلاشت رو بکن تا بتونی همه چیز رو تا جای ممکن عالی تموم کنی.";
+            Script::$script["fr"][Script::PR_EXECQUESTGOOD]
+                = "Tu es un gentil. Tu fais de ton mieux pour que la quête se finisse aussi bien que possible.";
 
             // NEW
             Script::$script["en"][Script::PR_EXECQUESTLANCELOT]
@@ -825,6 +866,8 @@ class Script{
                 = "كـ لانسوت شرير, يجب عليك أن ترفض هذه المهمة مهما حصل. “ψ(｀∇´)ψ";
             Script::$script["fa"][Script::PR_EXECQUESTLANCELOT]
                 = "به عنوان لنسلات شیطانی  تو باید چالش رو ببازی. انتخاب دیگه ای نداری!. “ψ(｀∇´)ψ";
+            Script::$script["fr"][Script::PR_EXECQUESTLANCELOT]
+                = "En tant que Mauvais Lancelot, tu dois faire échouer la mission coute que coute. “ψ(｀∇´)ψ";
 
             Script::$script["en"][Script::PR_GOFORQUEST]
                 = "%s go to execute the quest. <b>%d seconds</b> are given to finish the quest.";
@@ -850,6 +893,8 @@ class Script{
                 = "%s ذهب لتنفيذ المهمة <b>%d ثانية </b> معطاة لإنهاء المهمة.";
             Script::$script["fa"][Script::PR_GOFORQUEST]
                 = "%s برو و چالش رو اجرا کن <b>%d ثانيه </b> برای این کار وقت داری.";
+            Script::$script["fr"][Script::PR_GOFORQUEST]
+                = "%s vont réaliser la quête. <b>%d secondes</b> sont données pour finir la quête.";
 
 
             Script::$script["en"][Script::PR_YOUAREMERLIN]
@@ -876,6 +921,8 @@ class Script{
                 = "أنت مرلين. طاقة شريرة تشع من %s. وجّه فريقك دون أن يقبض عليك من الأشرار. تذكير : لا يمكنك التواصل مع الآخرين بالرسائل الخاصة.";
             Script::$script["fa"][Script::PR_YOUAREMERLIN]
                 = "تو مرلین، پیشگوی بزرگ هستی! بوهای بدی از طرف %s به مشام میاد. از به دام افتادن درباریان در برابر افراد بد جلوگیری کن. توجه کن که مرلین حق نداره توی چت خصوصی اطلاعاتی به کسی بده.";
+            Script::$script["fr"][Script::PR_YOUAREMERLIN]
+                = "Tu es Merlin. Une mauvaise aura émane de %s. Guide tes alliés sans te faire remarquer par les méchants! Note: Merlin ne devrait pas utiliser les Messages Privés pour communiquer avec ses alliés";
 
 
             Script::$script["en"][Script::PR_YOUAREPERCIVAL]
