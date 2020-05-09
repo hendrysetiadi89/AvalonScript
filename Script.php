@@ -5046,22 +5046,22 @@ class Script{
 
                 . Script::$script["fr"][Script::PU_ROLELIST]
 
-                . "\nAu début de la partie, le jeton du Roi".Constant::EMO_KING_B. " sera aléatoirement distribué à un joueur. Le roi peut désigner qui participera à la prochaine quête.\n"
-                . "Une fois le choix du Roi effectué, tous les joueurs peuvent voter <b>pour</b> ou <b>contre</b> l'équipe choisie. Les comptes sont révélés à la fin du vote.\n\n"
+                . "\nAu début de la partie, le jeton du Roi".Constant::EMO_KING_B. " sera aléatoirement distribué à un joueur and the King may choose who can complete the current quest.\n"
+                . "After the king has done the assignment, any player may vote <b>approve</b> or <b>reject</b> to the assignment. Then, the approve and reject will be counted.\n\n"
 
-                . "Si la moitié des joueurs ou plus a voté <b>contre</b>, l'équipe est rejetée, et le jeton du Roi"
-                .Constant::EMO_KING_B." est donné au joueur suivant.\n"
-                . "Si plus de la moitié des joueurs a voté <b>pour</b>, la quête est réalisée par l'équipe choisie.\n\n"
+                . "If the <b>reject</b> count is half or more the count of the players, then the quest is rejected, and the king token"
+                .Constant::EMO_KING_B." will be given to the next player (next to the King)\n"
+                . "If the <b>approve</b> count is more than half players' count, then the quest is executed by the assignees.\n\n"
 
-                . "Lorsqu'ils réalisent une quête, les joueurs du Mal peuvent secrètement choisir de la faire échouer."
-                . "En général, si au moins un joueur fait échouer la quête, la quête entière échoue.\n\n"
+                . "When executing a quest, evil players may choose to fail the quest and this will be done secretly. "
+                . "In general, if at least 1 player give the FAIL to that quest, it means that quest will FAIL.\n\n"
 
-                . "Pour empêcher tous les équipes d'être rejetées, on ne peut rejeter que jusqu'à 4 équipes consécutives. Si l'équipe est rejetée 5 fois de suite, la quête échoue automatiquement.\n\n"
+                . "And to prevent each quest being rejected over and over, each quest has maximum reject of 5. If the quest is rejected 5 times, it will automatically FAIL\n\n"
 
-                . "Dans une partie à 8 joueurs ou plus, la <b>Dame du Lac</b>".Constant::EMO_LADY_B." peut être utilisée. La Dame du Lac est une alliée du Bien..."
-                . "Le joueur qui possède le jeton de la Dame du Lac peut désigner un joueur, qui lui révèle son alignement. Il doit ensuite donner le jeton à ce joueur.\n\n"
+                . "In a game 8 players or more, <b>lady of the lake</b>".Constant::EMO_LADY_B." can be used. Lady of The Lake will give a large benefit for a good forces.. "
+                . "A player who hold the lady token may choose a player to know his/her true identity (good or evil) but only the lady holder knows the truth.\n\n"
 
-                . "C'est tout ! Jouer est la meilleure manière d'apprendre : utilisez /start ou /startchaos pour lancer une partie.\n\n"; 
+                . "That's all. Practice is the faster way to learn.. Type /start or /startchaos to start the game.\n\n"; 
 
 
 
@@ -5127,9 +5127,6 @@ class Script{
             Script::$script["fa"][Script::PR_GROUPLIST]
                 = "لیست گروه های فعلی درحال آپدیت شدنه. شما می تونید از طریق تماس با سازنده ی ربات گروه خودتون رو به این لیست اضافه کنید. \n\n"
                 .$groupList;
-            Script::$script["fr"][Script::PR_GROUPLIST]
-                = "Vous pouvez ajouter votre groupe public à cette liste en contactant le développeur de ce bot.\n\n"
-                .$groupList;
 
 
             Script::$script["en"][Script::PU_RATEME]
@@ -5180,10 +5177,6 @@ class Script{
                 = "این بات رو دوست دارید؟ به ما رأی بدید ". Constant::EMO_SMILE_B . "\n"
                 ."<a href=\"http://telegram.me/storebot?start=%s\">به من رأی بدید!</a>\n\n"
                 . Script::$script["fa"][Script::PU_JOINCHANNEL];
-            Script::$script["fr"][Script::PU_RATEME]
-                = "Vous aimez le bot ? N'hésitez pas à l'évaluer ". Constant::EMO_SMILE_B . "\n"
-                ."<a href=\"http://telegram.me/storebot?start=%s\">Évaluer</a>\n\n"
-                . Script::$script["fr"][Script::PU_JOINCHANNEL];
 
 
             Script::$script["en"][Script::PU_MERLININFO]
@@ -5255,12 +5248,6 @@ class Script{
                 . "اون میتونه یاغی ها رو بشناسه و شانس سوزوندن چالش ها رو از اونا بگیره.\n\n"
                 . "توجه کنید که اگه مرلین خودش رو بشناسونه، حتی اگه درباری ها سه تا موفقیت توی چالش ها داشته باشن قاتل میتونه "
                 . "یه نفر رو به عنوان مرلین حدس بزنه و بکشه و اگه اون شخص مرلین باشه، حتی اگه درباری ها سه تا برد داشته باشن باز هم یاغی ها برنده ی بازی میشن.";
-            Script::$script["fr"][Script::PU_MERLININFO]
-                = "<b>".Script::$script["fr"][Script::MERLIN]."</b>".Constant::EMO_SMILE_B
-                . " connaît tous les joueurs du Mal, sauf /mordred (et le /ninja). Son rôle est de partager des indices à ses alliés, "
-                . "afin d'éviter que les joueurs du Mal fassent échouer les quêtes.\n\n"
-                . "Cependant, si Merlin n'est pas discret, l' /assassin peut le débusquer même si 3 quêtes réussissent."
-                . "Si l'Assassin désigne correctement Merlin à la fin de la partie, le Mal l'emportera même si 3 quêtes ont été réussies.";
 
 
             Script::$script["en"][Script::PU_PERCIVALINFO]
@@ -5318,11 +5305,6 @@ class Script{
                 . " پرسیوال، مرلین و مورگانا رو میشناسه ولی نمیدونه که کدوم به کدومه.\n\n"
                 . "هدف پرسیوال پیدا کردن مرلین و پیروی از دستورات اونه, "
                 . "بعلاوه مرلین باید خودش رو مرلین جا بزنه تا قاتل به اشتباه بیفته. /assassin.";
-            Script::$script["fr"][Script::PU_PERCIVALINFO]
-                = "<b>".Script::$script["fr"][Script::PERCIVAL]."</b>".Constant::EMO_SMILE_B
-                . " connaît Merlin et Morgane dès le début de la partie. Cependant, il ne sait pas les distinguer.\n\n"
-                . "L'objectif de Perceval est de bien distinguer Merlin de Morgane pour pouvoir suivre les ordres de Merlin."
-                . "De plus, Perceval doit agir de façon à se faire passer pour Merlin aux yeux de l'Assassin.";
 
 
             Script::$script["en"][Script::PU_SERVANTINFO]
@@ -5379,11 +5361,6 @@ class Script{
                 . "  خدمتکار با درباری هاست ولی با این وجود در ابتدای بازی هیچی نمیدونه.\n\n"
                 . "وظیفه ی خدمتکار اینه که در چالش ها موفق بشه و مرلین رو بشناسه ( با استنتاج و حدس ). ".
                 "همچنین خدمتکار باید خودش رو مرلین جا بزنه تا یاغی ها اشتباه کنن.";
-            Script::$script["fr"][Script::PU_SERVANTINFO]
-                = "Le <b>".Script::$script["fr"][Script::SERVANT]."</b>".Constant::EMO_SMILE_B
-                . " est du côté du Bien, mais n'a aucune information.\n\n"
-                . "L'objectif du Vassal est de faire réussir des quêtes et de repérer Merlin.".
-                "Le Vassal peut aussi tenter de passer pour Merlin afin de trouver les joueurs du Mal.";
 
             Script::$script["en"][Script::PU_AUDITORINFO]
                 = "<b>".Script::$script["en"][Script::AUDITOR]."</b>".Constant::EMO_SMILE_B
@@ -5421,9 +5398,6 @@ class Script{
             Script::$script["fa"][Script::PU_AUDITORINFO]
                 = "<b>".Script::$script["fa"][Script::AUDITOR]."</b>".Constant::EMO_SMILE_B
                 . " وکیل تو تیم درباری هاست و اگه برای یه چالش انتخاب بشه 20 درصد امکان \"از بین بردن\" باخت در اون چالش رو داره.n\n";
-            Script::$script["fr"][Script::PU_AUDITORINFO]
-                = "L'<b>".Script::$script["fr"][Script::AUDITOR]."</b>".Constant::EMO_SMILE_B
-                . " est du côté du Bien. Si l'Auditeur participe à une quête, il y a 20% de chance qu'elle réussisse même si un jouer l'a fait échouer.\n\n";
 
 
             Script::$script["en"][Script::PU_MORDREDINFO]
@@ -5474,11 +5448,6 @@ class Script{
                 = "<b>".Script::$script["fa"][Script::MORDRED]."</b>".Constant::EMO_EVIL_B
                 . " موردرد از یاغی هاست و همه ی اونها بجز اوبرن رو میشناسه. وظیفه ی موردرد شکست در چالش هاست.\n\n"
                 . "مرلین موردرد رو نمیشناسه پس میتونه بجای یه درباری نقش خودش رو اجرا کنه.";
-            Script::$script["fr"][Script::PU_MORDREDINFO]
-                = "<b>".Script::$script["fr"][Script::MORDRED]."</b>".Constant::EMO_EVIL_B
-                . " , en tant que joueur du Mal, connaît ses alliés (sauf Obéron) et a pour objectif de faire échouer des quêtes.\n\n"
-                . "Merlin ne connaît pas l'idendité de Mordred : ce dernier peut donc se faire passer pour un joueur du Bien aux yeux de tous.";
-
 
             Script::$script["en"][Script::PU_NINJAINFO]
                 = "<b>".Script::$script["en"][Script::NINJA]."</b>".Constant::EMO_EVIL_B
@@ -5528,11 +5497,6 @@ class Script{
                 = "<b>".Script::$script["fa"][Script::NINJA]."</b>".Constant::EMO_EVIL_B
                 . " نیجنجا ( سوبر موردرد ) از یاغی هاست و همه ی اونها بجز اوبرن رو میشناسه. وظیفه ی نینجا شکست در چالش هاست. \n\n"
                 . "مرلین نمیتونه نینجا رو به عنوان یه یاغی ببینه, پس میتونه به عنوان یه درباری نقش اجرا کنه. نینجا می تونه از قابلیت خودش که فقط یک بار در طول هر بازی فعال میشه استفاده کنه و وقتی توی یه چالش هست دو باخت اضافه کنه.";
-            Script::$script["fr"][Script::PU_NINJAINFO]
-                = "Le <b>".Script::$script["en"][Script::NINJA]."</b>".Constant::EMO_EVIL_B
-                . " (Super Mordred), en tant que joueur du Mal, connaît ses alliés (sauf Obéron) et a pour objectif de faire échouer des quêtes.\n\n"
-                . "Merlin ne connaît pas l'idendité du Ninja : ce dernier peut donc se faire passer pour un joueur du Bien aux yeux de tous. De plus, une fois par partie, le Ninja peut faire échouer une quête en comptant pour 2 personnes.";
-            
 
 
             Script::$script["en"][Script::SECRETCODES] = array(
@@ -5746,6 +5710,23 @@ class Script{
                 "نامطمئن",
                 "بازی کن",
             );
+            Script::$script["fr"][Script::SECRETCODES] = array(
+                "merci",
+                "désolé",
+                "honnête",
+                "mensonge",
+                "confus",
+                "heureux",
+                "triste",
+                "stupide",
+                "intelligent",
+//                "Oh mon Dieu",
+                "croire",
+                "choisir",
+                "sûr",
+                "doute",
+                "jouer",
+            );
 
 
             Script::$script["en"][Script::PU_AGENTINFO]
@@ -5806,6 +5787,11 @@ class Script{
                 . "مأمور ها درباری هستن. اونها در طول بازی از طریق کدهای رمزگذاری شده ی مخصوصی از طریق پی وی بات با هم ارتباط برقرار میکنن\n\n"
                 . "همه ی مأمور ها باید در طول بازی همدیگه رو از طریق کد ها بشناسن تا بتونن راحت تر به موفقیت برسن. توجه کنید که مأمور ها نباید نقششون رو معلوم کنن...در این صورت قاتل با شناختن اونها راحت تر میتونه مرلین رو بکشه.\n\n"
                 . "کد های سری این ها هستن : ".Constant::arrayToString(Script::$script["fa"][Script::SECRETCODES]).".\n\n";
+            Script::$script["fr"][Script::PU_AGENTINFO]
+                = "<b>".Script::$script["fr"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                . " est dans le camp du bien. Tous les agents partagent les mêmes codes secrets, partagés par le bot en Message Privé.\n\n"
+                . "Les agents peuvent se reconnaître en utilisant des codes secrets, pour réussir les missions plus facilement ensemble. N'oubliez pas, ne soyez pas trop voyants, ou le camp du mal connaîtra les agents, et il sera plus facile pour l'assassin de démasquer puis tuer Merlin.\n\n"
+                . "Possible codes secrets   : ".Constant::arrayToString(Script::$script["fr"][Script::SECRETCODES]).".\n\n";
 
 
             Script::$script["en"][Script::PU_MORGANAINFO]
@@ -5856,7 +5842,10 @@ class Script{
                 = "<b>".Script::$script["fa"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
                 . " توی تیم یاغی ها بازی میکنه. مورگانا همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه \n\n"
                 . "و چون پرسیوال مرلین و مورگانا رو نمیتونه تشخیص بده، وظیفه ی دوم مورگانا اینه که به جای مرلین برای پرسیوال نقش بازی کنه. در این صورت اگه پرسیوال باورش کنه، مرلین توی تله میفته. \n\n";
-
+             Script::$script["fr"][Script::PU_MORGANAINFO]
+                = "<b>".Script::$script["fr"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                . " étant dans le camp du mal, elle connaît les autres membres du camp du mal et doit coopérer avec eux pour faire échouer les quêtes.\n\n"
+                . "Vu que Perceval peut voir Merlin et Morgane, le but premier de Morgane est de gagner la confiacne de Perceval en agissant comme Merlin agirait. Si Perceval est trompé, Merlin sera en difficultés.\n\n";
 
             Script::$script["en"][Script::PU_ASSASSININFO]
                 = "<b>".Script::$script["en"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
@@ -5904,6 +5893,10 @@ class Script{
                 = "<b>".Script::$script["fa"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
                 . " توی تیم یاغی ها بازی میکنه. قاتل همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
                 . "قاتل میتونه در انتهای بازی (اگه درباری ها سه پیروزی در چالش ها داشته باشن) مرلین رو حدس بزنه و بکشه. اگه حدس قاتل درست باشه و مرلین کشته بشه نتیجه هرچی که باشه باز هم تیم یاغی ها پیروز میشه.";
+            Script::$script["fr"][Script::PU_ASSASSININFO]
+                = "<b>".Script::$script["fr"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                . " étant dans le camp du mal, il connaît les autres membres du camp du mal et doit coopérer avec eux pour faire échouer les quêtes.\n\n"
+                . "L'Assassin peut tenter de démasquer Merlin à la fin de la partie (si 3 quêtes sont réussies). Si il démasque effectivement Merlin, peu importe le résultat des quêtes, le camp du mal l'emporte.";
 
 
             Script::$script["en"][Script::PU_WITCHINFO]
@@ -5954,6 +5947,10 @@ class Script{
                 = "<b>".Script::$script["fa"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
                 . " توی تیم یاغی ها بازی میکنه. جادوگر همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
                 . "جادوگر همه ی درباری ها رو میشناسه. اما نمیدونه چند نفرن و چه نقشی دارن. ولی میتونه با استفاده از اطلاعاتش باعث باخت تیم دربار بشه. \n";
+            Script::$script["fr"][Script::PU_WITCHINFO]
+                = "<b>".Script::$script["fr"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                . " étant dans le camp du mal, elle connaît les autres membres du camp du mal et doit coopérer avec eux pour faire échouer les quêtes.\n\n"
+                . "La Sorcière a la capacité de connaître les rôles de du camp du bien, mais ne connaît pas le nombre, ni les possesseurs des rôles. Utilisez cette information pour traquer Merlin plus aisément.\n";
 
 
             Script::$script["en"][Script::PU_MORGAUSEINFO]
@@ -6003,6 +6000,10 @@ class Script{
                 = "<b>".Script::$script["fa"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
                 . " توی تیم یاغی ها بازی میکنه. مورگاس همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
                 . "مورگاس ترکیبی از مورگانا /morgana و قاتله /assassin.  مورگاس باید هم پرسیوال رو به اشتباه بندازه و هم در انتهای بازی میتونه مرلین رو بکشه. \n\n";
+            Script::$script["fr"][Script::PU_MORGAUSEINFO]
+                = "<b>".Script::$script["fr"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                . " étant dans le camp du mal, elle connaît les autres membres du camp du mal et doit coopérer avec eux pour faire échouer les quêtes.\n\n"
+                . "Morgause est une combinaison de /morgana et de /assassin. Le joueur avec ce personnage peut tromper Perceval et Morgause peut essayer de tuer Merlin à la fin de la partie.\n\n";
 
 
             Script::$script["en"][Script::PU_KNIGHTINFO]
@@ -6052,6 +6053,10 @@ class Script{
                 = "<b>".Script::$script["fa"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
                 . " شوالیه همونطور که از اسمش پیداست یکی از درباری هاست و وظیفش پیروزی در چالش هاست. \n\n"
                 . "در ابتدای بازی شوالیه میتونه دوتا از همسایه هاش رو بشناسه. شوالیه میتونه یاغی ای که میون اونها وجود داره رو ببینه و ممکنه حداقل یه یاغی وجود داشته باشه یا هردونفر درباری باشن. همچنین شوالیه نمیتونه موردرد رو ببینه واسه همین موردرد به عنوان یه درباری به اون نشون داده میشه. \n\n";
+            Script::$script["fr"][Script::PU_KNIGHTINFO]
+                = "<b>".Script::$script["fr"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                . " est dans le camp du bien, et a pour objectif de réussir les quêtes.\n\n"
+                . "Au début de la partie, le Chevalier peut avoir des informations concernant deux joueurs adjacents. Le chevalier peut savoir si il sont dans le camp du bien, ou si au moins un d'entre eux est dans le camp du mal. Cependant, le Chevalier ne peut détecter MordreD. Mordred apparaît donc dans le camp du bien. \n\n";
 
 
             // NEW
@@ -6104,6 +6109,10 @@ class Script{
                 = "<b>".Script::$script["fa"][Script::GOOD_LANCELOT]."</b>"
                 . " یکی از درباری هاست و وظیفش پیروزی در چالش هاست. \n\n"
                 . "با این حال لنسلات خوب این شانس رو داره که توی چالش جاش با لنسلات شیطانی عوض بشه. در این صورت بانوی دریاچه لنسلات شیطانی رو لنسلات خوب میبینه. همچنین با تغییر نقش ها، هدف پیروزی یا شکست در اون چالش برای لنسلات ها هم فرق میکنه (فقط برای اون چالش). \n\n";
+            Script::$script["fr"][Script::PU_GOODLANCELOTINFO]
+                = "<b>".Script::$script["fr"][Script::GOOD_LANCELOT]."</b>"
+                . " est initialement dans le camp du bien, et a pour objectif de réussir les quêtes.\n\n"
+                . "Cependant, il y a une faible chance que pendant une quête, Bon Lancelot échange de rôle avec Lancelot Maléfique. Si ça arrive, alors sur cette quête, la dame du lac verra Bon Lancelot dans le camp du mal, et la condition de victoire de Bon Lancelot change aussi (pour cette quête uniquement) \n\n";
 
             // NEW
             Script::$script["en"][Script::PU_EVILLANCELOTINFO]
@@ -6166,6 +6175,11 @@ class Script{
                 . " یکی از یاغی هاست که مرلین و یاغی ها اون رو میشناسن ولی اون کسی رو نمیشناسه.\n\n"
                 . " با این حال لنسلات شیطانی این شانس رو داره که توی چالش جاش با لنسلات خوب عوض بشه. در این صورت بانوی دریاچه لنسلات خوب رو لنسلات شیطانی میبینه. همچنین با تغییر نقش ها، هدف پیروزی یا شکست در اون چالش برای لنسلات ها هم فرق میکنه (فقط برای اون چالش)..\n\n"
                 . "در ورژن 1 لنسلات شیطانی میتونه توی چالش ها موفقیت یا شکست رو انتخاب کنه. اما در ورژن 2 باید حتما شکست رو انتخاب کنه.";
+            Script::$script["fr"][Script::PU_EVILLANCELOTINFO]
+                = "<b>".Script::$script["fr"][Script::EVIL_LANCELOT]."</b>"
+                . " est initiallement maléfique. Il est connu de Merlin, et des autres membres du camp du mal. Cependant, Lancelot Maléfique ne connaît pas les autres membres du camp du mal.\n\n"
+                . "Il y a une faible chance que pendant une quête, Lancelot Maléfique devienne Bon Lancelot. Si ça arrive, la dame du lac verra Lancelot dans le camp du bien pendant cette quête, et la condition de victoire de Lancelot Maléfique changera (uniquement pour cette quête)\n\n"
+                . "Dans la Variante 1, Lancelot Maléfique peut donner un SUCCÈS ou un ÉCHEC à la quête. Dans la Variante 2, Lancelot Maléfique doit donner un ÉCHEC à la quête sur laquelle il est.";
 
 
 
@@ -6213,6 +6227,10 @@ class Script{
                 = "<b>".Script::$script["fa"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
                 . "اوبرن با تیم یاغی هاست ولی هیچکدوم از یاغی ها اون رو نمیشناسن...با این حال اوبرن برای مرلین قابل شناساییه."
                 . "  اوبرن تمام هم تیمی های یاغی خودش رو میشناسه ولی نمیتونه از پیام خصوصی برای صحبت استفاده کنه.";
+            Script::$script["fr"][Script::PU_OBERONINFO]
+                = "<b>".Script::$script["fr"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                . " est dans le camp du mal, mais les autres joueurs de son camp ne connaissent pas son identité. Merlin voit quand même qu'il est dans le camp du mal."
+                . " Oberon connaît tous ses alliés, mais ne doit quand même pas utiliser de messages privés.";
 
 
             Script::$script["en"][Script::PU_THIEFINFO]
@@ -6251,6 +6269,9 @@ class Script{
             Script::$script["fa"][Script::PU_THIEFINFO]
                 = "<b>".Script::$script["fa"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
                 ." دزد یکی از یاغی هاست. وظیفه ی دزد اینه که به کمک بقیه ی یاغی ها چالش ها رو به سمت شکست ببره. \n\n";
+            Script::$script["fr"][Script::PU_THIEFINFO]
+                = "<b>".Script::$script["fr"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                . " étant dans le camp du mal, connais les autres joueurs du camp du mal au début de la partie, afin de coopérer pour faire échouer les quêtes.\n\n";
 
 
         }
