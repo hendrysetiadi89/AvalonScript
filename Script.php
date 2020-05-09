@@ -5535,725 +5535,780 @@ class Script{
             
 
 
-            Script::$script["en"][Script::SECRETCODES] = array(
-                "thanks",
-                "sorry",
-                "honest",
-                "lie",
-                "confused",
-                "happy",
-                "sad",
-                "stupid",
-                "smart",
-//                "Oh my God",
-                "believe",
-                "choose",
-                "sure",
-                "doubt",
-                "play",
-            );
-            Script::$script["id"][Script::SECRETCODES] = array(
-                "terima kasih",
-                "maaf",
-                "jujur",
-                "bohong",
-                "bingung",
-                "senang",
-                "sedih",
-                "bodoh",
-                "pintar",
-//                "ya Tuhan",
-                "percaya",
-                "pilih",
-                "yakin",
-                "ragu",
-                "main",
-            );
-            Script::$script["it"][Script::SECRETCODES] = array(
-                "grazie",
-                "scusa",
-                "onesto",
-                "bugia",
-                "confuso",
-                "contento",
-                "triste",
-                "stupido",
-                "intelligente",
-                "incredibile",
-                "credete",
-                "scegliete",
-                "sicuro",
-                "dubbio",
-                "gioca",
-            );
-            Script::$script["cn"][Script::SECRETCODES] = array(
-                "謝謝",
-                "對不起",
-                "誠實",
-                "欺騙",
-                "混亂",
-                "開心",
-                "傷心",
-                "笨蛋",
-                "醒目",
-//                "我的天",
-                "相信",
-                "選擇",
-                "當然",
-                "懷疑",
-                "玩",
-            );
-            Script::$script["pb"][Script::SECRETCODES] = array(
-                "obrigado",
-                "desculpe",
-                "honesto",
-                "mentira",
-                "confuso",
-                "feliz",
-                "triste",
-                "idiota",
-                "esperto",
-//                "Meu Deus!",
-                "acredite",
-                "escolha",
-                "claro",
-                "dúvida",
-                "joga",
-                "pensar",
-                "cilada",
-            );
-            Script::$script["ph"][Script::SECRETCODES] = array(
-                "salamat",
-                "traydor",
-                "mabait",
-                "sinungaling",
-                "mahusay",
-                "masaya",
-                "malungkot",
-                "tiwala",
-                "pambihira",
-                "pikon",
-                "masama",
-                "epal",
-                "maganda",
-                "charot",
-                "panalo",
-            );
-            Script::$script["es"][Script::SECRETCODES] = array(
-                "gracias",
-                "perdón",
-                "honesto",
-                "mentir",
-                "confuso",
-                "feliz",
-                "triste",
-                "estúpido",
-                "inteligente",
-//                "Oh Dios mío",
-                "creer",
-                "elegir",
-                "seguro",
-                "duda",
-                "jugar",
-            );
-            Script::$script["zho"][Script::SECRETCODES] = array(
-                "谢谢",
-                "对不起",
-                "诚实",
-                "欺骗",
-                "混乱",
-                "开心",
-                "伤心",
-                "笨蛋",
-                "醒目",
-//                "我的天",
-                "相信",
-                "选择",
-                "当然",
-                "怀疑",
-                "玩",
-            );
-            Script::$script["yue"][Script::SECRETCODES] = array(
-                "唔該",
-                "對唔住",
-                "真心",
-                "呃",
-                "亂",
-                "開心",
-                "傷心",
-                "癡線",
-                "醒",
-                "大鑊",
-                "信",
-                "揀",
-                "梗係",
-                "諗",
-                "玩嘢",
-                "過",
-                "唔去",
-                "你大我阿",
-            );
-            Script::$script["och"][Script::SECRETCODES] = array(
-                "多謝",
-                "對不起",
-                "誠信",
-                "詐騙",
-                "混亂",
-                "快樂",
-                "心傷",
-                "蠢純",
-                "聰明",
-//                "天啊",
-                "相信",
-                "選擇",
-                "當然",
-                "懷疑",
-                "把戲",
-            );
-
-            Script::$script["ar"][Script::SECRETCODES] = array(
-                "شكراً",
-                "آسف",
-                "صادق",
-                "كاذب",
-                "محتار",
-                "سعيد",
-                "حزين",
-                "غبي",
-                "ذكي",
-//                "يا إلهي",
-                "أؤمن",
-                "أختار",
-                "متأكد",
-                "أشك",
-                "ألعب",
-            );
-
-            Script::$script["fa"][Script::SECRETCODES] = array(
-                "ممنون",
-                "ببخشید",
-                "راستگو",
-                "دروغگو",
-                "متعجب",
-                "خوشحال",
-                "ناراحت",
-                "احمق",
-                "باهوش",
-//                "اوه خدای من",
-                "باور کن",
-                "انتخاب کن",
-                "مطمئن",
-                "نامطمئن",
-                "بازی کن",
-            );
-
-
-            Script::$script["en"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["en"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . " is in a good side. All agents in the team share the same secret codes given via Bot Private Message.\n\n"
-                . "Agents can find the other teammates by using those secret codes, so that together they will succeed the mission easier. Remember, do not make it too obvious, or the bad guys will know the agents and it will make assassin's job easier to kill Merlin.\n\n"
-                . "Possible secret codes: ".Constant::arrayToString(Script::$script["en"][Script::SECRETCODES]).".\n\n";
-            Script::$script["id"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["id"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . " berada di tim baik. Semua agent dalam tim mendapatkan kode rahasia yang sama yang diberikan melalui PM Bot.\n\n"
-                . "Agent dapat menemukan teman agen lainnya menggunakan kode rahasia tersebut, sehingga bersama-sama agent dapat menyukseskan misi lebih mudah. Ingat, jangan terlalu jelas memberikan kode, atau penjahat akan tahu semua agent sehingga membuat tugas assassin untuk membunuh Merlin menjadi lebih mudah.\n\n"
-                . "Kode rahasia yang mungkin: ".Constant::arrayToString(Script::$script["id"][Script::SECRETCODES]).".\n\n";
-            Script::$script["it"][Script::PU_AGENTINFO]
-                = "l'<b>".Script::$script["it"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . " è della parte dei buoni. Tutti gli agenti della squadra hanno lo stesso codice segreto ricevuto in privato.\n\n"
-                . "Gli Agenti possono riconoscersi usando questi codici segreti, in modo da rendere più facile la missione. Ricorda, non farti notare, oppure i cattivi sapranno chi sono gli agenti e renderanno il lavoro all'assassino più facile per uccidere Merlino.\n\n"
-                . "Possibili codici segreti: ".Constant::arrayToString(Script::$script["it"][Script::SECRETCODES]).".\n\n";
-            Script::$script["cn"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["cn"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . "特務之間都會使用暗號來分辨自己的同伴。當然在群組使用暗號時候別太明顯，否則會更容易讓刺客找到梅林。\n\n"
-                . "這些是遊戲中可能會用到的暗號: ".Constant::arrayToString(Script::$script["cn"][Script::SECRETCODES]).".\n\n";
-            Script::$script["pb"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["pb"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . " está do lado do Bem. Todos os agentes recebem o mesmo código secreto por meio de uma mensagem na conversa privada com o bot.\n\n"
-                . "Os Agentes podem identificar-se usando estes códigos, de forma a ter mais chance de obter sucesso nas Missões. Lembrem-se, não deixem muito óbvio, ou os membros do Mal saberão quem são os agentes, facilitando o trabalho da assassina em aniquilar Merlin.\n\n"
-                . "Possíveis códigos secretos: ".Constant::arrayToString(Script::$script["pb"][Script::SECRETCODES]).".\n\n";
-            Script::$script["ph"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["ph"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . " ay mabuting tao. lahat ng Agent sa team ay may parehas na Secret Code galing kay Bot via PM.\n\n"
-                . "Pwedeng mahanap ng Agent ang mga co-Agent gamit ang mga Secret Code, para matapos ng mabilis ang missions. Tandaan, wag masyadong halata, kung hindi, malalaman ng Evil Team na Agent kayo at mapapadali ang trabaho ng Assassin na Paslangin ang Merlin.\n\n"
-                . "Mga posibleng Secret Codes: ".Constant::arrayToString(Script::$script["ph"][Script::SECRETCODES]).".\n\n";
-            Script::$script["es"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["es"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . " está en el bando del Bien. Todos los agentes en el mismo equipo comparten el mismo código secreto recibido vía Mensaje Privado por el Bot.\n\n"
-                . "Los agentes pueden encontrar aotros usando sus códigos secretos, así ellos podrán completar misiones más fácilmente. Recuerda, no lo hagas demasiado obio, o los malvados conocerán a los agentes y tendrán más fácil el trabajo de matar a Merlín.\n\n"
-                . "Códigos secretos posibles: ".Constant::arrayToString(Script::$script["es"][Script::SECRETCODES]).".\n\n";
-            Script::$script["zho"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["zho"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . "特务之间都会使用暗号来分辨自己的同伴。当然在群组使用暗号时候别太明显，否则会更容易让刺客找到梅林。\n\n"
-                . "这些是遊戏中可能会用到的暗号: ".Constant::arrayToString(Script::$script["zho"][Script::SECRETCODES]).".\n\n";
-            Script::$script["yue"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["yue"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . "喺好人，而特務會用暗號嚟搵自己同伴。\n\n"
-                . "記住，喺群组用暗號得太明顯，壞人就好容易搵到梅林。\n\n"
-                . "以下就喺遊戲中可能會用嘅暗號: ".Constant::arrayToString(Script::$script["yue"][Script::SECRETCODES]).".\n\n";
-            Script::$script["och"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["och"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . "屬於正派，而機械人會發放同一暗號予所有密探。"
-                . "密探之間都會用暗號來找自己的同伴。但在群组使用暗号时候別太明顯，否则只會更容易讓刺客找到梅林。\n\n"
-                . "這些是可能會用到的暗號: ".Constant::arrayToString(Script::$script["och"][Script::SECRETCODES]).".\n\n";
-            Script::$script["ar"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["ar"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . "هو بصف الطيبين. كل الوكلاء الموجودين بنفس الفريق بإمكانهم التواصل مع بعضهم عبر البوت الخاص\n\n"
-                . "الوكلاء بإمكانهم معرفة أعضاء الفريق الآخر بإستخدام أكواد سرية, معاً بإمكانهم الفوز بالمهمة بسهولة. تذكر, لا تكون واضحاً...و إلا سيعرف الأشرار الوكلاء و سيجعل وظيفة الحشاش أسهل بقتل مرلين.\n\n"
-                . "الأكواد السرية المسموحة : ".Constant::arrayToString(Script::$script["ar"][Script::SECRETCODES]).".\n\n";
-            Script::$script["fa"][Script::PU_AGENTINFO]
-                = "<b>".Script::$script["fa"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
-                . "مأمور ها درباری هستن. اونها در طول بازی از طریق کدهای رمزگذاری شده ی مخصوصی از طریق پی وی بات با هم ارتباط برقرار میکنن\n\n"
-                . "همه ی مأمور ها باید در طول بازی همدیگه رو از طریق کد ها بشناسن تا بتونن راحت تر به موفقیت برسن. توجه کنید که مأمور ها نباید نقششون رو معلوم کنن...در این صورت قاتل با شناختن اونها راحت تر میتونه مرلین رو بکشه.\n\n"
-                . "کد های سری این ها هستن : ".Constant::arrayToString(Script::$script["fa"][Script::SECRETCODES]).".\n\n";
-
-
-            Script::$script["en"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["en"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n"
-                . "Because Percival can see Merlin and Morgana, Morgana's primary job is to gain trust from Percival by acting as a Merlin. If Percival can be deceived, Merlin will be in trouble.\n\n";
-            Script::$script["id"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["id"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n"
-                . "Karena Percival dapat melihat Merlin dan Morgana, tugas utama Morgana adalah mendapatkan kepercayaan dari Percival dengan berpura-pura menjadi Merlin. Jika Percival dapat ditipu, maka Merlin akan berada dalam bahaya.\n\n";
-            Script::$script["it"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["it"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " come giocatore malvagio, conosce i suoi compagni ad inizio partita (tranne Oberon) e deve cooperare con loro per far fallire le Missioni.\n\n"
-                . "Siccome Percival può vedere Merlino e Morgana, il ruolo primario di Morgana è guadagnare la fiducia di Percival agendo come Merlino. Se Percival si lascia ingannare, Merlino sarà nei guai.\n\n";
-            Script::$script["cn"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["cn"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . "遊戲一開始你會知道你的壞人同伴，除了奧北朗。你必須和你的同伴一起努力去讓任務失敗。\n\n"
-                . "另外，你專門放虛假的消息，給好人以為是梅林，好讓派西维爾更難找到真梅林。\n\n";
-            Script::$script["pb"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["pb"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " por ser uma jogadora do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Ela deve colaborar para o fracasso das Missões.\n\n"
-                . "Uma vez que Percival vê quem são Merlin e Morgana, sem distinguir um do outro, a tarefa principal de Morgana é ganhar a confiança de Percival agindo como Merlin. Se Percival puder ser enganado, Merlin estará em apuros.\n\n";
-            Script::$script["ph"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["ph"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n"
-                . "Dahil nakikita ng Percival ang Merlin at Morgana, Ang trabaho ng Morgana ay makuha ang tiwala ng Percival sa pagActing bilang Merlin. Kung ang Percival ay nauto, madali na lang mahanap ang Merlin.\n\n";
-            Script::$script["es"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["es"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n"
-                . "Como Perceval puede ver a Merlín y a Morgana, el trabajo principal de Morgana es ganarse la confianza de Perceval actuando como Merlín. Si Perceval es engañado, Merlín podrá estar en problemas.\n\n";
-            Script::$script["zho"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["zho"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " 遊戏当中实力最强的坏人。\n\n"
-                . "除了能知道自己的队友是谁(除了欧泊朗)，他还能负责欺骗派西维尔和在遊戏结束时候刺杀梅林。\n\n";
-            Script::$script["yue"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["yue"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " 喺壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
-                . "好好利用你有既資訊，誤導珀西瓦里相信你係真梅林。\n\n";
-            Script::$script["och"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["och"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " 屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n"
-                . "莫甘娜負責欺騙派西維爾，令人誤會她是真梅林。\n\n";
-            Script::$script["ar"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["ar"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " يلعب بدور الشرير و يعرف كل الأشرار من بداية اللعبة, يجب أن يجتمعوا حتى يحبطوا المهمة. \n\n"
-                . "و لأن البريفسال بإمكانه رؤية مرلين و مورقانا, هدف مورقانا الأساسي هو كسب ثقته بإدعاءه أنه مرلين. إن كان هناك شخص يدعي كونه بريفسال, عندها مرلين سيكون في مأزق. \n\n";
-            Script::$script["fa"][Script::PU_MORGANAINFO]
-                = "<b>".Script::$script["fa"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
-                . " توی تیم یاغی ها بازی میکنه. مورگانا همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه \n\n"
-                . "و چون پرسیوال مرلین و مورگانا رو نمیتونه تشخیص بده، وظیفه ی دوم مورگانا اینه که به جای مرلین برای پرسیوال نقش بازی کنه. در این صورت اگه پرسیوال باورش کنه، مرلین توی تله میفته. \n\n";
-
-
-            Script::$script["en"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["en"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n"
-                . "Assassin can guess Merlin at the end of the game (if 3 quests already been succeed). If the guess is correct, whatever the result in the quests, Evil force will win.";
-            Script::$script["id"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["id"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n"
-                . "Assassin dapat menebak Merlin di akhir game (jika 3 quest sudah sukses). Jika Merlin berhasil dibunuh, apapun hasil di quest, tim jahat akan menang.";
-            Script::$script["it"][Script::PU_ASSASSININFO]
-                = "l'<b>".Script::$script["it"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " come giocatore malvagio conosce gli altri cattivi all'inizio della partita (tranne Oberon) e deve collaborare con loro per fallire le Missioni.\n\n"
-                . "l'Assassino alla fine della partita può cercare di indovinare Merlino a fine partita (se 3 missioni sono state completate). Se l'ipotesi è giusta, nonostante le missioni completate, Il team malvagio vincerà!";
-            Script::$script["cn"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["cn"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " 刺客會知道自己的同伴(除了奧北朗)，並協助他們令到好人們任務失敗。一旦好人成功完成3個任務，他有1次機會去刺殺梅林。梅林一死，壞人就贏。\n\n";
-            Script::$script["pb"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["pb"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " por ser uma jogadora do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Ela deve colaborar para o fracasso das Missões.\n\n"
-                . "A Assassina pode tentar adivinhar quem é Merlin ao final da partida (caso 3 Missões tenham tido sucesso). Se ela escolher corretamente, independentemente do resultado das Missões, as forças do Mal vencerão.";
-            Script::$script["ph"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["ph"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n"
-                . "Ang Assassin ay pwedeng hulaan ang Merlin sa pagtatapos ng Laro (kung ang 3 Quests ay Success). Kung tama ang hula, kahit ano pa ang resulta ng Quest, Evil Team ang Mananalo.";
-            Script::$script["es"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["es"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n"
-                . "El Asesino puede descubrir a Merlín al final del juego (si se completan 3 gestas satisfactoriamente). Si lo adivina correctamente, las fuerzas del Mal ganarán.";
-            Script::$script["zho"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["zho"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " 刺客会知道自己的同伴(除了欧泊朗)，并协助他们令到好人们任务失败。一旦好人成功完成3个任务，他有1次机会去刺杀梅林。梅林一死，坏人就赢。\n\n";
-            Script::$script["yue"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["yue"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . "係壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
-                . "一旦好人成功執行 3 個任務，佢就要負責刺殺梅林，成功刺殺梅林嘅話壞人陣營會贏。";
-            Script::$script["och"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["och"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . "會知道自己的同伴(除了奧伯倫)，並協助他們令到好人們任務失敗。\n\n"
-                . "一旦正派成功完成 3 個任務，他有 1 次機會去刺殺梅林。梅林一死，反派就勝利。";
-            Script::$script["ar"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["ar"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " يلعب بدور الأشرار و يعرف من هم الأشرار من بداية اللعبة, و يجب أن يجتمعوا معاً حتى تحبط المهمة. \n\n"
-                . "الحشاش بإستطاعته تخمين من هي مرلين في نهاية اللعبة ( إذا كانت 3 مهمات قد نجحت بالفعل). إذا كان التخمين صحيح, مهما كانت نتيجة المهمات, قوة الأشرار ستفوز.";
-            Script::$script["fa"][Script::PU_ASSASSININFO]
-                = "<b>".Script::$script["fa"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
-                . " توی تیم یاغی ها بازی میکنه. قاتل همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
-                . "قاتل میتونه در انتهای بازی (اگه درباری ها سه پیروزی در چالش ها داشته باشن) مرلین رو حدس بزنه و بکشه. اگه حدس قاتل درست باشه و مرلین کشته بشه نتیجه هرچی که باشه باز هم تیم یاغی ها پیروز میشه.";
-
-
-            Script::$script["en"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["en"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n"
-                . "Witch has the ability to know what are the roles that the good team holds, but witch doesn't know how much or who hold the roles. Use this information to narrow down the merlin.\n";
-            Script::$script["id"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["id"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n"
-                . "Witch mempunyai kemampuan untuk mengetahui peran apa saja yang ada di tim baik, tapi witch tidak mengetahui jumlah dan siapa yang memegang peran tersebut. Gunakan informasi ini untuk mencari merlin.";
-            Script::$script["it"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["it"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . " come giocatore malvagio conosce gli altri cattivi a inizio partita (tranne Oberon) e deve collaborare insieme per fallire le missione.\n\n"
-                . "La Strega ha l'abilità di conoscere quali sono i ruoli che i buoni hanno, ma non sa con certezza quanti o di chi sono i ruoli. Usa quest'informazione per scovare Merlino.\n";
-            Script::$script["cn"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["cn"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . "身為巫師，他必須同已知的壞人(無法知道神秘壞人奧北朗是誰)聯手出擊，去阻止好人們完成任務。\n\n"
-                . "知道好人的角色，但不知道該角色是屬於哪一個好人以及無法知道該角色的數量。\n";
-            Script::$script["pb"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["pb"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . " por ser uma jogadora do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Ela deve colaborar para o fracasso das Missões.\n\n"
-                . "A Feiticeira tem a habilidade de conhecer os papéis do Bem que estão no jogo, mas não sabe quem são ou quantos são. Ela poderá usar este conhecimento para descobrir quem é Merlin.\n";
-            Script::$script["ph"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["ph"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n"
-                . "Ang Bruha ay may Powers na malaman ang Role list ng Good Team, ngunit di alam ng Bruha kung ilan o sino ang may hawak ng role. Gamitin ang impormasyon upang mahanap ang Merlin.\n";
-            Script::$script["es"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["es"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n"
-                . "La Bruja tiene la habilidad de conocer los roles del bien presentes en la partida, pero no sabe quien y cuantos llevan esos roles. Usa esta información para estrechar con Merlín.\n";
-            Script::$script["zho"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["zho"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . "身为巫师，他必须同已知的坏人(无法知道神秘坏人奥北朗是谁)联手出击，去阻止好人们完成任务。\n\n"
-                . "知道好人的角色，但不知道该角色是属於哪一个好人以及无法知道该角色的数量。\n";
-            Script::$script["yue"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["yue"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . "係壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
-                . "女巫知道有邊啲身份，但唔知道嗰啲角色係邊個或者某一角色有幾多，可以利用手上有既資訊去幫隊友搵出邊嗰喺梅林。\n";
-            Script::$script["och"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["och"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . "屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n"
-                . "女巫會知道正派的角色，但不知道該角色是確實屬於哪一個以及該角色的數量；要收集更多資訊去猜測誰是梅林。\n";
-            Script::$script["ar"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["ar"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . " كـلاعب بدور الأشرار, يعرف عن كل اللاعبين الأشرار من بداية اللعبة و يجب أن يجتمع معهم حتى يحبطوا المهمة. \n\n"
-                . "ويتش لديه القدرة لمعرفة أدوار الفريق الطيب, لكن لا يعرف من يحمل هذا الدور. يستعمل هذه الميزة ليحبط مرلين. \n";
-            Script::$script["fa"][Script::PU_WITCHINFO]
-                = "<b>".Script::$script["fa"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
-                . " توی تیم یاغی ها بازی میکنه. جادوگر همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
-                . "جادوگر همه ی درباری ها رو میشناسه. اما نمیدونه چند نفرن و چه نقشی دارن. ولی میتونه با استفاده از اطلاعاتش باعث باخت تیم دربار بشه. \n";
-
-
-            Script::$script["en"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["en"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n"
-                . "Morgause is a combination role from /morgana and /assassin. The player with this character can deceive Percival and Morgause can also kill Merlin at the game of the game.\n\n";
-            Script::$script["id"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["id"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n"
-                . "Morgause adalah peran kombinasi dari /morgana dan /assassin. Pemain dengan karakter ini dapat menipu Percival dan Morgause juga dapat membunuh Merlin di akhir game.\n\n";
-            Script::$script["it"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["it"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . " come giocatore malvagio conosce gli altri giocatori all'inizio della partita e deve collaborare con loro per fallire le missioni.\n\n"
-                . "Morgause è l'unione dei ruoli /morgana e /assassin. Il giocatore con questo personaggio può confondere Percival e sia uccidere Merlino a fine partita.\n\n";
-            Script::$script["cn"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["cn"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . "遊戲當中實力最強的壞人，除了能知道自己的隊友是誰(除了奧北朗)，他還能負責欺騙派西维爾和在遊戲結束時候刺殺梅林。\n\n";
-            Script::$script["pb"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["pb"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . " por ser do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Deve colaborar para o fracasso das Missões.\n\n"
-                . "Morgause é uma combinação entre /morgana e a /assassin. Ela pode enganar Percival e também poderá matar Merlin ao final da partida.\n\n";
-            Script::$script["ph"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["ph"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n"
-                . "Morgause ay pinagsamang role mula sa /morgana at /assassin. Ang Player sa role na to ay pwedeng malinlang ang Percival at ang Morgassassin ay maaring paslangin ang Merlin sa pagtatapos ng Laro.\n\n";
-            Script::$script["es"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["es"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n"
-                . "Morgause es una combinación de los roles de /morgana y /assassin. El jugador con este personaje puede confundir a Perceval y puede matar a Merlín al final de la partida.\n\n";
-            Script::$script["zho"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["zho"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . "，遊戏当中实力最强的坏人。\n\n"
-                . "除了能知道自己的队友是谁(除了奥北朗)，他还能负责欺骗派西维尔和在遊戏结束时候刺杀梅林。\n\n";
-            Script::$script["yue"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["yue"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . "係壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
-                . "莫歌絲同時擁有莫甘娜及刺客嘅能力，佢要誤導珀西瓦里以為佢係梅林，再喺最後關頭刺殺梅林。\n\n";
-            Script::$script["och"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["och"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . "屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n"
-                . "莫歌絲有齊莫甘娜與刺客的能力：她不但負責欺騙派西維爾，亦會在適當時候出手擊殺梅林。\n\n";
-            Script::$script["ar"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["ar"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . " كـ لاعب بدور الأشرار, هو يعرف كل اللاعبين الأشرار من بداية اللعبة و يجب أن يجتمع معهم حتى يحبطوا المهمة. \n\n"
-                . "مورقوس هو مزيج بين مورقانا /morgana و الحشاش /assassin.  اللاعب بهذه الشخصية يدّعي بأنه بريفسال و مورقوس بإمكانه قتل مرلين في نهاية اللعبة. \n\n";
-            Script::$script["fa"][Script::PU_MORGAUSEINFO]
-                = "<b>".Script::$script["fa"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
-                . " توی تیم یاغی ها بازی میکنه. مورگاس همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
-                . "مورگاس ترکیبی از مورگانا /morgana و قاتله /assassin.  مورگاس باید هم پرسیوال رو به اشتباه بندازه و هم در انتهای بازی میتونه مرلین رو بکشه. \n\n";
-
-
-            Script::$script["en"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["en"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . " is a good person whose job is to succeed the quests.\n\n"
-                . "At the start of the game, knight can have information about 2 neighborhood players. Knight knows whether there is no bad person between them, or there is at least 1 bad person. However, Knight cannot detect Mordred, so Mordred will be seen as a good person.\n\n";
-            Script::$script["id"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["id"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . " adalah pemain baik yang bertugas menyukseskan quest.\n\n"
-                . "Di awal permainan, knight dapat memperoleh informasi mengenai 2 pemain di sekelilingnya. Knight tahu apakah tidak ada pemain jahat dari kedua orang itu, atau terdapat minimal 1 orang jahat. Namun, Knight tidak dapat mendeteksi Mordred, sehingga Mordred terlihat seperti orang baik.\n\n";
-            Script::$script["it"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["it"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . " è una brava persona il cui scopo è completare le missioni.\n\n"
-                . "All'inizio della partita, il cavaliere avrà informazioni riguardo ai giocatori vicini (quello sopra e sotto). Il Cavaliere sa se tra di loro sono presenti solo buoni o c'è almeno un cattivo (Nota: Mordred potrebbe esser visto come buono).\n\n";
-            Script::$script["cn"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["cn"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . " 保護帝國的騎士有辦法知道它左右2個玩家不是壞人或者至少有1個壞人。會見到莫德雷德是好人。\n\n";
-            Script::$script["pb"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["pb"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . " é um membro do Bem. Seu papel é obter sucesso nas Missões.\n\n"
-                . "Ao início da partida, o Cavaleiro pode ter informações sobre 2 jogadores próximos. O Cavaleiro saberá se não há alguém do Mal entre os 2 ou se ao menos 1 deles é do Mal. Porém, o Cavaleiro não vê Mordred, por isso, Mordred será informado como alguém do Bem.\n\n";
-            Script::$script["ph"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["ph"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . " ay isang mabutins tao na ang trabaho ay ipanalo ang Quest.\n\n"
-                . "Sa simula ng Laro, Ang Kawal ay impormasyon tungkol sa 2 kapitbahay na players. Alam ng kawal kung walang masama sa kanila, o may isang masama sa kanila. Ngunit, Hindi na deDetect ng Kawal ang Mordred, Makikita ang Mordred bilang mabuting tao.\n\n";
-            Script::$script["es"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["es"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . " es una buena persona cuyo trabajo es completar las gestas.\n\n"
-                . "Al principio de la partida, el caballero tiene información de 2 jugadores vecinos. El caballero conoce al menos uno de ellos es malvado, o ninguno. Sin embargo, el caballero no puede detectar a Mordred, así que Mordred será visto como un jugador bueno.\n\n";
-            Script::$script["zho"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["zho"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . "保护王国的。\n\n"
-                . "骑士有办法知道它左右2个玩家不是坏人或者至少有1个坏人，但会见到莫德雷德是好人。\n\n";
-            Script::$script["yue"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["yue"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . "係好人一名，而職責就係力保任務成功。\n\n"
-                . "遊戲一開始，騎士就會知道左右兩個玩家係好定壞：一係兩個都好人，一係就至少有一個壞人。而如果左右有玩家係莫德雷德，武士會當咗佢係好人。\n\n";
-            Script::$script["och"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["och"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . "屬於正派，只會令任務成功。"
-                . "騎士有能力知曉 2 位選手皆不是反派，或者至少有 1 位是反派。不過，莫德雷德會當作正派。\n\n";
-            Script::$script["ar"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["ar"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . " هو شخص جيد هدفه بأن ينجح في المهمة. \n\n"
-                . "في بداية اللعبة, بإمكان الفارس الحصول معلومات عن 2 من أقرباءه ( أقرب 2 من عنده من الأعلى و من الأسفل ). الفارس يعرف إذا كان هناك شخص سيء من بينهم, أو على الأقل شخص واحد سيء. على أي حال...الفارس لا يمكن معرفة موردير, إذاً سيرى موردريد على أساس أنه شخص جيد. \n\n";
-            Script::$script["fa"][Script::PU_KNIGHTINFO]
-                = "<b>".Script::$script["fa"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
-                . " شوالیه همونطور که از اسمش پیداست یکی از درباری هاست و وظیفش پیروزی در چالش هاست. \n\n"
-                . "در ابتدای بازی شوالیه میتونه دوتا از همسایه هاش رو بشناسه. شوالیه میتونه یاغی ای که میون اونها وجود داره رو ببینه و ممکنه حداقل یه یاغی وجود داشته باشه یا هردونفر درباری باشن. همچنین شوالیه نمیتونه موردرد رو ببینه واسه همین موردرد به عنوان یه درباری به اون نشون داده میشه. \n\n";
-
-
-            // NEW
-            Script::$script["en"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["en"][Script::GOOD_LANCELOT]."</b>"
-                . " is originally a good person whose job is to succeed the quests.\n\n"
-                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (for that quest only)\n\n";
-            Script::$script["id"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["id"][Script::GOOD_LANCELOT]."</b>"
-                . " awalnya adalah orang baik yang tugasnya menyukseskan misi\n\n"
-                . "Namun, ada kemungkinan di suatu misi, Good Lancelot akan bertukar peran dengan Evil Lancelot. Jika itu terjadi, maka di misi itu, lady akan melihat Good Lancelot sebagai Jahat, dan kondisi kemenangan untuk Good Lancelot juga berubah (untuk misi itu saja)\n\n";
-            Script::$script["it"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["it"][Script::GOOD_LANCELOT]."</b>"
-                . " è originalmente una buona persona il cui scopo è completare le quest.\n\n"
-                . "Però, c'è una piccola probabilità che in una quest il Lancillotto buono scambia il ruolo con il Lancillotto Cattivo. Se ciò accade, allora in quella quest, la ragazza del lago vedrà il Lancillotto Buono come cattivo, e la condizione di vittoria cambierà (solo per quella quest).\n\n";
-            Script::$script["cn"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["cn"][Script::GOOD_LANCELOT]."</b>"
-                . " 是屬於好人陣型的隊伍成員之一，你要負責讓任務成功。\n\n"
-                . "可惜，依然會有很微小的機率正義的蘭斯洛特會更改身份變身成為壞人的蘭斯洛特。如果這樣的情況發生了，湖女會見到是好人的你是壞人。當然正義的蘭斯洛特勝利的條件也更改了(只限當時後執行的任務罷了)\n\n";
-            Script::$script["pb"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["pb"][Script::GOOD_LANCELOT]."</b>"
-                . " is originally a good person whose job is to succeed the quests.\n\n"
-                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
-            Script::$script["ph"][Script::PU_GOODLANCELOTINFO]
-                = "Ang <b>".Script::$script["ph"][Script::GOOD_LANCELOT]."</b>"
-                . "  ay orihinal na mabuting tao na nag misyon ay manalo sa Quest.\n\n"
-                . "Ngunit Subalit Datapwat, may slight chance na mag switch ng role ang Good Lancelot na maging Evil Lancelot sa isang quest. Kung mangyayari iyon sa quest, masisilip ng Babae sa Septic Tank na si Good Lancelot ay masama at ang winning condition ng Good Lancelot ay magbabago rin (para lang sa quest na iyon)\n\n";
-            Script::$script["es"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["es"][Script::GOOD_LANCELOT]."</b>"
-                . " is originally a good person whose job is to succeed the quests.\n\n"
-                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
-            Script::$script["zho"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["zho"][Script::GOOD_LANCELOT]."</b>"
-                . " is originally a good person whose job is to succeed the quests.\n\n"
-                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
-            Script::$script["yue"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["yue"][Script::GOOD_LANCELOT]."</b>"
-                . " 原本屬於好人陣營。\n\n"
-                . "遊戲進行中會有好細嘅機會邪惡蘭斯洛特會同正義蘭斯洛特交換身份。交換身份後，湖女會見到正義蘭斯洛特喺壞人，正義蘭斯洛特亦會加入咗壞人陣營。"
-                . "(係分支1，邪惡蘭斯洛特可以選擇令任務成功或者失敗。但係，係分支2嘅遊戲裡面，當佢執行任務時候，邪惡蘭斯洛特只能夠令任務失敗。)\n\n";
-            Script::$script["och"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["och"][Script::GOOD_LANCELOT]."</b>"
-                . " is originally a good person whose job is to succeed the quests.\n\n"
-                . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
-            Script::$script["ar"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["ar"][Script::GOOD_LANCELOT]."</b>"
-                . " هو بالأصل شخص جيد هدفه بأنه ينجح بالمهام. \n\n"
-                . "على أي حال, هناك إحتمال في المهمة...اللانسوت الجيد يغير دوره مع اللانسوت الشرير. إن حصل هذا, إذاً في تلك المهمة...السيدة سترى اللانسوت الجيد كـ شرير...و حالة الفوز للانسوت الجيد ستتغير (فقط لمهمة واحدة). \n\n";
-            Script::$script["fa"][Script::PU_GOODLANCELOTINFO]
-                = "<b>".Script::$script["fa"][Script::GOOD_LANCELOT]."</b>"
-                . " یکی از درباری هاست و وظیفش پیروزی در چالش هاست. \n\n"
-                . "با این حال لنسلات خوب این شانس رو داره که توی چالش جاش با لنسلات شیطانی عوض بشه. در این صورت بانوی دریاچه لنسلات شیطانی رو لنسلات خوب میبینه. همچنین با تغییر نقش ها، هدف پیروزی یا شکست در اون چالش برای لنسلات ها هم فرق میکنه (فقط برای اون چالش). \n\n";
-
-            // NEW
-            Script::$script["en"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["en"][Script::EVIL_LANCELOT]."</b>"
-                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
-                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
-                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
-            Script::$script["id"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["id"][Script::EVIL_LANCELOT]."</b>"
-                . " awalnya adalah orang jahat. Dia diketahui oleh Merlin dan teman jahat lainnya. Namun, Evil Lancelot sendiri tidak tahu teman jahatnya.\n\n"
-                . "Ada kemungkinan di suatu misi, Evil Lancelot akan bertukar peran dengan Good Lancelot. Jika itu terjadi, maka di misi itu, lady akan melihat Evil Lancelot sebagai Baik, dan kondisi kemenangan untuk Evil Lancelot juga berubah (untuk misi itu saja)\n\n"
-                . "Di Varian 1, Evil Lancelot boleh memberikan SUKSES atau GAGAL. Di Varian 2, Evil Lancelot harus memberikan GAGAL di misi yang dia ikuti.";
-            Script::$script["it"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["it"][Script::EVIL_LANCELOT]."</b>"
-                . " è originalmente una persona cattiva. È conosciuta a Merlino e gli altri cattivi. Però, lui non conosce i suoi compagni.\n\n"
-                . "Però, c'è una piccola probabilità che in una quest, Il Lancillotto cattivo scambi il ruolo con Lancillotto Buono. Se ciò dovesse succedere, allora in quella quest la Ragazza del lago vedrà il Lancillotto Cattivo come buono e la sua condizione di vittoria cambierà (solo per questa quest)\n\n"
-                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
-            Script::$script["cn"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["cn"][Script::EVIL_LANCELOT]."</b>"
-                . " 原本是屬於壞人隊伍的人員之一。梅林和其他壞人隊伍會知道他是誰，不過他自己本身不會知道他壞人隊伍的成員有誰。\n\n"
-                . "在遊戲中會有極小的機率，邪惡的蘭斯洛特會和正義的蘭斯洛特交換身份。如果這種情況發生，湖女會見到邪惡的蘭斯洛特是壞人。然後邪惡蘭斯洛特的勝利條件也會跟著改變（只限當時後執行的任務罷了）。\n\n"
-                . "在分支1，邪惡的蘭斯洛特可以選擇讓任務成功或者失敗。然而，在分支2的遊戲裡面，當他執行任務時候，邪惡的蘭斯洛特只能讓任務失敗。";
-            Script::$script["pb"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["pb"][Script::EVIL_LANCELOT]."</b>"
-                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
-                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
-                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
-            Script::$script["ph"][Script::PU_EVILLANCELOTINFO]
-                = "Ang <b>".Script::$script["ph"][Script::EVIL_LANCELOT]."</b>"
-                . " ay orihinal na masamang tao. Kilala siya ng Merlin at ng kanyang ibang evil friends. Ngunit hindi niya kilala ang mga kakampi niya.\n\n"
-                . "May slight chance na mag switch ng role ang Evil Lancelot na maging Good Lancelot sa isang quest. Kung mangyayari iyon sa quest, masisilip ng Babae sa Septic Tank na si Evil Lancelot ay mabuti at ang winning condition ng Good Lancelot ay magbabago rin (para lang sa quest na iyon)\n\n"
-                . "Sa Variant 1, Ang Evil Lancelot ay pwede magbigay ng SUCCESS o FAIL sa Quest. Sa Variant 2, Ang Evil Lancelot ay kailangang magbigay FAIL sa Quest kung saan siya kabilang.";
-            Script::$script["es"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["es"][Script::EVIL_LANCELOT]."</b>"
-                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
-                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
-                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
-            Script::$script["zho"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["zho"][Script::EVIL_LANCELOT]."</b>"
-                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
-                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
-                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
-            Script::$script["yue"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["yue"][Script::EVIL_LANCELOT]."</b>"
-                . " 原本屬於壞人陣營，會被梅林同埋其他壞人知道係壞人，但佢並唔知道有邊啲壞人。\n\n"
-                . "遊戲進行中會有好細嘅機會邪惡蘭斯洛特會同正義蘭斯洛特交換身份。交換身份後，湖女會見到邪惡蘭斯洛特喺好人，邪惡蘭斯洛特亦會加入咗好人陣營。\n\n"
-                . "(係分支1，邪惡蘭斯洛特可以選擇令任務成功或者失敗。但係，係分支2嘅遊戲裡面，當佢執行任務時候，邪惡蘭斯洛特只能夠令任務失敗。)";
-            Script::$script["och"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["och"][Script::EVIL_LANCELOT]."</b>"
-                . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
-                . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
-                . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
-            Script::$script["ar"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["ar"][Script::EVIL_LANCELOT]."</b>"
-                . " هو بالأساس شخص شرير. يعرف عنه جميع طاقم الأشرار , لكن هو لا يعرفهم.\n\n"
-                . "هناك إحتمال في المهمة, اللانسوت الشرير يتغير مع اللانسوت الطيب...لو حصل هذا, إذاً في تلك المهمة....السيدة سترى اللانسوت الشرير على أساس أنه طيب, و حالة الفوز أيضاً ستتغير ( لمهمة واحدة فقط ) .\n\n"
-                . "في الإصدار الأول, بإمكان اللانسوت الشرير إعطاء قبول أو رفض للمهمة. و لكن في الإصدار الثاني...اللانسوت الشرير يجب عليه أن يعطي رفض للمهمة التي هو فيها.";
-            Script::$script["fa"][Script::PU_EVILLANCELOTINFO]
-                = "<b>".Script::$script["fa"][Script::EVIL_LANCELOT]."</b>"
-                . " یکی از یاغی هاست که مرلین و یاغی ها اون رو میشناسن ولی اون کسی رو نمیشناسه.\n\n"
-                . " با این حال لنسلات شیطانی این شانس رو داره که توی چالش جاش با لنسلات خوب عوض بشه. در این صورت بانوی دریاچه لنسلات خوب رو لنسلات شیطانی میبینه. همچنین با تغییر نقش ها، هدف پیروزی یا شکست در اون چالش برای لنسلات ها هم فرق میکنه (فقط برای اون چالش)..\n\n"
-                . "در ورژن 1 لنسلات شیطانی میتونه توی چالش ها موفقیت یا شکست رو انتخاب کنه. اما در ورژن 2 باید حتما شکست رو انتخاب کنه.";
-
-
-
-            Script::$script["en"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["en"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . " is an evil player but all other evil players do not know the oberon's identity. Merlin can still see Oberon though."
-                . " Oberon knows all the evil teammates but should not use Private Message to communicate.";
-            Script::$script["id"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["id"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . " adalah pemain jahat namun pemain jahat lain tidak tahu identitas Oberon. Sayangnya, Merlin masih dapat melihat Oberon."
-                . " Oberon tahu semua teman jahatnya, namun tidak boleh menggunakan PM untuk berkomunasi.";
-            Script::$script["it"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["it"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . " è un giocatore malvagio ma gli altri giocatori non sapranno la sua identità. Merlino lo rivela comunque come malvagio."
-                . " Oberon conosce i compagni ma non può scrivergli con i Messaggi Privati.";
-            Script::$script["cn"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["cn"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . " 最神秘的壞人，一開始能知道所有壞人，但其他壞人卻不會知道他的存在。梅林能知道他就是壞人卻不會知道他是奧北朗。此角色不能PM其他壞人玩家，這會破壞遊戲的平衡。";
-            Script::$script["pb"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["pb"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . " é um jogador do Mal, mas todos os outros jogadores do Mal não sabem sua identidade. Merlin, no entanto, ainda vê Oberon."
-                . " Oberon sabe quem são os outros jogadores do Mal, mas não deve usar a conversa privada para se comunicar.";
-            Script::$script["ph"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["ph"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . " ay evil player ngunit di kilala ng Evil Team ang Oberon. Pero nakikita parin ng Merlin ang Oberon."
-                . " Alam ng Oberon lahat ng Evil Team Ngunit bawal gumanit ng PM para kausapin ang mga kakampi.";
-            Script::$script["es"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["es"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . " es del bando del Mal, pero los otros jugadores malvados no conocen la identidad de Oberón. Merlín puede ver a Oberón de cualquier forma."
-                . " Oberón conoce a todos los miembros del bando del Mal pero no debe usar Mensajes Privados para comunicarse.";
-            Script::$script["zho"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["zho"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . "，最神秘的坏人，一开始能知道所有坏人，但其他坏人却不会知道他的存在。梅林能知道他就是坏人。此角色不能PM其他坏人玩家，这会破坏遊戏的平衡。";
-            Script::$script["yue"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["yue"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . "係壞人，雖然佢知道邊啲係壞人，其他壞人亦唔知佢係壞人陣營，不過就逃唔出梅林嘅法眼。";
-            Script::$script["och"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["och"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . "屬於反派，但你的反派同伴卻不認識你。梅林反而知曉你是反派。";
-            Script::$script["ar"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["ar"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . "كون بصف اللاعبين الأشرار, لكن كل الأشرار لا يعرفون هوية أوبيرن...مع ذلك, مرلين بإمكانها رؤية أوبيرن."
-                . "  أوبيرن يعرف جميع أصدقاءه الأشرار, لكن ممنوع أن يستخدم التواصل المنفرد.";
-            Script::$script["fa"][Script::PU_OBERONINFO]
-                = "<b>".Script::$script["fa"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
-                . "اوبرن با تیم یاغی هاست ولی هیچکدوم از یاغی ها اون رو نمیشناسن...با این حال اوبرن برای مرلین قابل شناساییه."
-                . "  اوبرن تمام هم تیمی های یاغی خودش رو میشناسه ولی نمیتونه از پیام خصوصی برای صحبت استفاده کنه.";
-
-
-            Script::$script["en"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["en"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n";
-            Script::$script["id"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["id"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n";
-            Script::$script["it"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["it"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . " come giocatore malvagio, conosce gli altri giocatori a inizio partita (tranne Oberon) e deve collaborare con loro per fallire le missioni.\n\n";
-            Script::$script["cn"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["cn"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . " 一個非常普通的小偷。你只知道你自己的壞人同伴，除了奧北朗。總之，能力不強的你無法用特殊能力對付好人，但你依然可以用你的口才，用盡一切手段去阻止任務成功。\n\n";
-            Script::$script["pb"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["pb"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . " por ser um jogador do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Deve colaborar para o fracasso das Missões.\n\n";
-            Script::$script["ph"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["ph"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n";
-            Script::$script["es"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["es"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n";
-            Script::$script["zho"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["zho"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . " 一个非常普通的小偷。你只知道你自己的坏人同伴，除了欧泊朗。总之，能力不强的你无法用特殊能力对付好人，但你依然可以用你的口才，用尽一切手段去阻止任务成功。\n\n";
-            Script::$script["yue"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["yue"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . "係壞人，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n";
-            Script::$script["och"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["och"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . "屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n";
-            Script::$script["ar"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["ar"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                . " كـ لاعب بدور الأشرار, يعرف عن كل اللاعبين الأشرار من بداية اللعبة و يجب أن يجتمع معهم حتى يحبطوا المهمة. \n\n";
-            Script::$script["fa"][Script::PU_THIEFINFO]
-                = "<b>".Script::$script["fa"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
-                ." دزد یکی از یاغی هاست. وظیفه ی دزد اینه که به کمک بقیه ی یاغی ها چالش ها رو به سمت شکست ببره. \n\n";
-
-
-        }
+                Script::$script["en"][Script::SECRETCODES] = array(
+                    "thanks",
+                    "sorry",
+                    "honest",
+                    "lie",
+                    "confused",
+                    "happy",
+                    "sad",
+                    "stupid",
+                    "smart",
+    //                "Oh my God",
+                    "believe",
+                    "choose",
+                    "sure",
+                    "doubt",
+                    "play",
+                );
+                Script::$script["id"][Script::SECRETCODES] = array(
+                    "terima kasih",
+                    "maaf",
+                    "jujur",
+                    "bohong",
+                    "bingung",
+                    "senang",
+                    "sedih",
+                    "bodoh",
+                    "pintar",
+    //                "ya Tuhan",
+                    "percaya",
+                    "pilih",
+                    "yakin",
+                    "ragu",
+                    "main",
+                );
+                Script::$script["it"][Script::SECRETCODES] = array(
+                    "grazie",
+                    "scusa",
+                    "onesto",
+                    "bugia",
+                    "confuso",
+                    "contento",
+                    "triste",
+                    "stupido",
+                    "intelligente",
+                    "incredibile",
+                    "credete",
+                    "scegliete",
+                    "sicuro",
+                    "dubbio",
+                    "gioca",
+                );
+                Script::$script["cn"][Script::SECRETCODES] = array(
+                    "謝謝",
+                    "對不起",
+                    "誠實",
+                    "欺騙",
+                    "混亂",
+                    "開心",
+                    "傷心",
+                    "笨蛋",
+                    "醒目",
+    //                "我的天",
+                    "相信",
+                    "選擇",
+                    "當然",
+                    "懷疑",
+                    "玩",
+                );
+                Script::$script["pb"][Script::SECRETCODES] = array(
+                    "obrigado",
+                    "desculpe",
+                    "honesto",
+                    "mentira",
+                    "confuso",
+                    "feliz",
+                    "triste",
+                    "idiota",
+                    "esperto",
+    //                "Meu Deus!",
+                    "acredite",
+                    "escolha",
+                    "claro",
+                    "dúvida",
+                    "joga",
+                    "pensar",
+                    "cilada",
+                );
+                Script::$script["ph"][Script::SECRETCODES] = array(
+                    "salamat",
+                    "traydor",
+                    "mabait",
+                    "sinungaling",
+                    "mahusay",
+                    "masaya",
+                    "malungkot",
+                    "tiwala",
+                    "pambihira",
+                    "pikon",
+                    "masama",
+                    "epal",
+                    "maganda",
+                    "charot",
+                    "panalo",
+                );
+                Script::$script["es"][Script::SECRETCODES] = array(
+                    "gracias",
+                    "perdón",
+                    "honesto",
+                    "mentir",
+                    "confuso",
+                    "feliz",
+                    "triste",
+                    "estúpido",
+                    "inteligente",
+    //                "Oh Dios mío",
+                    "creer",
+                    "elegir",
+                    "seguro",
+                    "duda",
+                    "jugar",
+                );
+                Script::$script["zho"][Script::SECRETCODES] = array(
+                    "谢谢",
+                    "对不起",
+                    "诚实",
+                    "欺骗",
+                    "混乱",
+                    "开心",
+                    "伤心",
+                    "笨蛋",
+                    "醒目",
+    //                "我的天",
+                    "相信",
+                    "选择",
+                    "当然",
+                    "怀疑",
+                    "玩",
+                );
+                Script::$script["yue"][Script::SECRETCODES] = array(
+                    "唔該",
+                    "對唔住",
+                    "真心",
+                    "呃",
+                    "亂",
+                    "開心",
+                    "傷心",
+                    "癡線",
+                    "醒",
+                    "大鑊",
+                    "信",
+                    "揀",
+                    "梗係",
+                    "諗",
+                    "玩嘢",
+                    "過",
+                    "唔去",
+                    "你大我阿",
+                );
+                Script::$script["och"][Script::SECRETCODES] = array(
+                    "多謝",
+                    "對不起",
+                    "誠信",
+                    "詐騙",
+                    "混亂",
+                    "快樂",
+                    "心傷",
+                    "蠢純",
+                    "聰明",
+    //                "天啊",
+                    "相信",
+                    "選擇",
+                    "當然",
+                    "懷疑",
+                    "把戲",
+                );
+    
+                Script::$script["ar"][Script::SECRETCODES] = array(
+                    "شكراً",
+                    "آسف",
+                    "صادق",
+                    "كاذب",
+                    "محتار",
+                    "سعيد",
+                    "حزين",
+                    "غبي",
+                    "ذكي",
+    //                "يا إلهي",
+                    "أؤمن",
+                    "أختار",
+                    "متأكد",
+                    "أشك",
+                    "ألعب",
+                );
+    
+                Script::$script["fa"][Script::SECRETCODES] = array(
+                    "ممنون",
+                    "ببخشید",
+                    "راستگو",
+                    "دروغگو",
+                    "متعجب",
+                    "خوشحال",
+                    "ناراحت",
+                    "احمق",
+                    "باهوش",
+    //                "اوه خدای من",
+                    "باور کن",
+                    "انتخاب کن",
+                    "مطمئن",
+                    "نامطمئن",
+                    "بازی کن",
+                );
+                Script::$script["fr"][Script::SECRETCODES] = array(
+                    "merci",
+                    "désolé",
+                    "honnête",
+                    "mensonge",
+                    "confus",
+                    "heureux",
+                    "triste",
+                    "stupide",
+                    "intelligent",
+    //                "Oh mon Dieu",
+                    "croire",
+                    "choisir",
+                    "sûr",
+                    "doute",
+                    "jouer",
+                );
+    
+    
+                Script::$script["en"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["en"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . " is in a good side. All agents in the team share the same secret codes given via Bot Private Message.\n\n"
+                    . "Agents can find the other teammates by using those secret codes, so that together they will succeed the mission easier. Remember, do not make it too obvious, or the bad guys will know the agents and it will make assassin's job easier to kill Merlin.\n\n"
+                    . "Possible secret codes: ".Constant::arrayToString(Script::$script["en"][Script::SECRETCODES]).".\n\n";
+                Script::$script["id"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["id"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . " berada di tim baik. Semua agent dalam tim mendapatkan kode rahasia yang sama yang diberikan melalui PM Bot.\n\n"
+                    . "Agent dapat menemukan teman agen lainnya menggunakan kode rahasia tersebut, sehingga bersama-sama agent dapat menyukseskan misi lebih mudah. Ingat, jangan terlalu jelas memberikan kode, atau penjahat akan tahu semua agent sehingga membuat tugas assassin untuk membunuh Merlin menjadi lebih mudah.\n\n"
+                    . "Kode rahasia yang mungkin: ".Constant::arrayToString(Script::$script["id"][Script::SECRETCODES]).".\n\n";
+                Script::$script["it"][Script::PU_AGENTINFO]
+                    = "l'<b>".Script::$script["it"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . " è della parte dei buoni. Tutti gli agenti della squadra hanno lo stesso codice segreto ricevuto in privato.\n\n"
+                    . "Gli Agenti possono riconoscersi usando questi codici segreti, in modo da rendere più facile la missione. Ricorda, non farti notare, oppure i cattivi sapranno chi sono gli agenti e renderanno il lavoro all'assassino più facile per uccidere Merlino.\n\n"
+                    . "Possibili codici segreti: ".Constant::arrayToString(Script::$script["it"][Script::SECRETCODES]).".\n\n";
+                Script::$script["cn"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["cn"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . "特務之間都會使用暗號來分辨自己的同伴。當然在群組使用暗號時候別太明顯，否則會更容易讓刺客找到梅林。\n\n"
+                    . "這些是遊戲中可能會用到的暗號: ".Constant::arrayToString(Script::$script["cn"][Script::SECRETCODES]).".\n\n";
+                Script::$script["pb"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["pb"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . " está do lado do Bem. Todos os agentes recebem o mesmo código secreto por meio de uma mensagem na conversa privada com o bot.\n\n"
+                    . "Os Agentes podem identificar-se usando estes códigos, de forma a ter mais chance de obter sucesso nas Missões. Lembrem-se, não deixem muito óbvio, ou os membros do Mal saberão quem são os agentes, facilitando o trabalho da assassina em aniquilar Merlin.\n\n"
+                    . "Possíveis códigos secretos: ".Constant::arrayToString(Script::$script["pb"][Script::SECRETCODES]).".\n\n";
+                Script::$script["ph"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["ph"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . " ay mabuting tao. lahat ng Agent sa team ay may parehas na Secret Code galing kay Bot via PM.\n\n"
+                    . "Pwedeng mahanap ng Agent ang mga co-Agent gamit ang mga Secret Code, para matapos ng mabilis ang missions. Tandaan, wag masyadong halata, kung hindi, malalaman ng Evil Team na Agent kayo at mapapadali ang trabaho ng Assassin na Paslangin ang Merlin.\n\n"
+                    . "Mga posibleng Secret Codes: ".Constant::arrayToString(Script::$script["ph"][Script::SECRETCODES]).".\n\n";
+                Script::$script["es"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["es"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . " está en el bando del Bien. Todos los agentes en el mismo equipo comparten el mismo código secreto recibido vía Mensaje Privado por el Bot.\n\n"
+                    . "Los agentes pueden encontrar aotros usando sus códigos secretos, así ellos podrán completar misiones más fácilmente. Recuerda, no lo hagas demasiado obio, o los malvados conocerán a los agentes y tendrán más fácil el trabajo de matar a Merlín.\n\n"
+                    . "Códigos secretos posibles: ".Constant::arrayToString(Script::$script["es"][Script::SECRETCODES]).".\n\n";
+                Script::$script["zho"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["zho"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . "特务之间都会使用暗号来分辨自己的同伴。当然在群组使用暗号时候别太明显，否则会更容易让刺客找到梅林。\n\n"
+                    . "这些是遊戏中可能会用到的暗号: ".Constant::arrayToString(Script::$script["zho"][Script::SECRETCODES]).".\n\n";
+                Script::$script["yue"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["yue"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . "喺好人，而特務會用暗號嚟搵自己同伴。\n\n"
+                    . "記住，喺群组用暗號得太明顯，壞人就好容易搵到梅林。\n\n"
+                    . "以下就喺遊戲中可能會用嘅暗號: ".Constant::arrayToString(Script::$script["yue"][Script::SECRETCODES]).".\n\n";
+                Script::$script["och"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["och"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . "屬於正派，而機械人會發放同一暗號予所有密探。"
+                    . "密探之間都會用暗號來找自己的同伴。但在群组使用暗号时候別太明顯，否则只會更容易讓刺客找到梅林。\n\n"
+                    . "這些是可能會用到的暗號: ".Constant::arrayToString(Script::$script["och"][Script::SECRETCODES]).".\n\n";
+                Script::$script["ar"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["ar"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . "هو بصف الطيبين. كل الوكلاء الموجودين بنفس الفريق بإمكانهم التواصل مع بعضهم عبر البوت الخاص\n\n"
+                    . "الوكلاء بإمكانهم معرفة أعضاء الفريق الآخر بإستخدام أكواد سرية, معاً بإمكانهم الفوز بالمهمة بسهولة. تذكر, لا تكون واضحاً...و إلا سيعرف الأشرار الوكلاء و سيجعل وظيفة الحشاش أسهل بقتل مرلين.\n\n"
+                    . "الأكواد السرية المسموحة : ".Constant::arrayToString(Script::$script["ar"][Script::SECRETCODES]).".\n\n";
+                Script::$script["fa"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["fa"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . "مأمور ها درباری هستن. اونها در طول بازی از طریق کدهای رمزگذاری شده ی مخصوصی از طریق پی وی بات با هم ارتباط برقرار میکنن\n\n"
+                    . "همه ی مأمور ها باید در طول بازی همدیگه رو از طریق کد ها بشناسن تا بتونن راحت تر به موفقیت برسن. توجه کنید که مأمور ها نباید نقششون رو معلوم کنن...در این صورت قاتل با شناختن اونها راحت تر میتونه مرلین رو بکشه.\n\n"
+                    . "کد های سری این ها هستن : ".Constant::arrayToString(Script::$script["fa"][Script::SECRETCODES]).".\n\n";
+                Script::$script["fr"][Script::PU_AGENTINFO]
+                    = "<b>".Script::$script["fr"][Script::AGENT]."</b>".Constant::EMO_SMILE_B
+                    . " est dans le camp du bien. Tous les agents partagent les mêmes codes secrets, partagés par le bot en Message Privé.\n\n"
+                    . "Les agents peuvent se reconnaître en utilisant des codes secrets, pour réussir les missions plus facilement ensemble. N'oubliez pas, ne soyez pas trop voyants, ou le camp du mal connaîtra les agents, et il sera plus facile pour l'assassin de démasquer puis tuer Merlin.\n\n"
+                    . "Possible codes secrets   : ".Constant::arrayToString(Script::$script["fr"][Script::SECRETCODES]).".\n\n";
+    
+    
+                Script::$script["en"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["en"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n"
+                    . "Because Percival can see Merlin and Morgana, Morgana's primary job is to gain trust from Percival by acting as a Merlin. If Percival can be deceived, Merlin will be in trouble.\n\n";
+                Script::$script["id"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["id"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n"
+                    . "Karena Percival dapat melihat Merlin dan Morgana, tugas utama Morgana adalah mendapatkan kepercayaan dari Percival dengan berpura-pura menjadi Merlin. Jika Percival dapat ditipu, maka Merlin akan berada dalam bahaya.\n\n";
+                Script::$script["it"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["it"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " come giocatore malvagio, conosce i suoi compagni ad inizio partita (tranne Oberon) e deve cooperare con loro per far fallire le Missioni.\n\n"
+                    . "Siccome Percival può vedere Merlino e Morgana, il ruolo primario di Morgana è guadagnare la fiducia di Percival agendo come Merlino. Se Percival si lascia ingannare, Merlino sarà nei guai.\n\n";
+                Script::$script["cn"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["cn"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . "遊戲一開始你會知道你的壞人同伴，除了奧北朗。你必須和你的同伴一起努力去讓任務失敗。\n\n"
+                    . "另外，你專門放虛假的消息，給好人以為是梅林，好讓派西维爾更難找到真梅林。\n\n";
+                Script::$script["pb"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["pb"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " por ser uma jogadora do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Ela deve colaborar para o fracasso das Missões.\n\n"
+                    . "Uma vez que Percival vê quem são Merlin e Morgana, sem distinguir um do outro, a tarefa principal de Morgana é ganhar a confiança de Percival agindo como Merlin. Se Percival puder ser enganado, Merlin estará em apuros.\n\n";
+                Script::$script["ph"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["ph"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n"
+                    . "Dahil nakikita ng Percival ang Merlin at Morgana, Ang trabaho ng Morgana ay makuha ang tiwala ng Percival sa pagActing bilang Merlin. Kung ang Percival ay nauto, madali na lang mahanap ang Merlin.\n\n";
+                Script::$script["es"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["es"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n"
+                    . "Como Perceval puede ver a Merlín y a Morgana, el trabajo principal de Morgana es ganarse la confianza de Perceval actuando como Merlín. Si Perceval es engañado, Merlín podrá estar en problemas.\n\n";
+                Script::$script["zho"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["zho"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " 遊戏当中实力最强的坏人。\n\n"
+                    . "除了能知道自己的队友是谁(除了欧泊朗)，他还能负责欺骗派西维尔和在遊戏结束时候刺杀梅林。\n\n";
+                Script::$script["yue"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["yue"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " 喺壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
+                    . "好好利用你有既資訊，誤導珀西瓦里相信你係真梅林。\n\n";
+                Script::$script["och"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["och"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " 屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n"
+                    . "莫甘娜負責欺騙派西維爾，令人誤會她是真梅林。\n\n";
+                Script::$script["ar"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["ar"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " يلعب بدور الشرير و يعرف كل الأشرار من بداية اللعبة, يجب أن يجتمعوا حتى يحبطوا المهمة. \n\n"
+                    . "و لأن البريفسال بإمكانه رؤية مرلين و مورقانا, هدف مورقانا الأساسي هو كسب ثقته بإدعاءه أنه مرلين. إن كان هناك شخص يدعي كونه بريفسال, عندها مرلين سيكون في مأزق. \n\n";
+                Script::$script["fa"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["fa"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " توی تیم یاغی ها بازی میکنه. مورگانا همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه \n\n"
+                    . "و چون پرسیوال مرلین و مورگانا رو نمیتونه تشخیص بده، وظیفه ی دوم مورگانا اینه که به جای مرلین برای پرسیوال نقش بازی کنه. در این صورت اگه پرسیوال باورش کنه، مرلین توی تله میفته. \n\n";
+                 Script::$script["fr"][Script::PU_MORGANAINFO]
+                    = "<b>".Script::$script["fr"][Script::MORGANA]."</b>".Constant::EMO_EVIL_B
+                    . " étant dans le camp du mal, elle connaît les autres membres du camp du mal et doit coopérer avec eux pour faire échouer les quêtes.\n\n"
+                    . "Vu que Perceval peut voir Merlin et Morgane, le but premier de Morgane est de gagner la confiacne de Perceval en agissant comme Merlin agirait. Si Perceval est trompé, Merlin sera en difficultés.\n\n";
+    
+                Script::$script["en"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["en"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n"
+                    . "Assassin can guess Merlin at the end of the game (if 3 quests already been succeed). If the guess is correct, whatever the result in the quests, Evil force will win.";
+                Script::$script["id"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["id"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n"
+                    . "Assassin dapat menebak Merlin di akhir game (jika 3 quest sudah sukses). Jika Merlin berhasil dibunuh, apapun hasil di quest, tim jahat akan menang.";
+                Script::$script["it"][Script::PU_ASSASSININFO]
+                    = "l'<b>".Script::$script["it"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " come giocatore malvagio conosce gli altri cattivi all'inizio della partita (tranne Oberon) e deve collaborare con loro per fallire le Missioni.\n\n"
+                    . "l'Assassino alla fine della partita può cercare di indovinare Merlino a fine partita (se 3 missioni sono state completate). Se l'ipotesi è giusta, nonostante le missioni completate, Il team malvagio vincerà!";
+                Script::$script["cn"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["cn"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " 刺客會知道自己的同伴(除了奧北朗)，並協助他們令到好人們任務失敗。一旦好人成功完成3個任務，他有1次機會去刺殺梅林。梅林一死，壞人就贏。\n\n";
+                Script::$script["pb"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["pb"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " por ser uma jogadora do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Ela deve colaborar para o fracasso das Missões.\n\n"
+                    . "A Assassina pode tentar adivinhar quem é Merlin ao final da partida (caso 3 Missões tenham tido sucesso). Se ela escolher corretamente, independentemente do resultado das Missões, as forças do Mal vencerão.";
+                Script::$script["ph"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["ph"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n"
+                    . "Ang Assassin ay pwedeng hulaan ang Merlin sa pagtatapos ng Laro (kung ang 3 Quests ay Success). Kung tama ang hula, kahit ano pa ang resulta ng Quest, Evil Team ang Mananalo.";
+                Script::$script["es"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["es"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n"
+                    . "El Asesino puede descubrir a Merlín al final del juego (si se completan 3 gestas satisfactoriamente). Si lo adivina correctamente, las fuerzas del Mal ganarán.";
+                Script::$script["zho"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["zho"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " 刺客会知道自己的同伴(除了欧泊朗)，并协助他们令到好人们任务失败。一旦好人成功完成3个任务，他有1次机会去刺杀梅林。梅林一死，坏人就赢。\n\n";
+                Script::$script["yue"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["yue"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . "係壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
+                    . "一旦好人成功執行 3 個任務，佢就要負責刺殺梅林，成功刺殺梅林嘅話壞人陣營會贏。";
+                Script::$script["och"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["och"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . "會知道自己的同伴(除了奧伯倫)，並協助他們令到好人們任務失敗。\n\n"
+                    . "一旦正派成功完成 3 個任務，他有 1 次機會去刺殺梅林。梅林一死，反派就勝利。";
+                Script::$script["ar"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["ar"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " يلعب بدور الأشرار و يعرف من هم الأشرار من بداية اللعبة, و يجب أن يجتمعوا معاً حتى تحبط المهمة. \n\n"
+                    . "الحشاش بإستطاعته تخمين من هي مرلين في نهاية اللعبة ( إذا كانت 3 مهمات قد نجحت بالفعل). إذا كان التخمين صحيح, مهما كانت نتيجة المهمات, قوة الأشرار ستفوز.";
+                Script::$script["fa"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["fa"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " توی تیم یاغی ها بازی میکنه. قاتل همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
+                    . "قاتل میتونه در انتهای بازی (اگه درباری ها سه پیروزی در چالش ها داشته باشن) مرلین رو حدس بزنه و بکشه. اگه حدس قاتل درست باشه و مرلین کشته بشه نتیجه هرچی که باشه باز هم تیم یاغی ها پیروز میشه.";
+                Script::$script["fr"][Script::PU_ASSASSININFO]
+                    = "<b>".Script::$script["fr"][Script::ASSASSIN]."</b>".Constant::EMO_EVIL_B
+                    . " étant dans le camp du mal, il connaît les autres membres du camp du mal et doit coopérer avec eux pour faire échouer les quêtes.\n\n"
+                    . "L'Assassin peut tenter de démasquer Merlin à la fin de la partie (si 3 quêtes sont réussies). Si il démasque effectivement Merlin, peu importe le résultat des quêtes, le camp du mal l'emporte.";
+    
+    
+                Script::$script["en"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["en"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n"
+                    . "Witch has the ability to know what are the roles that the good team holds, but witch doesn't know how much or who hold the roles. Use this information to narrow down the merlin.\n";
+                Script::$script["id"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["id"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n"
+                    . "Witch mempunyai kemampuan untuk mengetahui peran apa saja yang ada di tim baik, tapi witch tidak mengetahui jumlah dan siapa yang memegang peran tersebut. Gunakan informasi ini untuk mencari merlin.";
+                Script::$script["it"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["it"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . " come giocatore malvagio conosce gli altri cattivi a inizio partita (tranne Oberon) e deve collaborare insieme per fallire le missione.\n\n"
+                    . "La Strega ha l'abilità di conoscere quali sono i ruoli che i buoni hanno, ma non sa con certezza quanti o di chi sono i ruoli. Usa quest'informazione per scovare Merlino.\n";
+                Script::$script["cn"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["cn"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . "身為巫師，他必須同已知的壞人(無法知道神秘壞人奧北朗是誰)聯手出擊，去阻止好人們完成任務。\n\n"
+                    . "知道好人的角色，但不知道該角色是屬於哪一個好人以及無法知道該角色的數量。\n";
+                Script::$script["pb"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["pb"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . " por ser uma jogadora do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Ela deve colaborar para o fracasso das Missões.\n\n"
+                    . "A Feiticeira tem a habilidade de conhecer os papéis do Bem que estão no jogo, mas não sabe quem são ou quantos são. Ela poderá usar este conhecimento para descobrir quem é Merlin.\n";
+                Script::$script["ph"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["ph"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n"
+                    . "Ang Bruha ay may Powers na malaman ang Role list ng Good Team, ngunit di alam ng Bruha kung ilan o sino ang may hawak ng role. Gamitin ang impormasyon upang mahanap ang Merlin.\n";
+                Script::$script["es"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["es"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n"
+                    . "La Bruja tiene la habilidad de conocer los roles del bien presentes en la partida, pero no sabe quien y cuantos llevan esos roles. Usa esta información para estrechar con Merlín.\n";
+                Script::$script["zho"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["zho"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . "身为巫师，他必须同已知的坏人(无法知道神秘坏人奥北朗是谁)联手出击，去阻止好人们完成任务。\n\n"
+                    . "知道好人的角色，但不知道该角色是属於哪一个好人以及无法知道该角色的数量。\n";
+                Script::$script["yue"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["yue"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . "係壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
+                    . "女巫知道有邊啲身份，但唔知道嗰啲角色係邊個或者某一角色有幾多，可以利用手上有既資訊去幫隊友搵出邊嗰喺梅林。\n";
+                Script::$script["och"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["och"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . "屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n"
+                    . "女巫會知道正派的角色，但不知道該角色是確實屬於哪一個以及該角色的數量；要收集更多資訊去猜測誰是梅林。\n";
+                Script::$script["ar"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["ar"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . " كـلاعب بدور الأشرار, يعرف عن كل اللاعبين الأشرار من بداية اللعبة و يجب أن يجتمع معهم حتى يحبطوا المهمة. \n\n"
+                    . "ويتش لديه القدرة لمعرفة أدوار الفريق الطيب, لكن لا يعرف من يحمل هذا الدور. يستعمل هذه الميزة ليحبط مرلين. \n";
+                Script::$script["fa"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["fa"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . " توی تیم یاغی ها بازی میکنه. جادوگر همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
+                    . "جادوگر همه ی درباری ها رو میشناسه. اما نمیدونه چند نفرن و چه نقشی دارن. ولی میتونه با استفاده از اطلاعاتش باعث باخت تیم دربار بشه. \n";
+                Script::$script["fr"][Script::PU_WITCHINFO]
+                    = "<b>".Script::$script["fr"][Script::WITCH]."</b>".Constant::EMO_EVIL_B
+                    . " étant dans le camp du mal, elle connaît les autres membres du camp du mal et doit coopérer avec eux pour faire échouer les quêtes.\n\n"
+                    . "La Sorcière a la capacité de connaître les rôles de du camp du bien, mais ne connaît pas le nombre, ni les possesseurs des rôles. Utilisez cette information pour traquer Merlin plus aisément.\n";
+    
+    
+                Script::$script["en"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["en"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n"
+                    . "Morgause is a combination role from /morgana and /assassin. The player with this character can deceive Percival and Morgause can also kill Merlin at the game of the game.\n\n";
+                Script::$script["id"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["id"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n"
+                    . "Morgause adalah peran kombinasi dari /morgana dan /assassin. Pemain dengan karakter ini dapat menipu Percival dan Morgause juga dapat membunuh Merlin di akhir game.\n\n";
+                Script::$script["it"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["it"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . " come giocatore malvagio conosce gli altri giocatori all'inizio della partita e deve collaborare con loro per fallire le missioni.\n\n"
+                    . "Morgause è l'unione dei ruoli /morgana e /assassin. Il giocatore con questo personaggio può confondere Percival e sia uccidere Merlino a fine partita.\n\n";
+                Script::$script["cn"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["cn"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . "遊戲當中實力最強的壞人，除了能知道自己的隊友是誰(除了奧北朗)，他還能負責欺騙派西维爾和在遊戲結束時候刺殺梅林。\n\n";
+                Script::$script["pb"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["pb"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . " por ser do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Deve colaborar para o fracasso das Missões.\n\n"
+                    . "Morgause é uma combinação entre /morgana e a /assassin. Ela pode enganar Percival e também poderá matar Merlin ao final da partida.\n\n";
+                Script::$script["ph"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["ph"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n"
+                    . "Morgause ay pinagsamang role mula sa /morgana at /assassin. Ang Player sa role na to ay pwedeng malinlang ang Percival at ang Morgassassin ay maaring paslangin ang Merlin sa pagtatapos ng Laro.\n\n";
+                Script::$script["es"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["es"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n"
+                    . "Morgause es una combinación de los roles de /morgana y /assassin. El jugador con este personaje puede confundir a Perceval y puede matar a Merlín al final de la partida.\n\n";
+                Script::$script["zho"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["zho"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . "，遊戏当中实力最强的坏人。\n\n"
+                    . "除了能知道自己的队友是谁(除了奥北朗)，他还能负责欺骗派西维尔和在遊戏结束时候刺杀梅林。\n\n";
+                Script::$script["yue"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["yue"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . "係壞人一名，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n"
+                    . "莫歌絲同時擁有莫甘娜及刺客嘅能力，佢要誤導珀西瓦里以為佢係梅林，再喺最後關頭刺殺梅林。\n\n";
+                Script::$script["och"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["och"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . "屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n"
+                    . "莫歌絲有齊莫甘娜與刺客的能力：她不但負責欺騙派西維爾，亦會在適當時候出手擊殺梅林。\n\n";
+                Script::$script["ar"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["ar"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . " كـ لاعب بدور الأشرار, هو يعرف كل اللاعبين الأشرار من بداية اللعبة و يجب أن يجتمع معهم حتى يحبطوا المهمة. \n\n"
+                    . "مورقوس هو مزيج بين مورقانا /morgana و الحشاش /assassin.  اللاعب بهذه الشخصية يدّعي بأنه بريفسال و مورقوس بإمكانه قتل مرلين في نهاية اللعبة. \n\n";
+                Script::$script["fa"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["fa"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . " توی تیم یاغی ها بازی میکنه. مورگاس همه ی یاغی ها رو از ابتدای بازی میشناسه و باید برای شکست یه چالش همه رو دور هم جمع کنه. \n\n"
+                    . "مورگاس ترکیبی از مورگانا /morgana و قاتله /assassin.  مورگاس باید هم پرسیوال رو به اشتباه بندازه و هم در انتهای بازی میتونه مرلین رو بکشه. \n\n";
+                Script::$script["fr"][Script::PU_MORGAUSEINFO]
+                    = "<b>".Script::$script["fr"][Script::MORGAUSE]."</b>".Constant::EMO_EVIL_B
+                    . " étant dans le camp du mal, elle connaît les autres membres du camp du mal et doit coopérer avec eux pour faire échouer les quêtes.\n\n"
+                    . "Morgause est une combinaison de /morgana et de /assassin. Le joueur avec ce personnage peut tromper Perceval et Morgause peut essayer de tuer Merlin à la fin de la partie.\n\n";
+    
+    
+                Script::$script["en"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["en"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " is a good person whose job is to succeed the quests.\n\n"
+                    . "At the start of the game, knight can have information about 2 neighborhood players. Knight knows whether there is no bad person between them, or there is at least 1 bad person. However, Knight cannot detect Mordred, so Mordred will be seen as a good person.\n\n";
+                Script::$script["id"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["id"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " adalah pemain baik yang bertugas menyukseskan quest.\n\n"
+                    . "Di awal permainan, knight dapat memperoleh informasi mengenai 2 pemain di sekelilingnya. Knight tahu apakah tidak ada pemain jahat dari kedua orang itu, atau terdapat minimal 1 orang jahat. Namun, Knight tidak dapat mendeteksi Mordred, sehingga Mordred terlihat seperti orang baik.\n\n";
+                Script::$script["it"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["it"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " è una brava persona il cui scopo è completare le missioni.\n\n"
+                    . "All'inizio della partita, il cavaliere avrà informazioni riguardo ai giocatori vicini (quello sopra e sotto). Il Cavaliere sa se tra di loro sono presenti solo buoni o c'è almeno un cattivo (Nota: Mordred potrebbe esser visto come buono).\n\n";
+                Script::$script["cn"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["cn"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " 保護帝國的騎士有辦法知道它左右2個玩家不是壞人或者至少有1個壞人。會見到莫德雷德是好人。\n\n";
+                Script::$script["pb"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["pb"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " é um membro do Bem. Seu papel é obter sucesso nas Missões.\n\n"
+                    . "Ao início da partida, o Cavaleiro pode ter informações sobre 2 jogadores próximos. O Cavaleiro saberá se não há alguém do Mal entre os 2 ou se ao menos 1 deles é do Mal. Porém, o Cavaleiro não vê Mordred, por isso, Mordred será informado como alguém do Bem.\n\n";
+                Script::$script["ph"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["ph"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " ay isang mabutins tao na ang trabaho ay ipanalo ang Quest.\n\n"
+                    . "Sa simula ng Laro, Ang Kawal ay impormasyon tungkol sa 2 kapitbahay na players. Alam ng kawal kung walang masama sa kanila, o may isang masama sa kanila. Ngunit, Hindi na deDetect ng Kawal ang Mordred, Makikita ang Mordred bilang mabuting tao.\n\n";
+                Script::$script["es"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["es"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " es una buena persona cuyo trabajo es completar las gestas.\n\n"
+                    . "Al principio de la partida, el caballero tiene información de 2 jugadores vecinos. El caballero conoce al menos uno de ellos es malvado, o ninguno. Sin embargo, el caballero no puede detectar a Mordred, así que Mordred será visto como un jugador bueno.\n\n";
+                Script::$script["zho"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["zho"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . "保护王国的。\n\n"
+                    . "骑士有办法知道它左右2个玩家不是坏人或者至少有1个坏人，但会见到莫德雷德是好人。\n\n";
+                Script::$script["yue"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["yue"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . "係好人一名，而職責就係力保任務成功。\n\n"
+                    . "遊戲一開始，騎士就會知道左右兩個玩家係好定壞：一係兩個都好人，一係就至少有一個壞人。而如果左右有玩家係莫德雷德，武士會當咗佢係好人。\n\n";
+                Script::$script["och"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["och"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . "屬於正派，只會令任務成功。"
+                    . "騎士有能力知曉 2 位選手皆不是反派，或者至少有 1 位是反派。不過，莫德雷德會當作正派。\n\n";
+                Script::$script["ar"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["ar"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " هو شخص جيد هدفه بأن ينجح في المهمة. \n\n"
+                    . "في بداية اللعبة, بإمكان الفارس الحصول معلومات عن 2 من أقرباءه ( أقرب 2 من عنده من الأعلى و من الأسفل ). الفارس يعرف إذا كان هناك شخص سيء من بينهم, أو على الأقل شخص واحد سيء. على أي حال...الفارس لا يمكن معرفة موردير, إذاً سيرى موردريد على أساس أنه شخص جيد. \n\n";
+                Script::$script["fa"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["fa"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " شوالیه همونطور که از اسمش پیداست یکی از درباری هاست و وظیفش پیروزی در چالش هاست. \n\n"
+                    . "در ابتدای بازی شوالیه میتونه دوتا از همسایه هاش رو بشناسه. شوالیه میتونه یاغی ای که میون اونها وجود داره رو ببینه و ممکنه حداقل یه یاغی وجود داشته باشه یا هردونفر درباری باشن. همچنین شوالیه نمیتونه موردرد رو ببینه واسه همین موردرد به عنوان یه درباری به اون نشون داده میشه. \n\n";
+                Script::$script["fr"][Script::PU_KNIGHTINFO]
+                    = "<b>".Script::$script["fr"][Script::KNIGHT]."</b>".Constant::EMO_SMILE_B
+                    . " est dans le camp du bien, et a pour objectif de réussir les quêtes.\n\n"
+                    . "Au début de la partie, le Chevalier peut avoir des informations concernant deux joueurs adjacents. Le chevalier peut savoir si il sont dans le camp du bien, ou si au moins un d'entre eux est dans le camp du mal. Cependant, le Chevalier ne peut détecter MordreD. Mordred apparaît donc dans le camp du bien. \n\n";
+    
+    
+                // NEW
+                Script::$script["en"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["en"][Script::GOOD_LANCELOT]."</b>"
+                    . " is originally a good person whose job is to succeed the quests.\n\n"
+                    . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (for that quest only)\n\n";
+                Script::$script["id"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["id"][Script::GOOD_LANCELOT]."</b>"
+                    . " awalnya adalah orang baik yang tugasnya menyukseskan misi\n\n"
+                    . "Namun, ada kemungkinan di suatu misi, Good Lancelot akan bertukar peran dengan Evil Lancelot. Jika itu terjadi, maka di misi itu, lady akan melihat Good Lancelot sebagai Jahat, dan kondisi kemenangan untuk Good Lancelot juga berubah (untuk misi itu saja)\n\n";
+                Script::$script["it"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["it"][Script::GOOD_LANCELOT]."</b>"
+                    . " è originalmente una buona persona il cui scopo è completare le quest.\n\n"
+                    . "Però, c'è una piccola probabilità che in una quest il Lancillotto buono scambia il ruolo con il Lancillotto Cattivo. Se ciò accade, allora in quella quest, la ragazza del lago vedrà il Lancillotto Buono come cattivo, e la condizione di vittoria cambierà (solo per quella quest).\n\n";
+                Script::$script["cn"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["cn"][Script::GOOD_LANCELOT]."</b>"
+                    . " 是屬於好人陣型的隊伍成員之一，你要負責讓任務成功。\n\n"
+                    . "可惜，依然會有很微小的機率正義的蘭斯洛特會更改身份變身成為壞人的蘭斯洛特。如果這樣的情況發生了，湖女會見到是好人的你是壞人。當然正義的蘭斯洛特勝利的條件也更改了(只限當時後執行的任務罷了)\n\n";
+                Script::$script["pb"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["pb"][Script::GOOD_LANCELOT]."</b>"
+                    . " is originally a good person whose job is to succeed the quests.\n\n"
+                    . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+                Script::$script["ph"][Script::PU_GOODLANCELOTINFO]
+                    = "Ang <b>".Script::$script["ph"][Script::GOOD_LANCELOT]."</b>"
+                    . "  ay orihinal na mabuting tao na nag misyon ay manalo sa Quest.\n\n"
+                    . "Ngunit Subalit Datapwat, may slight chance na mag switch ng role ang Good Lancelot na maging Evil Lancelot sa isang quest. Kung mangyayari iyon sa quest, masisilip ng Babae sa Septic Tank na si Good Lancelot ay masama at ang winning condition ng Good Lancelot ay magbabago rin (para lang sa quest na iyon)\n\n";
+                Script::$script["es"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["es"][Script::GOOD_LANCELOT]."</b>"
+                    . " is originally a good person whose job is to succeed the quests.\n\n"
+                    . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+                Script::$script["zho"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["zho"][Script::GOOD_LANCELOT]."</b>"
+                    . " is originally a good person whose job is to succeed the quests.\n\n"
+                    . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+                Script::$script["yue"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["yue"][Script::GOOD_LANCELOT]."</b>"
+                    . " 原本屬於好人陣營。\n\n"
+                    . "遊戲進行中會有好細嘅機會邪惡蘭斯洛特會同正義蘭斯洛特交換身份。交換身份後，湖女會見到正義蘭斯洛特喺壞人，正義蘭斯洛特亦會加入咗壞人陣營。"
+                    . "(係分支1，邪惡蘭斯洛特可以選擇令任務成功或者失敗。但係，係分支2嘅遊戲裡面，當佢執行任務時候，邪惡蘭斯洛特只能夠令任務失敗。)\n\n";
+                Script::$script["och"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["och"][Script::GOOD_LANCELOT]."</b>"
+                    . " is originally a good person whose job is to succeed the quests.\n\n"
+                    . "However, there is a slight chance in a quest, Good Lancelot will switch role with the Evil Lancelot. If that happens, then in that quest, the lady will see the Good Lancelot as evil, and the winning condition for Good Lancelot will also change (fot that quest only)\n\n";
+                Script::$script["ar"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["ar"][Script::GOOD_LANCELOT]."</b>"
+                    . " هو بالأصل شخص جيد هدفه بأنه ينجح بالمهام. \n\n"
+                    . "على أي حال, هناك إحتمال في المهمة...اللانسوت الجيد يغير دوره مع اللانسوت الشرير. إن حصل هذا, إذاً في تلك المهمة...السيدة سترى اللانسوت الجيد كـ شرير...و حالة الفوز للانسوت الجيد ستتغير (فقط لمهمة واحدة). \n\n";
+                Script::$script["fa"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["fa"][Script::GOOD_LANCELOT]."</b>"
+                    . " یکی از درباری هاست و وظیفش پیروزی در چالش هاست. \n\n"
+                    . "با این حال لنسلات خوب این شانس رو داره که توی چالش جاش با لنسلات شیطانی عوض بشه. در این صورت بانوی دریاچه لنسلات شیطانی رو لنسلات خوب میبینه. همچنین با تغییر نقش ها، هدف پیروزی یا شکست در اون چالش برای لنسلات ها هم فرق میکنه (فقط برای اون چالش). \n\n";
+                Script::$script["fr"][Script::PU_GOODLANCELOTINFO]
+                    = "<b>".Script::$script["fr"][Script::GOOD_LANCELOT]."</b>"
+                    . " est initialement dans le camp du bien, et a pour objectif de réussir les quêtes.\n\n"
+                    . "Cependant, il y a une faible chance que pendant une quête, Bon Lancelot échange de rôle avec Lancelot Maléfique. Si ça arrive, alors sur cette quête, la dame du lac verra Bon Lancelot dans le camp du mal, et la condition de victoire de Bon Lancelot change aussi (pour cette quête uniquement) \n\n";
+    
+                // NEW
+                Script::$script["en"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["en"][Script::EVIL_LANCELOT]."</b>"
+                    . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                    . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
+                    . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+                Script::$script["id"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["id"][Script::EVIL_LANCELOT]."</b>"
+                    . " awalnya adalah orang jahat. Dia diketahui oleh Merlin dan teman jahat lainnya. Namun, Evil Lancelot sendiri tidak tahu teman jahatnya.\n\n"
+                    . "Ada kemungkinan di suatu misi, Evil Lancelot akan bertukar peran dengan Good Lancelot. Jika itu terjadi, maka di misi itu, lady akan melihat Evil Lancelot sebagai Baik, dan kondisi kemenangan untuk Evil Lancelot juga berubah (untuk misi itu saja)\n\n"
+                    . "Di Varian 1, Evil Lancelot boleh memberikan SUKSES atau GAGAL. Di Varian 2, Evil Lancelot harus memberikan GAGAL di misi yang dia ikuti.";
+                Script::$script["it"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["it"][Script::EVIL_LANCELOT]."</b>"
+                    . " è originalmente una persona cattiva. È conosciuta a Merlino e gli altri cattivi. Però, lui non conosce i suoi compagni.\n\n"
+                    . "Però, c'è una piccola probabilità che in una quest, Il Lancillotto cattivo scambi il ruolo con Lancillotto Buono. Se ciò dovesse succedere, allora in quella quest la Ragazza del lago vedrà il Lancillotto Cattivo come buono e la sua condizione di vittoria cambierà (solo per questa quest)\n\n"
+                    . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+                Script::$script["cn"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["cn"][Script::EVIL_LANCELOT]."</b>"
+                    . " 原本是屬於壞人隊伍的人員之一。梅林和其他壞人隊伍會知道他是誰，不過他自己本身不會知道他壞人隊伍的成員有誰。\n\n"
+                    . "在遊戲中會有極小的機率，邪惡的蘭斯洛特會和正義的蘭斯洛特交換身份。如果這種情況發生，湖女會見到邪惡的蘭斯洛特是壞人。然後邪惡蘭斯洛特的勝利條件也會跟著改變（只限當時後執行的任務罷了）。\n\n"
+                    . "在分支1，邪惡的蘭斯洛特可以選擇讓任務成功或者失敗。然而，在分支2的遊戲裡面，當他執行任務時候，邪惡的蘭斯洛特只能讓任務失敗。";
+                Script::$script["pb"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["pb"][Script::EVIL_LANCELOT]."</b>"
+                    . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                    . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
+                    . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+                Script::$script["ph"][Script::PU_EVILLANCELOTINFO]
+                    = "Ang <b>".Script::$script["ph"][Script::EVIL_LANCELOT]."</b>"
+                    . " ay orihinal na masamang tao. Kilala siya ng Merlin at ng kanyang ibang evil friends. Ngunit hindi niya kilala ang mga kakampi niya.\n\n"
+                    . "May slight chance na mag switch ng role ang Evil Lancelot na maging Good Lancelot sa isang quest. Kung mangyayari iyon sa quest, masisilip ng Babae sa Septic Tank na si Evil Lancelot ay mabuti at ang winning condition ng Good Lancelot ay magbabago rin (para lang sa quest na iyon)\n\n"
+                    . "Sa Variant 1, Ang Evil Lancelot ay pwede magbigay ng SUCCESS o FAIL sa Quest. Sa Variant 2, Ang Evil Lancelot ay kailangang magbigay FAIL sa Quest kung saan siya kabilang.";
+                Script::$script["es"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["es"][Script::EVIL_LANCELOT]."</b>"
+                    . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                    . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
+                    . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+                Script::$script["zho"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["zho"][Script::EVIL_LANCELOT]."</b>"
+                    . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                    . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
+                    . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+                Script::$script["yue"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["yue"][Script::EVIL_LANCELOT]."</b>"
+                    . " 原本屬於壞人陣營，會被梅林同埋其他壞人知道係壞人，但佢並唔知道有邊啲壞人。\n\n"
+                    . "遊戲進行中會有好細嘅機會邪惡蘭斯洛特會同正義蘭斯洛特交換身份。交換身份後，湖女會見到邪惡蘭斯洛特喺好人，邪惡蘭斯洛特亦會加入咗好人陣營。\n\n"
+                    . "(係分支1，邪惡蘭斯洛特可以選擇令任務成功或者失敗。但係，係分支2嘅遊戲裡面，當佢執行任務時候，邪惡蘭斯洛特只能夠令任務失敗。)";
+                Script::$script["och"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["och"][Script::EVIL_LANCELOT]."</b>"
+                    . " is originally an evil person. He is known to Merlin and the other evil friends. However, Evil Lancelot doesn't know his evil teammates.\n\n"
+                    . "There is a slight chance in a quest, Evil Lancelot will switch role with the Good Lancelot. If that happens, then in that quest, the lady will see the Evil Lancelot as good, and the winning condition for Evil Lancelot will also change (for that quest only)\n\n"
+                    . "In Variant 1, Evil Lancelot may give SUCCESS OR FAIL to quest. In Variant 2, Evil Lancelot must give FAIL on the quest he is on.";
+                Script::$script["ar"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["ar"][Script::EVIL_LANCELOT]."</b>"
+                    . " هو بالأساس شخص شرير. يعرف عنه جميع طاقم الأشرار , لكن هو لا يعرفهم.\n\n"
+                    . "هناك إحتمال في المهمة, اللانسوت الشرير يتغير مع اللانسوت الطيب...لو حصل هذا, إذاً في تلك المهمة....السيدة سترى اللانسوت الشرير على أساس أنه طيب, و حالة الفوز أيضاً ستتغير ( لمهمة واحدة فقط ) .\n\n"
+                    . "في الإصدار الأول, بإمكان اللانسوت الشرير إعطاء قبول أو رفض للمهمة. و لكن في الإصدار الثاني...اللانسوت الشرير يجب عليه أن يعطي رفض للمهمة التي هو فيها.";
+                Script::$script["fa"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["fa"][Script::EVIL_LANCELOT]."</b>"
+                    . " یکی از یاغی هاست که مرلین و یاغی ها اون رو میشناسن ولی اون کسی رو نمیشناسه.\n\n"
+                    . " با این حال لنسلات شیطانی این شانس رو داره که توی چالش جاش با لنسلات خوب عوض بشه. در این صورت بانوی دریاچه لنسلات خوب رو لنسلات شیطانی میبینه. همچنین با تغییر نقش ها، هدف پیروزی یا شکست در اون چالش برای لنسلات ها هم فرق میکنه (فقط برای اون چالش)..\n\n"
+                    . "در ورژن 1 لنسلات شیطانی میتونه توی چالش ها موفقیت یا شکست رو انتخاب کنه. اما در ورژن 2 باید حتما شکست رو انتخاب کنه.";
+                Script::$script["fr"][Script::PU_EVILLANCELOTINFO]
+                    = "<b>".Script::$script["fr"][Script::EVIL_LANCELOT]."</b>"
+                    . " est initiallement maléfique. Il est connu de Merlin, et des autres membres du camp du mal. Cependant, Lancelot Maléfique ne connaît pas les autres membres du camp du mal.\n\n"
+                    . "Il y a une faible chance que pendant une quête, Lancelot Maléfique devienne Bon Lancelot. Si ça arrive, la dame du lac verra Lancelot dans le camp du bien pendant cette quête, et la condition de victoire de Lancelot Maléfique changera (uniquement pour cette quête)\n\n"
+                    . "Dans la Variante 1, Lancelot Maléfique peut donner un SUCCÈS ou un ÉCHEC à la quête. Dans la Variante 2, Lancelot Maléfique doit donner un ÉCHEC à la quête sur laquelle il est.";
+    
+    
+    
+                Script::$script["en"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["en"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . " is an evil player but all other evil players do not know the oberon's identity. Merlin can still see Oberon though."
+                    . " Oberon knows all the evil teammates but should not use Private Message to communicate.";
+                Script::$script["id"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["id"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . " adalah pemain jahat namun pemain jahat lain tidak tahu identitas Oberon. Sayangnya, Merlin masih dapat melihat Oberon."
+                    . " Oberon tahu semua teman jahatnya, namun tidak boleh menggunakan PM untuk berkomunasi.";
+                Script::$script["it"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["it"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . " è un giocatore malvagio ma gli altri giocatori non sapranno la sua identità. Merlino lo rivela comunque come malvagio."
+                    . " Oberon conosce i compagni ma non può scrivergli con i Messaggi Privati.";
+                Script::$script["cn"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["cn"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . " 最神秘的壞人，一開始能知道所有壞人，但其他壞人卻不會知道他的存在。梅林能知道他就是壞人卻不會知道他是奧北朗。此角色不能PM其他壞人玩家，這會破壞遊戲的平衡。";
+                Script::$script["pb"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["pb"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . " é um jogador do Mal, mas todos os outros jogadores do Mal não sabem sua identidade. Merlin, no entanto, ainda vê Oberon."
+                    . " Oberon sabe quem são os outros jogadores do Mal, mas não deve usar a conversa privada para se comunicar.";
+                Script::$script["ph"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["ph"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . " ay evil player ngunit di kilala ng Evil Team ang Oberon. Pero nakikita parin ng Merlin ang Oberon."
+                    . " Alam ng Oberon lahat ng Evil Team Ngunit bawal gumanit ng PM para kausapin ang mga kakampi.";
+                Script::$script["es"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["es"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . " es del bando del Mal, pero los otros jugadores malvados no conocen la identidad de Oberón. Merlín puede ver a Oberón de cualquier forma."
+                    . " Oberón conoce a todos los miembros del bando del Mal pero no debe usar Mensajes Privados para comunicarse.";
+                Script::$script["zho"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["zho"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . "，最神秘的坏人，一开始能知道所有坏人，但其他坏人却不会知道他的存在。梅林能知道他就是坏人。此角色不能PM其他坏人玩家，这会破坏遊戏的平衡。";
+                Script::$script["yue"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["yue"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . "係壞人，雖然佢知道邊啲係壞人，其他壞人亦唔知佢係壞人陣營，不過就逃唔出梅林嘅法眼。";
+                Script::$script["och"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["och"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . "屬於反派，但你的反派同伴卻不認識你。梅林反而知曉你是反派。";
+                Script::$script["ar"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["ar"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . "كون بصف اللاعبين الأشرار, لكن كل الأشرار لا يعرفون هوية أوبيرن...مع ذلك, مرلين بإمكانها رؤية أوبيرن."
+                    . "  أوبيرن يعرف جميع أصدقاءه الأشرار, لكن ممنوع أن يستخدم التواصل المنفرد.";
+                Script::$script["fa"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["fa"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . "اوبرن با تیم یاغی هاست ولی هیچکدوم از یاغی ها اون رو نمیشناسن...با این حال اوبرن برای مرلین قابل شناساییه."
+                    . "  اوبرن تمام هم تیمی های یاغی خودش رو میشناسه ولی نمیتونه از پیام خصوصی برای صحبت استفاده کنه.";
+                Script::$script["fr"][Script::PU_OBERONINFO]
+                    = "<b>".Script::$script["fr"][Script::OBERON]."</b>".Constant::EMO_EVIL_B
+                    . " est dans le camp du mal, mais les autres joueurs de son camp ne connaissent pas son identité. Merlin voit quand même qu'il est dans le camp du mal."
+                    . " Oberon connaît tous ses alliés, mais ne doit quand même pas utiliser de messages privés.";
+    
+    
+                Script::$script["en"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["en"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " as an evil player knows the other evil players at the start of the game and has to cooperate together to fail the quests.\n\n";
+                Script::$script["id"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["id"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " adalah pemain jahat yang tahu teman-teman jahatnya di awal permainan (kecuali Oberon) dan harus bekerja sama dengan tim jahat untuk mengagalkan quest.\n\n";
+                Script::$script["it"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["it"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " come giocatore malvagio, conosce gli altri giocatori a inizio partita (tranne Oberon) e deve collaborare con loro per fallire le missioni.\n\n";
+                Script::$script["cn"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["cn"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " 一個非常普通的小偷。你只知道你自己的壞人同伴，除了奧北朗。總之，能力不強的你無法用特殊能力對付好人，但你依然可以用你的口才，用盡一切手段去阻止任務成功。\n\n";
+                Script::$script["pb"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["pb"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " por ser um jogador do Mal, tem conhecimento dos outros membros ao início da partida (exceto Oberon). Deve colaborar para o fracasso das Missões.\n\n";
+                Script::$script["ph"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["ph"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " bilang isang evil player na kilala ang iba pang Evil Team sa simula ng laro (maliban sa Oberon) at kailangang makipagtulungan sa mga kakampi upang mabigo ang Quests.\n\n";
+                Script::$script["es"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["es"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " como jugador malvado conoce a los otros jugadores del bando del Mal al principio de la partida y tiene que cooperar con ellos para sabotear las gestas.\n\n";
+                Script::$script["zho"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["zho"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " 一个非常普通的小偷。你只知道你自己的坏人同伴，除了欧泊朗。总之，能力不强的你无法用特殊能力对付好人，但你依然可以用你的口才，用尽一切手段去阻止任务成功。\n\n";
+                Script::$script["yue"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["yue"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . "係壞人，遊戲開始時會知道壞人陣營有咩人（除左奧伯龍），同壞人一齊破壞啲任務。\n\n";
+                Script::$script["och"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["och"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . "屬於反派，在任務未開始時就已知反派一夥人，合力務求所有任務失敗。\n\n";
+                Script::$script["ar"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["ar"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " كـ لاعب بدور الأشرار, يعرف عن كل اللاعبين الأشرار من بداية اللعبة و يجب أن يجتمع معهم حتى يحبطوا المهمة. \n\n";
+                Script::$script["fa"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["fa"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    ." دزد یکی از یاغی هاست. وظیفه ی دزد اینه که به کمک بقیه ی یاغی ها چالش ها رو به سمت شکست ببره. \n\n";
+                Script::$script["fr"][Script::PU_THIEFINFO]
+                    = "<b>".Script::$script["fr"][Script::THIEF]."</b>".Constant::EMO_EVIL_B
+                    . " étant dans le camp du mal, connais les autres joueurs du camp du mal au début de la partie, afin de coopérer pour faire échouer les quêtes.\n\n";
+            }
     }
 
     static function getNameByRole($role, $lang="en"){
