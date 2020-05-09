@@ -2911,6 +2911,8 @@ class Script{
                 = "لا يمكنك الدخول. هناك %d لاعب بالفعل.";
             Script::$script["fa"][Script::PU_CANNOTJOINFULL]
                 = "نمیشه عضو شد.%d وارد بازی شدن.";
+                Script::$script["fr"][Script::PU_CANNOTJOINFULL]
+                = " ne peut pas rejoindre. Il y a déjà %d joueurs.";
 
             Script::$script["en"][Script::PU_CANNOTJOIN]
                 = " cannot join.";
@@ -2936,6 +2938,8 @@ class Script{
                 = "لا يمكنك الدخول.";
             Script::$script["fa"][Script::PU_CANNOTJOIN]
                 = "نمیشه وارد شد.";
+                Script::$script["fr"][Script::PU_CANNOTJOIN]
+                = " ne peut pas rejoindre.";
 
             Script::$script["en"][Script::PU_STARTMEFIRST]
                 = " <a href=\"http://telegram.me/%s\">Start Me</a> first.";
@@ -2961,6 +2965,8 @@ class Script{
                 = " <a href=\"http://telegram.me/%s\">شغلني</a> أولاً.";
             Script::$script["fa"][Script::PU_STARTMEFIRST]
                 = " <a href=\"http://telegram.me/%s\">منو استارت کن</a> اول.";
+            Script::$script["fr"][Script::PU_STARTMEFIRST]
+                = " <a href=\"http://telegram.me/%s\">Démarrez-moi</a> d'abord.";
 
             Script::$script["en"][Script::PU_CREATEFIRST]
                 = "Game has not started yet. Type /start or /startchaos to start Avalon.";
@@ -2986,6 +2992,8 @@ class Script{
                 = "اللعبة لم تبدأ بعد. أكتب /start أو /startchaos لبدء أفالون.";
             Script::$script["fa"][Script::PU_CREATEFIRST]
                 = "هنوز بازی شروع نشده. بنویس /start یا /startchaos برای شروع بازی.";
+            Script::$script["fr"][Script::PU_CREATEFIRST]
+                = "La partie n'a pas encore commencé. Utilisez /start ou /startchaos pour lancer une partie d'Avalon.";    
 
             Script::$script["en"][Script::PU_GAMESTART]
                 = "Game has been started. Please anyone check the private message to know your role.";
@@ -3011,6 +3019,8 @@ class Script{
                 = "اللعبة قد بدأت. الرجاء من الجميع رؤية الرسائل الخاصة ليعرف كل لاعب دوره.";
             Script::$script["fa"][Script::PU_GAMESTART]
                 = "بازی شروع شد. لطفا همه پی وی هاشون رو برای فهمیدن نقش چک کنن.";
+            Script::$script["fr"][Script::PU_GAMESTART]
+                = "La partie a commencé. Vérifiez vos messages privés pour connaître votre rôle.";
 
             Script::$script["en"][Script::PU_GAMECANCEL]
                 = "Game is canceled because there is not enough players. Invite your friends to join.";
@@ -3036,8 +3046,10 @@ class Script{
                 = "اللعبة ألغيت لعدم توفر لاعبين كفاية. أضف أصحابك و ألعب.";
             Script::$script["fa"][Script::PU_GAMECANCEL]
                 = "بازی لغو شد چون بازیکن کافی توی بازی نبود. دوستاتون رو دعوت به بازی کنید.";
+            Script::$script["fr"][Script::PU_GAMECANCEL]
+                = "La partie a été annulée par manque de joueurs. Invitez vos amis à jouer !";
 
-
+                
 
             Script::$script["en"][Script::PU_SECONDSLEFT]
                 = "<b>%d seconds</b> left.";
@@ -3063,6 +3075,8 @@ class Script{
                 = "<b>%d ثانية </b> تبقت.";
             Script::$script["fa"][Script::PU_SECONDSLEFT]
                 = "<b>%d ثانيه </b> مونده.";
+            Script::$script["fr"][Script::PU_SECONDSLEFT]
+                = "<b>%d secondes</b> restantes.";
 
             Script::$script["en"][Script::PU_JOINREMIND]
                 = "<b>%d seconds</b> left. Invite your friends to /join. Use /forcestart to immediately start the game.";
@@ -3088,6 +3102,8 @@ class Script{
                 = "<b>%d ثانية </b> تبقت. أضف أصحابك ليلعبون /join. Use /forcestart to immediately start the game.";
             Script::$script["fa"][Script::PU_JOINREMIND]
                 = "<b>%d ثانيه </b> مونده. وارد بشید و یا دوستاتون رو دعوت به بازی کنید /join. Use /forcestart to immediately start the game.";
+            Script::$script["fr"][Script::PU_JOINREMIND]
+                = "<b>%d secondes</b> restantes. Invitez vos amis à rejoindre avec /join. Utilisez /forcestart pour lancer la partie immédiatement.";
 
             Script::$script["en"][Script::PU_JOINSTART]
                 = "%s has started the Avalon - %s. Type /join to join the game.";
@@ -3113,6 +3129,8 @@ class Script{
                 = "%s قد بدأ أفالون %s. أكتب /join للدخول إلى اللعبة.";
             Script::$script["fa"][Script::PU_JOINSTART]
                 = "%s بازی رو راه انداخت %s. بنویس /join برای ورود به بازی.";
+            Script::$script["fr"][Script::PU_JOINSTART]
+                = "%s a lancé une partie d'Avalon - %s. Utilisez /join pour la rejoindre.";
 
             Script::$script["en"][Script::PU_JOINSUCCESS]
                 = "%s joined. <b>%d</b> players. min <b>%d</b>. max <b>%d</b>.";
@@ -3138,6 +3156,8 @@ class Script{
                 = "%s دخلوا. <b>%d</b> لاعبين. أقل حد <b>%d</b>. أقصى حد <b>%d</b>.";
             Script::$script["fa"][Script::PU_JOINSUCCESS]
                 = "%s وارد شد. <b>%d</b> بازیکن. حداقل <b>%d</b>. و حداکثر <b>%d</b>.";
+            Script::$script["fr"][Script::PU_JOINSUCCESS]
+                = "%s a rejoint la partie. <b>%d</b> jouer. <b>%d</b> minmum. <b>%d</b> maximum.";
 
             Script::$script["en"][Script::PU_FLEE_SUCCESS]
                 = "%s fleed. <b>%d</b> players remaining.";
@@ -3163,6 +3183,8 @@ class Script{
                 = "%s هرب. <b>%d</b> لاعبين تبقوا.";
             Script::$script["fa"][Script::PU_FLEE_SUCCESS]
                 = "%s بازی رو ترک کرد. <b>%d</b> باقی مونده.";
+            Script::$script["fr"][Script::PU_FLEE_SUCCESS]
+                = "%s a quitté la partie. Il reste <b>%d</b> joueurs.";
 
             Script::$script["en"][Script::PU_FLEE_FAIL]
                 = "%s cannot flee. The game has already started.";
@@ -3188,6 +3210,8 @@ class Script{
                 = "%s لا يمكنك الهروب. اللعبة قد بدأت بالفعل.";
             Script::$script["fa"][Script::PU_FLEE_FAIL]
                 = "%s نمی تونی فرار کنی. بازی شروع شده ترسوی کوچولو.";
+            Script::$script["fr"][Script::PU_FLEE_FAIL]
+                = "%s ne peut pas quitter. La partie a déjà commencé.";
 
             Script::$script["en"][Script::PU_NEED_MORE_PLAYERS]
                 = "We need minimum %d players to start the game.";
@@ -3213,6 +3237,8 @@ class Script{
                 = "نحتاج على الأقل %d لاعبين لبدء اللعبة.";
             Script::$script["fa"][Script::PU_NEED_MORE_PLAYERS]
                 = "برای شروع بازی حداقل %d بازیکن نیاز داریم.";
+            Script::$script["fr"][Script::PU_NEED_MORE_PLAYERS]
+                = "Il faut au minimum %d joueurs pour lancer la partie.";
 
             Script::$script["en"][Script::PU_REQUEST_STOP]
                 = "%s requested to cancel the game. <b>%d</b> of <b>%d</b>.";
@@ -3238,6 +3264,8 @@ class Script{
                 = "%s طلب بإلغاء اللعبة. <b>%d</b> من <b>%d</b>.";
             Script::$script["fa"][Script::PU_REQUEST_STOP]
                 = "%s خواست بازی لغو بشه. <b>%d</b> از <b>%d</b>.";
+            Script::$script["fr"][Script::PU_REQUEST_STOP]
+                = "%s a demandé à annuler la partie. <b>%d</b> sur <b>%d</b>.";
 
 
             Script::$script["en"][Script::PU_REQUEST_START]
@@ -3264,6 +3292,8 @@ class Script{
                 = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
             Script::$script["fa"][Script::PU_REQUEST_START]
                 = "%s requests to start the game. <b>%d</b> of <b>%d</b>.";
+            Script::$script["fr"][Script::PU_REQUEST_START]
+                = "%s demande à commencer la partie. <b>%d</b> sur <b>%d</b>.";
 
 
             Script::$script["en"][Script::PU_STOP_SUCCESS]
@@ -3290,6 +3320,8 @@ class Script{
                 = "اللعبة ألغيت.";
             Script::$script["fa"][Script::PU_STOP_SUCCESS]
                 = "بازی لغو شده.";
+            Script::$script["fr"][Script::PU_STOP_SUCCESS]
+                = "La partie a été annulée.";
 
             Script::$script["en"][Script::PR_QUEUE_ME]
                 = "You have registered yourself to the next Avalon Game in %s group. Do not forget to /join when the game start. :D";
@@ -3315,6 +3347,8 @@ class Script{
                 = "لقد سجلت نفسك في لعبة أفالون في مجموعة%s . لا تنسى بأن تكتب /join عندما تبدأ اللعبة :D";
             Script::$script["fa"][Script::PR_QUEUE_ME]
                 = "شما ثبت نام کردید برای بازی بعدی در گروه%s . یادت نره که /join رو برای عضویت تو بازی بعدی بنویسی :D";
+            Script::$script["fr"][Script::PR_QUEUE_ME]
+                = "Vous vous être pré-inscrit à la prochaine partie du groupe %s. N'oubliez pas d'utiliser /join quand la partie commencera :D";
 
             Script::$script["en"][Script::PR_QUEUE_CALL]
                 = "The Avalon game is going to start in %s group.";
@@ -3340,6 +3374,8 @@ class Script{
                 = "لعبة أفالون ستبدأ في مجموعة %s .";
             Script::$script["fa"][Script::PR_QUEUE_CALL]
                 = "یه بازی جدید توی گروه %s داره شروع میشه.";
+            Script::$script["fr"][Script::PR_QUEUE_CALL]
+                = "Une partie d'Avalon va commencer dans le groupe %s.";
 
             Script::$script["en"][Script::PR_QUEUE_FULL]
                 = "You cannot join for the avalon next game. The queue is full. Try to start the game!";
@@ -3365,6 +3401,8 @@ class Script{
                 = "لا يمكنك الدخول في لعبة أفالون القادمة. قائمة الإنتظار ممتلئة. جرب أن تبدأ اللعبة.";
             Script::$script["fa"][Script::PR_QUEUE_FULL]
                 = "تو نمیتونی برای بازی بعد ثبت نام کنی چون سالن انتظار پر شده! سعی کن به موقع خودتو به بازی برسونی.";
+            Script::$script["fr"][Script::PR_QUEUE_FULL]
+                = "Vous ne pouvez pas vous pré-inscrire pour la prochaine partie, la file d'attente est remple. Essayez de lancer une partie !";
 
             Script::$script["en"][Script::PU_IN_PROGRESS]
                 = "In Progress~";
@@ -3390,6 +3428,8 @@ class Script{
                 = "يتم الآن...";
             Script::$script["fa"][Script::PU_IN_PROGRESS]
                 = "درحال پردازش...";
+            Script::$script["fr"][Script::PU_IN_PROGRESS]
+                = "En cours...";
 
             Script::$script["en"][Script::NORMAL_MODE]
                 = "Normal Mode";
@@ -3415,6 +3455,8 @@ class Script{
                 = "النمط الطبيعي";
             Script::$script["fa"][Script::NORMAL_MODE]
                 = "حالت عادی";
+            Script::$script["fr"][Script::NORMAL_MODE]
+                = "Mode Normal";
 
             Script::$script["en"][Script::CHAOS_MODE]
                 = "Chaos Mode";
@@ -3440,6 +3482,8 @@ class Script{
                 = "الوضع الفوضوي.";
             Script::$script["fa"][Script::CHAOS_MODE]
                 = "حالت هرج و مرج.";
+            Script::$script["fr"][Script::CHAOS_MODE]
+                = "Mode Chaos";
 
             // NEW
             Script::$script["en"][Script::NO_LANCELOT]
@@ -3466,6 +3510,8 @@ class Script{
                 = Constant::EMO_PROHIBITED. " بدون لانسوت";
             Script::$script["fa"][Script::NO_LANCELOT]
                 = Constant::EMO_PROHIBITED. " بدون لنسلات";
+            Script::$script["fr"][Script::NO_LANCELOT]
+                = Constant::EMO_PROHIBITED. " Pas de Lancelot";
 
             // NEW
             Script::$script["en"][Script::LANCELOT_V1]
@@ -3492,6 +3538,8 @@ class Script{
                 = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " لانسوت الإصدار الأول";
             Script::$script["fa"][Script::LANCELOT_V1]
                 = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " لنسلات ورژن 1";
+            Script::$script["fr"][Script::LANCELOT_V1]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v1";
 
             // NEW
             Script::$script["en"][Script::LANCELOT_V2]
@@ -3518,6 +3566,8 @@ class Script{
                 = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " لانسوت الإصدار الثاني";
             Script::$script["fa"][Script::LANCELOT_V2]
                 = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " لنسلات ورژن 2";
+            Script::$script["fr"][Script::LANCELOT_V2]
+                = Constant::EMO_EVIL_LANCELOT. Constant::EMO_HEART_SWITCH. Constant::EMO_GOOD_LANCELOT.  " Lancelot v2";
 
             // NEW
             Script::$script["en"][Script::PU_LANCELOT_V1_SELECT]
@@ -3592,6 +3642,12 @@ class Script{
                 ." و ".Script::$script["fa"][Script::EVIL_LANCELOT]
                 ." نقش ها وارد بازی خواهند شد \n"
                 ."هر دو نقش ممکن است در طول بازی تغییر کنند. \n\n";
+            Script::$script["fr"][Script::PU_LANCELOT_V1_SELECT]
+                = "<b>Variante 1 sélectionnée</b>\n"
+                . Script::$script["fr"][Script::GOOD_LANCELOT]
+                ." et ".Script::$script["fr"][Script::EVIL_LANCELOT]
+                ." seront ajoutés à la partie.\n"
+                ."Les deux Lancelot peuvent changer de camp durant la partie.\n\n";
 
             // NEW
             Script::$script["en"][Script::PU_LANCELOT_V2_SELECT]
@@ -3678,6 +3734,13 @@ class Script{
                 ." نقش ها وارد بازی خواهند شد. \n"
                 ."نقش ها ممکنه در طول بازی تغییر کنن. \n\n"
                 ."در این حالت لنسلات شیطانی باید حتما توی چالشی که هست ببازه. \n\n";
+            Script::$script["fr"][Script::PU_LANCELOT_V2_SELECT]
+                = "<b>Variante 2 sélectionnée</b>\n"
+                .Script::$script["fr"][Script::GOOD_LANCELOT]
+                ." and ".Script::$script["fr"][Script::EVIL_LANCELOT]
+                ." seront ajoutés à la partie.\n"
+                ."Les deux Lancelot peuvent changer de camp durant la partie.\n\n";
+                ."Dans cette variante, Lancelot Maléfique doit faire échouer les quêtes auxquelles il participe.\n\n";
 
             Script::$script["en"][Script::PLAY_TIME]
                 = "played %d times";
@@ -3703,6 +3766,8 @@ class Script{
                 = "لعب %d مرة";
             Script::$script["fa"][Script::PLAY_TIME]
                 = "بازی کرده %d بار";
+            Script::$script["fr"][Script::PLAY_TIME]
+                = "a joué %d parties";
 
             Script::$script["en"][Script::X_TIMES]
                 = "%d times";
@@ -3728,6 +3793,8 @@ class Script{
                 = "%d مرات";
             Script::$script["fa"][Script::X_TIMES]
                 = "%d بار";
+            Script::$script["fr"][Script::X_TIMES]
+                = "%d fois";
 
             Script::$script["en"][Script::WIN_RATE]
                 = "Winrate: %d%%";
@@ -3753,6 +3820,8 @@ class Script{
                 = "معدل الفوز : %d%%";
             Script::$script["fa"][Script::WIN_RATE]
                 = "درصد پیروزی : %d%%";
+            Script::$script["fr"][Script::WIN_RATE]
+                = "Pourcentage de victoire : %d%%";
 
             Script::$script["en"][Script::GOOD_TEAM_WON_STAT]
                 = "Good Team Won %d%%";
@@ -3778,6 +3847,8 @@ class Script{
                 = "فريق الطيبين فازوا %d%%";
             Script::$script["fa"][Script::GOOD_TEAM_WON_STAT]
                 = "برد درباری %d%%";
+            Script::$script["fr"][Script::GOOD_TEAM_WON_STAT]
+                = "Victoires du Bien : %d%% ";
 
             // NEW
             Script::$script["en"][Script::WON]
@@ -3804,6 +3875,8 @@ class Script{
                 = "فاز";
             Script::$script["fa"][Script::WON]
                 = "پیروزی";
+            Script::$script["fr"][Script::WON]
+                = "Gagné";
 
             // NEW
             Script::$script["en"][Script::LOST]
@@ -3830,6 +3903,8 @@ class Script{
                 = "خسر";
             Script::$script["fa"][Script::LOST]
                 = "شکست";
+            Script::$script["fr"][Script::LOST]
+                = "Perdu";
 
             Script::$script["en"][Script::EVIL_TEAM_WON_STAT]
                 = "Evil Team Won %d%%";
@@ -3855,6 +3930,8 @@ class Script{
                 = "الفريق الشرير فاز %d%%";
             Script::$script["fa"][Script::EVIL_TEAM_WON_STAT]
                 = "برد یاغی %d%%";
+            Script::$script["fr"][Script::EVIL_TEAM_WON_STAT]
+                = "Victoires du Mal : %d%%";
 
 
             Script::$script["en"][Script::PLAY_TO_HAVE_STAT]
@@ -3881,6 +3958,8 @@ class Script{
                 = "يجب عليك أن تلعب حتى تظهر الإحصائيات.";
             Script::$script["fa"][Script::PLAY_TO_HAVE_STAT]
                 = "برای داشتن مشخصات حتما باید بازی کرده باشی.";
+            Script::$script["fr"][Script::PLAY_TO_HAVE_STAT]
+                = "Il faut faire au moins une partie pour avoir des statistiques.";
 
             Script::$script["en"][Script::PU_CHCKPMTOCHGLANG]
                 = "Please check private message to change the language.";
@@ -3906,6 +3985,8 @@ class Script{
                 = "رجاء أنظر إلى الرسائل الخاصة حتى تغير اللعبة.";
             Script::$script["fa"][Script::PU_CHCKPMTOCHGLANG]
                 = "لطفا برای تغییر زبان پیام های خصوصیتو چک کن.";
+            Script::$script["fr"][Script::PU_CHCKPMTOCHGLANG]
+                = "Passez par vos messages privés pour changer la langue.";
 
             Script::$script["en"][Script::PU_SECONDTODECIDE]
                 = "\n\nYou have <b>%d seconds</b> to decide.\n";
@@ -3931,6 +4012,8 @@ class Script{
                 = "\n\n لديك <b>%d ثانية </b> لتقرر. \n";
             Script::$script["fa"][Script::PU_SECONDTODECIDE]
                 = "\n\n تو <b>%d ثانيه </b> برای تصمیم گیری وقت داری. \n";
+            Script::$script["fr"][Script::PU_SECONDTODECIDE]
+                = "\n\nVous avez <b>%d secondes</b> pour décider.\n";
 
             Script::$script["en"][Script::PU_LANGGROUPNOTFOUND]
                 = "Language cannot be changed. We cannot find the group.";
@@ -3956,6 +4039,8 @@ class Script{
                 = "لا يمكن تغيير اللغة. لم نجد المجموعة.";
             Script::$script["fa"][Script::PU_LANGGROUPNOTFOUND]
                 = "گروه رو پیدا نکردیم. زبان نمیتونه تغییر کنه.";
+            Script::$script["fr"][Script::PU_LANGGROUPNOTFOUND]
+                = "La langue ne peut pas être changé. Groupe introuvable.";
 
             Script::$script["en"][Script::PR_LANGGROUPCHANGED]
                 = "Language in %s has been set to %s.";
@@ -3981,6 +4066,8 @@ class Script{
                 = "اللغة في %s قد غيرت إلى %s.";
             Script::$script["fa"][Script::PR_LANGGROUPCHANGED]
                 = "زبان %s تغییر کرد به %s.";
+            Script::$script["fr"][Script::PR_LANGGROUPCHANGED]
+                = "Langue sélectionnée pour le groupe %s : %s.";
 
             Script::$script["en"][Script::PU_LANGCHANGED]
                 = "Language has been set to %s.";
@@ -4006,6 +4093,8 @@ class Script{
                 = "لقد تم تغيير اللغة إلى %s.";
             Script::$script["fa"][Script::PU_LANGCHANGED]
                 = "زبان تغییر کرد به %s.";
+            Script::$script["fr"][Script::PU_LANGCHANGED]
+                = "Langue sélectionnée : %s.";
 
             Script::$script["en"][Script::PR_SETLANGGROUPINST]
                 = "for %s.";
@@ -4031,6 +4120,8 @@ class Script{
                 = "لـ %s.";
             Script::$script["fa"][Script::PR_SETLANGGROUPINST]
                 = "برای %s.";
+            Script::$script["fr"][Script::PR_SETLANGGROUPINST]
+                = "pour %s.";
 
             Script::$script["en"][Script::PR_SETLANGINST]
                 = "Choose the language ";
@@ -4056,6 +4147,8 @@ class Script{
                 = "إختر اللغة";
             Script::$script["fa"][Script::PR_SETLANGINST]
                 = "زبان را اتخاب کنید";
+            Script::$script["fr"][Script::PR_SETLANGINST]
+                = "Sélectionnez la langue ";
 
             Script::$script["en"][Script::PR_GROUPONLY]
                 = "This command can only be executed from group.";
@@ -4081,6 +4174,8 @@ class Script{
                 = "هذا الأمر لا يمكن تنفيذه إلا في مجموعة.";
             Script::$script["fa"][Script::PR_GROUPONLY]
                 = "این دستور فقط در گروه اجرا می شود.";
+            Script::$script["fr"][Script::PR_GROUPONLY]
+                = "Cette commande ne fonctionne que dans un groupe.";
 
             Script::$script["en"][Script::PU_PMONLY]
                 = "This command can only be executed by Private Message to Bot.";
@@ -4106,6 +4201,8 @@ class Script{
                 = "هذا الأمر لا يمكن قيامه إلا في بوت اللعبة الخاص.";
             Script::$script["fa"][Script::PU_PMONLY]
                 = "این پیام فقط در چت شخصی ربات قابل اجرا است.";
+            Script::$script["en"][Script::PU_PMONLY]
+                = "Cette commande ne fonctionne qu'en message privé.";
 
             Script::$script["en"][Script::PU_ADMINONLY]
                 = "This command can only be executed by admin.";
@@ -4131,6 +4228,8 @@ class Script{
                 = "هذا الأمر لا يمكن قيامه إلا من قِبل المشرف.";
             Script::$script["fa"][Script::PU_ADMINONLY]
                 = "این دستور مخصوص ادمین است.";
+            Script::$script["fr"][Script::PU_ADMINONLY]
+                = "Cette commande ne peut être utilisée que par un admin.";
 
 
             Script::$script["en"][Script::PU_MAINTENANCE]
@@ -4157,6 +4256,8 @@ class Script{
                 = "يوجد صيانة حالية لبوت أفالون. الرجاء التجربة في وقت لاحق.";
             Script::$script["fa"][Script::PU_MAINTENANCE]
                 = "درحال حاضر تغییراتی درحال انجام است لطفا بعدا تلاش کنید.";
+            Script::$script["en"][Script::PU_MAINTENANCE]
+                = "Désolé, le bot est actuellement en maintenance. Réessayez plus tard.";
 
             $contributor =
                 Script::$script["en"][Script::LANG]."(@Rhyned), "
@@ -4170,7 +4271,8 @@ class Script{
                 .Script::$script["yue"][Script::LANG]."(@Khinchin, @cicle_k), "
                 .Script::$script["och"][Script::LANG]."(@Khinchin), "
                 .Script::$script["ar"][Script::LANG]."(@RendezvousRama), "
-                .Script::$script["fa"][Script::LANG]."(@mohireza123)\n\n";
+                .Script::$script["fa"][Script::LANG]."(@mohireza123), "
+                .Script::$script["fr"][Script::LANG]."(@Mihooo, @Eszik)\n\n";
 
             Script::$script["en"][Script::PU_CONTACT]
                 = "Telegram code by <b>Hendry Setiadi</b>.\n\n"
@@ -4244,6 +4346,12 @@ class Script{
                 ."با من از طریق ایمیل در تماس باشید : hendry.setiadi.89@gmail.com برای کمک به بهتر شدن ربات. \n\n"
                 ."به این ربات از طریق این لینک رای دهید :  <a href=\"http://telegram.me/storebot?start=%s\">به من رای دهید</a>.\n\n"
                 ."ممنون.";
+            Script::$script["fr"][Script::PU_CONTACT]
+                = "Programmé par <b>Hendry Setiadi</b>.\n\n"
+                . $contributor
+                ."Contactez-moi par e-mail à hendry.setiadi.89@gmail.com pour vos remerciements ou retours.\n\n"
+                ."Évaluez le bot en cliquant ici: <a href=\"http://telegram.me/storebot?start=%s\">Evaluer</a>.\n\n"
+                ."Merci.";
 
 
             Script::$script["en"][Script::PU_JOINCHANNEL]
@@ -4270,6 +4378,8 @@ class Script{
                 = "أدخل هذه <a href=\"https://telegram.me/avalonbgbot\">القناة</a> لرؤية الأخبار و آخر التحديثات للعبة. \n";
             Script::$script["fa"][Script::PU_JOINCHANNEL]
                 = "در این کانال عضو شوید <a href=\"https://telegram.me/avalonbgbot\">القناة</a> تا از آخرین اخبار و تغییرات اطلاع داشته باشید. \n";
+            Script::$script["fr"][Script::PU_JOINCHANNEL]
+                = "Rejoignez ce <a href=\"https://telegram.me/avalonbgbot\">channel</a> pour suivre les dernières nouvelles et mises à jour du bot.\n";
 
 
             Script::$script["en"][Script::PU_HELP]
@@ -4368,6 +4478,14 @@ class Script{
                 . "بنویسید /rolelist برای دیدن نقش ها. \n"
                 . "بنویسید /contact برای تماس با سازنده ی ربات.\n\n"
                 . Script::$script["fa"][Script::PU_JOINCHANNEL];
+            Script::$script["fr"][Script::PU_HELP]
+                = "Bot Telegram pour le jeu Avalon.\n"
+                . "Inspiré du <a href=\"https://boardgamegeek.com/boardgame/128882/resistance-avalon\">jeu de société The Resistance:Avalon</a>\n\n"
+                . "Pour jouer, invitez ce bot sur votre groupe puis utilisez /start ou /startchaos pour lancer une partie.\n\n"
+                . "Utilisez /howtoplay si vous découvrez Avalon\n"
+                . "Utilisez /rolelist pour afficher la liste des rôles\n"
+                . "Utilisez /contact pour afficher le contact du développeur\n\n"
+                . Script::$script["fr"][Script::PU_JOINCHANNEL];
 
             $normalRoleList = Constant::EMO_SMILE_B."/merlin\n"
                 .Constant::EMO_SMILE_B."/percival\n"
@@ -4435,6 +4553,10 @@ class Script{
             Script::$script["fa"][Script::PU_ROLELIST]
                 = $normalRoleList
                 . "نقش های جدید انحصاری تلگرام : \n"
+                . $chaosRoleList;
+            Script::$script["fr"][Script::PU_ROLELIST]
+                = $normalRoleList
+                . "Rôles additionnels, exclusifs à cette version :\n"
                 . $chaosRoleList;
 
 
@@ -4763,7 +4885,33 @@ class Script{
 
                 . "این همه چیز بود، بهترین راه برای یادگیری تمرینه...تایپ کنید /start یا /startchaos تا یه بازی جدید رو شروع کنید.\n\n";
 
+            Script::$script["fr"][Script::PU_HOWTOPLAY]
+                = " <b>Avalon est un jeu de déduction et de bluff.</b>\n\n"
+                . "Ce jeu raconte le voyage des compagnons et ennemis d'Arthur."
+                . "Il y a <b>5 quêtes</b> à réaliser, toujours dans le même ordre."
+                . " Si au moins 3 quêtes sont un succès, le Bien <i>pourra</i> gagner. If 3 quêtes échouent, le Mal l'emporte.\n\n"
 
+                . "Au début d'une partie, chaque joueur se verra attribué aléatoirement un rôle secret.\n"
+                . "Cliquez ci-dessous pour voir les détails des rôles :\n"
+
+                . Script::$script["fr"][Script::PU_ROLELIST]
+
+                . "\nAu début de la partie, le jeton du Roi".Constant::EMO_KING_B. " sera aléatoirement distribué à un joueur and the King may choose who can complete the current quest.\n"
+                . "After the king has done the assignment, any player may vote <b>approve</b> or <b>reject</b> to the assignment. Then, the approve and reject will be counted.\n\n"
+
+                . "If the <b>reject</b> count is half or more the count of the players, then the quest is rejected, and the king token"
+                .Constant::EMO_KING_B." will be given to the next player (next to the King)\n"
+                . "If the <b>approve</b> count is more than half players' count, then the quest is executed by the assignees.\n\n"
+
+                . "When executing a quest, evil players may choose to fail the quest and this will be done secretly. "
+                . "In general, if at least 1 player give the FAIL to that quest, it means that quest will FAIL.\n\n"
+
+                . "And to prevent each quest being rejected over and over, each quest has maximum reject of 5. If the quest is rejected 5 times, it will automatically FAIL\n\n"
+
+                . "In a game 8 players or more, <b>lady of the lake</b>".Constant::EMO_LADY_B." can be used. Lady of The Lake will give a large benefit for a good forces.. "
+                . "A player who hold the lady token may choose a player to know his/her true identity (good or evil) but only the lady holder knows the truth.\n\n"
+
+                . "That's all. Practice is the faster way to learn.. Type /start or /startchaos to start the game.\n\n"; 
 
 
 
