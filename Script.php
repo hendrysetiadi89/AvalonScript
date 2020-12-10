@@ -4724,6 +4724,7 @@ class Script{
                 "<b>ENGLISH-JAPANESE</b>\n"
                 ."<a href=\"http://telegram.me/AvalonAnime\">Avalon Anime</a>\n\n"
                 ."<b>INDONESIA</b>\n"
+                ."<a href=\"http://telegram.me/avalonacademy\">Avalon Academy</a>\n"
                 ."<a href=\"http://telegram.me/mainavalon\">Main Avalon Indonesia</a>\n"
                 ."<a href=\"http://telegram.me/avalonwolfcircle\">Avalon Wolf Circle</a>\n"
                 ."<a href=\"https://telegram.me/joinchat/ArAp4UFSojc5mFfM7iLPWw\">Play Avalon</a>\n"
